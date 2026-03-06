@@ -6,6 +6,9 @@ import { getServiceSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "GEO Services — AI Visibility Audits, Blueprints & Workshops",
   description: "GEO services that get your brand found in AI search. The EXACT Audit, GEO Blueprint, and GEO Workshop — bounded, high-impact engagements backed by PhD research.",
+  alternates: {
+    canonical: "https://miarenai.com/services",
+  },
   openGraph: {
     title: "GEO Services — Miaren AI",
     description: "Bounded, high-impact GEO engagements. The EXACT Audit, GEO Blueprint, and GEO Workshop.",

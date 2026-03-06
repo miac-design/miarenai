@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Insights — GEO Research & AI Visibility Articles",
   description:
     "Research, frameworks, and field notes on AI visibility. Expert articles on Generative Engine Optimization from Mia Cheraghian, PhD — founder of Miaren AI.",
+  alternates: {
+    canonical: "https://miarenai.com/insights",
+  },
   openGraph: {
     title: "Insights — Miaren AI",
     description: "Research, frameworks, and field notes on AI visibility by Mia Cheraghian, PhD.",

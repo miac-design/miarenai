@@ -6,6 +6,9 @@ import NodeNetwork from "@/components/NodeNetwork";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Get a free AI visibility audit from Miaren AI. Tell us about your brand and we'll show you exactly where you stand in AI search.",
+  alternates: {
+    canonical: "https://miarenai.com/contact",
+  },
 };
 
 export default function ContactPage() {

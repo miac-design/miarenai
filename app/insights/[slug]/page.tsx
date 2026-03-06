@@ -24,6 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.title,
     description: post.description,
     authors: [{ name: "Mia Cheraghian, PhD" }],
+    alternates: {
+      canonical: `https://miarenai.com/insights/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,

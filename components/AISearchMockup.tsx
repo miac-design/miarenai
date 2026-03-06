@@ -100,16 +100,14 @@ export default function AISearchMockup() {
                 }}
               >
                 <span
-                  className={`w-2 h-2 rounded-full ${
-                    result.highlight ? "bg-[#00D4AA]" : "bg-gray-300"
-                  }`}
+                  className={`w-2 h-2 rounded-full ${result.highlight ? "bg-[#00D4AA]" : "bg-gray-300"
+                    }`}
                 />
                 <span
-                  className={`text-sm ${
-                    result.highlight
+                  className={`text-sm ${result.highlight
                       ? "font-medium text-[#00D4AA]"
                       : "text-[#6B7B8D]"
-                  }`}
+                    }`}
                 >
                   {result.name}
                 </span>
@@ -122,7 +120,7 @@ export default function AISearchMockup() {
 
       {/* "Optimized for" text directly under the box */}
       <p
-        className="text-center mt-4 text-xs tracking-wider text-[#6B7B8D]"
+        className="text-right mt-5 text-xs tracking-wider text-[#6B7B8D] max-w-md ml-auto"
         style={{ fontFamily: "var(--font-mono)" }}
       >
         Optimized for ChatGPT · Perplexity · Copilot

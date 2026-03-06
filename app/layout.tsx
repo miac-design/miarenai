@@ -46,18 +46,27 @@ export const metadata: Metadata = {
     title: "Miaren AI — Be found where it matters next.",
     description:
       "GEO consulting that makes your brand visible, citable, and recommendable in AI-powered search engines.",
+    images: [
+      {
+        url: "https://miarenai.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Miaren AI — Be found where it matters next.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Miaren AI — Generative Engine Optimization",
     description:
       "Be found where it matters next. GEO consulting for AI search visibility.",
+    images: ["https://miarenai.com/og-image.png"],
   },
   robots: {
     index: true,
     follow: true,
   },
- alternates: {
+  alternates: {
     canonical: "https://miarenai.com",
   },
   verification: {

@@ -8,6 +8,9 @@ import { getFaqSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "FAQ",
   description: "Clear answers about GEO, AI search visibility, the EXACT Framework, and how Miaren AI works.",
+  alternates: {
+    canonical: "https://miarenai.com/faq",
+  },
 };
 
 export default function FaqPage() {

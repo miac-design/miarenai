@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Miaren AI was founded by Mia Cheraghian, PhD — researcher, AI strategist, and creator of the EXACT Framework. One mission: making technology work for everyone.",
+  alternates: {
+    canonical: "https://miarenai.com/about",
+  },
 };
 
 export default function AboutPage() {

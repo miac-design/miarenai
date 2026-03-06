@@ -19,7 +19,7 @@ export default function Header() {
           <span className="text-xl font-bold tracking-tight text-navy">
             MIAREN
           </span>
-          <span className="text-sm font-normal text-teal border border-teal/40 rounded px-1.5 py-0.5">
+          <span className="text-sm font-bold text-navy bg-teal rounded px-1.5 py-0.5">
             AI
           </span>
         </Link>
@@ -28,31 +28,28 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-8">
           <Link
             href="/services"
-            className={`text-sm font-medium transition-colors ${
-              isActive("/services")
+            className={`text-sm font-medium transition-colors ${isActive("/services")
                 ? "text-navy"
                 : "text-warm-gray hover:text-navy"
-            }`}
+              }`}
           >
             Services
           </Link>
           <Link
             href="/about"
-            className={`text-sm font-medium transition-colors ${
-              isActive("/about")
+            className={`text-sm font-medium transition-colors ${isActive("/about")
                 ? "text-navy"
                 : "text-warm-gray hover:text-navy"
-            }`}
+              }`}
           >
             About
           </Link>
           <Link
             href="/faq"
-            className={`text-sm font-medium transition-colors ${
-              isActive("/faq")
+            className={`text-sm font-medium transition-colors ${isActive("/faq")
                 ? "text-navy"
                 : "text-warm-gray hover:text-navy"
-            }`}
+              }`}
           >
             FAQ
           </Link>
@@ -64,17 +61,15 @@ export default function Header() {
             onMouseLeave={() => setInsightsOpen(false)}
           >
             <button
-              className={`text-sm font-medium transition-colors flex items-center gap-1 ${
-                pathname.startsWith("/insights")
+              className={`text-sm font-medium transition-colors flex items-center gap-1 ${pathname.startsWith("/insights")
                   ? "text-navy"
                   : "text-warm-gray hover:text-navy"
-              }`}
+                }`}
             >
               Insights
               <svg
-                className={`w-3.5 h-3.5 transition-transform ${
-                  insightsOpen ? "rotate-180" : ""
-                }`}
+                className={`w-3.5 h-3.5 transition-transform ${insightsOpen ? "rotate-180" : ""
+                  }`}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
