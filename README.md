@@ -66,3 +66,4 @@ public/
 - **Semantic HTML**: Proper heading hierarchy, landmark elements
 - **OpenGraph + Twitter Cards**: Full meta on every page
 - **Structured FAQ**: FAQPage schema for AI engines to parse
+
