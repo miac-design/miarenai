@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import NodeNetwork from "@/components/NodeNetwork";
 
@@ -43,7 +44,13 @@ export default function ContactPage() {
             <div className="md:col-span-2 space-y-5">
               <div className="bg-navy rounded-xl p-6">
                 <div className="flex items-start gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-teal/20 flex items-center justify-center text-teal text-sm font-bold shrink-0">MC</div>
+                  <Image
+                    src="/mia-cheraghian.png"
+                    alt="Mia Cheraghian, Founder of Miaren AI"
+                    width={48}
+                    height={48}
+                    className="rounded-full object-cover w-12 h-12 shrink-0"
+                  />
                   <p className="text-sm text-gray-300 italic leading-relaxed">
                     &ldquo;I&apos;ve audited brands across every industry. Most score below 20% on AI visibility — and they had no idea. That&apos;s what this audit is for.&rdquo;
                   </p>
