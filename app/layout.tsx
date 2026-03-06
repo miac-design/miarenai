@@ -1,0 +1,92 @@
+import type { Metadata } from "next";
+import { DM_Sans, JetBrains_Mono } from "next/font/google";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { getOrganizationSchema, getPersonSchema } from "@/lib/schema";
+import "./globals.css";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://miarenai.com"),
+  title: {
+    default: "Miaren AI — Generative Engine Optimization (GEO) Consultancy",
+    template: "%s | Miaren AI",
+  },
+  description:
+    "Miaren AI helps businesses become visible, citable, and recommendable in AI-powered search engines. GEO consulting for ChatGPT, Perplexity, Gemini, and Copilot.",
+  keywords: [
+    "Generative Engine Optimization",
+    "GEO",
+    "AI search visibility",
+    "AI citations",
+    "ChatGPT optimization",
+    "Perplexity optimization",
+    "EXACT Framework",
+    "AI visibility audit",
+    "Miaren AI",
+  ],
+  authors: [{ name: "Mia Cheraghian", url: "https://miarenai.com/about" }],
+  creator: "Miaren AI",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://miarenai.com",
+    siteName: "Miaren AI",
+    title: "Miaren AI — Be found where it matters next.",
+    description:
+      "GEO consulting that makes your brand visible, citable, and recommendable in AI-powered search engines.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Miaren AI — Generative Engine Optimization",
+    description:
+      "Be found where it matters next. GEO consulting for AI search visibility.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://miarenai.com",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const orgSchema = getOrganizationSchema();
+  const personSchema = getPersonSchema();
+
+  return (
+    <html lang="en" className={`${dmSans.variable} ${jetbrains.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+      </head>
+      <body className="font-sans antialiased">
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
