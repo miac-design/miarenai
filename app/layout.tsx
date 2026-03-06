@@ -57,8 +57,13 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  alternates: {
+ alternates: {
     canonical: "https://miarenai.com",
+  },
+  verification: {
+    other: {
+      "msvalidate.01": "4232842774BBD6E839B08127ABF203A5",
+    },
   },
 };
 
