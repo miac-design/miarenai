@@ -192,6 +192,104 @@ export const glossaryTerms: GlossaryTerm[] = [
     definition:
       "The machine-readable backbone that makes all other GEO signals work. Primarily Schema.org structured data in JSON-LD format that explicitly tells AI engines what your content is about. The 'T' in the EXACT Framework.",
   },
+  {
+    term: "Digital Footprint",
+    category: "Strategy",
+    definition:
+      "The collective trail of data your brand leaves across the internet — website content, social profiles, reviews, press mentions, directory listings. AI engines assemble your entity understanding from this footprint, making consistency across all touchpoints critical for GEO.",
+  },
+  {
+    term: "Hallucination",
+    category: "AI Platforms",
+    definition:
+      "When an AI engine generates factually incorrect information with high confidence. For brands, hallucinations can mean being incorrectly described, attributed with wrong services, or confused with competitors. Strong entity consistency and structured data reduce hallucination risk.",
+    insight:
+      "If AI is hallucinating about your brand, it's because your digital footprint doesn't give it enough structured, consistent data to work with.",
+  },
+  {
+    term: "Indexing",
+    category: "SEO Bridge",
+    definition:
+      "The process by which search engines and AI crawlers discover, process, and store your web content. For GEO, indexing goes beyond traditional search — AI engines also index structured data, review sites, and third-party mentions to build entity understanding.",
+  },
+  {
+    term: "LLM (Large Language Model)",
+    category: "AI Platforms",
+    definition:
+      "The neural network architecture powering AI search engines like ChatGPT (GPT-4), Gemini (Gemini Pro), and Perplexity. LLMs process vast amounts of text data and generate human-like responses. Understanding how LLMs retrieve and synthesize information is foundational to GEO strategy.",
+  },
+  {
+    term: "Mention",
+    category: "Measurement",
+    definition:
+      "Any instance where your brand is named in an AI-generated response. Mentions can be direct (brand name cited) or indirect (described without naming). Tracking mentions across platforms is a core GEO measurement practice.",
+  },
+  {
+    term: "NAP Consistency",
+    category: "SEO Bridge",
+    definition:
+      "Name, Address, Phone number — the foundational entity data that must be identical across every platform. Originally a local SEO concept, NAP consistency is now critical for GEO because AI engines cross-reference this data to verify entity identity.",
+  },
+  {
+    term: "Organic Search",
+    category: "SEO Bridge",
+    definition:
+      "Traditional unpaid search results on engines like Google and Bing. While still important, organic search is being supplemented by AI-generated responses that synthesize information from multiple sources rather than presenting a list of links.",
+    insight:
+      "88% of top Google results are invisible to AI engines. Ranking organically no longer guarantees being cited by AI.",
+  },
+  {
+    term: "Query Intent",
+    category: "Strategy",
+    definition:
+      "The underlying purpose behind a user's search or AI prompt. AI engines are sophisticated at interpreting intent — informational, navigational, transactional, or comparative. GEO strategy must align content structure with the query intents your target audience uses.",
+  },
+  {
+    term: "Retrieval-Augmented Generation (RAG)",
+    category: "Technical",
+    definition:
+      "A technique where AI engines retrieve relevant documents from external sources before generating a response. RAG is how most AI search engines ground their answers in real data. Being in the retrieval set is the first step to being cited.",
+    insight:
+      "If your content isn't in the retrieval step, it can never appear in the generation step. RAG is why structured, authoritative content matters.",
+  },
+  {
+    term: "User Prompt",
+    category: "AI Platforms",
+    definition:
+      "The natural language query a user types into an AI search engine. Unlike keyword-based search queries, prompts are conversational and often complex. GEO must account for the wide variety of ways users phrase questions about your category.",
+  },
+  {
+    term: "Visibility Audit",
+    category: "Measurement",
+    definition:
+      "A systematic assessment of how your brand appears across AI search platforms. Involves querying multiple AI engines with category-relevant prompts and scoring citation frequency, sentiment, and accuracy. The EXACT Audit is Miaren AI's proprietary visibility audit methodology.",
+  },
+  {
+    term: "Web Crawling",
+    category: "Technical",
+    definition:
+      "The automated process by which search engines and AI systems discover and download web content. AI-specific crawlers like GPTBot (OpenAI), PerplexityBot, and Google-Extended must be allowed in your robots.txt for your content to be included in AI training and retrieval.",
+  },
+  {
+    term: "XML Sitemap",
+    category: "Technical",
+    definition:
+      "A structured file that tells search engines and AI crawlers which pages on your site exist and when they were last updated. Critical for GEO because it helps AI crawlers efficiently discover and prioritize your content for indexing.",
+  },
+  {
+    term: "YMYL (Your Money or Your Life)",
+    category: "SEO Bridge",
+    definition:
+      "Content categories that can impact a user's health, finances, safety, or well-being. AI engines apply stricter authority requirements for YMYL topics, making entity consistency and third-party validation even more critical for brands in healthcare, finance, and legal sectors.",
+  },
+  {
+    term: "Zero-Click Search",
+    category: "Strategy",
+    definition:
+      "A search where the user gets their answer directly in the results without clicking through to any website. AI-generated responses are the ultimate zero-click experience. GEO ensures your brand is the one being cited in these responses, even when users never visit your site.",
+    insight:
+      "In a zero-click world, being cited IS the conversion. Brand visibility in the answer is the new click.",
+  },
 ];
 
 export function getTermsByLetter(): Record<string, GlossaryTerm[]> {

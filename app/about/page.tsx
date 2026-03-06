@@ -46,7 +46,7 @@ export default function AboutPage() {
               <div>
                 <p className="text-xs font-mono tracking-wider text-teal uppercase">Founder</p>
                 <h2 className="text-2xl font-bold text-navy">Mia (Mahboubeh) Cheraghian</h2>
-                <p className="text-sm text-warm-gray">Researcher · AI Strategist · Founder, Miaren AI</p>
+                <p className="text-sm text-warm-gray">Founder, Miaren AI</p>
               </div>
             </div>
 
