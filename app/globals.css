@@ -1,6 +1,8 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
+cd~/miarenai-site open app/globals.css @theme {
   --color-navy: #0A1628;
   --color-navy-light: #141E30;
   --color-teal: #00D4AA;
@@ -17,12 +19,25 @@
   --animate-fade-up: fadeUp 0.6s ease-out forwards;
 
   @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
+
   @keyframes fadeUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
@@ -47,14 +62,14 @@ body {
 }
 
 .bg-node-network {
-  background-image: 
+  background-image:
     radial-gradient(circle at 20% 50%, rgba(0, 212, 170, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(0, 212, 170, 0.06) 0%, transparent 40%),
     radial-gradient(circle at 60% 80%, rgba(0, 212, 170, 0.04) 0%, transparent 40%);
 }
 
 .bg-node-network-dark {
-  background-image: 
+  background-image:
     radial-gradient(circle at 20% 50%, rgba(0, 212, 170, 0.12) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(0, 212, 170, 0.08) 0%, transparent 40%),
     radial-gradient(circle at 60% 80%, rgba(0, 212, 170, 0.06) 0%, transparent 40%);
@@ -70,8 +85,15 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .section-label {
@@ -117,6 +139,7 @@ body {
   background-color: rgba(20, 30, 48, 0.8);
   color: var(--warm-gray);
 }
+
 .exact-letter-inactive:hover {
   background-color: var(--navy-light);
   color: white;
@@ -133,6 +156,7 @@ body {
   border-radius: 0.5rem;
   transition: background-color 0.2s;
 }
+
 .btn-primary:hover {
   background-color: var(--teal-dark);
 }
@@ -148,6 +172,7 @@ body {
   border-radius: 0.5rem;
   transition: border-color 0.2s;
 }
+
 .btn-secondary:hover {
   border-color: rgba(10, 22, 40, 0.4);
 }
@@ -163,6 +188,7 @@ body {
   border-radius: 0.5rem;
   transition: background-color 0.2s;
 }
+
 .btn-dark:hover {
   background-color: var(--navy-light);
 }
