@@ -29,8 +29,8 @@ export default function Header() {
           <Link
             href="/services"
             className={`text-sm font-medium transition-colors ${isActive("/services")
-                ? "text-navy"
-                : "text-warm-gray hover:text-navy"
+              ? "text-navy"
+              : "text-warm-gray hover:text-navy"
               }`}
           >
             Services
@@ -38,8 +38,8 @@ export default function Header() {
           <Link
             href="/about"
             className={`text-sm font-medium transition-colors ${isActive("/about")
-                ? "text-navy"
-                : "text-warm-gray hover:text-navy"
+              ? "text-navy"
+              : "text-warm-gray hover:text-navy"
               }`}
           >
             About
@@ -47,8 +47,8 @@ export default function Header() {
           <Link
             href="/faq"
             className={`text-sm font-medium transition-colors ${isActive("/faq")
-                ? "text-navy"
-                : "text-warm-gray hover:text-navy"
+              ? "text-navy"
+              : "text-warm-gray hover:text-navy"
               }`}
           >
             FAQ
@@ -58,13 +58,16 @@ export default function Header() {
           <div
             className="relative"
             onMouseEnter={() => setInsightsOpen(true)}
-            onMouseLeave={() => setInsightsOpen(false)}
+            onMouseLeave={() => {
+              setTimeout(() => setInsightsOpen(false), 150);
+            }}
           >
             <button
               className={`text-sm font-medium transition-colors flex items-center gap-1 ${pathname.startsWith("/insights")
-                  ? "text-navy"
-                  : "text-warm-gray hover:text-navy"
+                ? "text-navy"
+                : "text-warm-gray hover:text-navy"
                 }`}
+              onClick={() => setInsightsOpen(!insightsOpen)}
             >
               Insights
               <svg
@@ -83,19 +86,23 @@ export default function Header() {
               </svg>
             </button>
             {insightsOpen && (
-              <div className="absolute top-full left-0 mt-1 bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[180px]">
-                <Link
-                  href="/insights"
-                  className="block px-4 py-2 text-sm text-warm-gray hover:text-navy hover:bg-gray-50"
-                >
-                  All Articles
-                </Link>
-                <Link
-                  href="/insights/glossary"
-                  className="block px-4 py-2 text-sm text-warm-gray hover:text-navy hover:bg-gray-50"
-                >
-                  GEO Glossary
-                </Link>
+              <div className="absolute top-full left-0 pt-2">
+                <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[180px]">
+                  <Link
+                    href="/insights"
+                    className="block px-4 py-2 text-sm text-warm-gray hover:text-navy hover:bg-gray-50"
+                    onClick={() => setInsightsOpen(false)}
+                  >
+                    All Articles
+                  </Link>
+                  <Link
+                    href="/insights/glossary"
+                    className="block px-4 py-2 text-sm text-warm-gray hover:text-navy hover:bg-gray-50"
+                    onClick={() => setInsightsOpen(false)}
+                  >
+                    GEO Glossary
+                  </Link>
+                </div>
               </div>
             )}
           </div>
