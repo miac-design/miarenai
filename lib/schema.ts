@@ -200,3 +200,71 @@ export function getBreadcrumbSchema(
     })),
   };
 }
+
+export function getGlossarySchema(terms: { term: string; definition: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    name: "GEO Glossary — The Language of AI Visibility",
+    description: "50+ terms defined, from GEO fundamentals to technical implementation. Maintained by Mia Cheraghian, PhD.",
+    url: "https://miarenai.com/insights/glossary",
+    publisher: {
+      "@type": "Organization",
+      name: "Miaren AI",
+      url: "https://miarenai.com",
+    },
+    hasDefinedTerm: terms.map((t) => ({
+      "@type": "DefinedTerm",
+      name: t.term,
+      description: t.definition,
+      inDefinedTermSet: "https://miarenai.com/insights/glossary",
+    })),
+  };
+}
+
+export function getServiceSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Miaren AI",
+    description: "Generative Engine Optimization (GEO) consultancy helping businesses become visible, citable, and recommendable in AI-powered search engines.",
+    url: "https://miarenai.com/services",
+    provider: {
+      "@type": "Organization",
+      name: "Miaren AI",
+      url: "https://miarenai.com",
+    },
+    areaServed: "US",
+    serviceType: "Generative Engine Optimization",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "GEO Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "The EXACT Audit",
+            description: "Full EXACT Framework diagnostic across 4 AI platforms with AI Visibility Score, competitive benchmarking, and prioritized fix list.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "The GEO Blueprint",
+            description: "Custom content restructuring plan, structured data roadmap, entity consistency audit, and authority-building priorities.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "The GEO Workshop",
+            description: "Live half-day training session with full audit walkthrough, monitoring toolkit, and 30-day implementation support.",
+          },
+        },
+      ],
+    },
+  };
+}
