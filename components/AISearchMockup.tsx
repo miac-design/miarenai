@@ -105,8 +105,8 @@ export default function AISearchMockup() {
                 />
                 <span
                   className={`text-sm ${result.highlight
-                      ? "font-medium text-[#00D4AA]"
-                      : "text-[#6B7B8D]"
+                    ? "font-medium text-[#00D4AA]"
+                    : "text-[#6B7B8D]"
                     }`}
                 >
                   {result.name}
@@ -117,14 +117,6 @@ export default function AISearchMockup() {
           </div>
         </div>
       </div>
-
-      {/* "Optimized for" text directly under the box */}
-      <p
-        className="text-right mt-5 text-xs tracking-wider text-[#6B7B8D] max-w-md ml-auto"
-        style={{ fontFamily: "var(--font-mono)" }}
-      >
-        Optimized for ChatGPT · Perplexity · Copilot
-      </p>
     </div>
   );
 }
