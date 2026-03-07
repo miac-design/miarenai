@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-teal/10 border-2 border-teal/40 rounded-full px-4 py-1.5 mb-5">
+              <div className="inline-flex items-center gap-2 bg-teal/10 border border-teal/30 rounded-full px-4 py-1.5 mb-5">
                 <span className="w-2 h-2 rounded-full bg-teal" />
                 <span className="text-xs font-mono tracking-wider text-teal uppercase">
                   Generative Engine Optimization
@@ -33,15 +33,15 @@ export default function HomePage() {
               {/* Stats */}
               <div className="flex gap-8 mt-8">
                 <div>
-                  <p className="text-3xl md:text-4xl font-bold text-teal">527%</p>
+                  <p className="text-3xl md:text-4xl font-bold text-navy">527%</p>
                   <p className="text-sm text-warm-gray mt-1">Growth in AI-referred traffic</p>
                 </div>
                 <div>
-                  <p className="text-3xl md:text-4xl font-bold text-teal">21%</p>
+                  <p className="text-3xl md:text-4xl font-bold text-navy">21%</p>
                   <p className="text-sm text-warm-gray mt-1">Drop in traditional search</p>
                 </div>
                 <div>
-                  <p className="text-3xl md:text-4xl font-bold text-teal">88%</p>
+                  <p className="text-3xl md:text-4xl font-bold text-navy">88%</p>
                   <p className="text-sm text-warm-gray mt-1">Top Google results invisible to AI</p>
                 </div>
               </div>
