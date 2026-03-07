@@ -16,11 +16,11 @@ export default function ExactFramework() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
+    <section className="relative bg-navy py-10 md:py-16 overflow-hidden">
       <NodeNetwork opacity={0.2} color="0, 212, 170" />
       <div className="relative z-10 max-w-4xl mx-auto px-6">
         <div className="text-center mb-10">
-          <p className="section-label mb-3">OUR METHODOLOGY</p>
+          <p className="section-label mb-3">HOW WE FIND WHAT&apos;S MISSING</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             The <span className="text-teal">EXACT</span> Framework
           </h2>
