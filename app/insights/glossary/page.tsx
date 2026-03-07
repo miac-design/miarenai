@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GEO Glossary — Miaren AI",
     description: "50+ terms defined, from GEO fundamentals to technical implementation.",
+    images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI — Be found where it matters next." }],
   },
 };
 

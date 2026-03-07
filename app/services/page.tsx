@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GEO Services — Miaren AI",
     description: "Bounded, high-impact GEO engagements. The EXACT Audit, GEO Blueprint, and GEO Workshop.",
+    images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI — Be found where it matters next." }],
   },
 };
 

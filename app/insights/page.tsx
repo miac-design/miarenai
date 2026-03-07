@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Insights — Miaren AI",
     description: "Research, frameworks, and field notes on AI visibility by Mia Cheraghian, PhD.",
+    images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI — Be found where it matters next." }],
   },
 };
 
