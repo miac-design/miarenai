@@ -9,12 +9,48 @@ export default function ContactForm() {
     company: "",
     challenge: "",
   });
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Connect to form handler (Formspree, Supabase, etc.)
-    alert("Form submitted! Connect to your preferred form handler.");
+    setStatus("sending");
+
+    try {
+      const res = await fetch("https://formspree.io/f/mreygrbn", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          challenge: formData.challenge,
+        }),
+      });
+
+      if (res.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", company: "", challenge: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
+
+  if (status === "success") {
+    return (
+      <div className="text-center py-12">
+        <div className="w-16 h-16 bg-teal/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg className="w-8 h-8 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 className="text-xl font-bold text-navy mb-2">Request received!</h3>
+        <p className="text-warm-gray">I&apos;ll review your brand and reply personally within 48 hours.</p>
+      </div>
+    );
+  }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
@@ -85,11 +121,17 @@ export default function ContactForm() {
         </p>
       </div>
 
-      <button type="submit" className="btn-primary w-full justify-center !py-3.5">
-        Send my audit request
-        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-        </svg>
+      <button
+        type="submit"
+        disabled={status === "sending"}
+        className="btn-primary w-full justify-center !py-3.5 disabled:opacity-60"
+      >
+        {status === "sending" ? "Sending..." : "Send my audit request"}
+        {status !== "sending" && (
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        )}
       </button>
 
       <p className="text-xs text-warm-gray text-center flex items-center justify-center gap-1.5">
