@@ -4,23 +4,24 @@ import { notFound } from "next/navigation";
 import NodeNetwork from "@/components/NodeNetwork";
 import { caseStudies, getCaseStudyBySlug } from "@/lib/case-study-data";
 
+interface Props {
+    params: Promise<{ slug: string }>;
+}
+
 export function generateStaticParams() {
     return caseStudies.map((cs) => ({ slug: cs.slug }));
 }
 
-export function generateMetadata({
-    params,
-}: {
-    params: { slug: string };
-}): Metadata {
-    const cs = getCaseStudyBySlug(params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { slug } = await params;
+    const cs = getCaseStudyBySlug(slug);
     if (!cs) return {};
 
     return {
         title: `${cs.client} — GEO Results`,
         description: cs.tagline,
         alternates: {
-            canonical: `https://miarenai.com/results/${cs.slug}`,
+            canonical: `https://miarenai.com/results/${slug}`,
         },
         openGraph: {
             title: `${cs.client} — GEO Results | Miaren AI`,
@@ -30,12 +31,9 @@ export function generateMetadata({
     };
 }
 
-export default function CaseStudyPage({
-    params,
-}: {
-    params: { slug: string };
-}) {
-    const cs = getCaseStudyBySlug(params.slug);
+export default async function CaseStudyPage({ params }: Props) {
+    const { slug } = await params;
+    const cs = getCaseStudyBySlug(slug);
     if (!cs) notFound();
 
     return (
