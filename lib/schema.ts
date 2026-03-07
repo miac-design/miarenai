@@ -99,7 +99,7 @@ export function getPersonSchema() {
     alternateName: "Mahboubeh Cheraghian",
     jobTitle: "Founder, Miaren AI",
     url: "https://miarenai.com/about",
-    image: "https://miarenai.com/mia-cheraghian.jpg",
+    image: "https://miarenai.com/mia-cheraghian.png",
     description:
       "PhD researcher, AI strategist, and founder of Miaren AI. Creator of the EXACT Framework for Generative Engine Optimization. Director of Strategic Partnerships & Marketing at Austin AI Hub.",
     sameAs: ["https://www.linkedin.com/in/mia-cheraghian/"],

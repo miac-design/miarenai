@@ -46,7 +46,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="flex gap-4 mt-8">
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <Link href="/contact" className="btn-primary">
                   Get Your Free Audit
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

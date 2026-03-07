@@ -22,7 +22,7 @@ export default function Footer() {
               <Link href="/contact" className="block text-sm text-gray-400 hover:text-white transition-colors">Contact</Link>
             </div>
             <div className="space-y-2.5">
-              <a href="https://www.linkedin.com/company/miaren-ai/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+              <a href="https://www.linkedin.com/company/miaren-ai/" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-400 hover:text-white transition-colors">LinkedIn</a>
               <a href="mailto:hello@miarenai.com" className="block text-sm text-gray-400 hover:text-white transition-colors">hello@miarenai.com</a>
               <a href="https://calendly.com/c2018-mia/chat-with-mia" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-400 hover:text-white transition-colors">Book a Call</a>
             </div>
