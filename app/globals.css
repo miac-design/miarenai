@@ -202,7 +202,16 @@ body {
 .flip-card {
   perspective: 1000px;
   cursor: pointer;
-  height: 420px;
+  height: 380px;
+  /* Entrance animation */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease, filter 0.3s ease;
+}
+
+.flip-card-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .flip-card-inner {
@@ -220,8 +229,8 @@ body {
   }
 }
 
-/* Mobile tap flip */
-.flip-card-flipped {
+/* Mobile tap flip + auto-flip via JS */
+.flip-card-flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -232,13 +241,39 @@ body {
   height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background: #141E30;
+  display: flex;
+  flex-direction: column;
 }
 
 .flip-card-back {
   transform: rotateY(180deg);
+  background: linear-gradient(135deg, #00D4AA 0%, #00B894 100%);
 }
 
 /* Teal glow on hover */
 .flip-card:hover {
-  filter: drop-shadow(0 0 12px rgba(0, 212, 170, 0.2));
+  filter: drop-shadow(0 0 16px rgba(0, 212, 170, 0.25));
+}
+
+/* Mobile tap indicator pulse */
+@keyframes tap-pulse {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.tap-indicator {
+  animation: tap-pulse 2s infinite;
 }
