@@ -47,8 +47,8 @@ export default function ExactLetterAccordion() {
                         key={signal.letter}
                         onClick={() => setActiveIndex(i === activeIndex ? -1 : i)}
                         className={`w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center text-xl md:text-2xl font-bold transition-all duration-300 cursor-pointer ${i === activeIndex
-                                ? "bg-teal text-navy shadow-[0_10px_25px_rgba(0,212,170,0.35)] scale-110"
-                                : "bg-[rgba(20,30,48,0.8)] text-warm-gray hover:bg-navy-light hover:text-white"
+                            ? "bg-teal text-navy shadow-[0_10px_25px_rgba(0,212,170,0.35)] scale-110"
+                            : "bg-[rgba(20,30,48,0.8)] text-warm-gray hover:bg-navy-light hover:text-white"
                             }`}
                         aria-label={`${signal.letter} — ${signal.name}`}
                         aria-expanded={i === activeIndex}
@@ -62,9 +62,10 @@ export default function ExactLetterAccordion() {
             {signals.map((signal, i) => (
                 <div
                     key={signal.letter}
+                    id={`signal-${signal.letter.toLowerCase()}`}
                     className={`transition-all duration-500 overflow-hidden ${i === activeIndex
-                            ? "max-h-[500px] opacity-100 mb-4"
-                            : "max-h-0 opacity-0"
+                        ? "max-h-[500px] opacity-100 mb-4"
+                        : "max-h-0 opacity-0"
                         }`}
                     // All content is in the DOM for crawlers regardless of visibility
                     aria-hidden={i !== activeIndex}
@@ -90,8 +91,8 @@ export default function ExactLetterAccordion() {
                         key={i}
                         onClick={() => setActiveIndex(i)}
                         className={`h-1.5 rounded-full transition-all duration-300 ${i === activeIndex
-                                ? "w-6 bg-teal"
-                                : "w-1.5 bg-white/30 hover:bg-white/50"
+                            ? "w-6 bg-teal"
+                            : "w-1.5 bg-white/30 hover:bg-white/50"
                             }`}
                         aria-label={`Signal ${i + 1}`}
                     />

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
 import ExactLetterAccordion from "@/components/ExactLetterAccordion";
+import BowlAnalogy from "@/components/BowlAnalogy";
 import { getExactFrameworkArticleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -114,6 +115,39 @@ export default function ExactFrameworkPage() {
                             </div>
                         </div>
                     </noscript>
+                </div>
+            </section>
+
+            {/* ============================================= */}
+            {/* Section 2.5: How to Think About It (Bowl)     */}
+            {/* ============================================= */}
+            <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
+                <NodeNetwork opacity={0.15} color="0, 212, 170" />
+                <div className="relative z-10 max-w-6xl mx-auto px-6">
+                    <div className="text-center mb-10">
+                        <p className="section-label mb-3">// HOW TO THINK ABOUT IT</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+                            Your Brand Is a Restaurant.{" "}
+                            <span className="text-teal">AI Is the Food Critic.</span>
+                        </h2>
+                    </div>
+
+                    <BowlAnalogy />
+
+                    {/* Bottom Callout */}
+                    <div className="mt-12">
+                        <div className="teal-border-left">
+                            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+                                &ldquo;Academic research has identified 9 content
+                                optimization techniques for AI citation. Content is one of
+                                five signals in the EXACT Framework. The other four are
+                                equally important — and often overlooked.&rdquo;
+                            </p>
+                            <p className="mt-4 text-sm font-mono tracking-wider text-teal uppercase">
+                                Aggarwal et al., Georgia Tech / Princeton / IIT Delhi (2024)
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
