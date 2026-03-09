@@ -66,7 +66,7 @@ export default function ExactFrameworkPage() {
                         the EXACT Framework.
                     </p>
                     <p className="mt-6 text-sm font-mono tracking-wider text-teal uppercase">
-                        Developed by Mia Cheraghian, Founder of Miaren AI
+                        Developed by Mia Cheraghian, PhD / Founder of Miaren AI
                     </p>
                 </div>
             </section>

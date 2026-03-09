@@ -247,7 +247,7 @@ export default function HomePage() {
 
           <div className="text-center">
             <p className="text-xs font-mono tracking-wider text-warm-gray uppercase mb-6">
-              Developed by Mia Cheraghian
+              Developed by Mia Cheraghian, PhD
             </p>
             <Link
               href="/exact-framework"

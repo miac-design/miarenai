@@ -129,7 +129,7 @@ export default function AboutPage() {
 
           <div className="space-y-5 text-gray-400 text-lg leading-relaxed">
             <p>
-              PhD candidate at Texas Tech University, Senior Researcher at
+              PhD researcher at Texas Tech University, Senior Researcher at
               Rackspace Technology, and Director of Strategic Partnerships
               &amp; Marketing at{" "}
               <a
@@ -152,8 +152,9 @@ export default function AboutPage() {
             <p>
               My career is dedicated to democratizing access to emerging
               technology for populations traditionally left behind. My doctoral
-              research pioneered accessible travel experiences for people with
-              disabilities using smart glasses. Through Austin AI Hub, I connect
+              research explored how smart glasses can reduce travel hesitation,
+              including for people with disabilities, by making travel
+              experiences more accessible. Through Austin AI Hub, I connect
               underserved communities in Austin to AI opportunities. Through
               Miaren AI, I make AI visibility accessible to businesses that
               can&apos;t compete with enterprise players.
@@ -172,10 +173,9 @@ export default function AboutPage() {
 
           <div className="grid sm:grid-cols-2 gap-3">
             {[
-              "PhD Candidate, Texas Tech University (Tourism, Hospitality & Retail Management)",
+              "PhD, Texas Tech University (Tourism, Hospitality & Retail Management)",
               "Senior Researcher, Rackspace Technology",
               "Director of Strategic Partnerships & Marketing, Austin AI Hub (501(c)(3) nonprofit)",
-              "Google AI Certified",
               "Creator of the EXACT Framework",
               "Published researcher and peer reviewer",
               "1 published book chapter, 2 journal papers under review, 2 conference presentations",
