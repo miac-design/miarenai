@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
 import ExactLetterAccordion from "@/components/ExactLetterAccordion";
-import BowlAnalogy from "@/components/BowlAnalogy";
+import FlipCards from "@/components/FlipCards";
 import { getExactFrameworkArticleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -163,12 +163,12 @@ export default function ExactFrameworkPage() {
             </section>
 
             {/* ============================================= */}
-            {/* Section 2.5: How to Think About It (Bowl)     */}
+            {/* Section 2.5: How to Think About It (Flip Cards)*/}
             {/* ============================================= */}
             <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
                 <NodeNetwork opacity={0.15} color="0, 212, 170" />
-                <div className="relative z-10 max-w-6xl mx-auto px-6">
-                    <div className="text-center mb-10">
+                <div className="relative z-10 max-w-5xl mx-auto px-6">
+                    <div className="text-center mb-6">
                         <p className="section-label mb-3">// HOW TO THINK ABOUT IT</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
                             Your Brand Is a Restaurant.{" "}
@@ -176,10 +176,22 @@ export default function ExactFrameworkPage() {
                         </h2>
                     </div>
 
-                    <BowlAnalogy />
+                    {/* Intro paragraph */}
+                    <p className="text-gray-400 text-lg leading-relaxed text-center max-w-3xl mx-auto mb-12">
+                        When you walk into a restaurant, you notice the decor, the lighting,
+                        the ambiance. That&apos;s what attracts humans. But a food critic?
+                        They only care about what&apos;s on the plate. AI works the same way.
+                        It doesn&apos;t care how beautiful your website is. It cares about
+                        what&apos;s inside, how it&apos;s structured, and who else says
+                        it&apos;s good. Here are the five things the AI food critic actually
+                        evaluates.
+                    </p>
+
+                    {/* 5 Flip Cards */}
+                    <FlipCards />
 
                     {/* Bottom Callout */}
-                    <div className="mt-12">
+                    <div className="mt-14">
                         <div className="teal-border-left">
                             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
                                 &ldquo;Academic research has identified 9 content
