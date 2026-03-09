@@ -20,7 +20,7 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://miarenai.com"),
   title: {
-    default: "Miaren AI — AI Visibility Consulting | Be Found Where It Matters Next",
+    default: "Miaren AI | AI Visibility Consulting | Be Found Where It Matters Next",
     template: "%s | Miaren AI",
   },
   description:
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://miarenai.com",
     siteName: "Miaren AI",
-    title: "Miaren AI — Be found where it matters next.",
+    title: "Miaren AI | Be found where it matters next.",
     description:
       "GEO consulting that makes your brand visible, citable, and recommendable in AI-powered search engines.",
     images: [
@@ -51,13 +51,13 @@ export const metadata: Metadata = {
         url: "https://miarenai.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Miaren AI — Be found where it matters next.",
+        alt: "Miaren AI | Be found where it matters next.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Miaren AI — Generative Engine Optimization",
+    title: "Miaren AI | Generative Engine Optimization",
     description:
       "Be found where it matters next. GEO consulting for AI search visibility.",
     images: ["https://miarenai.com/og-image.png"],

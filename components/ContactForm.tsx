@@ -83,7 +83,7 @@ export default function ContactForm() {
           className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-teal transition-colors"
         />
         <p className="mt-1 text-xs text-warm-gray">
-          I&apos;ll reply personally — usually within 48 hours.
+          I&apos;ll reply personally. Usually within 48 hours.
         </p>
       </div>
 

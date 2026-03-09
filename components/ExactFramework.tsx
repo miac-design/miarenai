@@ -7,7 +7,7 @@ import NodeNetwork from "@/components/NodeNetwork";
 const signals = [
   { letter: "E", name: "Entity Consistency", description: "Your brand information must be identical everywhere AI looks: website, LinkedIn, directories, review sites. Inconsistency kills AI confidence in citing you.", insight: "Where most brands fail first." },
   { letter: "X", name: "Cross-Platform Presence", description: "AI engines cross-reference LinkedIn, review sites, news articles, industry directories, and more. If you only exist on your own domain, you're missing critical signals.", insight: "Your website alone isn't enough." },
-  { letter: "A", name: "Authority Signals", description: "Third-party validation from trusted sources — earned media, review sites, expert citations, high-authority backlinks. If only your own website says you're great, AI engines aren't convinced.", insight: "The hardest signal to build. The biggest payoff." },
+  { letter: "A", name: "Authority Signals", description: "Third-party validation from trusted sources . Earned media, review sites, expert citations, high-authority backlinks. If only your own website says you're great, AI engines aren't convinced.", insight: "The hardest signal to build. The biggest payoff." },
   { letter: "C", name: "Content Structure", description: "Content must be structured for AI parsing: clear headings, Q&A formats, direct answers, and statistical claims with sources. Marketing copy full of buzzwords doesn't translate.", insight: "Structure beats length every time." },
   { letter: "T", name: "Technical Infrastructure", description: "Schema.org markup in JSON-LD format that explicitly tells AI engines what your content is about. Without it, AI must infer meaning from unstructured text.", insight: "The technical backbone that makes everything else work." },
 ];
@@ -29,7 +29,7 @@ export default function ExactFramework() {
 
         <div className="flex justify-center gap-3 mb-8">
           {signals.map((signal, i) => (
-            <button key={signal.letter} onClick={() => setActive(i)} className={`exact-letter ${i === active ? "exact-letter-active" : "exact-letter-inactive"}`} aria-label={`${signal.letter} — ${signal.name}`}>
+            <button key={signal.letter} onClick={() => setActive(i)} className={`exact-letter ${i === active ? "exact-letter-active" : "exact-letter-inactive"}`} aria-label={`${signal.letter}: ${signal.name}`}>
               {signal.letter}
             </button>
           ))}

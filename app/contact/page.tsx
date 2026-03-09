@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import NodeNetwork from "@/components/NodeNetwork";
 
 export const metadata: Metadata = {
-  title: "Contact Miaren AI — Book a Free AI Visibility Assessment",
+  title: "Contact Miaren AI | Book a Free AI Visibility Assessment",
   description:
     "Book a free conversation about your brand's AI visibility. Miaren AI helps businesses become visible in ChatGPT, Perplexity, and Google AI Overviews.",
   alternates: {
@@ -81,7 +81,7 @@ export default function ContactPage() {
                   </p>
                 </div>
                 <p className="text-xs text-warm-gray">
-                  — Mia Cheraghian, Founder
+                  / Mia Cheraghian, Founder
                 </p>
                 <div className="mt-5 space-y-2.5">
                   <div className="flex items-center gap-3">

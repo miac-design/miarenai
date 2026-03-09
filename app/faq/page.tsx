@@ -6,7 +6,7 @@ import { faqItems } from "@/lib/faq-data";
 import { getFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "AI Visibility FAQ — Common Questions About GEO",
+  title: "AI Visibility FAQ | Common Questions About GEO",
   description:
     "Frequently asked questions about AI visibility and Generative Engine Optimization. What is GEO? How does it differ from SEO? How long does it take to see results? Answered by Mia Cheraghian.",
   alternates: {

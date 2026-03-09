@@ -4,16 +4,16 @@ import InsightsGrid from "@/components/InsightsGrid";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Insights — GEO Research & AI Visibility Articles",
+  title: "Insights | GEO Research & AI Visibility Articles",
   description:
-    "Research, frameworks, and field notes on AI visibility. Expert articles on Generative Engine Optimization from Mia Cheraghian, PhD — founder of Miaren AI.",
+    "Research, frameworks, and field notes on AI visibility. Expert articles on Generative Engine Optimization from Mia Cheraghian, PhD and founder of Miaren AI.",
   alternates: {
     canonical: "https://miarenai.com/insights",
   },
   openGraph: {
-    title: "Insights — Miaren AI",
+    title: "Insights | Miaren AI",
     description: "Research, frameworks, and field notes on AI visibility by Mia Cheraghian, PhD.",
-    images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI — Be found where it matters next." }],
+    images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI | Be found where it matters next." }],
   },
 };
 

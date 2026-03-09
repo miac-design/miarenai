@@ -18,15 +18,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!cs) return {};
 
     return {
-        title: `${cs.client} — GEO Results`,
+        title: `${cs.client} | GEO Results`,
         description: cs.tagline,
         alternates: {
             canonical: `https://miarenai.com/results/${slug}`,
         },
         openGraph: {
-            title: `${cs.client} — GEO Results | Miaren AI`,
+            title: `${cs.client} | GEO Results | Miaren AI`,
             description: cs.tagline,
-            images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI — Be found where it matters next." }],
+            images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI | Be found where it matters next." }],
         },
     };
 }
@@ -112,7 +112,7 @@ export default async function CaseStudyPage({ params }: Props) {
                             <p className="text-gray-300 leading-relaxed italic text-lg mb-4">
                                 &ldquo;{cs.testimonial.quote}&rdquo;
                             </p>
-                            <p className="text-sm font-medium text-teal">— {cs.testimonial.role}</p>
+                            <p className="text-sm font-medium text-teal">/ {cs.testimonial.role}</p>
                         </div>
                     )}
 

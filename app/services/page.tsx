@@ -4,7 +4,7 @@ import NodeNetwork from "@/components/NodeNetwork";
 import { getServiceSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "AI Visibility Services — GEO Audits, Strategy & Workshops",
+  title: "AI Visibility Services | GEO Audits, Strategy & Workshops",
   description:
     "Miaren AI offers AI visibility audits, GEO strategy, and B2B workshops. Using the proprietary EXACT Framework to make your brand citable in ChatGPT, Perplexity, and Google AI Overviews.",
   alternates: {

@@ -1,11 +1,11 @@
-// lib/blog-content.ts — Full article content for each blog post
+// lib/blog-content.ts | Full article content for each blog post
 
 export const blogContent: Record<string, { sections: { heading: string; content: string }[] }> = {
   "what-is-generative-engine-optimization": {
     sections: [
       {
         heading: "The shift happening right now",
-        content: "Your customers are no longer starting their search on Google. They're asking ChatGPT, Perplexity, Gemini, and Copilot. And when they do, they're getting direct answers — not a list of ten blue links. This is the most significant shift in digital discovery since Google itself. The question is whether your brand appears in those answers.",
+        content: "Your customers are no longer starting their search on Google. They're asking ChatGPT, Perplexity, Gemini, and Copilot. And when they do, they're getting direct answers instead of a list of ten blue links. This is the most significant shift in digital discovery since Google itself. The question is whether your brand appears in those answers.",
       },
       {
         heading: "What GEO actually is",
@@ -13,7 +13,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "GEO is not SEO rebranded",
-        content: "SEO and GEO address fundamentally different systems. SEO optimizes for Google's ranking algorithm — backlinks, keywords, page speed. GEO optimizes for AI synthesis engines that evaluate authority, entity consistency, and structured data to decide who to cite in generated responses. Only 12% of URLs that AI engines cite also rank in Google's top 10 (Ahrefs, 2025). That means 88% of AI citations come from sources that aren't dominant in traditional search. They're different games with different rules.",
+        content: "SEO and GEO address fundamentally different systems. SEO optimizes for Google's ranking algorithm (backlinks, keywords, page speed). GEO optimizes for AI synthesis engines that evaluate authority, entity consistency, and structured data to decide who to cite in generated responses. Only 12% of URLs that AI engines cite also rank in Google's top 10 (Ahrefs, 2025). That means 88% of AI citations come from sources that aren't dominant in traditional search. They're different games with different rules.",
       },
       {
         heading: "The five signals AI engines evaluate",
@@ -25,7 +25,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "What you should do next",
-        content: "Start by asking ChatGPT, Perplexity, and Gemini questions your customers would ask about your industry. Does your brand get mentioned? If not, you have a visibility gap. The EXACT Audit from Miaren AI provides a systematic, research-backed assessment across all major AI platforms — with a quantified score and prioritized action plan to close that gap.",
+        content: "Start by asking ChatGPT, Perplexity, and Gemini questions your customers would ask about your industry. Does your brand get mentioned? If not, you have a visibility gap. The EXACT Audit from Miaren AI provides a systematic, research-backed assessment across all major AI platforms, with a quantified score and prioritized action plan to close that gap.",
       },
     ],
   },
@@ -45,7 +45,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "What most brands get wrong",
-        content: "The most common failure is assuming that strong Google rankings translate to AI visibility. They don't. Only 12% of AI-cited URLs also rank in Google's top 10. Most brands we audit score below 20% on AI visibility — and they had no idea their competitors were being cited while they were invisible.",
+        content: "The most common failure is assuming that strong Google rankings translate to AI visibility. They don't. Only 12% of AI-cited URLs also rank in Google's top 10. Most brands we audit score below 20% on AI visibility, and they had no idea their competitors were being cited while they were invisible.",
       },
       {
         heading: "Building citation-worthy presence",
@@ -57,7 +57,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
     sections: [
       {
         heading: "The audit results are consistent",
-        content: "After auditing dozens of brands across industries — from B2B tech to hospitality to professional services — the same gaps appear almost every time. Most companies score below 20% on our AI Visibility Score. The problems aren't random. They're systematic.",
+        content: "After auditing dozens of brands across industries, from B2B tech to hospitality to professional services. The same gaps appear almost every time. Most companies score below 20% on our AI Visibility Score. The problems aren't random. They're systematic.",
       },
       {
         heading: "Gap #1: Entity inconsistency",
@@ -73,7 +73,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "The fix order matters",
-        content: "Entity consistency first (2-4 week impact). Structured data second (4-8 week impact). Content restructuring third (ongoing). Authority building fourth (3-6 month play). This is exactly the prioritization the EXACT Audit delivers — quick wins first, so you see momentum early while building toward long-term advantage.",
+        content: "Entity consistency first (2-4 week impact). Structured data second (4-8 week impact). Content restructuring third (ongoing). Authority building fourth (3-6 month play). This is exactly the prioritization the EXACT Audit delivers: quick wins first, so you see momentum early while building toward long-term advantage.",
       },
     ],
   },
@@ -93,11 +93,11 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "Building a tracking system",
-        content: "Start with a structured audit across ChatGPT, Perplexity, Gemini, and Copilot using 10 queries relevant to your industry. Screenshot everything. Score each platform. Repeat monthly. This manual process is what the EXACT Audit systematizes — but you can start a basic version yourself today.",
+        content: "Start with a structured audit across ChatGPT, Perplexity, Gemini, and Copilot using 10 queries relevant to your industry. Screenshot everything. Score each platform. Repeat monthly. This manual process is what the EXACT Audit systematizes, but you can start a basic version yourself today.",
       },
       {
         heading: "The metrics that matter",
-        content: "Citation frequency tells you if you're visible. Share of voice tells you how you compare to competitors. Sentiment tells you whether AI is helping or hurting your brand. Together, they paint a complete picture of your AI search position — and tell you exactly where to focus your optimization efforts.",
+        content: "Citation frequency tells you if you're visible. Share of voice tells you how you compare to competitors. Sentiment tells you whether AI is helping or hurting your brand. Together, they paint a complete picture of your AI search position and tell you exactly where to focus your optimization efforts.",
       },
     ],
   },
@@ -113,7 +113,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "What SEO does that GEO can't",
-        content: "Traditional SEO still drives the majority of organic web traffic. Page speed, mobile optimization, backlink profiles, and keyword relevance remain critical for Google rankings. GEO doesn't replace these fundamentals — it layers on top of them.",
+        content: "Traditional SEO still drives the majority of organic web traffic. Page speed, mobile optimization, backlink profiles, and keyword relevance remain critical for Google rankings. GEO doesn't replace these fundamentals. It layers on top of them.",
       },
       {
         heading: "What GEO does that SEO can't",
@@ -121,7 +121,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "The integrated approach",
-        content: "The brands winning in 2026 are doing both. Strong SEO foundations with GEO layered on top. They're not choosing between Google rankings and AI citations — they're optimizing for both simultaneously. The EXACT Framework is designed to identify exactly where your GEO gaps are while preserving your SEO strengths.",
+        content: "The brands winning in 2026 are doing both. Strong SEO foundations with GEO layered on top. They're not choosing between Google rankings and AI citations. They're optimizing for both simultaneously. The EXACT Framework is designed to identify exactly where your GEO gaps are while preserving your SEO strengths.",
       },
     ],
   },
@@ -129,11 +129,11 @@ export const blogContent: Record<string, { sections: { heading: string; content:
     sections: [
       {
         heading: "Making the internal case for GEO",
-        content: "If you're a marketing leader reading this, you probably already sense that AI search is changing your competitive landscape. The challenge is making that case internally — with data, not intuition. Here's the framework for doing that.",
+        content: "If you're a marketing leader reading this, you probably already sense that AI search is changing your competitive landscape. The challenge is making that case internally, with data, not intuition. Here's the framework for doing that.",
       },
       {
         heading: "The data that moves executives",
-        content: "AI-referred website traffic grew 527% year over year (Previsible / Search Engine Land, 2025). Organic search click-through rates have declined roughly 30% since AI Overviews launched (BrightEdge). ChatGPT has 300M+ weekly active users. Gartner projected traditional search volume would decrease 25% by 2026. Less than 5% of companies have any intentional AI search strategy. These aren't projections — this is happening now.",
+        content: "AI-referred website traffic grew 527% year over year (Previsible / Search Engine Land, 2025). Organic search click-through rates have declined roughly 30% since AI Overviews launched (BrightEdge). ChatGPT has 300M+ weekly active users. Gartner projected traditional search volume would decrease 25% by 2026. Less than 5% of companies have any intentional AI search strategy. These aren't projections. This is happening now.",
       },
       {
         heading: "The competitive intelligence angle",
@@ -145,7 +145,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "First-mover advantage is real",
-        content: "AI engines are building their understanding of brands right now. The entity relationships, authority signals, and content patterns being established today will compound over time. Early movers build structural advantages that late entrants can't easily replicate. The window for first-mover advantage in GEO is open — but it won't stay open forever.",
+        content: "AI engines are building their understanding of brands right now. The entity relationships, authority signals, and content patterns being established today will compound over time. Early movers build structural advantages that late entrants can't easily replicate. The window for first-mover advantage in GEO is open. But it won't stay open forever.",
       },
     ],
   },

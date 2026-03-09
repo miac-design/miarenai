@@ -5,16 +5,16 @@ import { glossaryTerms } from "@/lib/glossary-data";
 import { getGlossarySchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "GEO Glossary — The Language of AI Visibility",
+  title: "GEO Glossary | The Language of AI Visibility",
   description:
     "50+ Generative Engine Optimization terms defined. From GEO fundamentals to technical implementation. Your reference guide to how AI-powered search works. Maintained by Mia Cheraghian, PhD.",
   alternates: {
     canonical: "https://miarenai.com/insights/glossary",
   },
   openGraph: {
-    title: "GEO Glossary — Miaren AI",
+    title: "GEO Glossary | Miaren AI",
     description: "50+ terms defined, from GEO fundamentals to technical implementation.",
-    images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI — Be found where it matters next." }],
+    images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI | Be found where it matters next." }],
   },
 };
 

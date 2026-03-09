@@ -3,14 +3,14 @@ import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
 
 export const metadata: Metadata = {
-    title: "GEO vs SEO — What's the Difference?",
+    title: "GEO vs SEO | What's the Difference?",
     description:
         "GEO (Generative Engine Optimization) is the practice of being cited in AI search responses. SEO focuses on ranking in Google. GEO layers on top of SEO. Learn the difference.",
     alternates: {
         canonical: "https://miarenai.com/geo-vs-seo",
     },
     openGraph: {
-        title: "GEO vs SEO — What's the Difference? | Miaren AI",
+        title: "GEO vs SEO | What's the Difference? | Miaren AI",
         description:
             "GEO layers on top of SEO. Learn how AI search differs from traditional search and what your brand needs to do about it.",
         url: "https://miarenai.com/geo-vs-seo",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
                 url: "https://miarenai.com/og-image.png",
                 width: 1200,
                 height: 630,
-                alt: "GEO vs SEO — Miaren AI",
+                alt: "GEO vs SEO | Miaren AI",
             },
         ],
     },

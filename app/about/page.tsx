@@ -4,14 +4,14 @@ import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
 
 export const metadata: Metadata = {
-  title: "About Miaren AI — Founded by Mia Cheraghian | AI Visibility Consultancy",
+  title: "About Miaren AI | Founded by Mia Cheraghian | AI Visibility Consultancy",
   description:
     "Miaren AI was founded by Mia Cheraghian, a PhD researcher and AI strategist. The name means AI Renaissance. We help brands become visible in AI-powered search.",
   alternates: {
     canonical: "https://miarenai.com/about",
   },
   openGraph: {
-    title: "About Miaren AI — Founded by Mia Cheraghian",
+    title: "About Miaren AI | Founded by Mia Cheraghian",
     description:
       "PhD researcher and AI strategist helping brands become visible in AI-powered search.",
     images: [

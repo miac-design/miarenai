@@ -1,4 +1,4 @@
-// lib/schema.ts — JSON-LD Structured Data for AI Crawlability
+// lib/schema.ts | JSON-LD Structured Data for AI Crawlability
 
 export function getOrganizationSchema() {
   return {
@@ -205,7 +205,7 @@ export function getGlossarySchema(terms: { term: string; definition: string }[])
   return {
     "@context": "https://schema.org",
     "@type": "DefinedTermSet",
-    name: "GEO Glossary — The Language of AI Visibility",
+    name: "GEO Glossary | The Language of AI Visibility",
     description: "50+ terms defined, from GEO fundamentals to technical implementation. Maintained by Mia Cheraghian, PhD.",
     url: "https://miarenai.com/insights/glossary",
     publisher: {

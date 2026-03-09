@@ -102,7 +102,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Entity",
     category: "Technical",
     definition:
-      "How AI systems understand your brand as a distinct, consistent concept. Your brand's digital fingerprint assembled from information scattered across the web — your website, LinkedIn, directories, news articles, and more.",
+      "How AI systems understand your brand as a distinct, consistent concept. Your brand's digital fingerprint assembled from information scattered across the web: your website, LinkedIn, directories, news articles, and more.",
   },
   {
     term: "Entity Consistency",
@@ -142,7 +142,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Google Business Profile",
     category: "SEO Bridge",
     definition:
-      "Google's free business listing tool. For GEO, it serves as a critical entity verification source — AI engines cross-reference your GBP information with your website and other platforms to validate entity consistency.",
+      "Google's free business listing tool. For GEO, it serves as a critical entity verification source. AI engines cross-reference your GBP information with your website and other platforms to validate entity consistency.",
   },
   {
     term: "JSON-LD",
@@ -196,7 +196,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Digital Footprint",
     category: "Strategy",
     definition:
-      "The collective trail of data your brand leaves across the internet — website content, social profiles, reviews, press mentions, directory listings. AI engines assemble your entity understanding from this footprint, making consistency across all touchpoints critical for GEO.",
+      "The collective trail of data your brand leaves across the internet: website content, social profiles, reviews, press mentions, directory listings. AI engines assemble your entity understanding from this footprint, making consistency across all touchpoints critical for GEO.",
   },
   {
     term: "Hallucination",
@@ -210,7 +210,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Indexing",
     category: "SEO Bridge",
     definition:
-      "The process by which search engines and AI crawlers discover, process, and store your web content. For GEO, indexing goes beyond traditional search — AI engines also index structured data, review sites, and third-party mentions to build entity understanding.",
+      "The process by which search engines and AI crawlers discover, process, and store your web content. For GEO, indexing goes beyond traditional search. AI engines also index structured data, review sites, and third-party mentions to build entity understanding.",
   },
   {
     term: "LLM (Large Language Model)",
@@ -228,7 +228,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "NAP Consistency",
     category: "SEO Bridge",
     definition:
-      "Name, Address, Phone number — the foundational entity data that must be identical across every platform. Originally a local SEO concept, NAP consistency is now critical for GEO because AI engines cross-reference this data to verify entity identity.",
+      "Name, Address, Phone number. The foundational entity data that must be identical across every platform. Originally a local SEO concept, NAP consistency is now critical for GEO because AI engines cross-reference this data to verify entity identity.",
   },
   {
     term: "Organic Search",
@@ -242,7 +242,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Query Intent",
     category: "Strategy",
     definition:
-      "The underlying purpose behind a user's search or AI prompt. AI engines are sophisticated at interpreting intent — informational, navigational, transactional, or comparative. GEO strategy must align content structure with the query intents your target audience uses.",
+      "The underlying purpose behind a user's search or AI prompt. AI engines are sophisticated at interpreting intent: informational, navigational, transactional, or comparative. GEO strategy must align content structure with the query intents your target audience uses.",
   },
   {
     term: "Retrieval-Augmented Generation (RAG)",

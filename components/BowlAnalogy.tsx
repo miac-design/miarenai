@@ -22,7 +22,7 @@ export default function BowlAnalogy() {
                     {/* Bowl image */}
                     <Image
                         src="/bowl-illustration.png"
-                        alt="Premium bowl of food — visual analogy for AI visibility signals"
+                        alt="Premium bowl of food, visual analogy for AI visibility signals"
                         width={400}
                         height={400}
                         className="rounded-2xl w-full h-auto"
@@ -40,7 +40,7 @@ export default function BowlAnalogy() {
                             onMouseEnter={() => setActiveZone("steam")}
                             onMouseLeave={() => setActiveZone(null)}
                             onClick={() => handleZone("steam")}
-                            aria-label="Steam zone — The Presentation"
+                            aria-label="Steam zone: The Presentation"
                         />
                         {/* Bowl rim zone (25-55%) */}
                         <button
@@ -51,7 +51,7 @@ export default function BowlAnalogy() {
                             onMouseEnter={() => setActiveZone("bowl")}
                             onMouseLeave={() => setActiveZone(null)}
                             onClick={() => handleZone("bowl")}
-                            aria-label="Bowl zone — Technical Infrastructure"
+                            aria-label="Bowl zone: Technical Infrastructure"
                         />
                         {/* Food zone (55-90%) */}
                         <button
@@ -62,7 +62,7 @@ export default function BowlAnalogy() {
                             onMouseEnter={() => setActiveZone("food")}
                             onMouseLeave={() => setActiveZone(null)}
                             onClick={() => handleZone("food")}
-                            aria-label="Food zone — Content Structure"
+                            aria-label="Food zone: Content Structure"
                         />
                     </div>
 
@@ -194,7 +194,7 @@ export default function BowlAnalogy() {
                         </a>
                     </div>
                     <p className="text-gray-400 text-sm leading-relaxed">
-                        The actual content — answers, structured information, substance.
+                        The actual content: answers, structured information, substance.
                         This is your content structure. It&apos;s what AI engines
                         &ldquo;eat&rdquo; and decide to cite. A beautiful bowl with nothing
                         inside? AI skips right past it.
@@ -243,7 +243,7 @@ export default function BowlAnalogy() {
                     <p className="text-gray-400 text-sm leading-relaxed">
                         If the sign outside says one thing, Google Maps says another, and
                         Yelp says something else, the food critic doesn&apos;t know which is
-                        real. This is entity consistency — same name, same description,
+                        real. This is entity consistency. Same name, same description,
                         everywhere.
                     </p>
                 </div>
@@ -279,7 +279,7 @@ export default function BowlAnalogy() {
                     <p className="text-gray-400 text-sm leading-relaxed">
                         A restaurant that only exists on its own website is invisible. The
                         food critic checks Yelp, Google, Instagram, local blogs. This is
-                        cross-platform presence — the more places that mention you, the more
+                        cross-platform presence. The more places that mention you, the more
                         confident the critic is.
                     </p>
                 </div>
@@ -315,7 +315,7 @@ export default function BowlAnalogy() {
                     <p className="text-gray-400 text-sm leading-relaxed">
                         The food critic doesn&apos;t trust the restaurant&apos;s own
                         marketing. They ask: who else says this place is good? News articles,
-                        reviews, partnerships. These are authority signals — third-party
+                        reviews, partnerships. These are authority signals. Third-party
                         validation is everything.
                     </p>
                 </div>

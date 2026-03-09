@@ -6,14 +6,14 @@ import BowlAnalogy from "@/components/BowlAnalogy";
 import { getExactFrameworkArticleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-    title: "The EXACT Framework — AI Visibility Audit Methodology",
+    title: "The EXACT Framework | AI Visibility Audit Methodology",
     description:
         "The EXACT Framework is a proprietary AI visibility methodology developed by Mia Cheraghian. Five signals that determine whether AI engines cite your brand: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure.",
     alternates: {
         canonical: "https://miarenai.com/exact-framework",
     },
     openGraph: {
-        title: "The EXACT Framework — AI Visibility Audit Methodology | Miaren AI",
+        title: "The EXACT Framework | AI Visibility Audit Methodology | Miaren AI",
         description:
             "Five signals that determine whether AI engines cite your brand. A proprietary methodology by Mia Cheraghian.",
         url: "https://miarenai.com/exact-framework",
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
                 url: "https://miarenai.com/og-image.png",
                 width: 1200,
                 height: 630,
-                alt: "The EXACT Framework — Miaren AI",
+                alt: "The EXACT Framework | Miaren AI",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "The EXACT Framework — AI Visibility Audit Methodology",
+        title: "The EXACT Framework | AI Visibility Audit Methodology",
         description:
             "Five signals that determine whether AI engines cite your brand. By Mia Cheraghian at Miaren AI.",
         images: ["https://miarenai.com/og-image.png"],
@@ -138,23 +138,23 @@ export default function ExactFrameworkPage() {
                     <noscript>
                         <div className="space-y-6 mt-8">
                             <div className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
-                                <h3 className="text-xl font-bold text-white mb-2">E &mdash; Entity Consistency</h3>
+                                <h3 className="text-xl font-bold text-white mb-2">E : Entity Consistency</h3>
                                 <p className="text-gray-400">Your brand information must be identical across every platform AI looks at: website, LinkedIn, directories, review sites. AI engines cross-reference multiple sources to build confidence. If your description on LinkedIn says one thing and your website says another, AI has lower confidence and is less likely to cite you. Inconsistency kills AI confidence in citing you.</p>
                             </div>
                             <div className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
-                                <h3 className="text-xl font-bold text-white mb-2">X &mdash; Cross-Platform Presence</h3>
+                                <h3 className="text-xl font-bold text-white mb-2">X : Cross-Platform Presence</h3>
                                 <p className="text-gray-400">Be visible across the platforms AI engines cross-reference. AI doesn&apos;t just look at your website. It cross-references LinkedIn, event platforms, news articles, industry directories, and more. If you only exist on your own domain, you&apos;re missing the signals that build AI confidence.</p>
                             </div>
                             <div className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
-                                <h3 className="text-xl font-bold text-white mb-2">A &mdash; Authority Signals</h3>
+                                <h3 className="text-xl font-bold text-white mb-2">A : Authority Signals</h3>
                                 <p className="text-gray-400">Third-party validation from trusted sources tells AI your brand is credible. If the only source saying you&apos;re great is your own website, that&apos;s weak. If industry publications, review sites, and other trusted sources reference you, that&apos;s strong. This is the hardest signal to build and the most durable once you have it.</p>
                             </div>
                             <div className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
-                                <h3 className="text-xl font-bold text-white mb-2">C &mdash; Content Structure</h3>
+                                <h3 className="text-xl font-bold text-white mb-2">C : Content Structure</h3>
                                 <p className="text-gray-400">AI-readable content that directly answers questions. AI engines pull from content that provides clear, direct answers. Content with clear headings, Q&amp;A format, and direct answers performs significantly better than marketing copy full of buzzwords. Lead with the answer.</p>
                             </div>
                             <div className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
-                                <h3 className="text-xl font-bold text-white mb-2">T &mdash; Technical Infrastructure</h3>
+                                <h3 className="text-xl font-bold text-white mb-2">T : Technical Infrastructure</h3>
                                 <p className="text-gray-400">Structured data (Schema.org markup) that helps AI engines parse your content. Without structured data, AI must infer meaning from unstructured text. With it, AI can directly parse your brand information, products, FAQs, and more. This is the behind-the-scenes plumbing that makes everything else work.</p>
                             </div>
                         </div>
@@ -185,7 +185,7 @@ export default function ExactFrameworkPage() {
                                 &ldquo;Academic research has identified 9 content
                                 optimization techniques for AI citation. Content is one of
                                 five signals in the EXACT Framework. The other four are
-                                equally important — and often overlooked.&rdquo;
+                                equally important, and often overlooked.&rdquo;
                             </p>
                             <p className="mt-4 text-sm font-mono tracking-wider text-teal uppercase">
                                 Aggarwal et al., Georgia Tech / Princeton / IIT Delhi (2024)
@@ -309,7 +309,7 @@ export default function ExactFrameworkPage() {
                                 forever.&rdquo;
                             </p>
                             <p className="mt-4 text-sm font-mono tracking-wider text-teal uppercase">
-                                &mdash; Mia Cheraghian
+                                / Mia Cheraghian
                             </p>
                         </div>
                     </div>

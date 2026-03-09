@@ -50,7 +50,7 @@ export default function ExactLetterAccordion() {
                             ? "bg-teal text-navy shadow-[0_10px_25px_rgba(0,212,170,0.35)] scale-110"
                             : "bg-[rgba(20,30,48,0.8)] text-warm-gray hover:bg-navy-light hover:text-white"
                             }`}
-                        aria-label={`${signal.letter} — ${signal.name}`}
+                        aria-label={`${signal.letter}: ${signal.name}`}
                         aria-expanded={i === activeIndex}
                     >
                         {signal.letter}
@@ -75,7 +75,7 @@ export default function ExactLetterAccordion() {
                             SIGNAL {i + 1} OF 5
                         </p>
                         <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
-                            {signal.letter} &mdash; {signal.name}
+                            {signal.letter}: {signal.name}
                         </h3>
                         <p className="text-gray-400 leading-relaxed">
                             {signal.description}

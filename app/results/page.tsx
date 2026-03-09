@@ -4,16 +4,16 @@ import NodeNetwork from "@/components/NodeNetwork";
 import { caseStudies } from "@/lib/case-study-data";
 
 export const metadata: Metadata = {
-    title: "Results — Proof That GEO Works",
+    title: "Results | Proof That GEO Works",
     description:
         "Real results from real GEO engagements. See how Miaren AI helped organizations go from invisible to citable in AI-powered search.",
     alternates: {
         canonical: "https://miarenai.com/results",
     },
     openGraph: {
-        title: "Results — Miaren AI",
+        title: "Results | Miaren AI",
         description: "Real results from real GEO engagements. See how organizations went from invisible to citable.",
-        images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI — Be found where it matters next." }],
+        images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI | Be found where it matters next." }],
     },
 };
 
@@ -27,7 +27,7 @@ export default function ResultsPage() {
                     Client <span className="text-teal">Results</span>
                 </h1>
                 <p className="text-warm-gray text-lg mb-12 max-w-2xl">
-                    Real GEO engagements. Measurable outcomes. Every project follows the same EXACT Framework — the results speak for themselves.
+                    Real GEO engagements. Measurable outcomes. Every project follows the same EXACT Framework. The results speak for themselves.
                 </p>
 
                 <div className="space-y-6">
@@ -78,7 +78,7 @@ export default function ResultsPage() {
                                     <p className="text-warm-gray leading-relaxed italic mb-4">
                                         &ldquo;{cs.testimonial!.quote}&rdquo;
                                     </p>
-                                    <p className="text-sm font-medium text-navy">— {cs.testimonial!.role}</p>
+                                    <p className="text-sm font-medium text-navy">/ {cs.testimonial!.role}</p>
                                 </div>
                             ))}
                     </div>
