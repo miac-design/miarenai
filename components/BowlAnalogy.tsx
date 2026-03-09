@@ -17,8 +17,8 @@ export default function BowlAnalogy() {
     return (
         <div className="grid md:grid-cols-5 gap-8 md:gap-10 items-start">
             {/* LEFT: Bowl Illustration (40%) */}
-            <div className="md:col-span-2 relative flex items-center justify-center">
-                <div className="relative w-full max-w-xs mx-auto">
+            <div className="md:col-span-2 relative flex items-center justify-center md:sticky md:top-24 md:self-start">
+                <div className="relative w-full max-w-sm mx-auto">
                     {/* Bowl image */}
                     <Image
                         src="/bowl-illustration.png"
@@ -34,8 +34,8 @@ export default function BowlAnalogy() {
                         {/* Steam zone (top 25%) */}
                         <button
                             className={`absolute top-0 left-[10%] right-[10%] h-[25%] rounded-t-2xl cursor-pointer transition-all duration-300 ${zoneActive("steam")
-                                    ? "bg-teal/15 ring-2 ring-teal/40"
-                                    : "hover:bg-teal/10"
+                                ? "bg-teal/15 ring-2 ring-teal/40"
+                                : "hover:bg-teal/10"
                                 }`}
                             onMouseEnter={() => setActiveZone("steam")}
                             onMouseLeave={() => setActiveZone(null)}
@@ -45,8 +45,8 @@ export default function BowlAnalogy() {
                         {/* Bowl rim zone (25-55%) */}
                         <button
                             className={`absolute top-[25%] left-[5%] right-[5%] h-[30%] cursor-pointer transition-all duration-300 ${zoneActive("bowl")
-                                    ? "bg-teal/15 ring-2 ring-teal/40"
-                                    : "hover:bg-teal/10"
+                                ? "bg-teal/15 ring-2 ring-teal/40"
+                                : "hover:bg-teal/10"
                                 }`}
                             onMouseEnter={() => setActiveZone("bowl")}
                             onMouseLeave={() => setActiveZone(null)}
@@ -56,8 +56,8 @@ export default function BowlAnalogy() {
                         {/* Food zone (55-90%) */}
                         <button
                             className={`absolute top-[55%] left-[10%] right-[10%] h-[35%] rounded-b-2xl cursor-pointer transition-all duration-300 ${zoneActive("food")
-                                    ? "bg-teal/15 ring-2 ring-teal/40"
-                                    : "hover:bg-teal/10"
+                                ? "bg-teal/15 ring-2 ring-teal/40"
+                                : "hover:bg-teal/10"
                                 }`}
                             onMouseEnter={() => setActiveZone("food")}
                             onMouseLeave={() => setActiveZone(null)}
@@ -131,8 +131,8 @@ export default function BowlAnalogy() {
                 {/* Card 1: The Presentation */}
                 <div
                     className={`bg-[#141E30] border-l-[3px] border-teal rounded-xl p-5 transition-all duration-300 ${zoneActive("steam")
-                            ? "shadow-[0_0_20px_rgba(0,212,170,0.2)] ring-1 ring-teal/30"
-                            : ""
+                        ? "shadow-[0_0_20px_rgba(0,212,170,0.2)] ring-1 ring-teal/30"
+                        : ""
                         }`}
                     onMouseEnter={() => setActiveZone("steam")}
                     onMouseLeave={() => setActiveZone(null)}
@@ -153,8 +153,8 @@ export default function BowlAnalogy() {
                 {/* Card 2: The Bowl */}
                 <div
                     className={`bg-[#141E30] border-l-[3px] border-teal rounded-xl p-5 transition-all duration-300 ${zoneActive("bowl")
-                            ? "shadow-[0_0_20px_rgba(0,212,170,0.2)] ring-1 ring-teal/30"
-                            : ""
+                        ? "shadow-[0_0_20px_rgba(0,212,170,0.2)] ring-1 ring-teal/30"
+                        : ""
                         }`}
                     onMouseEnter={() => setActiveZone("bowl")}
                     onMouseLeave={() => setActiveZone(null)}
@@ -178,8 +178,8 @@ export default function BowlAnalogy() {
                 {/* Card 3: What's Inside */}
                 <div
                     className={`bg-[#141E30] border-l-[3px] border-teal rounded-xl p-5 transition-all duration-300 ${zoneActive("food")
-                            ? "shadow-[0_0_20px_rgba(0,212,170,0.2)] ring-1 ring-teal/30"
-                            : ""
+                        ? "shadow-[0_0_20px_rgba(0,212,170,0.2)] ring-1 ring-teal/30"
+                        : ""
                         }`}
                     onMouseEnter={() => setActiveZone("food")}
                     onMouseLeave={() => setActiveZone(null)}

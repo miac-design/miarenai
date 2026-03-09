@@ -72,6 +72,50 @@ export default function ExactFrameworkPage() {
             </section>
 
             {/* ============================================= */}
+            {/* Section 1.5: How AI Actually Finds Info       */}
+            {/* ============================================= */}
+            <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
+                <NodeNetwork opacity={0.2} color="0, 212, 170" />
+                <div className="relative z-10 max-w-3xl mx-auto px-6">
+                    <p className="section-label mb-3">// HOW AI FINDS INFORMATION</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+                        Crawl. Cross-Reference.{" "}
+                        <span className="text-teal">Synthesize & Cite.</span>
+                    </h2>
+                    <div className="space-y-5 text-gray-400 leading-relaxed">
+                        <p>
+                            AI bots scan websites, directories, news articles, and platforms.
+                            Then AI compares what it finds across multiple sources. If 5
+                            sources agree, confidence builds. If sources conflict, confidence
+                            drops.
+                        </p>
+                        <p>
+                            When someone asks a question, AI pulls from its most trusted
+                            sources and names specific brands in its answer. The brands that
+                            get cited are the ones with the strongest, most consistent
+                            signals.
+                        </p>
+                        <p>
+                            Only 12% of URLs that AI engines cite also rank in Google&apos;s
+                            top 10{" "}
+                            <span className="text-xs font-mono text-warm-gray">
+                                (Ahrefs, 2025)
+                            </span>
+                            . This means AI uses different criteria than Google for deciding
+                            who&apos;s trustworthy. That&apos;s why{" "}
+                            <Link
+                                href="/geo-vs-seo"
+                                className="text-teal hover:underline"
+                            >
+                                GEO and SEO are different disciplines
+                            </Link>
+                            .
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* ============================================= */}
             {/* Section 2: Interactive EXACT Letters          */}
             {/* ============================================= */}
             <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
@@ -165,7 +209,9 @@ export default function ExactFrameworkPage() {
                         </h2>
                         <p className="mt-4 text-warm-gray text-lg max-w-2xl mx-auto">
                             The EXACT Framework builds your foundation for AI citability.
-                            Staying visible requires three ongoing strategies.
+                            Staying visible requires three ongoing strategies. Learn more about how our{" "}
+                            <Link href="/services" className="text-teal hover:underline">AI visibility services</Link>{" "}
+                            put these into practice.
                         </p>
                     </div>
 
@@ -251,26 +297,21 @@ export default function ExactFrameworkPage() {
                             </p>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            {/* ============================================= */}
-            {/* Section 4: The Relationship Analogy           */}
-            {/* ============================================= */}
-            <section className="relative bg-navy py-14 md:py-20 overflow-hidden">
-                <NodeNetwork opacity={0.15} color="0, 212, 170" />
-                <div className="relative z-10 max-w-3xl mx-auto px-6">
-                    <div className="teal-border-left">
-                        <p className="text-2xl md:text-3xl font-bold text-white leading-relaxed">
-                            &ldquo;AI visibility is like a relationship. It needs consistency,
-                            showing up, trust, clear communication, and a solid foundation.
-                            You don&apos;t go on one date and expect a lifelong partner. You
-                            don&apos;t publish one blog post and expect AI to recommend you
-                            forever.&rdquo;
-                        </p>
-                        <p className="mt-6 text-sm font-mono tracking-wider text-teal uppercase">
-                            &mdash; Mia Cheraghian
-                        </p>
+                    {/* Relationship Quote — closing this section */}
+                    <div className="mt-12 max-w-3xl mx-auto">
+                        <div className="teal-border-left">
+                            <p className="text-xl md:text-2xl font-bold text-navy leading-relaxed">
+                                &ldquo;AI visibility is like a relationship. It needs consistency,
+                                showing up, trust, clear communication, and a solid foundation.
+                                You don&apos;t go on one date and expect a lifelong partner. You
+                                don&apos;t publish one blog post and expect AI to recommend you
+                                forever.&rdquo;
+                            </p>
+                            <p className="mt-4 text-sm font-mono tracking-wider text-teal uppercase">
+                                &mdash; Mia Cheraghian
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -377,13 +418,23 @@ export default function ExactFrameworkPage() {
             <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
                 <NodeNetwork opacity={0.2} color="0, 212, 170" />
                 <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
+                    <p className="text-warm-gray text-lg leading-relaxed mb-8">
+                        Built for businesses that want to be found in AI search.
+                        The entity relationships AI engines are forming right now will
+                        compound. Early movers build advantages that late movers spend
+                        years trying to close.
+                    </p>
                     <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
                         See how your brand{" "}
                         <span className="text-teal">scores.</span>
                     </h2>
                     <p className="mt-4 text-gray-400 text-lg">
                         Get a free EXACT Framework assessment and find out where your brand
-                        stands in AI search.
+                        stands in AI search. Have questions? Check our{" "}
+                        <Link href="/faq" className="text-teal hover:underline">
+                            FAQ
+                        </Link>
+                        .
                     </p>
                     <div className="mt-8">
                         <a
