@@ -276,17 +276,17 @@ export function getExactFrameworkArticleSchema() {
     headline: "The EXACT Framework for AI Visibility",
     description:
       "The EXACT Framework is a proprietary AI visibility methodology developed by Mia Cheraghian. Five signals that determine whether AI engines cite your brand: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure.",
-    url: "https://www.miarenai.com/exact-framework",
+    url: "https://miarenai.com/exact-framework",
     datePublished: "2026-03-09",
     author: {
       "@type": "Person",
       name: "Mia Cheraghian",
-      url: "https://www.miarenai.com/about",
+      url: "https://miarenai.com/about",
     },
     publisher: {
       "@type": "Organization",
       name: "Miaren AI",
-      url: "https://www.miarenai.com",
+      url: "https://miarenai.com",
     },
     articleSection: "Methodology",
   };

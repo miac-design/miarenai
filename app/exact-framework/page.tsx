@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     description:
         "The EXACT Framework is a proprietary AI visibility methodology developed by Mia Cheraghian. Five signals that determine whether AI engines cite your brand: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure.",
     alternates: {
-        canonical: "https://www.miarenai.com/exact-framework",
+        canonical: "https://miarenai.com/exact-framework",
     },
     openGraph: {
         title: "The EXACT Framework — AI Visibility Audit Methodology | Miaren AI",
         description:
             "Five signals that determine whether AI engines cite your brand. A proprietary methodology by Mia Cheraghian.",
-        url: "https://www.miarenai.com/exact-framework",
+        url: "https://miarenai.com/exact-framework",
         images: [
             {
                 url: "https://miarenai.com/og-image.png",
