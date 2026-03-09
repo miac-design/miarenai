@@ -36,6 +36,15 @@ export default function Header() {
             Services
           </Link>
           <Link
+            href="/exact-framework"
+            className={`text-sm font-medium transition-colors ${isActive("/exact-framework")
+              ? "text-navy"
+              : "text-warm-gray hover:text-navy"
+              }`}
+          >
+            EXACT Framework
+          </Link>
+          <Link
             href="/results"
             className={`text-sm font-medium transition-colors ${isActive("/results")
               ? "text-navy"
@@ -141,6 +150,7 @@ export default function Header() {
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3">
           <Link href="/services" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Services</Link>
+          <Link href="/exact-framework" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>EXACT Framework</Link>
           <Link href="/results" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Results</Link>
           <Link href="/about" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>About</Link>
           <Link href="/faq" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>FAQ</Link>
