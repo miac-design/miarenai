@@ -189,10 +189,10 @@ function FlipCard({
             <div className="flip-card-inner">
                 {/* ══════ FRONT ══════ */}
                 <div className="flip-card-front">
-                    <div className="flex flex-col items-center justify-center pt-8 pb-4">
+                    <div className="flex flex-col items-center justify-center mb-4">
                         <Icon />
                     </div>
-                    <div className="px-5 pb-2 text-center flex-1 flex flex-col">
+                    <div className="text-center flex-1 flex flex-col">
                         <h3 className="text-teal font-bold text-lg mb-2">
                             {card.frontTitle}
                         </h3>
@@ -200,7 +200,7 @@ function FlipCard({
                             {card.frontText}
                         </p>
                     </div>
-                    <div className="px-5 pb-4">
+                    <div className="mt-auto pt-3">
                         <div className="border-t border-white/10 pt-3 flex items-center justify-between">
                             <p className="text-[11px] text-gray-500 md:hidden tap-indicator">
                                 Tap to flip →
@@ -233,7 +233,7 @@ function FlipCard({
                             {card.backLetter}
                         </span>
                     </div>
-                    <div className="relative z-10 flex flex-col h-full justify-between p-6">
+                    <div className="relative z-10 flex flex-col h-full justify-between">
                         <div>
                             <h3 className="text-xl font-bold text-[#0A1628] mb-3">
                                 {card.backLabel}
@@ -314,7 +314,7 @@ export default function FlipCards() {
     return (
         <div
             ref={gridRef}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-[960px] mx-auto"
+            className="flex flex-wrap justify-center gap-5 md:gap-6 max-w-[960px] mx-auto"
         >
             {cards.map((card, i) => (
                 <FlipCard
