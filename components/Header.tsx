@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [insightsOpen, setInsightsOpen] = useState(false);
 
   const isActive = (path: string) => pathname === path;
 
@@ -45,13 +44,13 @@ export default function Header() {
             EXACT Framework
           </Link>
           <Link
-            href="/results"
-            className={`text-sm font-medium transition-colors ${isActive("/results")
+            href="/geo-vs-seo"
+            className={`text-sm font-medium transition-colors ${isActive("/geo-vs-seo")
               ? "text-navy"
               : "text-warm-gray hover:text-navy"
               }`}
           >
-            Results
+            GEO vs SEO
           </Link>
           <Link
             href="/about"
@@ -71,59 +70,6 @@ export default function Header() {
           >
             FAQ
           </Link>
-
-          {/* Insights Dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setInsightsOpen(true)}
-            onMouseLeave={() => {
-              setTimeout(() => setInsightsOpen(false), 150);
-            }}
-          >
-            <button
-              className={`text-sm font-medium transition-colors flex items-center gap-1 ${pathname.startsWith("/insights")
-                ? "text-navy"
-                : "text-warm-gray hover:text-navy"
-                }`}
-              onClick={() => setInsightsOpen(!insightsOpen)}
-            >
-              Insights
-              <svg
-                className={`w-3.5 h-3.5 transition-transform ${insightsOpen ? "rotate-180" : ""
-                  }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            {insightsOpen && (
-              <div className="absolute top-full left-0 pt-2">
-                <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[180px]">
-                  <Link
-                    href="/insights"
-                    className="block px-4 py-2 text-sm text-warm-gray hover:text-navy hover:bg-gray-50"
-                    onClick={() => setInsightsOpen(false)}
-                  >
-                    All Articles
-                  </Link>
-                  <Link
-                    href="/insights/glossary"
-                    className="block px-4 py-2 text-sm text-warm-gray hover:text-navy hover:bg-gray-50"
-                    onClick={() => setInsightsOpen(false)}
-                  >
-                    GEO Glossary
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
 
           <Link href="/contact" className="btn-primary text-sm !py-2 !px-5">
             Get Your Free Audit
@@ -151,11 +97,9 @@ export default function Header() {
         <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3">
           <Link href="/services" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Services</Link>
           <Link href="/exact-framework" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>EXACT Framework</Link>
-          <Link href="/results" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Results</Link>
+          <Link href="/geo-vs-seo" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>GEO vs SEO</Link>
           <Link href="/about" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>About</Link>
           <Link href="/faq" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>FAQ</Link>
-          <Link href="/insights" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Insights</Link>
-          <Link href="/insights/glossary" className="block text-sm font-medium text-warm-gray" onClick={() => setMobileOpen(false)}>GEO Glossary</Link>
           <Link href="/contact" className="btn-primary text-sm !py-2 w-full justify-center" onClick={() => setMobileOpen(false)}>Get Your Free Audit</Link>
         </div>
       )}

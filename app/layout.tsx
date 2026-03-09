@@ -20,11 +20,11 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://miarenai.com"),
   title: {
-    default: "Miaren AI — Generative Engine Optimization (GEO) Consultancy",
+    default: "Miaren AI — AI Visibility Consulting | Be Found Where It Matters Next",
     template: "%s | Miaren AI",
   },
   description:
-    "Miaren AI helps businesses become visible, citable, and recommendable in AI-powered search engines. GEO consulting for ChatGPT, Perplexity, Gemini, and Copilot.",
+    "Miaren AI helps businesses become visible, citable, and recommendable in AI-powered search engines like ChatGPT, Perplexity, and Google AI Overviews. Founded by Mia Cheraghian.",
   keywords: [
     "Generative Engine Optimization",
     "GEO",

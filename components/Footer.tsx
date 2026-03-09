@@ -14,13 +14,13 @@ export default function Footer() {
           </div>
           <div className="flex gap-16">
             <div className="space-y-2.5">
-              <Link href="/about" className="block text-sm text-gray-400 hover:text-white transition-colors">About</Link>
               <Link href="/services" className="block text-sm text-gray-400 hover:text-white transition-colors">Services</Link>
               <Link href="/exact-framework" className="block text-sm text-gray-400 hover:text-white transition-colors">EXACT Framework</Link>
+              <Link href="/geo-vs-seo" className="block text-sm text-gray-400 hover:text-white transition-colors">GEO vs SEO</Link>
+              <Link href="/about" className="block text-sm text-gray-400 hover:text-white transition-colors">About</Link>
+              <Link href="/faq" className="block text-sm text-gray-400 hover:text-white transition-colors">FAQ</Link>
               <Link href="/results" className="block text-sm text-gray-400 hover:text-white transition-colors">Results</Link>
               <Link href="/insights" className="block text-sm text-gray-400 hover:text-white transition-colors">Insights</Link>
-              <Link href="/insights/glossary" className="block text-sm text-gray-400 hover:text-white transition-colors">GEO Glossary</Link>
-              <Link href="/faq" className="block text-sm text-gray-400 hover:text-white transition-colors">FAQ</Link>
               <Link href="/contact" className="block text-sm text-gray-400 hover:text-white transition-colors">Contact</Link>
             </div>
             <div className="space-y-2.5">
@@ -30,8 +30,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-white/10">
+        <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between gap-3">
           <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Miaren AI. All rights reserved.</p>
+          <p className="text-xs text-gray-500">The EXACT Framework is a proprietary methodology by Mia Cheraghian.</p>
         </div>
       </div>
     </footer>

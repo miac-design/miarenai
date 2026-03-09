@@ -5,10 +5,24 @@ import ContactForm from "@/components/ContactForm";
 import NodeNetwork from "@/components/NodeNetwork";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Get a free AI visibility audit from Miaren AI. Tell us about your brand and we'll show you exactly where you stand in AI search.",
+  title: "Contact Miaren AI — Book a Free AI Visibility Assessment",
+  description:
+    "Book a free conversation about your brand's AI visibility. Miaren AI helps businesses become visible in ChatGPT, Perplexity, and Google AI Overviews.",
   alternates: {
     canonical: "https://miarenai.com/contact",
+  },
+  openGraph: {
+    title: "Contact Miaren AI",
+    description:
+      "Book a free AI visibility assessment. Find out what AI currently says about your brand.",
+    images: [
+      {
+        url: "https://miarenai.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Miaren AI",
+      },
+    ],
   },
 };
 
@@ -20,10 +34,12 @@ export default function ContactPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <p className="section-label mb-3">GET IN TOUCH</p>
           <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-            Let&apos;s look at your AI visibility together.
+            Let&apos;s Talk About Your AI Visibility
           </h1>
           <p className="mt-4 text-warm-gray text-lg">
-            Tell me about your brand. I&apos;ll show you exactly where you stand in AI search — and what to do about it.
+            Not sure if AI mentions your brand? Start with a conversation.
+            We&apos;ll show you what AI currently says about you and where the
+            gaps are.
           </p>
         </div>
       </section>
@@ -34,10 +50,17 @@ export default function ContactPage() {
             <div className="md:col-span-3">
               <div className="glass-card p-7">
                 <div className="inline-flex items-center gap-2 border border-teal/30 rounded-full px-4 py-1.5 mb-5">
-                  <span className="text-xs font-mono tracking-wider text-teal uppercase">Free Audit Request</span>
+                  <span className="text-xs font-mono tracking-wider text-teal uppercase">
+                    Free Audit Request
+                  </span>
                 </div>
-                <h2 className="text-xl font-bold text-navy mb-2">Start with a free GEO audit</h2>
-                <p className="text-sm text-warm-gray mb-6">No pitch. No pressure. Just an honest look at where your brand stands in AI search.</p>
+                <h2 className="text-xl font-bold text-navy mb-2">
+                  Start with a free GEO audit
+                </h2>
+                <p className="text-sm text-warm-gray mb-6">
+                  No pitch. No pressure. Just an honest look at where your brand
+                  stands in AI search.
+                </p>
                 <ContactForm />
               </div>
             </div>
@@ -52,48 +75,119 @@ export default function ContactPage() {
                     className="rounded-full object-cover w-12 h-12 shrink-0"
                   />
                   <p className="text-sm text-gray-300 italic leading-relaxed">
-                    &ldquo;I&apos;ve audited brands across every industry. Most score below 20% on AI visibility — and they had no idea. That&apos;s what this audit is for.&rdquo;
+                    &ldquo;I&apos;ve audited brands across every industry. Most
+                    score below 20% on AI visibility and they had no idea.
+                    That&apos;s what this audit is for.&rdquo;
                   </p>
                 </div>
-                <p className="text-xs text-warm-gray">— Mia Cheraghian, Founder</p>
+                <p className="text-xs text-warm-gray">
+                  — Mia Cheraghian, Founder
+                </p>
                 <div className="mt-5 space-y-2.5">
                   <div className="flex items-center gap-3">
-                    <svg className="w-4 h-4 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                    <span className="text-sm text-gray-300">hello@miarenai.com</span>
+                    <svg
+                      className="w-4 h-4 text-teal"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    <span className="text-sm text-gray-300">
+                      hello@miarenai.com
+                    </span>
                   </div>
-                  <a href="https://www.linkedin.com/company/miaren-ai/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:opacity-80">
-                    <svg className="w-4 h-4 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                    <span className="text-sm text-gray-300">Mia Cheraghian</span>
+                  <a
+                    href="https://www.linkedin.com/company/miaren-ai/about/?viewAsMember=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 hover:opacity-80"
+                  >
+                    <svg
+                      className="w-4 h-4 text-teal"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                      />
+                    </svg>
+                    <span className="text-sm text-gray-300">
+                      Mia Cheraghian
+                    </span>
                   </a>
                   <div className="flex items-center gap-3">
-                    <svg className="w-4 h-4 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                    <span className="text-sm text-gray-300">Based in Austin, Texas</span>
+                    <svg
+                      className="w-4 h-4 text-teal"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    <span className="text-sm text-gray-300">
+                      Based in Austin, Texas
+                    </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <svg className="w-4 h-4 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                    <span className="text-sm text-gray-300">Typical response: within 48 hours</span>
+                    <svg
+                      className="w-4 h-4 text-teal"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span className="text-sm text-gray-300">
+                      Typical response: within 48 hours
+                    </span>
                   </div>
                 </div>
               </div>
               <div className="glass-card p-6">
-                <h3 className="text-lg font-bold text-navy mb-2">Prefer to talk first?</h3>
-                <p className="text-sm text-warm-gray mb-4">Book a free 30-minute call. We&apos;ll look at your AI visibility live.</p>
-                <a href="https://calendly.com/c2018-mia/chat-with-mia" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border-2 border-teal text-teal text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-teal hover:text-navy transition-colors w-full justify-center">
+                <h3 className="text-lg font-bold text-navy mb-2">
+                  Prefer to talk first?
+                </h3>
+                <p className="text-sm text-warm-gray mb-4">
+                  Book a free 30-minute call. We&apos;ll look at your AI
+                  visibility live.
+                </p>
+                <a
+                  href="https://calendly.com/c2018-mia/chat-with-mia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border-2 border-teal text-teal text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-teal hover:text-navy transition-colors w-full justify-center"
+                >
                   Book a 30-minute call →
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="py-12 bg-soft-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <div className="text-teal text-3xl mb-3">&ldquo;&rdquo;</div>
-          <p className="text-lg md:text-xl text-navy leading-relaxed">
-            Most companies I audit score below 20% on AI visibility. Their competitors are being cited every time. The gap is fixable — but only if you know it exists.
-          </p>
-          <p className="mt-4 text-sm text-warm-gray">— Mia Cheraghian, Founder of Miaren AI</p>
         </div>
       </section>
     </>

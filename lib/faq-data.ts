@@ -9,36 +9,61 @@ export const faqItems: FaqItem[] = [
   {
     question: "What is Generative Engine Optimization (GEO)?",
     answer:
-      "GEO is the practice of optimizing your brand's digital presence so that AI-powered search engines — like ChatGPT, Perplexity, Gemini, and Copilot — cite, recommend, and reference your brand in their generated responses. Unlike traditional SEO which focuses on ranking in a list of links, GEO focuses on being named in AI-generated answers.",
+      "GEO is the practice of making your brand visible, citable, and recommendable in AI-generated search responses. Unlike traditional SEO which focuses on ranking in a list of links, GEO focuses on being named and cited in AI-generated answers from ChatGPT, Perplexity, Google AI Overviews, and Microsoft Copilot.",
+  },
+  {
+    question: "What is AI visibility?",
+    answer:
+      "AI visibility is whether AI search engines mention, cite, or recommend your brand when users ask relevant questions. If someone asks ChatGPT for recommendations in your industry and your brand is not mentioned, you have an AI visibility gap. Most businesses we audit score below 20%.",
   },
   {
     question: "How is GEO different from SEO?",
     answer:
-      "SEO optimizes for Google's ranking algorithm — backlinks, keywords, page speed. GEO optimizes for AI synthesis engines that evaluate authority, entity consistency, and structured data to decide who to cite. Only 12% of URLs that AI engines cite also rank in Google's top 10 (Ahrefs, 2025). They're different systems with different rules. GEO layers on top of SEO — it doesn't replace it.",
+      "SEO optimizes for Google's ranking algorithm. GEO optimizes for AI synthesis engines that evaluate authority, entity consistency, and structured data to decide who to cite. Only 12% of AI-cited URLs also rank in Google's top 10 (Ahrefs, 2025). GEO layers on top of SEO. It does not replace it.",
+  },
+  {
+    question: "Should we stop investing in SEO and focus on GEO?",
+    answer:
+      "No. GEO layers on top of SEO, it does not replace it. A strong SEO foundation actually supports GEO performance. What you should do is evolve your SEO strategy to include GEO elements: structured data, AI-readable content, entity consistency, and AI citation tracking alongside your traditional metrics.",
   },
   {
     question: "What is the EXACT Framework?",
     answer:
-      "The EXACT Framework is Miaren AI's proprietary audit methodology for assessing AI visibility. It evaluates five signals that AI engines use when deciding which brands to cite: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure. Each signal is scored to produce an overall AI Visibility Score.",
+      "The EXACT Framework is a proprietary AI visibility audit methodology developed by Mia Cheraghian. It evaluates five signals that AI engines use when deciding who to cite: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure. Each signal is scored to produce an overall AI Visibility Score.",
   },
   {
-    question: "Does GEO replace SEO?",
+    question: "How do AI engines decide what to cite?",
     answer:
-      "No. GEO layers on top of SEO — it doesn't replace it. You still need strong traditional search fundamentals. But SEO alone is no longer sufficient. AI engines use different signals and pull from different sources than Google's traditional algorithm. The brands winning in AI search are the ones doing both.",
+      "AI engines evaluate multiple signals including entity consistency across platforms, authority from trusted third-party sources, content structure and AI readability, technical infrastructure like schema markup, and cross-platform presence. They synthesize from multiple sources rather than ranking individual pages.",
   },
   {
-    question: "How do I know if my brand has AI visibility?",
+    question: "How long does it take to see results from GEO?",
     answer:
-      "Ask ChatGPT, Perplexity, and Gemini questions that your customers would ask about your industry, products, or services. Does your brand get mentioned? If not, you have an AI visibility gap. Our EXACT Audit provides a systematic, research-backed assessment across all major AI platforms with a quantified score and prioritized action plan.",
+      "Entity consistency fixes can show impact within 2-4 weeks as AI engines re-crawl your profiles. Structured data improvements typically take 4-8 weeks. Authority building is the longest play at 3-6+ months but produces the most durable results. We prioritize quick wins first so you see momentum early.",
   },
   {
-    question: "How long until I see results from GEO?",
+    question: "Can you pay to be cited by AI?",
     answer:
-      "Entity consistency fixes can show impact within 2-4 weeks as AI engines recrawl your profiles. Structured data improvements typically take 4-8 weeks. Authority building is the longest play — 3-6 months for meaningful third-party signals. The EXACT Audit prioritizes quick wins first so you see momentum early.",
+      "No. AI engines do not accept payment for citations. They cite sources based on authority, relevance, and consistency. This is why earned visibility through proper GEO strategy matters. You cannot buy your way into an AI-generated answer the way you can buy Google Ads.",
   },
   {
-    question: "What AI platforms do you optimize for?",
+    question: "We're a small company. Does AI visibility matter for us?",
     answer:
-      "We optimize across all major AI search platforms: ChatGPT (300M+ weekly active users), Perplexity (fastest-growing AI search engine), Google AI Overviews (appearing in 30%+ of queries), Microsoft Copilot (enterprise via Office 365), and Google Gemini. Each platform has different citation behaviors, and a real GEO strategy addresses all of them.",
+      "Yes, especially for you. AI search tends to recommend a smaller number of brands per query compared to Google's ten blue links. This means the gap between being mentioned and being invisible is wider. Small businesses with strong AI visibility can compete directly with larger competitors in AI responses.",
+  },
+  {
+    question: "How do we measure AI visibility?",
+    answer:
+      "We measure AI visibility by querying major AI platforms (ChatGPT, Perplexity, Google AI Overviews, Copilot) with questions your customers would ask. We track brand mentions, citation frequency, sentiment, and recommendation positioning. The EXACT Framework provides a quantified score across all five signals.",
+  },
+  {
+    question: "What AI search platforms should we care about?",
+    answer:
+      "ChatGPT (300M+ weekly active users), Perplexity (fastest-growing AI search engine), Google AI Overviews (appearing in 30%+ of queries), Microsoft Copilot (enterprise via Office 365), and Google Gemini. Each platform has different citation behaviors, and a real GEO strategy addresses all of them.",
+  },
+  {
+    question: "Is this just a fad?",
+    answer:
+      "No. AI-referred website sessions grew 527% in 2024-2025 (Previsible/Search Engine Land). Traditional click-through rates dropped ~30% since AI Overviews launched (BrightEdge). 300M+ people use ChatGPT weekly (OpenAI). This is a structural shift in how people find businesses, not a temporary trend.",
   },
 ];
