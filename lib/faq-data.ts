@@ -27,9 +27,9 @@ export const faqItems: FaqItem[] = [
       "No. GEO layers on top of SEO, it does not replace it. A strong SEO foundation actually supports GEO performance. What you should do is evolve your SEO strategy to include GEO elements: structured data, AI-readable content, entity consistency, and AI citation tracking alongside your traditional metrics.",
   },
   {
-    question: "What is the EXACT Framework?",
+    question: "What is the AI visibility methodology?",
     answer:
-      "The EXACT Framework is a proprietary AI visibility audit methodology developed by Mia Cheraghian. It evaluates five signals that AI engines use when deciding who to cite: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure. Each signal is scored to produce an overall AI Visibility Score.",
+      "The AI visibility methodology is a diagnostic framework developed by Mia Cheraghian, PhD. It evaluates three signals that AI engines use when deciding who to cite: Can AI find you? (content structure, schema markup, technical infrastructure), Can AI trust you? (entity consistency, cross-platform presence), and Can AI quote you? (third-party authority signals). Each signal is assessed to reveal your overall AI visibility.",
   },
   {
     question: "How do AI engines decide what to cite?",
@@ -54,7 +54,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "How do we measure AI visibility?",
     answer:
-      "We measure AI visibility by querying major AI platforms (ChatGPT, Perplexity, Google AI Overviews, Copilot) with questions your customers would ask. We track brand mentions, citation frequency, sentiment, and recommendation positioning. The EXACT Framework provides a quantified score across all five signals.",
+      "We measure AI visibility by querying major AI platforms (ChatGPT, Perplexity, Google AI Overviews, Copilot) with questions your customers would ask. We track brand mentions, citation frequency, sentiment, and recommendation positioning. The AI visibility methodology provides a quantified score across all three signals.",
   },
   {
     question: "What AI search platforms should we care about?",

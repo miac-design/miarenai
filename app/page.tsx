@@ -12,7 +12,7 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2 bg-teal/10 border border-teal/30 rounded-full px-4 py-1.5 mb-5">
               <span className="w-2 h-2 rounded-full bg-teal" />
               <span className="text-xs font-mono tracking-wider text-teal uppercase">
-                AI Visibility Consulting
+                AI Visibility Research & Strategy
               </span>
             </div>
 
@@ -33,7 +33,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="btn-primary"
               >
-                See How Your Brand Scores
+                Schedule a Conversation
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -49,7 +49,7 @@ export default function HomePage() {
                 </svg>
               </a>
               <Link href="/services" className="btn-secondary">
-                Explore Services
+                Explore Areas of Focus
               </Link>
             </div>
           </div>
@@ -204,7 +204,7 @@ export default function HomePage() {
               </h3>
               <p className="text-sm text-warm-gray leading-relaxed">
                 Train your team on AI search optimization. Expert-led sessions
-                covering the EXACT Framework, audit methodology, and ongoing
+                covering the AI visibility methodology, audit methodology, and ongoing
                 strategy.
               </p>
             </Link>
@@ -212,31 +212,29 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 4: EXACT Framework Preview */}
+      {/* Section 4: Three-Signal Methodology Preview */}
       <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <div className="text-center mb-10">
             <p className="section-label mb-3">OUR METHODOLOGY</p>
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              The <span className="text-teal">EXACT</span> Framework
+              Three <span className="text-teal">Diagnostic Signals</span>
             </h2>
             <p className="mt-3 text-warm-gray">
-              Five signals. One audit. Complete clarity.
+              Three signals. One methodology. Complete clarity.
             </p>
           </div>
 
-          <div className="grid grid-cols-5 gap-3 md:gap-4 mb-8">
+          <div className="grid grid-cols-3 gap-3 md:gap-4 mb-8">
             {[
-              { letter: "E", name: "Entity Consistency" },
-              { letter: "X", name: "Cross-Platform Presence" },
-              { letter: "A", name: "Authority Signals" },
-              { letter: "C", name: "Content Structure" },
-              { letter: "T", name: "Technical Infrastructure" },
+              { num: "1", name: "Can AI find you?" },
+              { num: "2", name: "Can AI trust you?" },
+              { num: "3", name: "Can AI quote you?" },
             ].map((signal) => (
-              <div key={signal.letter} className="text-center">
+              <div key={signal.num} className="text-center">
                 <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-[rgba(20,30,48,0.8)] text-teal flex items-center justify-center text-xl md:text-2xl font-bold mx-auto mb-2">
-                  {signal.letter}
+                  {signal.num}
                 </div>
                 <p className="text-xs text-gray-400 leading-tight">
                   {signal.name}
@@ -247,13 +245,13 @@ export default function HomePage() {
 
           <div className="text-center">
             <p className="text-xs font-mono tracking-wider text-warm-gray uppercase mb-6">
-              Developed by Mia Cheraghian, PhD
+              Research and methodology by Mia Cheraghian, PhD
             </p>
             <Link
-              href="/exact-framework"
+              href="/methodology"
               className="text-teal font-medium hover:underline"
             >
-              Learn more about the EXACT Framework →
+              Learn more about the methodology →
             </Link>
           </div>
         </div>
@@ -262,14 +260,14 @@ export default function HomePage() {
       {/* Section 5: Who This Is For */}
       <section className="py-16 md:py-20 bg-soft-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <p className="section-label mb-3">// WHO WE WORK WITH</p>
+          <p className="section-label mb-3">// WHO THIS IS FOR</p>
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
             Is this for you?
           </h2>
           <p className="text-warm-gray text-lg leading-relaxed">
-            We work with businesses ($1M-$50M revenue) who are invisible to AI
+            We work with brands and organizations who are invisible to AI
             search. If your competitors are being recommended by ChatGPT and
-            you&apos;re not, we fix that.
+            you&apos;re not, the methodology reveals why and what to change.
           </p>
           <div className="mt-8">
             <Link href="/faq" className="text-teal font-medium hover:underline">
@@ -284,12 +282,12 @@ export default function HomePage() {
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-            See how your brand{" "}
-            <span className="text-teal">scores.</span>
+            Explore how AI sees{" "}
+            <span className="text-teal">your brand.</span>
           </h2>
           <p className="mt-5 text-gray-400 text-lg">
-            Find out what AI currently says about your brand and where the gaps
-            are.
+            Learn where your brand stands in AI search and what the
+            three diagnostic signals reveal.
           </p>
           <div className="mt-8">
             <a
@@ -298,7 +296,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="btn-primary text-lg !px-8 !py-4"
             >
-              Book Your Free Assessment →
+              Schedule a Conversation →
             </a>
           </div>
         </div>

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "AI citations",
     "ChatGPT optimization",
     "Perplexity optimization",
-    "EXACT Framework",
+    "three-signal methodology",
     "AI visibility audit",
     "Miaren AI",
   ],

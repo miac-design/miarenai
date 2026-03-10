@@ -4,16 +4,16 @@ import NodeNetwork from "@/components/NodeNetwork";
 import { getServiceSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "AI Visibility Services | GEO Audits, Strategy & Workshops",
+  title: "Areas of Focus | AI Visibility Research, Assessments & Workshops",
   description:
-    "Miaren AI offers AI visibility audits, GEO strategy, and B2B workshops. Using the proprietary EXACT Framework to make your brand citable in ChatGPT, Perplexity, and Google AI Overviews.",
+    "Areas of focus: AI visibility research, diagnostic assessments, and expert-led workshops. Based on original methodology by Mia Cheraghian, PhD.",
   alternates: {
     canonical: "https://miarenai.com/services",
   },
   openGraph: {
     title: "AI Visibility Services | Miaren AI",
     description:
-      "AI visibility audits, GEO strategy, and B2B workshops using the EXACT Framework.",
+      "AI visibility audits, GEO strategy, and B2B workshops using the AI visibility methodology.",
     images: [
       {
         url: "https://miarenai.com/og-image.png",
@@ -67,10 +67,10 @@ export default function ServicesPage() {
                 A comprehensive assessment of your brand&apos;s visibility
                 across AI search platforms using the{" "}
                 <Link
-                  href="/exact-framework"
+                  href="/methodology"
                   className="text-teal hover:underline"
                 >
-                  EXACT Framework
+                  three-signal methodology
                 </Link>
                 . Find out what AI currently says about you, where the gaps are,
                 and what to fix first.
@@ -89,7 +89,7 @@ export default function ServicesPage() {
               </p>
               <ul className="space-y-3">
                 {[
-                  "Full EXACT Framework diagnostic across 4 AI platforms",
+                  "Full AI visibility diagnostic across 4 AI platforms",
                   "AI Visibility Score with competitive benchmarking",
                   "Gap analysis across all 5 signals",
                   "Prioritized fix list with quick wins flagged",
@@ -246,10 +246,10 @@ export default function ServicesPage() {
                 visibility. Your team learns how AI engines decide who to cite,
                 the{" "}
                 <Link
-                  href="/exact-framework"
+                  href="/methodology"
                   className="text-teal hover:underline"
                 >
-                  EXACT Framework
+                  three-signal methodology
                 </Link>
                 , how to audit your own visibility, and what ongoing strategy
                 looks like.
@@ -275,7 +275,7 @@ export default function ServicesPage() {
               <ul className="space-y-3">
                 {[
                   "How AI engines decide who to cite",
-                  "The EXACT Framework for AI visibility auditing",
+                  "The AI visibility methodology for AI visibility auditing",
                   "How to audit your own brand's AI visibility",
                   "Ongoing strategy for maintaining citations",
                   "Monitoring tools and templates your team keeps",

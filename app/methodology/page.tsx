@@ -1,36 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
-import ExactLetterAccordion from "@/components/ExactLetterAccordion";
 import FlipCards from "@/components/FlipCards";
 import { getExactFrameworkArticleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-    title: "The EXACT Framework | AI Visibility Audit Methodology",
+    title: "How AI Decides Who to Cite | AI Visibility Methodology | Miaren AI",
     description:
-        "The EXACT Framework is a proprietary AI visibility methodology developed by Mia Cheraghian. Five signals that determine whether AI engines cite your brand: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure.",
+        "How AI decides who to cite. Three diagnostic signals that determine whether AI engines name your brand in their answers. Research and methodology by Mia Cheraghian, PhD.",
     alternates: {
-        canonical: "https://miarenai.com/exact-framework",
+        canonical: "https://miarenai.com/methodology",
     },
     openGraph: {
-        title: "The EXACT Framework | AI Visibility Audit Methodology | Miaren AI",
+        title: "How AI Decides Who to Cite | Miaren AI",
         description:
-            "Five signals that determine whether AI engines cite your brand. A proprietary methodology by Mia Cheraghian.",
-        url: "https://miarenai.com/exact-framework",
+            "Three diagnostic signals that determine whether AI engines name your brand. Research and methodology by Mia Cheraghian, PhD.",
+        url: "https://miarenai.com/methodology",
         images: [
             {
                 url: "https://miarenai.com/og-image.png",
                 width: 1200,
                 height: 630,
-                alt: "The EXACT Framework | Miaren AI",
+                alt: "AI Visibility Methodology | Miaren AI",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "The EXACT Framework | AI Visibility Audit Methodology",
+        title: "How AI Decides Who to Cite | AI Visibility Methodology",
         description:
-            "Five signals that determine whether AI engines cite your brand. By Mia Cheraghian at Miaren AI.",
+            "Three diagnostic signals that determine whether AI engines name your brand. By Mia Cheraghian, PhD.",
         images: ["https://miarenai.com/og-image.png"],
     },
 };
@@ -53,17 +52,17 @@ export default function ExactFrameworkPage() {
                 <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
                     <p className="section-label mb-4">// METHODOLOGY</p>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight">
-                        The <span className="text-teal">EXACT</span> Framework
+                        Three <span className="text-teal">Diagnostic Signals</span>
                     </h1>
                     <p className="mt-4 text-xl md:text-2xl text-warm-gray font-medium">
-                        Five signals. One audit. Complete clarity.
+                        Three signals. One methodology. Complete clarity.
                     </p>
                     <p className="mt-6 text-warm-gray text-lg leading-relaxed max-w-2xl mx-auto">
                         AI engines evaluate multiple signals when deciding which brands to
                         name in their responses. Through extensive research, auditing, and
-                        hands-on testing, I&apos;ve identified five key signals that
-                        consistently determine who gets cited and who gets ignored. I call it
-                        the EXACT Framework.
+                        hands-on testing across ChatGPT, Perplexity, Google AI Overviews, and Copilot,
+                        I&apos;ve identified three diagnostic signals that consistently determine
+                        who gets cited and who gets ignored.
                     </p>
                     <p className="mt-6 text-sm font-mono tracking-wider text-teal uppercase">
                         Developed by Mia Cheraghian, PhD / Founder of Miaren AI
@@ -116,49 +115,78 @@ export default function ExactFrameworkPage() {
             </section>
 
             {/* ============================================= */}
-            {/* Section 2: Interactive EXACT Letters          */}
+            {/* Section 2: The Three Diagnostic Signals       */}
             {/* ============================================= */}
             <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
                 <NodeNetwork opacity={0.2} color="0, 212, 170" />
                 <div className="relative z-10 max-w-4xl mx-auto px-6">
                     <div className="text-center mb-10">
-                        <p className="section-label mb-3">THE FIVE SIGNALS</p>
+                        <p className="section-label mb-3">THE THREE SIGNALS</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-white">
-                            What determines whether AI cites your brand
+                            Three signals that determine whether AI names your brand
                         </h2>
                     </div>
 
-                    <ExactLetterAccordion />
-
-                    {/* 
-            SSR fallback: all signal content rendered as semantic HTML 
-            for crawlers that don't execute JavaScript.
-            Hidden visually but present in the HTML source.
-          */}
-                    <noscript>
-                        <div className="space-y-6 mt-8">
-                            <div className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
-                                <h3 className="text-xl font-bold text-white mb-2">E : Entity Consistency</h3>
-                                <p className="text-gray-400">Your brand information must be identical across every platform AI looks at: website, LinkedIn, directories, review sites. AI engines cross-reference multiple sources to build confidence. If your description on LinkedIn says one thing and your website says another, AI has lower confidence and is less likely to cite you. Inconsistency kills AI confidence in citing you.</p>
+                    <div className="space-y-6">
+                        {/* Signal 1 */}
+                        <div id="signal-find" className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="text-xs font-mono tracking-wider text-teal bg-teal/10 px-2.5 py-1 rounded">SIGNAL 1 OF 3</span>
                             </div>
-                            <div className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
-                                <h3 className="text-xl font-bold text-white mb-2">X : Cross-Platform Presence</h3>
-                                <p className="text-gray-400">Be visible across the platforms AI engines cross-reference. AI doesn&apos;t just look at your website. It cross-references LinkedIn, event platforms, news articles, industry directories, and more. If you only exist on your own domain, you&apos;re missing the signals that build AI confidence.</p>
-                            </div>
-                            <div className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
-                                <h3 className="text-xl font-bold text-white mb-2">A : Authority Signals</h3>
-                                <p className="text-gray-400">Third-party validation from trusted sources tells AI your brand is credible. If the only source saying you&apos;re great is your own website, that&apos;s weak. If industry publications, review sites, and other trusted sources reference you, that&apos;s strong. This is the hardest signal to build and the most durable once you have it.</p>
-                            </div>
-                            <div className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
-                                <h3 className="text-xl font-bold text-white mb-2">C : Content Structure</h3>
-                                <p className="text-gray-400">AI-readable content that directly answers questions. AI engines pull from content that provides clear, direct answers. Content with clear headings, Q&amp;A format, and direct answers performs significantly better than marketing copy full of buzzwords. Lead with the answer.</p>
-                            </div>
-                            <div className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
-                                <h3 className="text-xl font-bold text-white mb-2">T : Technical Infrastructure</h3>
-                                <p className="text-gray-400">Structured data (Schema.org markup) that helps AI engines parse your content. Without structured data, AI must infer meaning from unstructured text. With it, AI can directly parse your brand information, products, FAQs, and more. This is the behind-the-scenes plumbing that makes everything else work.</p>
-                            </div>
+                            <h3 className="text-xl font-bold text-white mb-3">Can AI find you?</h3>
+                            <p className="text-gray-400 leading-relaxed">
+                                Your content must be structured, crawlable, and readable by AI engines.
+                                Without structured data (Schema.org markup), clean heading hierarchy, and
+                                direct answers to real questions, AI doesn&apos;t know you exist. This is the
+                                foundation — nothing else matters if AI can&apos;t parse your content.
+                            </p>
+                            <p className="text-gray-400 leading-relaxed mt-3">
+                                Schema markup helps AI directly interpret your brand information, products,
+                                FAQs, and more. Content with clear headings, Q&amp;A format, and direct answers
+                                performs significantly better than marketing copy. Lead with the answer.
+                            </p>
                         </div>
-                    </noscript>
+
+                        {/* Signal 2 */}
+                        <div id="signal-trust" className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="text-xs font-mono tracking-wider text-teal bg-teal/10 px-2.5 py-1 rounded">SIGNAL 2 OF 3</span>
+                            </div>
+                            <h3 className="text-xl font-bold text-white mb-3">Can AI trust you?</h3>
+                            <p className="text-gray-400 leading-relaxed">
+                                Your brand information must be identical across every platform AI looks at:
+                                website, LinkedIn, directories, review sites, event platforms. AI engines
+                                cross-reference multiple sources to build confidence. If your description on
+                                LinkedIn says one thing and your website says another, AI has lower confidence
+                                and is less likely to cite you.
+                            </p>
+                            <p className="text-gray-400 leading-relaxed mt-3">
+                                You also need to be visible across the platforms AI cross-references — not just
+                                your own domain. LinkedIn, industry directories, news articles, event platforms.
+                                The more places AI finds consistent information about you, the more confident
+                                it becomes.
+                            </p>
+                        </div>
+
+                        {/* Signal 3 */}
+                        <div id="signal-quote" className="bg-[rgba(20,30,48,0.6)] border border-white/10 rounded-xl p-7">
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="text-xs font-mono tracking-wider text-teal bg-teal/10 px-2.5 py-1 rounded">SIGNAL 3 OF 3</span>
+                            </div>
+                            <h3 className="text-xl font-bold text-white mb-3">Can AI quote you?</h3>
+                            <p className="text-gray-400 leading-relaxed">
+                                Third-party validation from trusted sources tells AI your brand is worth naming.
+                                If the only source saying you&apos;re great is your own website, that&apos;s weak.
+                                If industry publications, review sites, news articles, and other independent
+                                sources reference you, that&apos;s strong.
+                            </p>
+                            <p className="text-gray-400 leading-relaxed mt-3">
+                                This is the hardest signal to build and the most durable once you have it.
+                                AI won&apos;t stake its reputation on citing you unless independent sources
+                                confirm you&apos;re worth naming.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -185,8 +213,8 @@ export default function ExactFrameworkPage() {
                             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
                                 &ldquo;Academic research has identified 9 content
                                 optimization techniques for AI citation. Content is one of
-                                five signals in the EXACT Framework. The other four are
-                                equally important, and often overlooked.&rdquo;
+                                three signals in the methodology. The other two are
+                                equally important — and often overlooked.&rdquo;
                             </p>
                             <p className="mt-4 text-sm font-mono tracking-wider text-teal uppercase">
                                 Aggarwal et al., Georgia Tech / Princeton / IIT Delhi (2024)
@@ -205,14 +233,12 @@ export default function ExactFrameworkPage() {
                     <div className="text-center mb-4">
                         <p className="section-label mb-3">// BEYOND THE FOUNDATION</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-navy leading-tight">
-                            EXACT gets you in the door.{" "}
+                            The three signals get you in the door.{" "}
                             <span className="text-teal">These keep you in the room.</span>
                         </h2>
                         <p className="mt-4 text-warm-gray text-lg max-w-2xl mx-auto">
-                            The EXACT Framework builds your foundation for AI citability.
-                            Staying visible requires three ongoing strategies. Learn more about how our{" "}
-                            <Link href="/services" className="text-teal hover:underline">AI visibility services</Link>{" "}
-                            put these into practice.
+                            The methodology builds your foundation for AI citability.
+                            Staying visible requires three ongoing strategies.
                         </p>
                     </div>
 
@@ -328,10 +354,9 @@ export default function ExactFrameworkPage() {
                         For brands ready to go deeper
                     </h2>
                     <p className="text-warm-gray text-lg leading-relaxed mb-8 max-w-3xl">
-                        The EXACT Framework covers your foundation and ongoing strategy for
-                        AI visibility. For brands ready to go further, we also work on
-                        platform-specific optimization, competitive displacement, and AI
-                        misinformation monitoring.
+                        The methodology covers your foundation and ongoing strategy for
+                        AI visibility. For brands and organizations ready to go deeper into AI
+                        visibility, these are the advanced research areas we explore.
                     </p>
 
                     <div className="grid md:grid-cols-3 gap-5">
@@ -420,18 +445,18 @@ export default function ExactFrameworkPage() {
                 <NodeNetwork opacity={0.2} color="0, 212, 170" />
                 <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
                     <p className="text-warm-gray text-lg leading-relaxed mb-8">
-                        Built for businesses that want to be found in AI search.
+                        For brands and organizations ready to go deeper into AI visibility.
                         The entity relationships AI engines are forming right now will
                         compound. Early movers build advantages that late movers spend
                         years trying to close.
                     </p>
                     <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-                        See how your brand{" "}
-                        <span className="text-teal">scores.</span>
+                        Explore how AI sees{" "}
+                        <span className="text-teal">your brand.</span>
                     </h2>
                     <p className="mt-4 text-gray-400 text-lg">
-                        Get a free EXACT Framework assessment and find out where your brand
-                        stands in AI search. Have questions? Check our{" "}
+                        Learn where your brand stands in AI search based on the three
+                        diagnostic signals. Have questions? Check our{" "}
                         <Link href="/faq" className="text-teal hover:underline">
                             FAQ
                         </Link>
@@ -444,7 +469,7 @@ export default function ExactFrameworkPage() {
                             rel="noopener noreferrer"
                             className="btn-primary text-lg !px-8 !py-4"
                         >
-                            Book Your Free Assessment
+                            Schedule a Conversation
                             <svg
                                 className="w-5 h-5"
                                 fill="none"
@@ -470,10 +495,9 @@ export default function ExactFrameworkPage() {
                 <div className="max-w-4xl mx-auto px-6">
                     <div className="border-t border-gray-200 pt-8">
                         <p className="text-sm text-warm-gray leading-relaxed">
-                            The EXACT Framework is a proprietary methodology developed by Mia
-                            Cheraghian at Miaren AI. The foundational research on Generative
-                            Engine Optimization was published by Aggarwal et al. (2024) from
-                            Georgia Tech, Princeton, and IIT Delhi.
+                            AI visibility research and methodology by Mia Cheraghian, PhD.
+                            Foundational GEO research by Aggarwal et al. (2024),
+                            Georgia Tech / Princeton / IIT Delhi.
                         </p>
                     </div>
                 </div>

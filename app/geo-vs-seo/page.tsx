@@ -311,10 +311,10 @@ export default function GeoVsSeoPage() {
                     <p className="mt-4 text-warm-gray text-lg">
                         See how you score across the{" "}
                         <Link
-                            href="/exact-framework"
+                            href="/methodology"
                             className="text-teal font-medium hover:underline"
                         >
-                            EXACT Framework
+                            three-signal methodology
                         </Link>{" "}
                         signals.
                     </p>
@@ -325,7 +325,7 @@ export default function GeoVsSeoPage() {
                             rel="noopener noreferrer"
                             className="btn-primary text-lg !px-8 !py-4"
                         >
-                            Book Your Free Assessment →
+                            Schedule a Conversation →
                         </a>
                     </div>
                 </div>

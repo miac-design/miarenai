@@ -93,7 +93,7 @@ export default function FaqPage() {
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/contact" className="btn-primary">
-                Get Your Free Audit →
+                Connect →
               </Link>
               <a
                 href="https://calendly.com/c2018-mia/chat-with-mia"

@@ -16,8 +16,8 @@ export const blogContent: Record<string, { sections: { heading: string; content:
         content: "SEO and GEO address fundamentally different systems. SEO optimizes for Google's ranking algorithm (backlinks, keywords, page speed). GEO optimizes for AI synthesis engines that evaluate authority, entity consistency, and structured data to decide who to cite in generated responses. Only 12% of URLs that AI engines cite also rank in Google's top 10 (Ahrefs, 2025). That means 88% of AI citations come from sources that aren't dominant in traditional search. They're different games with different rules.",
       },
       {
-        heading: "The five signals AI engines evaluate",
-        content: "Through extensive auditing and research, we've identified five core signals that AI engines evaluate when deciding which brands to cite. We call this the EXACT Framework: Entity Consistency (identical brand information across platforms), Cross-Platform Presence (visibility across platforms AI engines cross-reference), Authority Signals (third-party validation from trusted sources), Content Structure (AI-readable content that directly answers questions), and Technical Infrastructure (Schema.org structured data AI can parse).",
+        heading: "The three signals AI engines evaluate",
+        content: "Through extensive auditing and research, we've identified five core signals that AI engines evaluate when deciding which brands to cite. We call this the AI visibility methodology: Entity Consistency (identical brand information across platforms), Cross-Platform Presence (visibility across platforms AI engines cross-reference), Authority Signals (third-party validation from trusted sources), Content Structure (AI-readable content that directly answers questions), and Technical Infrastructure (Schema.org structured data AI can parse).",
       },
       {
         heading: "Why this matters now",
@@ -49,7 +49,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "Building citation-worthy presence",
-        content: "The brands that consistently get cited share common traits: their information is identical across every platform, they have Schema.org markup that AI can parse, independent sources reference them positively, and their content is structured to answer specific questions directly. This is exactly what the EXACT Framework measures.",
+        content: "The brands that consistently get cited share common traits: their information is identical across every platform, they have Schema.org markup that AI can parse, independent sources reference them positively, and their content is structured to answer specific questions directly. This is exactly what the AI visibility methodology measures.",
       },
     ],
   },
@@ -121,7 +121,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "The integrated approach",
-        content: "The brands winning in 2026 are doing both. Strong SEO foundations with GEO layered on top. They're not choosing between Google rankings and AI citations. They're optimizing for both simultaneously. The EXACT Framework is designed to identify exactly where your GEO gaps are while preserving your SEO strengths.",
+        content: "The brands winning in 2026 are doing both. Strong SEO foundations with GEO layered on top. They're not choosing between Google rankings and AI citations. They're optimizing for both simultaneously. The AI visibility methodology is designed to identify exactly where your GEO gaps are while preserving your SEO strengths.",
       },
     ],
   },
@@ -141,7 +141,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "The phased approach",
-        content: "Phase 1: Audit your current AI visibility with the EXACT Framework. Phase 2: Fix entity consistency and implement structured data (quick wins). Phase 3: Restructure priority content for AI readability. Phase 4: Build authority signals through earned media and third-party validation. Each phase delivers measurable results you can report to leadership.",
+        content: "Phase 1: Audit your current AI visibility with the AI visibility methodology. Phase 2: Fix entity consistency and implement structured data (quick wins). Phase 3: Restructure priority content for AI readability. Phase 4: Build authority signals through earned media and third-party validation. Each phase delivers measurable results you can report to leadership.",
       },
       {
         heading: "First-mover advantage is real",

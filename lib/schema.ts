@@ -65,7 +65,7 @@ export function getOrganizationSchema() {
             "@type": "Service",
             name: "The EXACT Audit",
             description:
-              "Full EXACT Framework diagnostic across 4 AI platforms with AI Visibility Score, competitive benchmarking, and prioritized fix list. Delivered in 5-7 business days.",
+              "Full AI visibility diagnostic across 4 AI platforms with AI Visibility Score, competitive benchmarking, and prioritized fix list. Delivered in 5-7 business days.",
           },
         },
         {
@@ -101,7 +101,7 @@ export function getPersonSchema() {
     url: "https://miarenai.com/about",
     image: "https://miarenai.com/mia-cheraghian.png",
     description:
-      "PhD researcher, AI strategist, and founder of Miaren AI. Creator of the EXACT Framework for Generative Engine Optimization. Director of Strategic Partnerships & Marketing at Austin AI Hub.",
+      "PhD researcher, AI strategist, and founder of Miaren AI. Creator of the AI visibility methodology for Generative Engine Optimization. Director of Strategic Partnerships & Marketing at Austin AI Hub.",
     sameAs: ["https://www.linkedin.com/in/mia-cheraghian/"],
     alumniOf: {
       "@type": "CollegeOrUniversity",
@@ -245,7 +245,7 @@ export function getServiceSchema() {
           itemOffered: {
             "@type": "Service",
             name: "The EXACT Audit",
-            description: "Full EXACT Framework diagnostic across 4 AI platforms with AI Visibility Score, competitive benchmarking, and prioritized fix list.",
+            description: "Full AI visibility diagnostic across 4 AI platforms with AI Visibility Score, competitive benchmarking, and prioritized fix list.",
           },
         },
         {
@@ -273,10 +273,10 @@ export function getExactFrameworkArticleSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "The EXACT Framework for AI Visibility",
+    headline: "Three Diagnostic Signals for AI Visibility",
     description:
-      "The EXACT Framework is a proprietary AI visibility methodology developed by Mia Cheraghian. Five signals that determine whether AI engines cite your brand: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure.",
-    url: "https://miarenai.com/exact-framework",
+      "How AI decides who to cite. Three diagnostic signals that determine whether AI engines name your brand in their answers. Research and methodology by Mia Cheraghian, PhD.",
+    url: "https://miarenai.com/methodology",
     datePublished: "2026-03-09",
     author: {
       "@type": "Person",

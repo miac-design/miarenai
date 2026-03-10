@@ -35,13 +35,13 @@ export default function Header() {
             Services
           </Link>
           <Link
-            href="/exact-framework"
-            className={`text-sm font-medium transition-colors ${isActive("/exact-framework")
+            href="/methodology"
+            className={`text-sm font-medium transition-colors ${isActive("/methodology")
               ? "text-navy"
               : "text-warm-gray hover:text-navy"
               }`}
           >
-            EXACT Framework
+            Methodology
           </Link>
           <Link
             href="/geo-vs-seo"
@@ -72,7 +72,7 @@ export default function Header() {
           </Link>
 
           <Link href="/contact" className="btn-primary text-sm !py-2 !px-5">
-            Get Your Free Audit
+            Connect
           </Link>
         </div>
 
@@ -96,11 +96,11 @@ export default function Header() {
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3">
           <Link href="/services" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Services</Link>
-          <Link href="/exact-framework" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>EXACT Framework</Link>
+          <Link href="/methodology" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Methodology</Link>
           <Link href="/geo-vs-seo" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>GEO vs SEO</Link>
           <Link href="/about" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>About</Link>
           <Link href="/faq" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>FAQ</Link>
-          <Link href="/contact" className="btn-primary text-sm !py-2 w-full justify-center" onClick={() => setMobileOpen(false)}>Get Your Free Audit</Link>
+          <Link href="/contact" className="btn-primary text-sm !py-2 w-full justify-center" onClick={() => setMobileOpen(false)}>Connect</Link>
         </div>
       )}
     </header>

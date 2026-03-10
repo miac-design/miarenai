@@ -7,7 +7,6 @@ import { useState, useEffect, useRef, useCallback } from "react";
 interface CardData {
     frontTitle: string;
     frontText: string;
-    backLetter: string;
     backLabel: string;
     backText: string;
     signalId: string;
@@ -16,56 +15,34 @@ interface CardData {
 
 const cards: CardData[] = [
     {
-        frontTitle: "The Bowl",
-        frontText: "Without a solid bowl, the food falls apart.",
-        backLetter: "T",
-        backLabel: "T — Technical Infrastructure",
-        backText:
-            "Server, code, schema markup, site speed. If AI crawlers can't read your site, nothing else matters. This is the plumbing that holds everything together.",
-        signalId: "signal-t",
-        tagLabel: "Technical Infrastructure",
-    },
-    {
-        frontTitle: "What's Inside",
+        frontTitle: "What's Inside the Bowl",
         frontText:
-            "The actual food. The substance. The reason anyone comes back.",
-        backLetter: "C",
-        backLabel: "C — Content Structure",
+            "The actual substance — structured content, schema markup, direct answers. This is what AI engines 'eat' and decide to cite.",
+        backLabel: "Can AI find you?",
         backText:
-            "Answers, structured information, Q&A content. This is what AI engines 'eat' and decide to cite. A beautiful bowl with nothing inside? AI skips right past it.",
-        signalId: "signal-c",
-        tagLabel: "Content Structure",
+            "Your content must be structured, crawlable, and readable by AI engines. Without structured data, clean heading hierarchy, and direct answers to real questions, AI doesn't know you exist. A beautiful bowl with nothing AI can scoop? It skips right past.",
+        signalId: "signal-find",
+        tagLabel: "Signal 1: Findability",
     },
     {
-        frontTitle: "The Name on Every Sign",
+        frontTitle: "The Same Bowl at Every Table",
         frontText:
-            "Same name on the door, on Google Maps, on Yelp. No confusion.",
-        backLetter: "E",
-        backLabel: "E — Entity Consistency",
+            "Same name on the door, on Google Maps, on Yelp, on LinkedIn. If one says Italian and another says Mexican, nobody recommends confidently.",
+        backLabel: "Can AI trust you?",
         backText:
-            "Your brand information must be identical everywhere AI looks. If LinkedIn says one thing and your website says another, AI loses confidence in citing you.",
-        signalId: "signal-e",
-        tagLabel: "Entity Consistency",
+            "Your brand information must be identical across every platform AI looks at. AI cross-references multiple sources to build confidence. If your description on LinkedIn says one thing and your website says another, AI loses confidence in citing you.",
+        signalId: "signal-trust",
+        tagLabel: "Signal 2: Trust",
     },
     {
-        frontTitle: "In Every Food Guide",
-        frontText: "A restaurant nobody lists is a restaurant nobody finds.",
-        backLetter: "X",
-        backLabel: "X — Cross-Platform Presence",
+        frontTitle: "Others Recommending the Restaurant",
+        frontText:
+            "The critic asks: who else says this place is good? Reviews, press mentions, word of mouth from independent sources.",
+        backLabel: "Can AI quote you?",
         backText:
-            "AI cross-references LinkedIn, directories, news articles, event platforms. If you only exist on your own website, you're missing the signals that build AI confidence.",
-        signalId: "signal-x",
-        tagLabel: "Cross-Platform Presence",
-    },
-    {
-        frontTitle: "Others Recommending You",
-        frontText: "The critic asks: who else says this place is good?",
-        backLetter: "A",
-        backLabel: "A — Authority Signals",
-        backText:
-            "Third-party validation from trusted sources. News articles, reviews, partnerships. The hardest signal to build. The most durable once you have it.",
-        signalId: "signal-a",
-        tagLabel: "Authority Signals",
+            "Third-party validation from trusted sources tells AI your brand is worth naming. Without independent sources confirming you're worth naming, AI doesn't walk in the door. The hardest signal to build. The most durable once you have it.",
+        signalId: "signal-quote",
+        tagLabel: "Signal 3: Authority",
     },
 ];
 
@@ -86,20 +63,6 @@ function BowlIcon() {
     );
 }
 
-function UtensilsIcon() {
-    return (
-        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" stroke="#00D4AA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            {/* Fork */}
-            <path d="M22 12v14" />
-            <path d="M18 12v8c0 3.3 1.8 6 4 6s4-2.7 4-6v-8" />
-            <path d="M22 26v22" />
-            {/* Knife */}
-            <path d="M50 12v36" />
-            <path d="M50 12c-6 0-8 6-8 12s2 8 8 8" />
-        </svg>
-    );
-}
-
 function StorefrontIcon() {
     return (
         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" stroke="#00D4AA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -112,30 +75,9 @@ function StorefrontIcon() {
             {/* Sign */}
             <line x1="22" y1="34" x2="28" y2="34" />
             <line x1="22" y1="37" x2="26" y2="37" />
-            {/* Map pin (small, to the right) */}
+            {/* Map pin */}
             <circle cx="56" cy="18" r="4" />
             <path d="M56 22l0 4" />
-        </svg>
-    );
-}
-
-function BookOpenIcon() {
-    return (
-        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" stroke="#00D4AA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            {/* Left page */}
-            <path d="M36 20c-6-4-14-4-18-2v30c4-2 12-2 18 2" />
-            {/* Right page */}
-            <path d="M36 20c6-4 14-4 18-2v30c-4-2-12-2-18 2" />
-            {/* Spine */}
-            <line x1="36" y1="20" x2="36" y2="50" />
-            {/* Text lines left */}
-            <line x1="24" y1="28" x2="30" y2="28" />
-            <line x1="24" y1="32" x2="32" y2="32" />
-            <line x1="24" y1="36" x2="30" y2="36" />
-            {/* Text lines right */}
-            <line x1="42" y1="28" x2="48" y2="28" />
-            <line x1="40" y1="32" x2="48" y2="32" />
-            <line x1="42" y1="36" x2="48" y2="36" />
         </svg>
     );
 }
@@ -151,7 +93,7 @@ function StarBubbleIcon() {
     );
 }
 
-const iconComponents = [BowlIcon, UtensilsIcon, StorefrontIcon, BookOpenIcon, StarBubbleIcon];
+const iconComponents = [BowlIcon, StorefrontIcon, StarBubbleIcon];
 
 /* ─── Flip Card Component ─── */
 
@@ -227,12 +169,6 @@ function FlipCard({
 
                 {/* ══════ BACK ══════ */}
                 <div className="flip-card-back">
-                    {/* Watermark letter */}
-                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none" aria-hidden="true">
-                        <span className="text-[140px] font-black text-[#0A1628] opacity-[0.12] leading-none">
-                            {card.backLetter}
-                        </span>
-                    </div>
                     <div className="relative z-10 flex flex-col h-full justify-between">
                         <div>
                             <h3 className="text-xl font-bold text-[#0A1628] mb-3">

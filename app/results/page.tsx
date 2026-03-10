@@ -27,7 +27,7 @@ export default function ResultsPage() {
                     Client <span className="text-teal">Results</span>
                 </h1>
                 <p className="text-warm-gray text-lg mb-12 max-w-2xl">
-                    Real GEO engagements. Measurable outcomes. Every project follows the same EXACT Framework. The results speak for themselves.
+                    Real GEO engagements. Measurable outcomes. Every project follows the same three-signal methodology. The results speak for themselves.
                 </p>
 
                 <div className="space-y-6">

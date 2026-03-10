@@ -58,7 +58,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Authority Signals",
     category: "Core GEO",
     definition:
-      "Third-party validation that tells AI engines your brand is credible and trustworthy. Includes earned media, review site presence, expert citations, high-authority backlinks, social proof, and Wikipedia presence. The 'A' in the EXACT Framework.",
+      "Third-party validation that tells AI engines your brand is credible and trustworthy. Includes earned media, review site presence, expert citations, high-authority backlinks, social proof, and Wikipedia presence. The 'A' in the AI visibility methodology.",
     insight:
       "AI engines weigh external validation heavily. This is the hardest signal to build but has the biggest compounding impact.",
   },
@@ -84,7 +84,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Content Structure",
     category: "Core GEO",
     definition:
-      "How your content is organized and formatted for AI readability. AI engines pull from content that directly answers questions. Content structured with clear headings, direct answers, and Q&A format performs significantly better than marketing copy. The 'C' in the EXACT Framework.",
+      "How your content is organized and formatted for AI readability. AI engines pull from content that directly answers questions. Content structured with clear headings, direct answers, and Q&A format performs significantly better than marketing copy. The 'C' in the AI visibility methodology.",
   },
   {
     term: "Copilot",
@@ -96,7 +96,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Cross-Platform Presence",
     category: "Core GEO",
     definition:
-      "Being visible and referenced across multiple platforms that AI engines cross-reference when building responses. Includes LinkedIn, review sites, industry directories, Google Business Profile, and more. The 'X' in the EXACT Framework.",
+      "Being visible and referenced across multiple platforms that AI engines cross-reference when building responses. Includes LinkedIn, review sites, industry directories, Google Business Profile, and more. The 'X' in the AI visibility methodology.",
   },
   {
     term: "Entity",
@@ -108,15 +108,15 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Entity Consistency",
     category: "Core GEO",
     definition:
-      "Having identical brand information across all platforms where AI engines look. Name, description, services, founding date, leadership, and location must match everywhere. Inconsistency kills AI confidence in citing you. The 'E' in the EXACT Framework.",
+      "Having identical brand information across all platforms where AI engines look. Name, description, services, founding date, leadership, and location must match everywhere. Inconsistency kills AI confidence in citing you. The 'E' in the AI visibility methodology.",
     insight:
       "Entity consistency fixes can show impact within 2-4 weeks. This is often the single fastest improvement you can make.",
   },
   {
-    term: "EXACT Framework",
+    term: "three-signal methodology",
     category: "Core GEO",
     definition:
-      "Miaren AI's proprietary methodology for assessing and improving AI visibility. Evaluates five signals: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure.",
+      "Miaren AI's research methodology for assessing and improving AI visibility. Evaluates three signals: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure.",
   },
   {
     term: "FAQPage Schema",
@@ -184,13 +184,13 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Structured Data",
     category: "Technical",
     definition:
-      "Machine-readable markup (primarily Schema.org in JSON-LD format) that explicitly tells AI engines what your content is about. Without structured data, AI engines must infer meaning from unstructured text. The 'T' (Technical Infrastructure) in the EXACT Framework.",
+      "Machine-readable markup (primarily Schema.org in JSON-LD format) that explicitly tells AI engines what your content is about. Without structured data, AI engines must infer meaning from unstructured text. The 'T' (Technical Infrastructure) in the AI visibility methodology.",
   },
   {
     term: "Technical Infrastructure",
     category: "Core GEO",
     definition:
-      "The machine-readable backbone that makes all other GEO signals work. Primarily Schema.org structured data in JSON-LD format that explicitly tells AI engines what your content is about. The 'T' in the EXACT Framework.",
+      "The machine-readable backbone that makes all other GEO signals work. Primarily Schema.org structured data in JSON-LD format that explicitly tells AI engines what your content is about. The 'T' in the AI visibility methodology.",
   },
   {
     term: "Digital Footprint",

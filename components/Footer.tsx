@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="flex gap-16">
             <div className="space-y-2.5">
               <Link href="/services" className="block text-sm text-gray-400 hover:text-white transition-colors">Services</Link>
-              <Link href="/exact-framework" className="block text-sm text-gray-400 hover:text-white transition-colors">EXACT Framework</Link>
+              <Link href="/methodology" className="block text-sm text-gray-400 hover:text-white transition-colors">Methodology</Link>
               <Link href="/geo-vs-seo" className="block text-sm text-gray-400 hover:text-white transition-colors">GEO vs SEO</Link>
               <Link href="/about" className="block text-sm text-gray-400 hover:text-white transition-colors">About</Link>
               <Link href="/faq" className="block text-sm text-gray-400 hover:text-white transition-colors">FAQ</Link>
@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
         <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between gap-3">
           <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Miaren AI. All rights reserved.</p>
-          <p className="text-xs text-gray-500">The EXACT Framework is a proprietary methodology by Mia Cheraghian.</p>
+          <p className="text-xs text-gray-500">AI visibility research and methodology by Mia Cheraghian, PhD. Foundational GEO research by Aggarwal et al. (2024), Georgia Tech / Princeton / IIT Delhi.</p>
         </div>
       </div>
     </footer>

@@ -39,7 +39,7 @@ export const caseStudies: CaseStudy[] = [
             { metric: "3 weeks", description: "Time from audit to full implementation" },
         ],
         testimonial: {
-            quote: "Mia showed us that we were completely invisible to AI search, and we're an AI company. She rebuilt our entire digital presence from the ground up. Within weeks, we started appearing in ChatGPT and Perplexity responses for our exact category. The EXACT Framework made something complex feel systematic and achievable.",
+            quote: "Mia showed us that we were completely invisible to AI search, and we're an AI company. She rebuilt our entire digital presence from the ground up. Within weeks, we started appearing in ChatGPT and Perplexity responses for our exact category. The AI visibility methodology made something complex feel systematic and achievable.",
             role: "CEO, AI Consulting Firm",
         },
         keyInsight:
@@ -89,7 +89,7 @@ export const caseStudies: CaseStudy[] = [
             "Benchmarked against 4 direct competitors, revealing two competitors already investing in GEO with scores above 40%",
             "Mapped entity fragmentation: identified 14 inconsistencies across major platforms (LinkedIn, Crunchbase, G2, Wikipedia, company website)",
             "Analyzed content structure: found that 88% of their indexed pages used marketing language that AI engines couldn't extract direct answers from",
-            "Delivered a prioritized 47-point fix list organized by EXACT Framework signal, with estimated impact and implementation complexity",
+            "Delivered a prioritized 47-point fix list organized by three-signal methodology signal, with estimated impact and implementation complexity",
             "Provided a 90-day GEO roadmap with quick wins (entity fixes, schema deployment) and longer-term plays (content restructuring, authority building)",
         ],
         results: [

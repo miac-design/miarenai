@@ -4,9 +4,9 @@ import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
 
 export const metadata: Metadata = {
-  title: "About Miaren AI | Founded by Mia Cheraghian | AI Visibility Consultancy",
+  title: "About Miaren AI | Founded by Mia Cheraghian, PhD",
   description:
-    "Miaren AI was founded by Mia Cheraghian, a PhD researcher and AI strategist. The name means AI Renaissance. We help brands become visible in AI-powered search.",
+    "Miaren AI is an AI visibility research and strategy platform founded by Mia Cheraghian, PhD. Researcher focused on how AI search engines decide who to cite.",
   alternates: {
     canonical: "https://miarenai.com/about",
   },
@@ -30,21 +30,26 @@ const personSchema = {
   "@type": "Person",
   name: "Mia Cheraghian",
   alternateName: "Mahboubeh Cheraghian",
-  jobTitle: "Founder and CEO",
+  jobTitle: "Founder",
   worksFor: { "@type": "Organization", name: "Miaren AI" },
   alumniOf: {
     "@type": "CollegeOrUniversity",
     name: "Texas Tech University",
   },
+  hasCredential: {
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: "degree",
+    name: "PhD, Tourism, Hospitality & Retail Management",
+  },
   knowsAbout: [
     "Generative Engine Optimization",
     "AI Visibility",
-    "AI Search",
+    "AI Search Optimization",
     "GEO",
-    "EXACT Framework",
+    "AI visibility methodology",
   ],
   description:
-    "PhD researcher, AI strategist, and founder of Miaren AI. Creator of the EXACT Framework for Generative Engine Optimization.",
+    "PhD researcher, AI strategist, and founder of Miaren AI. Creator of the AI visibility methodology for Generative Engine Optimization.",
   sameAs: ["https://www.linkedin.com/in/mia-cheraghian/"],
   url: "https://www.miarenai.com/about",
 };
@@ -142,10 +147,10 @@ export default function AboutPage() {
               </a>
               . Creator of the{" "}
               <Link
-                href="/exact-framework"
+                href="/methodology"
                 className="text-teal hover:underline"
               >
-                EXACT Framework
+                three-signal methodology
               </Link>{" "}
               for AI visibility auditing.
             </p>
@@ -176,7 +181,7 @@ export default function AboutPage() {
               "PhD, Texas Tech University (Tourism, Hospitality & Retail Management)",
               "Senior Researcher, Rackspace Technology",
               "Director of Strategic Partnerships & Marketing, Austin AI Hub (501(c)(3) nonprofit)",
-              "Creator of the EXACT Framework",
+              "Creator of the AI visibility methodology",
               "Published researcher and peer reviewer",
               "1 published book chapter, 2 journal papers under review, 2 conference presentations",
             ].map((item) => (

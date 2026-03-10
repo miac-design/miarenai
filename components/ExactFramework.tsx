@@ -24,7 +24,7 @@ export default function ExactFramework() {
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             The <span className="text-teal">EXACT</span> Framework
           </h2>
-          <p className="mt-3 text-warm-gray">Five signals. One audit. Complete clarity.</p>
+          <p className="mt-3 text-warm-gray">Three signals. One methodology. Complete clarity.</p>
         </div>
 
         <div className="flex justify-center gap-3 mb-8">

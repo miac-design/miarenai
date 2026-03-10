@@ -47,9 +47,9 @@ export default function GlossaryPage() {
             <p className="mt-3 text-sm text-warm-gray">Last updated March 2026 · Maintained by Mia Cheraghian, PhD</p>
           </div>
 
-          {/* EXACT Framework callout */}
+          {/* three-signal methodology callout */}
           <div className="teal-border-left bg-teal-light/50 rounded-r-xl p-6 mb-10">
-            <h2 className="text-lg font-bold text-navy mb-2">The EXACT Framework</h2>
+            <h2 className="text-lg font-bold text-navy mb-2">The AI visibility methodology</h2>
             <p className="text-sm text-warm-gray mb-4">Miaren AI&apos;s proprietary methodology for assessing and improving AI visibility.</p>
             <div className="space-y-2">
               {[

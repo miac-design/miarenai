@@ -129,7 +129,7 @@ export default async function CaseStudyPage({ params }: Props) {
                         <h3 className="text-xl font-bold text-navy mb-3">Ready to see your own score?</h3>
                         <p className="text-warm-gray mb-6">Start with a free EXACT Audit and find out where your brand stands in AI search.</p>
                         <Link href="/contact" className="btn-primary">
-                            Get Your Free Audit
+                            Connect
                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>

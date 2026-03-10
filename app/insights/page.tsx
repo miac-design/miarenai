@@ -37,7 +37,7 @@ export default function InsightsPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-navy">Want to check your AI visibility?</h2>
           <p className="mt-3 text-warm-gray text-lg">Get a research-backed audit of your brand&apos;s presence across AI search systems.</p>
           <div className="mt-6">
-            <Link href="/contact" className="btn-primary">Get Your Free Audit →</Link>
+            <Link href="/contact" className="btn-primary">Connect →</Link>
           </div>
         </div>
       </section>

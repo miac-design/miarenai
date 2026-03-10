@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: Props) {
                   Mia Cheraghian, PhD
                 </p>
                 <p className="text-xs text-warm-gray">
-                  Founder, Miaren AI · Researcher · EXACT Framework Creator
+                  Founder, Miaren AI · Researcher · AI visibility methodology creator
                 </p>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default async function BlogPostPage({ params }: Props) {
               <div>
                 <p className="font-semibold text-navy">Mia Cheraghian, PhD</p>
                 <p className="text-xs text-warm-gray">
-                  Founder of Miaren AI · PhD Researcher · Creator of the EXACT Framework
+                  Founder of Miaren AI · PhD Researcher · Creator of the AI visibility methodology
                 </p>
               </div>
             </div>
@@ -156,7 +156,7 @@ export default async function BlogPostPage({ params }: Props) {
                 LinkedIn →
               </a>
               <Link href="/contact" className="text-teal text-sm font-medium hover:underline">
-                Get a Free Audit →
+                Connect →
               </Link>
             </div>
           </div>
@@ -181,7 +181,7 @@ export default async function BlogPostPage({ params }: Props) {
             Get a research-backed audit of your brand&apos;s presence across AI search systems.
           </p>
           <div className="mt-6 flex gap-3 justify-center">
-            <Link href="/contact" className="btn-primary">Get Your Free Audit →</Link>
+            <Link href="/contact" className="btn-primary">Connect →</Link>
             <a href="https://calendly.com/c2018-mia/chat-with-mia" target="_blank" rel="noopener noreferrer" className="btn-secondary !border-white/20 !text-white hover:!border-white/40">
               Book a Call →
             </a>

@@ -5,16 +5,16 @@ import ContactForm from "@/components/ContactForm";
 import NodeNetwork from "@/components/NodeNetwork";
 
 export const metadata: Metadata = {
-  title: "Contact Miaren AI | Book a Free AI Visibility Assessment",
+  title: "Start a Conversation | Miaren AI",
   description:
-    "Book a free conversation about your brand's AI visibility. Miaren AI helps businesses become visible in ChatGPT, Perplexity, and Google AI Overviews.",
+    "Interested in understanding how AI search engines perceive your brand? Schedule a conversation to explore the methodology.",
   alternates: {
     canonical: "https://miarenai.com/contact",
   },
   openGraph: {
-    title: "Contact Miaren AI",
+    title: "Start a Conversation | Miaren AI",
     description:
-      "Book a free AI visibility assessment. Find out what AI currently says about your brand.",
+      "Schedule a conversation to explore how AI search engines perceive your brand.",
     images: [
       {
         url: "https://miarenai.com/og-image.png",
@@ -51,15 +51,15 @@ export default function ContactPage() {
               <div className="glass-card p-7">
                 <div className="inline-flex items-center gap-2 border border-teal/30 rounded-full px-4 py-1.5 mb-5">
                   <span className="text-xs font-mono tracking-wider text-teal uppercase">
-                    Free Audit Request
+                    Conversation Request
                   </span>
                 </div>
                 <h2 className="text-xl font-bold text-navy mb-2">
-                  Start with a free GEO audit
+                  Start a conversation
                 </h2>
                 <p className="text-sm text-warm-gray mb-6">
-                  No pitch. No pressure. Just an honest look at where your brand
-                  stands in AI search.
+                  Interested in understanding how AI search engines perceive your brand?
+                  Tell us a little about your organization.
                 </p>
                 <ContactForm />
               </div>
@@ -75,9 +75,9 @@ export default function ContactPage() {
                     className="rounded-full object-cover w-12 h-12 shrink-0"
                   />
                   <p className="text-sm text-gray-300 italic leading-relaxed">
-                    &ldquo;I&apos;ve audited brands across every industry. Most
+                    &ldquo;I&apos;ve assessed brands across every industry. Most
                     score below 20% on AI visibility and they had no idea.
-                    That&apos;s what this audit is for.&rdquo;
+                    That&apos;s what this methodology reveals.&rdquo;
                   </p>
                 </div>
                 <p className="text-xs text-warm-gray">
@@ -174,8 +174,8 @@ export default function ContactPage() {
                   Prefer to talk first?
                 </h3>
                 <p className="text-sm text-warm-gray mb-4">
-                  Book a free 30-minute call. We&apos;ll look at your AI
-                  visibility live.
+                  Schedule a 30-minute call. We&apos;ll explore your AI
+                  visibility together.
                 </p>
                 <a
                   href="https://calendly.com/c2018-mia/chat-with-mia"
