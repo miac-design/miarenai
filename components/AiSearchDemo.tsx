@@ -47,9 +47,9 @@ export default function AiSearchDemo() {
             <div className="bg-white rounded-2xl shadow-xl border border-gray-200/60 overflow-hidden">
                 {/* Title bar */}
                 <div className="flex items-center gap-1.5 px-4 py-2.5 border-b border-gray-100 bg-gray-50/80">
-                    <span className="w-2.5 h-2.5 rounded-full bg-gray-300" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-gray-300" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-gray-300" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#FEBC2E]" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#28C840]" />
                     <span className="ml-3 text-[10px] font-mono text-gray-400 tracking-wider uppercase">
                         AI Search
                     </span>
