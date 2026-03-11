@@ -68,10 +68,7 @@ export const caseStudies: CaseStudy[] = [
             { metric: "12 pages", description: "Fully schema-optimized with JSON-LD structured data" },
             { metric: "100%", description: "AI crawler access, all major bots explicitly allowed" },
         ],
-        testimonial: {
-            quote: "Before working with Mia, we had no idea AI visibility was even something we needed to think about. She showed us that the AI search engines our own community members use every day couldn't find us. The transformation was eye-opening. We went from invisible to being cited as a recommended AI education resource in Austin.",
-            role: "Board Member, AI Education Nonprofit",
-        },
+
         keyInsight:
             "Nonprofits and community organizations are particularly vulnerable to AI invisibility because they rarely invest in technical SEO, let alone GEO. Yet these are often the exact organizations people search for with AI — queries like 'best AI communities near me' or 'where to learn AI in Austin.' The gap between mission impact and digital discoverability is significant and measurable.",
     },
