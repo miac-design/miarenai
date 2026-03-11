@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
-import { getServiceSchema } from "@/lib/schema";
+import { getServiceSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Areas of Focus | AI Visibility Diagnostics & Strategy | Miaren AI",
@@ -27,12 +27,20 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   const serviceSchema = getServiceSchema();
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "https://miarenai.com" },
+    { name: "Services", url: "https://miarenai.com/services" },
+  ]);
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Hero */}

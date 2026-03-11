@@ -1,10 +1,16 @@
 import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
 import AiSearchDemo from "@/components/AiSearchDemo";
+import { getWebSiteSchema } from "@/lib/schema";
 
 export default function HomePage() {
+  const websiteSchema = getWebSiteSchema();
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       {/* Section 1: Hero */}
       <section className="relative bg-soft-white pt-14 pb-16 md:pt-24 md:pb-28 overflow-hidden">
         <NodeNetwork opacity={0.35} />

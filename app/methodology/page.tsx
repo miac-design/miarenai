@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
 import FlipCards from "@/components/FlipCards";
-import { getExactFrameworkArticleSchema } from "@/lib/schema";
+import { getExactFrameworkArticleSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "How AI Decides Who to Cite | AI Visibility Methodology | Miaren AI",
@@ -36,12 +36,20 @@ export const metadata: Metadata = {
 
 export default function ExactFrameworkPage() {
     const articleSchema = getExactFrameworkArticleSchema();
+    const breadcrumbSchema = getBreadcrumbSchema([
+        { name: "Home", url: "https://miarenai.com" },
+        { name: "Methodology", url: "https://miarenai.com/methodology" },
+    ]);
 
     return (
         <>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
 
             {/* ============================================= */}

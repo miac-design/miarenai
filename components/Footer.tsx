@@ -10,7 +10,7 @@ export default function Footer() {
               <span className="text-lg font-bold tracking-tight text-white">MIAREN</span>
               <span className="text-xs font-normal text-teal border border-teal/40 rounded px-1.5 py-0.5">AI</span>
             </Link>
-            <p className="mt-3 text-sm italic text-warm-gray">Be found where it matters next.</p>
+            <p className="mt-3 text-sm italic text-warm-gray">AI visibility research and strategy.</p>
           </div>
           <div className="flex gap-16">
             <div className="space-y-2.5">

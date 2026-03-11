@@ -260,8 +260,8 @@ export function getServiceSchema() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "The GEO Workshop",
-            description: "Live half-day training session with full audit walkthrough, monitoring toolkit, and 30-day implementation support.",
+            name: "Expert Briefings",
+            description: "Research-informed sessions for leadership and marketing teams on AI search systems, diagnostic signals, and AI visibility data interpretation.",
           },
         },
       ],
@@ -291,3 +291,19 @@ export function getExactFrameworkArticleSchema() {
     articleSection: "Methodology",
   };
 }
+
+export function getWebSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Miaren AI",
+    url: "https://miarenai.com",
+    description:
+      "AI visibility research and strategy firm studying how organizations become discoverable, citable, and recommended in AI-powered search systems.",
+    publisher: {
+      "@type": "Organization",
+      name: "Miaren AI",
+    },
+  };
+}
+
