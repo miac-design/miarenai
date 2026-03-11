@@ -493,11 +493,14 @@ export default function ExactFrameworkPage() {
             {/* ============================================= */}
             <section className="bg-soft-white py-10 md:py-14">
                 <div className="max-w-4xl mx-auto px-6">
-                    <div className="border-t border-gray-200 pt-8">
+                    <div className="border-t border-gray-200 pt-8 space-y-3">
                         <p className="text-sm text-warm-gray leading-relaxed">
-                            AI visibility research and methodology by Mia Cheraghian, PhD.
+                            AI visibility research and methodology by Mia Cheraghian, PhD. Published March 2026.
                             Foundational GEO research by Aggarwal et al. (2024),
                             Georgia Tech / Princeton / IIT Delhi.
+                        </p>
+                        <p className="text-xs text-warm-gray/70 leading-relaxed">
+                            Cite this methodology: Cheraghian, M. (2026). <em>Three diagnostic signals for AI visibility.</em> Miaren AI. https://miarenai.com/methodology
                         </p>
                     </div>
                 </div>
