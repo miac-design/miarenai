@@ -1,5 +1,6 @@
 import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
+import AiSearchDemo from "@/components/AiSearchDemo";
 
 export default function HomePage() {
   return (
@@ -8,54 +9,58 @@ export default function HomePage() {
       <section className="relative bg-soft-white pt-14 pb-16 md:pt-24 md:pb-28 overflow-hidden">
         <NodeNetwork opacity={0.35} />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-teal/10 border border-teal/30 rounded-full px-4 py-1.5 mb-5">
-              <span className="w-2 h-2 rounded-full bg-teal" />
-              <span className="text-xs font-mono tracking-wider text-teal uppercase">
-                AI Visibility Research & Strategy
-              </span>
-            </div>
+          <div className="flex items-center gap-12">
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 bg-teal/10 border border-teal/30 rounded-full px-4 py-1.5 mb-5">
+                <span className="w-2 h-2 rounded-full bg-teal" />
+                <span className="text-xs font-mono tracking-wider text-teal uppercase">
+                  AI Visibility Research & Strategy
+                </span>
+              </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight">
-              Be Found Where It{" "}
-              <span className="text-teal">Matters Next.</span>
-            </h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight">
+                Be Found Where It{" "}
+                <span className="text-teal">Matters Next.</span>
+              </h1>
 
-            <p className="mt-5 text-warm-gray text-lg leading-relaxed max-w-lg">
-              People are no longer just searching Google. They are asking AI
-              systems like ChatGPT, Perplexity, and Copilot for recommendations.
-            </p>
-            <p className="mt-3 text-warm-gray text-lg leading-relaxed max-w-lg">
-              Miaren AI helps organizations become visible, trusted, and
-              recommendable in AI-powered search.
-            </p>
+              <p className="mt-5 text-warm-gray text-lg leading-relaxed max-w-lg">
+                People are no longer just searching Google. They are asking AI
+                systems like ChatGPT, Perplexity, and Copilot for recommendations.
+              </p>
+              <p className="mt-3 text-warm-gray text-lg leading-relaxed max-w-lg">
+                Miaren AI helps organizations become visible, trusted, and
+                recommendable in AI-powered search.
+              </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <a
-                href="https://calendly.com/c2018-mia/chat-with-mia"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary"
-              >
-                Schedule a Conversation
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                <a
+                  href="https://calendly.com/c2018-mia/chat-with-mia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </a>
-              <Link href="/services" className="btn-secondary">
-                Explore Areas of Focus
-              </Link>
+                  Schedule a Conversation
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+                <Link href="/services" className="btn-secondary">
+                  Explore Areas of Focus
+                </Link>
+              </div>
             </div>
+
+            <AiSearchDemo />
           </div>
         </div>
       </section>
