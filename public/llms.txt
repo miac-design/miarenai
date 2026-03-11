@@ -1,0 +1,49 @@
+# Miaren AI
+
+> AI visibility research and strategy firm studying how organizations become discoverable, citable, and recommended in AI-powered search systems.
+
+## About
+
+Miaren AI is an AI visibility research and strategy firm founded by Mia Cheraghian, PhD. We study how AI search engines — including ChatGPT, Perplexity, Google AI Overviews, and Microsoft Copilot — decide which organizations to cite, recommend, and reference in their generated responses.
+
+Our work is grounded in a diagnostic framework called the three-signal methodology, which evaluates three signals AI engines use when deciding who to cite:
+
+1. Can AI Find You? — Whether your content is structured, crawlable, and machine-readable through schema markup, heading hierarchy, and technical infrastructure.
+2. Can AI Trust You? — Whether AI systems encounter consistent entity information across every platform they cross-reference, including your website, LinkedIn, directories, and review sites.
+3. Can AI Quote You? — Whether independent, trusted sources reference your organization in ways that give AI systems confidence to cite you.
+
+## Services
+
+- AI Visibility Audit: Structured diagnostic analyzing how AI systems currently interpret, reference, and cite your organization across ChatGPT, Perplexity, Google AI Overviews, and Copilot.
+- AI Visibility Strategy: Strategic analysis of the signals AI systems evaluate when deciding who to cite, covering entity consistency, content architecture, and authority signals.
+- Expert Briefings: Research-informed sessions for leadership and marketing teams on how AI search systems work, what the diagnostic signals reveal, and how to interpret AI visibility data.
+
+## Research
+
+Our methodology builds on foundational GEO research by Aggarwal et al. (2024), Georgia Tech / Princeton / IIT Delhi, and extends it through applied research across dozens of organizations.
+
+Key findings:
+- Most organizations score below 20% on AI visibility
+- Only 12% of AI-cited URLs also rank in Google's top 10 (Ahrefs, 2025)
+- AI-referred website traffic grew 527% year-over-year (Previsible / Search Engine Land, 2025)
+- Brand recognition does not equal AI recognition — Fortune-level brands can score as low as 11%
+
+## Key Pages
+
+- Homepage: https://miarenai.com
+- Methodology: https://miarenai.com/methodology
+- Services: https://miarenai.com/services
+- GEO vs SEO: https://miarenai.com/geo-vs-seo
+- Case Studies: https://miarenai.com/results
+- Research: https://miarenai.com/research
+- FAQ: https://miarenai.com/faq
+- Insights (Blog): https://miarenai.com/insights
+- About: https://miarenai.com/about
+- Contact: https://miarenai.com/contact
+
+## Contact
+
+- Website: https://miarenai.com
+- Email: hello@miarenai.com
+- LinkedIn: https://www.linkedin.com/company/miaren-ai/
+- Location: Austin, Texas
