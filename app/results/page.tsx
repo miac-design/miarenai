@@ -4,15 +4,15 @@ import NodeNetwork from "@/components/NodeNetwork";
 import { caseStudies } from "@/lib/case-study-data";
 
 export const metadata: Metadata = {
-    title: "Results | Proof That GEO Works",
+    title: "Case Studies | AI Visibility Research in Practice",
     description:
-        "Real results from real GEO engagements. See how Miaren AI helped organizations go from invisible to citable in AI-powered search.",
+        "How the three-signal diagnostic methodology has been applied across industries. AI visibility case studies by Miaren AI.",
     alternates: {
         canonical: "https://miarenai.com/results",
     },
     openGraph: {
-        title: "Results | Miaren AI",
-        description: "Real results from real GEO engagements. See how organizations went from invisible to citable.",
+        title: "Case Studies | Miaren AI",
+        description: "How the diagnostic methodology has been applied. AI visibility case studies across industries.",
         images: [{ url: "https://miarenai.com/og-image.png", width: 1200, height: 630, alt: "Miaren AI | Be found where it matters next." }],
     },
 };
@@ -22,12 +22,12 @@ export default function ResultsPage() {
         <section className="relative bg-soft-white pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden">
             <NodeNetwork opacity={0.2} />
             <div className="relative z-10 max-w-5xl mx-auto px-6">
-                <p className="section-label mb-3">PROOF IT WORKS</p>
+                <p className="section-label mb-3">APPLIED RESEARCH</p>
                 <h1 className="text-4xl md:text-5xl font-bold text-navy mb-3">
-                    Client <span className="text-teal">Results</span>
+                    Case <span className="text-teal">Studies</span>
                 </h1>
                 <p className="text-warm-gray text-lg mb-12 max-w-2xl">
-                    Real GEO engagements. Measurable outcomes. Every project follows the same three-signal methodology. The results speak for themselves.
+                    How the three-signal diagnostic methodology has been applied across industries. Each engagement follows the same analytical framework.
                 </p>
 
                 <div className="space-y-6">
@@ -66,7 +66,7 @@ export default function ResultsPage() {
 
                 {/* Testimonials Section */}
                 <div className="mt-16">
-                    <h2 className="text-2xl font-bold text-navy mb-8 text-center">What clients say</h2>
+                    <h2 className="text-2xl font-bold text-navy mb-8 text-center">From organizations we&apos;ve worked with</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {caseStudies
                             .filter((cs) => cs.testimonial)
@@ -86,7 +86,7 @@ export default function ResultsPage() {
 
                 <div className="text-center mt-12">
                     <Link href="/contact" className="btn-primary">
-                        Get your own EXACT Audit
+                        Request a Diagnostic
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>

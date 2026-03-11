@@ -39,7 +39,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "How long does it take to see results from GEO?",
     answer:
-      "Entity consistency fixes can show impact within 2-4 weeks as AI engines re-crawl your profiles. Structured data improvements typically take 4-8 weeks. Authority building is the longest play at 3-6+ months but produces the most durable results. We prioritize quick wins first so you see momentum early.",
+      "Entity consistency fixes can show impact within 2-4 weeks as AI engines re-crawl your profiles. Structured data improvements typically take 4-8 weeks. Authority building is the longest play at 3-6+ months but produces the most durable results. Implementation is typically sequenced from highest-impact, lowest-effort fixes first.",
   },
   {
     question: "Can you pay to be cited by AI?",

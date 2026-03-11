@@ -55,12 +55,12 @@ export default function ExactFrameworkPage() {
                         Three <span className="text-teal">Diagnostic Signals</span>
                     </h1>
                     <p className="mt-4 text-xl md:text-2xl text-warm-gray font-medium">
-                        Three signals. One methodology. Complete clarity.
+                        A diagnostic framework for understanding AI citation decisions.
                     </p>
                     <p className="mt-6 text-warm-gray text-lg leading-relaxed max-w-2xl mx-auto">
-                        AI engines evaluate multiple signals when deciding which brands to
-                        name in their responses. Through extensive research, auditing, and
-                        hands-on testing across ChatGPT, Perplexity, Google AI Overviews, and Copilot,
+                        AI engines evaluate multiple signals when deciding which organizations to
+                        name in their responses. Through systematic research and testing across
+                        ChatGPT, Perplexity, Google AI Overviews, and Copilot,
                         I&apos;ve identified three diagnostic signals that consistently determine
                         who gets cited and who gets ignored.
                     </p>
@@ -233,12 +233,12 @@ export default function ExactFrameworkPage() {
                     <div className="text-center mb-4">
                         <p className="section-label mb-3">// BEYOND THE FOUNDATION</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-navy leading-tight">
-                            The three signals get you in the door.{" "}
-                            <span className="text-teal">These keep you in the room.</span>
+                            The three signals establish your foundation.{" "}
+                            <span className="text-teal">These sustain it.</span>
                         </h2>
                         <p className="mt-4 text-warm-gray text-lg max-w-2xl mx-auto">
-                            The methodology builds your foundation for AI citability.
-                            Staying visible requires three ongoing strategies.
+                            The diagnostic methodology identifies your foundation for AI citability.
+                            Maintaining visibility requires three ongoing strategies.
                         </p>
                     </div>
 
@@ -329,14 +329,14 @@ export default function ExactFrameworkPage() {
                     <div className="mt-12 max-w-3xl mx-auto">
                         <div className="teal-border-left">
                             <p className="text-xl md:text-2xl font-bold text-navy leading-relaxed">
-                                &ldquo;AI visibility is like a relationship. It needs consistency,
-                                showing up, trust, clear communication, and a solid foundation.
-                                You don&apos;t go on one date and expect a lifelong partner. You
-                                don&apos;t publish one blog post and expect AI to recommend you
-                                forever.&rdquo;
+                                &ldquo;AI citation is not a one-time achievement. It requires
+                                consistent signals over time &mdash; regular publishing, entity
+                                maintenance, and ongoing alignment with the queries your
+                                audience actually asks. The organizations that sustain visibility
+                                are the ones that treat it as an ongoing research problem.&rdquo;
                             </p>
                             <p className="mt-4 text-sm font-mono tracking-wider text-teal uppercase">
-                                / Mia Cheraghian
+                                / Mia Cheraghian, PhD
                             </p>
                         </div>
                     </div>
@@ -351,12 +351,12 @@ export default function ExactFrameworkPage() {
                 <div className="relative z-10 max-w-4xl mx-auto px-6">
                     <p className="section-label mb-3">// ADVANCED LAYERS</p>
                     <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-                        For brands ready to go deeper
+                        Advanced research areas
                     </h2>
                     <p className="text-warm-gray text-lg leading-relaxed mb-8 max-w-3xl">
-                        The methodology covers your foundation and ongoing strategy for
-                        AI visibility. For brands and organizations ready to go deeper into AI
-                        visibility, these are the advanced research areas we explore.
+                        The diagnostic methodology covers the foundation and ongoing strategy for
+                        AI visibility. For organizations ready to go deeper,
+                        these are the advanced research areas we study.
                     </p>
 
                     <div className="grid md:grid-cols-3 gap-5">
@@ -405,8 +405,8 @@ export default function ExactFrameworkPage() {
                                 Competitive Displacement
                             </h3>
                             <p className="text-warm-gray text-sm leading-relaxed">
-                                Who AI is citing instead of you and how to change that. Identify
-                                gaps and shift the citation landscape in your favor.
+                                Who AI is citing instead of you and why. Analyzing
+                                competitive citation patterns to understand positioning gaps.
                             </p>
                         </div>
 
@@ -430,8 +430,9 @@ export default function ExactFrameworkPage() {
                                 AI Misinformation Monitoring
                             </h3>
                             <p className="text-warm-gray text-sm leading-relaxed">
-                                What happens when AI says something wrong about your brand.
-                                Detect, correct, and protect your brand narrative.
+                                What happens when AI says something inaccurate about your
+                                organization. Identifying, documenting, and addressing
+                                AI-generated misinformation.
                             </p>
                         </div>
                     </div>
@@ -445,10 +446,10 @@ export default function ExactFrameworkPage() {
                 <NodeNetwork opacity={0.2} color="0, 212, 170" />
                 <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
                     <p className="text-warm-gray text-lg leading-relaxed mb-8">
-                        For brands and organizations ready to go deeper into AI visibility.
-                        The entity relationships AI engines are forming right now will
-                        compound. Early movers build advantages that late movers spend
-                        years trying to close.
+                        For organizations ready to go deeper into AI visibility analysis.
+                        The entity relationships AI engines are forming now will
+                        compound. Early understanding creates advantages that become
+                        difficult to close.
                     </p>
                     <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
                         Explore how AI sees{" "}

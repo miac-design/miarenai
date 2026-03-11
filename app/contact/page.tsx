@@ -37,9 +37,9 @@ export default function ContactPage() {
             Let&apos;s Talk About Your AI Visibility
           </h1>
           <p className="mt-4 text-warm-gray text-lg">
-            Not sure if AI mentions your brand? Start with a conversation.
-            We&apos;ll show you what AI currently says about you and where the
-            gaps are.
+            Not sure if AI mentions your organization? Start with a conversation.
+            We&apos;ll walk through how AI currently interprets and references
+            you.
           </p>
         </div>
       </section>

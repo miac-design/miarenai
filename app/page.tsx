@@ -124,9 +124,9 @@ export default function HomePage() {
         <NodeNetwork opacity={0.2} />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="text-center mb-10">
-            <p className="section-label mb-3">// SERVICES</p>
+            <p className="section-label mb-3">// AREAS OF FOCUS</p>
             <h2 className="text-3xl md:text-4xl font-bold text-navy">
-              What We Do
+              Areas of Focus
             </h2>
           </div>
 
@@ -154,9 +154,9 @@ export default function HomePage() {
                 AI Visibility Audit
               </h3>
               <p className="text-sm text-warm-gray leading-relaxed">
-                Find out what AI says about your brand today. A complete
-                assessment across ChatGPT, Perplexity, Google AI Overviews, and
-                Copilot.
+                A structured diagnostic analyzing how AI systems currently
+                interpret, reference, and cite your organization across
+                ChatGPT, Perplexity, Google AI Overviews, and Copilot.
               </p>
             </Link>
 
@@ -183,9 +183,9 @@ export default function HomePage() {
                 AI Visibility Strategy
               </h3>
               <p className="text-sm text-warm-gray leading-relaxed">
-                Build the signals that make AI cite you. A custom roadmap
-                covering entity consistency, content restructuring, and
-                authority building.
+                Strategic analysis of the signals AI systems evaluate when
+                deciding who to cite. Covers entity consistency, content
+                architecture, and authority signals.
               </p>
             </Link>
 
@@ -209,12 +209,12 @@ export default function HomePage() {
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-navy mb-2 group-hover:text-teal transition-colors">
-                GEO Workshops
+                Expert Briefings
               </h3>
               <p className="text-sm text-warm-gray leading-relaxed">
-                Train your team on AI search visibility. Research-informed sessions
-                covering the AI visibility methodology, diagnostic analysis, and ongoing
-                strategy.
+                Research-informed sessions for leadership and marketing teams
+                on how AI search systems work, what the diagnostic signals
+                reveal, and how to interpret AI visibility data.
               </p>
             </Link>
           </div>
@@ -274,9 +274,10 @@ export default function HomePage() {
             Is this for you?
           </h2>
           <p className="text-warm-gray text-lg leading-relaxed">
-            We work with brands and organizations who are invisible to AI
-            search. If your competitors are being recommended by ChatGPT and
-            you&apos;re not, the methodology reveals why and what to change.
+            Organizations that are invisible in AI search despite strong
+            traditional web presence. If competitors are being recommended by
+            ChatGPT and you are not, the diagnostic methodology identifies
+            why.
           </p>
           <div className="mt-8">
             <Link href="/faq" className="text-teal font-medium hover:underline">
