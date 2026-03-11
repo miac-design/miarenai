@@ -22,8 +22,12 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-5 text-warm-gray text-lg leading-relaxed max-w-lg">
-              Your customers stopped Googling. They started asking AI. Miaren AI
-              makes sure AI knows who you are.
+              People are no longer just searching Google. They are asking AI
+              systems like ChatGPT, Perplexity, and Copilot for recommendations.
+            </p>
+            <p className="mt-3 text-warm-gray text-lg leading-relaxed max-w-lg">
+              Miaren AI helps organizations become visible, trusted, and
+              recommendable in AI-powered search.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
