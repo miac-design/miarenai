@@ -17,7 +17,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "The three signals AI engines evaluate",
-        content: "Through extensive auditing and research, we've identified five core signals that AI engines evaluate when deciding which brands to cite. We call this the AI visibility methodology: Entity Consistency (identical brand information across platforms), Cross-Platform Presence (visibility across platforms AI engines cross-reference), Authority Signals (third-party validation from trusted sources), Content Structure (AI-readable content that directly answers questions), and Technical Infrastructure (Schema.org structured data AI can parse).",
+        content: "Through systematic research, we've identified three diagnostic signals that AI engines evaluate when deciding which organizations to cite. We call this the AI visibility methodology: Can AI Find You? (whether your content structure, schema markup, and technical infrastructure make you machine-readable), Can AI Trust You? (whether your entity information is consistent across platforms and you have cross-platform presence), and Can AI Quote You? (whether independent, trusted sources reference you in ways that give AI confidence to cite you).",
       },
       {
         heading: "Why this matters now",
@@ -25,7 +25,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "What you should do next",
-        content: "Start by asking ChatGPT, Perplexity, and Gemini questions your customers would ask about your industry. Does your brand get mentioned? If not, you have a visibility gap. The EXACT Audit from Miaren AI provides a systematic, research-backed assessment across all major AI platforms, with a quantified score and prioritized action plan to close that gap.",
+        content: "Start by asking ChatGPT, Perplexity, and Gemini questions your customers would ask about your industry. Does your brand get mentioned? If not, you have a visibility gap. The AI Visibility Audit from Miaren AI provides a systematic, research-backed assessment across all major AI platforms, with a quantified score and prioritized action plan to close that gap.",
       },
     ],
   },
@@ -73,7 +73,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "The fix order matters",
-        content: "Entity consistency first (2-4 week impact). Structured data second (4-8 week impact). Content restructuring third (ongoing). Authority building fourth (3-6 month play). This is exactly the prioritization the EXACT Audit delivers: quick wins first, so you see momentum early while building toward long-term advantage.",
+        content: "Entity consistency first (2-4 week impact). Structured data second (4-8 week impact). Content restructuring third (ongoing). Authority building fourth (3-6 month play). This is exactly the prioritization the AI Visibility Audit delivers: highest-impact, lowest-effort fixes first, building toward long-term advantage.",
       },
     ],
   },
@@ -93,7 +93,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "Building a tracking system",
-        content: "Start with a structured audit across ChatGPT, Perplexity, Gemini, and Copilot using 10 queries relevant to your industry. Screenshot everything. Score each platform. Repeat monthly. This manual process is what the EXACT Audit systematizes, but you can start a basic version yourself today.",
+        content: "Start with a structured audit across ChatGPT, Perplexity, Gemini, and Copilot using 10 queries relevant to your industry. Screenshot everything. Score each platform. Repeat monthly. This manual process is what the AI Visibility Audit systematizes, but you can start a basic version yourself today.",
       },
       {
         heading: "The metrics that matter",

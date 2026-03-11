@@ -127,7 +127,7 @@ export default async function CaseStudyPage({ params }: Props) {
                     {/* CTA */}
                     <div className="text-center pt-6 border-t border-gray-200">
                         <h3 className="text-xl font-bold text-navy mb-3">Ready to see your own score?</h3>
-                        <p className="text-warm-gray mb-6">Start with a free EXACT Audit and find out where your brand stands in AI search.</p>
+                        <p className="text-warm-gray mb-6">Start with an AI Visibility Audit and find out where your organization stands in AI search.</p>
                         <Link href="/contact" className="btn-primary">
                             Connect
                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

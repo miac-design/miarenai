@@ -262,7 +262,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Visibility Audit",
     category: "Measurement",
     definition:
-      "A systematic assessment of how your brand appears across AI search platforms. Involves querying multiple AI engines with category-relevant prompts and scoring citation frequency, sentiment, and accuracy. The EXACT Audit is Miaren AI's proprietary visibility audit methodology.",
+      "A systematic assessment of how your organization appears across AI search platforms. Involves querying multiple AI engines with category-relevant prompts and scoring citation frequency, sentiment, and accuracy. The AI Visibility Audit is Miaren AI's diagnostic methodology for measuring AI search presence.",
   },
   {
     term: "Web Crawling",

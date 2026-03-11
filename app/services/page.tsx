@@ -82,30 +82,22 @@ export default function ServicesPage() {
                 interpret, reference, and cite your organization. We query
                 ChatGPT, Perplexity, Google AI Overviews, and Copilot with the
                 questions your audience actually asks, then evaluate the
-                results against five analytical signals.
+                results against three diagnostic signals.
               </p>
-              <p className="text-sm font-mono text-teal mb-4">FIVE DIAGNOSTIC SIGNALS</p>
+              <p className="text-sm font-mono text-teal mb-4">THREE DIAGNOSTIC SIGNALS</p>
               <div className="space-y-4">
                 {[
                   {
-                    signal: "Entity Consistency",
-                    desc: "Whether AI systems encounter the same brand identity, description, and positioning across every platform they cross-reference.",
+                    signal: "Can AI Find You?",
+                    desc: "Whether your content is structured, crawlable, and machine-readable. Evaluates schema markup, heading hierarchy, content architecture, and technical infrastructure that determines if AI systems can parse and interpret your organization.",
                   },
                   {
-                    signal: "Cross-Platform Presence",
-                    desc: "Whether your organization exists across the directories, platforms, and sources that AI systems consult when building entity models.",
+                    signal: "Can AI Trust You?",
+                    desc: "Whether AI systems encounter consistent brand identity, description, and positioning across every platform they cross-reference. Evaluates entity consistency and cross-platform presence across directories, LinkedIn, review sites, and your website.",
                   },
                   {
-                    signal: "Authority & Citation Signals",
-                    desc: "Whether independent, trusted sources reference your organization in ways that give AI systems confidence to cite you.",
-                  },
-                  {
-                    signal: "Information Architecture & Content Structure",
-                    desc: "Whether your content is structured so AI systems can parse, interpret, and extract answers directly.",
-                  },
-                  {
-                    signal: "Technical Discoverability",
-                    desc: "Whether structured data, schema markup, and technical infrastructure make your organization machine-readable to AI crawlers.",
+                    signal: "Can AI Quote You?",
+                    desc: "Whether independent, trusted sources reference your organization in ways that give AI systems confidence to cite you. Evaluates third-party authority signals, earned media, and external validation.",
                   },
                 ].map((item) => (
                   <div key={item.signal}>
@@ -124,7 +116,7 @@ export default function ServicesPage() {
                   "How AI systems currently interpret your organization",
                   "Where information gaps or inconsistencies undermine AI confidence",
                   "Which competitors AI systems cite instead of you, and why",
-                  "Signal-level assessment across all five analytical dimensions",
+                  "Signal-level assessment across all three diagnostic dimensions",
                   "Strategic visibility recommendations based on diagnostic findings",
                 ].map((item) => (
                   <li
@@ -304,8 +296,8 @@ export default function ServicesPage() {
               <div
                 key={item.label}
                 className={`border rounded-xl p-5 text-center ${item.muted
-                    ? "border-white/10 opacity-50"
-                    : "border-teal/30 bg-teal/5"
+                  ? "border-white/10 opacity-50"
+                  : "border-teal/30 bg-teal/5"
                   }`}
               >
                 <p className={`text-sm font-bold mb-1 ${item.muted ? "text-gray-500" : "text-teal"}`}>
@@ -427,7 +419,7 @@ export default function ServicesPage() {
               <ul className="space-y-3">
                 {[
                   "How AI search systems construct knowledge and select citations",
-                  "The five diagnostic signals that determine AI visibility",
+                  "The three diagnostic signals that determine AI visibility",
                   "How to evaluate your organization's current AI presence",
                   "Strategic considerations for AI information architecture",
                   "Ongoing assessment criteria and monitoring frameworks",

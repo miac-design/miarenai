@@ -63,7 +63,7 @@ export function getOrganizationSchema() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "The EXACT Audit",
+            name: "AI Visibility Audit",
             description:
               "Full AI visibility diagnostic across 4 AI platforms with AI Visibility Score, competitive benchmarking, and prioritized fix list. Delivered in 5-7 business days.",
           },
@@ -244,7 +244,7 @@ export function getServiceSchema() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "The EXACT Audit",
+            name: "AI Visibility Audit",
             description: "Full AI visibility diagnostic across 4 AI platforms with AI Visibility Score, competitive benchmarking, and prioritized fix list.",
           },
         },
