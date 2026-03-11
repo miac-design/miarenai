@@ -4,22 +4,22 @@ import NodeNetwork from "@/components/NodeNetwork";
 import { getServiceSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Areas of Focus | AI Visibility Research, Assessments & Workshops",
+  title: "Areas of Focus | AI Visibility Diagnostics & Strategy | Miaren AI",
   description:
-    "Areas of focus: AI visibility research, diagnostic assessments, and expert-led workshops. Based on original methodology by Mia Cheraghian, PhD.",
+    "AI visibility diagnostics, information architecture strategy, and generative search analysis. Research-based advisory by Mia Cheraghian, PhD.",
   alternates: {
     canonical: "https://miarenai.com/services",
   },
   openGraph: {
-    title: "AI Visibility Services | Miaren AI",
+    title: "Areas of Focus | Miaren AI",
     description:
-      "AI visibility audits, GEO strategy, and B2B workshops using the AI visibility methodology.",
+      "AI visibility diagnostics, information architecture strategy, and generative search analysis.",
     images: [
       {
         url: "https://miarenai.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Miaren AI Services",
+        alt: "Miaren AI - Areas of Focus",
       },
     ],
   },
@@ -35,65 +35,77 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
-      {/* Hero / Intro */}
+      {/* Hero */}
       <section className="relative bg-soft-white pt-14 pb-16 md:pt-24 md:pb-28 overflow-hidden">
         <NodeNetwork opacity={0.3} />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
-          <p className="section-label mb-4">// SERVICES</p>
+          <p className="section-label mb-4">// AREAS OF FOCUS</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight">
-            AI Visibility <span className="text-teal">Services</span>
+            How We <span className="text-teal">Think About</span> AI Visibility
           </h1>
           <p className="mt-6 text-warm-gray text-lg leading-relaxed">
-            AI engines are forming their understanding of your brand right now.
-            The entity relationships and authority signals being established
-            today will compound. We help you get it right.
+            AI search engines are building entity models of every brand and
+            organization. The knowledge structures they form today will compound.
+            Our work focuses on understanding how those systems evaluate, select,
+            and cite sources, and applying that understanding strategically.
+          </p>
+          <p className="mt-4 text-warm-gray text-sm leading-relaxed">
+            Based on the{" "}
+            <Link
+              href="/methodology"
+              className="text-teal hover:underline"
+            >
+              three-signal diagnostic methodology
+            </Link>{" "}
+            developed by Mia Cheraghian, PhD.
           </p>
         </div>
       </section>
 
-      {/* Service 1: AI Visibility Audit */}
+      {/* Service 1: AI Visibility Diagnostic */}
       <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div>
               <span className="inline-block bg-teal text-navy text-xs font-bold px-3 py-1 rounded mb-4">
-                START HERE
+                DIAGNOSTIC
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 AI Visibility Audit
               </h2>
               <p className="text-gray-400 leading-relaxed mb-6">
-                A comprehensive assessment of your brand&apos;s visibility
-                across AI search platforms using the{" "}
+                A structured diagnostic of how AI search engines currently
+                perceive, reference, and cite your organization. We analyze
+                your presence across ChatGPT, Perplexity, Google AI Overviews,
+                and Copilot against the{" "}
                 <Link
                   href="/methodology"
                   className="text-teal hover:underline"
                 >
-                  three-signal methodology
+                  three diagnostic signals
                 </Link>
-                . Find out what AI currently says about you, where the gaps are,
-                and what to fix first.
+                : findability, trust, and authority.
               </p>
-              <p className="text-sm font-mono text-teal mb-4">HOW IT WORKS</p>
+              <p className="text-sm font-mono text-teal mb-4">WHAT THIS REVEALS</p>
               <p className="text-gray-400 text-sm leading-relaxed">
-                We audit your brand across ChatGPT, Perplexity, Google AI
-                Overviews, and Copilot, then score you against the 5 EXACT
-                signals: Entity Consistency, Cross-Platform Presence, Authority
-                Signals, Content Structure, and Technical Infrastructure.
+                Whether AI engines can parse your content. Whether they
+                encounter consistent information across platforms. Whether
+                independent sources validate your expertise. The diagnostic
+                produces a signal-level assessment, not a checklist.
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-xl p-7">
               <p className="text-xs font-mono tracking-wider text-teal uppercase mb-4">
-                WHAT YOU GET
+                AREAS OF ANALYSIS
               </p>
               <ul className="space-y-3">
                 {[
-                  "Full AI visibility diagnostic across 4 AI platforms",
-                  "AI Visibility Score with competitive benchmarking",
-                  "Gap analysis across all 5 signals",
-                  "Prioritized fix list with quick wins flagged",
-                  "Executive summary with strategic recommendations",
+                  "AI knowledge graph representation and entity recognition",
+                  "Cross-platform information consistency analysis",
+                  "Structured data readiness for AI ingestion",
+                  "Third-party authority signal assessment",
+                  "Competitive citation landscape mapping",
                 ].map((item) => (
                   <li
                     key={item}
@@ -116,28 +128,12 @@ export default function ServicesPage() {
                   </li>
                 ))}
               </ul>
-              <div className="flex items-center gap-2 text-sm text-teal mt-6">
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                Delivered in 5-7 business days
-              </div>
               <div className="mt-6">
                 <Link
                   href="/contact"
                   className="btn-primary w-full justify-center"
                 >
-                  Book Your Audit →
+                  Request a Diagnostic →
                 </Link>
               </div>
             </div>
@@ -152,15 +148,15 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div className="glass-card p-7 order-2 md:order-1">
               <p className="text-xs font-mono tracking-wider text-teal uppercase mb-4">
-                WHAT YOU GET
+                STRATEGIC ANALYSIS
               </p>
               <ul className="space-y-3">
                 {[
-                  "Custom content restructuring plan for AI readability",
-                  "Structured data (Schema.org) implementation roadmap",
-                  "Entity consistency audit and fix plan",
-                  "Authority-building priority list with specific tactics",
-                  "Platform-specific optimization recommendations",
+                  "AI information architecture recommendations",
+                  "Knowledge infrastructure design for AI ingestion",
+                  "Entity consistency and cross-platform alignment plan",
+                  "Authority signal development strategy",
+                  "Platform-specific citation behavior analysis",
                 ].map((item) => (
                   <li
                     key={item}
@@ -185,12 +181,13 @@ export default function ServicesPage() {
               </ul>
               <div className="mt-6 p-4 bg-teal/5 border border-teal/20 rounded-lg">
                 <p className="text-xs font-mono text-teal uppercase mb-2">
-                  TIMELINE CONTEXT
+                  IMPACT TIMELINE
                 </p>
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  Entity consistency fixes show impact in 2-4 weeks. Structured
-                  data improvements in 4-8 weeks. Authority building takes 3-6+
-                  months but is the most durable.
+                  Information architecture changes typically reflect in AI
+                  systems within 4-8 weeks. Authority signal development
+                  operates on a 3-6 month horizon and produces the most
+                  durable results.
                 </p>
               </div>
               <div className="mt-6">
@@ -200,36 +197,35 @@ export default function ServicesPage() {
                   rel="noopener noreferrer"
                   className="btn-dark w-full justify-center"
                 >
-                  Build Your Strategy →
+                  Schedule a Conversation →
                 </a>
               </div>
             </div>
             <div className="order-1 md:order-2">
               <span className="inline-block border border-gray-300 text-warm-gray text-xs font-medium px-3 py-1 rounded mb-4">
-                MOST COMPREHENSIVE
+                STRATEGY
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
                 AI Visibility Strategy
               </h2>
               <p className="text-warm-gray leading-relaxed">
-                A custom{" "}
-                <Link
-                  href="/geo-vs-seo"
-                  className="text-teal hover:underline"
-                >
-                  GEO
-                </Link>{" "}
-                strategy built on your audit results. A prioritized roadmap
-                covering entity consistency fixes, content restructuring,
-                authority building, and technical implementation. No guesswork,
-                no generic advice.
+                A research-informed strategic analysis built on your
+                diagnostic results. We map how AI systems currently construct
+                knowledge about your category, identify where your
+                organization is absent or misrepresented, and design the
+                information architecture needed to shift that.
+              </p>
+              <p className="text-warm-gray leading-relaxed mt-4">
+                This is not a content calendar or an execution plan. It is a
+                strategic assessment of how to structure your organization&apos;s
+                knowledge for AI systems that are deciding who to cite.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Service 3: B2B GEO Workshops */}
+      {/* Service 3: Expert Briefings */}
       <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -239,24 +235,23 @@ export default function ServicesPage() {
                 FOR TEAMS
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                B2B GEO Workshops
+                Expert Briefings
               </h2>
               <p className="text-gray-400 leading-relaxed mb-6">
-                Expert-led training sessions for teams who need to understand AI
-                visibility. Your team learns how AI engines decide who to cite,
-                the{" "}
+                Structured briefings for leadership and technical teams who need
+                to understand how AI search systems evaluate and cite sources.
+                Grounded in the{" "}
                 <Link
                   href="/methodology"
                   className="text-teal hover:underline"
                 >
                   three-signal methodology
-                </Link>
-                , how to audit your own visibility, and what ongoing strategy
-                looks like.
+                </Link>{" "}
+                and current research on generative search behavior.
               </p>
-              <p className="text-sm font-mono text-teal mb-3">WHO IT&apos;S FOR</p>
+              <p className="text-sm font-mono text-teal mb-3">DESIGNED FOR</p>
               <div className="flex flex-wrap gap-2">
-                {["Marketing Teams", "SEO Agencies", "Executive Leadership"].map(
+                {["Executive Leadership", "Marketing & Communications", "Technical Teams"].map(
                   (tag) => (
                     <span
                       key={tag}
@@ -270,15 +265,15 @@ export default function ServicesPage() {
             </div>
             <div className="bg-white/5 border border-white/10 rounded-xl p-7">
               <p className="text-xs font-mono tracking-wider text-teal uppercase mb-4">
-                YOUR TEAM LEARNS
+                BRIEFING COVERS
               </p>
               <ul className="space-y-3">
                 {[
-                  "How AI engines decide who to cite",
-                  "The AI visibility methodology for AI visibility auditing",
-                  "How to audit your own brand's AI visibility",
-                  "Ongoing strategy for maintaining citations",
-                  "Monitoring tools and templates your team keeps",
+                  "How AI search engines construct knowledge and select citations",
+                  "The three diagnostic signals that determine AI visibility",
+                  "How to evaluate your organization's current AI presence",
+                  "Strategic considerations for AI information architecture",
+                  "Ongoing monitoring frameworks and assessment criteria",
                 ].map((item) => (
                   <li
                     key={item}
@@ -301,22 +296,6 @@ export default function ServicesPage() {
                   </li>
                 ))}
               </ul>
-              <div className="flex items-center gap-2 text-sm text-teal mt-6">
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                Half-day session + 30 days implementation support
-              </div>
               <div className="mt-6">
                 <a
                   href="https://calendly.com/c2018-mia/chat-with-mia"
@@ -324,7 +303,7 @@ export default function ServicesPage() {
                   rel="noopener noreferrer"
                   className="btn-primary w-full justify-center"
                 >
-                  Schedule a Workshop →
+                  Request a Briefing →
                 </a>
               </div>
             </div>
@@ -337,11 +316,11 @@ export default function ServicesPage() {
         <div className="max-w-xl mx-auto px-6">
           <div className="bg-teal-light border border-teal/20 rounded-2xl p-8 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-navy">
-              Not sure which service you need?
+              Not sure where to start?
             </h2>
             <p className="mt-3 text-warm-gray">
-              Start with a conversation. We&apos;ll help you figure out what
-              makes sense for your brand.
+              Start with a conversation. We&apos;ll help you understand what
+              AI search engines currently say about your organization.
             </p>
             <div className="mt-6">
               <a
@@ -350,7 +329,7 @@ export default function ServicesPage() {
                 rel="noopener noreferrer"
                 className="btn-primary"
               >
-                Book a Free 30-Minute Call →
+                Schedule a Conversation →
               </a>
             </div>
           </div>
