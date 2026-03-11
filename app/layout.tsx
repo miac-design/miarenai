@@ -20,11 +20,11 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://miarenai.com"),
   title: {
-    default: "Miaren AI | AI Visibility Consulting | Be Found Where It Matters Next",
+    default: "Miaren AI | AI Visibility Research & Strategy | Be Found Where It Matters Next",
     template: "%s | Miaren AI",
   },
   description:
-    "Miaren AI helps businesses become visible, citable, and recommendable in AI-powered search engines like ChatGPT, Perplexity, and Google AI Overviews. Founded by Mia Cheraghian.",
+    "Miaren AI studies how organizations become visible, citable, and recommended in AI-powered search systems like ChatGPT, Perplexity, and Google AI Overviews. Founded by Mia Cheraghian, PhD.",
   keywords: [
     "Generative Engine Optimization",
     "GEO",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Miaren AI",
     title: "Miaren AI | Be found where it matters next.",
     description:
-      "GEO consulting that makes your brand visible, citable, and recommendable in AI-powered search engines.",
+      "AI visibility research and strategy. Understanding how organizations become discoverable and citable in AI-powered search.",
     images: [
       {
         url: "https://miarenai.com/og-image.png",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Miaren AI | Generative Engine Optimization",
     description:
-      "Be found where it matters next. GEO consulting for AI search visibility.",
+      "Be found where it matters next. AI visibility research and strategy for generative search.",
     images: ["https://miarenai.com/og-image.png"],
   },
   robots: {

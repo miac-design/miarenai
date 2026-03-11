@@ -203,8 +203,8 @@ export default function HomePage() {
                 GEO Workshops
               </h3>
               <p className="text-sm text-warm-gray leading-relaxed">
-                Train your team on AI search optimization. Expert-led sessions
-                covering the AI visibility methodology, audit methodology, and ongoing
+                Train your team on AI search visibility. Research-informed sessions
+                covering the AI visibility methodology, diagnostic analysis, and ongoing
                 strategy.
               </p>
             </Link>

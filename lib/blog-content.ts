@@ -45,7 +45,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "What most brands get wrong",
-        content: "The most common failure is assuming that strong Google rankings translate to AI visibility. They don't. Only 12% of AI-cited URLs also rank in Google's top 10. Most brands we audit score below 20% on AI visibility, and they had no idea their competitors were being cited while they were invisible.",
+        content: "The most common failure is assuming that strong Google rankings translate to AI visibility. They don't. Only 12% of AI-cited URLs also rank in Google's top 10. In our research, most organizations score below 20% on AI visibility, and they had no idea their competitors were being cited while they were invisible.",
       },
       {
         heading: "Building citation-worthy presence",
@@ -65,7 +65,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "Gap #2: Zero structured data",
-        content: "The vast majority of websites we audit have no Schema.org markup at all. Without it, AI engines must infer what your content is about from unstructured text. With it, they can directly parse your brand information, products, FAQs, and expertise. This is often the single highest-impact fix.",
+        content: "The vast majority of websites we've analyzed have no Schema.org markup at all. Without it, AI engines must infer what your content is about from unstructured text. With it, they can directly parse your brand information, products, FAQs, and expertise. This is often the single highest-impact change.",
       },
       {
         heading: "Gap #3: No third-party validation",

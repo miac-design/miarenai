@@ -9,7 +9,7 @@ export function getOrganizationSchema() {
     url: "https://miarenai.com",
     logo: "https://miarenai.com/logo.png",
     description:
-      "Miaren AI is a Generative Engine Optimization (GEO) consultancy that helps businesses become visible, citable, and recommendable in AI-powered search engines including ChatGPT, Perplexity, Gemini, and Copilot.",
+      "Miaren AI is an AI visibility research and strategy firm studying how organizations become discoverable, citable, and recommended in AI-powered search systems including ChatGPT, Perplexity, Google AI Overviews, and Copilot.",
     foundingDate: "2026",
     founder: {
       "@type": "Person",
@@ -101,7 +101,7 @@ export function getPersonSchema() {
     url: "https://miarenai.com/about",
     image: "https://miarenai.com/mia-cheraghian.png",
     description:
-      "PhD researcher, AI strategist, and founder of Miaren AI. Creator of the AI visibility methodology for Generative Engine Optimization. Director of Strategic Partnerships & Marketing at Austin AI Hub.",
+      "PhD researcher and founder of Miaren AI. Studies how AI-powered search systems interpret, reference, and recommend organizations. Background in UX research and market research. Director of Strategic Partnerships & Marketing at Austin AI Hub.",
     sameAs: ["https://www.linkedin.com/in/mia-cheraghian/"],
     alumniOf: {
       "@type": "CollegeOrUniversity",
@@ -227,7 +227,7 @@ export function getServiceSchema() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: "Miaren AI",
-    description: "Generative Engine Optimization (GEO) consultancy helping businesses become visible, citable, and recommendable in AI-powered search engines.",
+    description: "AI visibility research and strategy firm studying how organizations become discoverable and citable in AI-powered search systems.",
     url: "https://miarenai.com/services",
     provider: {
       "@type": "Organization",

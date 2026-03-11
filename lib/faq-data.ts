@@ -14,7 +14,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "What is AI visibility?",
     answer:
-      "AI visibility is whether AI search engines mention, cite, or recommend your brand when users ask relevant questions. If someone asks ChatGPT for recommendations in your industry and your brand is not mentioned, you have an AI visibility gap. Most businesses we audit score below 20%.",
+      "AI visibility is whether AI search engines mention, cite, or recommend your brand when users ask relevant questions. If someone asks ChatGPT for recommendations in your industry and your brand is not mentioned, you have an AI visibility gap. In our research, most organizations score below 20%.",
   },
   {
     question: "How is GEO different from SEO?",

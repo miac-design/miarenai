@@ -75,7 +75,7 @@ export default function ContactPage() {
                     className="rounded-full object-cover w-12 h-12 shrink-0"
                   />
                   <p className="text-sm text-gray-300 italic leading-relaxed">
-                    &ldquo;I&apos;ve assessed brands across every industry. Most
+                    &ldquo;I&apos;ve analyzed organizations across every industry. Most
                     score below 20% on AI visibility and they had no idea.
                     That&apos;s what this methodology reveals.&rdquo;
                   </p>
