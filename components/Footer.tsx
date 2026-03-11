@@ -17,12 +17,14 @@ export default function Footer() {
               <Link href="/services" className="block text-sm text-gray-400 hover:text-white transition-colors">Services</Link>
               <Link href="/methodology" className="block text-sm text-gray-400 hover:text-white transition-colors">Methodology</Link>
               <Link href="/geo-vs-seo" className="block text-sm text-gray-400 hover:text-white transition-colors">GEO vs SEO</Link>
+              <Link href="/results" className="block text-sm text-gray-400 hover:text-white transition-colors">Case Studies</Link>
               <Link href="/about" className="block text-sm text-gray-400 hover:text-white transition-colors">About</Link>
+            </div>
+            <div className="space-y-2.5">
               <Link href="/research" className="block text-sm text-gray-400 hover:text-white transition-colors">Research</Link>
-              <Link href="/faq" className="block text-sm text-gray-400 hover:text-white transition-colors">FAQ</Link>
-              <Link href="/results" className="block text-sm text-gray-400 hover:text-white transition-colors">Results</Link>
               <Link href="/insights" className="block text-sm text-gray-400 hover:text-white transition-colors">Insights</Link>
               <Link href="/insights/glossary" className="block text-sm text-gray-400 hover:text-white transition-colors">Glossary</Link>
+              <Link href="/faq" className="block text-sm text-gray-400 hover:text-white transition-colors">FAQ</Link>
               <Link href="/contact" className="block text-sm text-gray-400 hover:text-white transition-colors">Contact</Link>
             </div>
             <div className="space-y-2.5">
