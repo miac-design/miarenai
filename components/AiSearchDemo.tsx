@@ -42,7 +42,7 @@ export default function AiSearchDemo() {
     }, []);
 
     return (
-        <div className="hidden lg:block w-full max-w-sm">
+        <div className="hidden lg:block w-full max-w-sm shrink-0">
             {/* Window chrome */}
             <div className="bg-white rounded-2xl shadow-xl border border-gray-200/60 overflow-hidden">
                 {/* Title bar */}

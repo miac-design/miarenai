@@ -9,8 +9,8 @@ export default function HomePage() {
       <section className="relative bg-soft-white pt-14 pb-16 md:pt-24 md:pb-28 overflow-hidden">
         <NodeNetwork opacity={0.35} />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <div className="flex items-center gap-12">
-            <div className="max-w-2xl">
+          <div className="flex items-center gap-12 lg:gap-16">
+            <div className="flex-1 max-w-2xl">
               <div className="inline-flex items-center gap-2 bg-teal/10 border border-teal/30 rounded-full px-4 py-1.5 mb-5">
                 <span className="w-2 h-2 rounded-full bg-teal" />
                 <span className="text-xs font-mono tracking-wider text-teal uppercase">
