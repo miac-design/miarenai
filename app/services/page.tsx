@@ -41,13 +41,14 @@ export default function ServicesPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <p className="section-label mb-4">// AREAS OF FOCUS</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight">
-            How We <span className="text-teal">Think About</span> AI Visibility
+            How We <span className="text-teal">Study</span> AI Visibility
           </h1>
           <p className="mt-6 text-warm-gray text-lg leading-relaxed">
-            AI search engines are building entity models of every brand and
-            organization. The knowledge structures they form today will compound.
-            Our work focuses on understanding how those systems evaluate, select,
-            and cite sources, and applying that understanding strategically.
+            AI search systems are building entity models of every organization.
+            They crawl, cross-reference, and synthesize information from hundreds
+            of sources to decide who to name in their responses. We study how
+            those systems make citation decisions and help organizations
+            understand where they stand.
           </p>
           <p className="mt-4 text-warm-gray text-sm leading-relaxed">
             Based on the{" "}
@@ -62,7 +63,9 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Service 1: AI Visibility Diagnostic */}
+      {/* ============================================= */}
+      {/* AI Visibility Audit                           */}
+      {/* ============================================= */}
       <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -75,37 +78,54 @@ export default function ServicesPage() {
                 AI Visibility Audit
               </h2>
               <p className="text-gray-400 leading-relaxed mb-6">
-                A structured diagnostic of how AI search engines currently
-                perceive, reference, and cite your organization. We analyze
-                your presence across ChatGPT, Perplexity, Google AI Overviews,
-                and Copilot against the{" "}
-                <Link
-                  href="/methodology"
-                  className="text-teal hover:underline"
-                >
-                  three diagnostic signals
-                </Link>
-                : findability, trust, and authority.
+                A structured diagnostic that analyzes how AI systems currently
+                interpret, reference, and cite your organization. We query
+                ChatGPT, Perplexity, Google AI Overviews, and Copilot with the
+                questions your audience actually asks, then evaluate the
+                results against five analytical signals.
               </p>
-              <p className="text-sm font-mono text-teal mb-4">WHAT THIS REVEALS</p>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Whether AI engines can parse your content. Whether they
-                encounter consistent information across platforms. Whether
-                independent sources validate your expertise. The diagnostic
-                produces a signal-level assessment, not a checklist.
-              </p>
+              <p className="text-sm font-mono text-teal mb-4">FIVE DIAGNOSTIC SIGNALS</p>
+              <div className="space-y-4">
+                {[
+                  {
+                    signal: "Entity Consistency",
+                    desc: "Whether AI systems encounter the same brand identity, description, and positioning across every platform they cross-reference.",
+                  },
+                  {
+                    signal: "Cross-Platform Presence",
+                    desc: "Whether your organization exists across the directories, platforms, and sources that AI systems consult when building entity models.",
+                  },
+                  {
+                    signal: "Authority & Citation Signals",
+                    desc: "Whether independent, trusted sources reference your organization in ways that give AI systems confidence to cite you.",
+                  },
+                  {
+                    signal: "Information Architecture & Content Structure",
+                    desc: "Whether your content is structured so AI systems can parse, interpret, and extract answers directly.",
+                  },
+                  {
+                    signal: "Technical Discoverability",
+                    desc: "Whether structured data, schema markup, and technical infrastructure make your organization machine-readable to AI crawlers.",
+                  },
+                ].map((item) => (
+                  <div key={item.signal}>
+                    <p className="text-sm font-semibold text-white">{item.signal}</p>
+                    <p className="text-xs text-gray-500 leading-relaxed mt-1">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-xl p-7">
               <p className="text-xs font-mono tracking-wider text-teal uppercase mb-4">
-                AREAS OF ANALYSIS
+                WHAT THE DIAGNOSTIC REVEALS
               </p>
               <ul className="space-y-3">
                 {[
-                  "AI knowledge graph representation and entity recognition",
-                  "Cross-platform information consistency analysis",
-                  "Structured data readiness for AI ingestion",
-                  "Third-party authority signal assessment",
-                  "Competitive citation landscape mapping",
+                  "How AI systems currently interpret your organization",
+                  "Where information gaps or inconsistencies undermine AI confidence",
+                  "Which competitors AI systems cite instead of you, and why",
+                  "Signal-level assessment across all five analytical dimensions",
+                  "Strategic visibility recommendations based on diagnostic findings",
                 ].map((item) => (
                   <li
                     key={item}
@@ -141,7 +161,9 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Service 2: AI Visibility Strategy */}
+      {/* ============================================= */}
+      {/* AI Visibility Strategy                        */}
+      {/* ============================================= */}
       <section className="relative py-16 md:py-24 bg-soft-white overflow-hidden">
         <NodeNetwork opacity={0.2} />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -152,11 +174,11 @@ export default function ServicesPage() {
               </p>
               <ul className="space-y-3">
                 {[
-                  "AI information architecture recommendations",
-                  "Knowledge infrastructure design for AI ingestion",
-                  "Entity consistency and cross-platform alignment plan",
-                  "Authority signal development strategy",
-                  "Platform-specific citation behavior analysis",
+                  "AI system interpretation analysis across major platforms",
+                  "Knowledge architecture recommendations for AI ingestion",
+                  "Entity alignment strategy across distributed sources",
+                  "Authority signal development and citation pathway analysis",
+                  "Generative search visibility strategy by platform behavior",
                 ].map((item) => (
                   <li
                     key={item}
@@ -209,23 +231,158 @@ export default function ServicesPage() {
                 AI Visibility Strategy
               </h2>
               <p className="text-warm-gray leading-relaxed">
-                A research-informed strategic analysis built on your
-                diagnostic results. We map how AI systems currently construct
-                knowledge about your category, identify where your
-                organization is absent or misrepresented, and design the
-                information architecture needed to shift that.
+                A research-informed strategic analysis built on your diagnostic
+                results. We map how AI systems currently construct knowledge about
+                your category, identify where your organization is absent or
+                misrepresented, and design the knowledge architecture needed to
+                change how AI systems interpret you.
               </p>
               <p className="text-warm-gray leading-relaxed mt-4">
                 This is not a content calendar or an execution plan. It is a
                 strategic assessment of how to structure your organization&apos;s
-                knowledge for AI systems that are deciding who to cite.
+                information for AI systems that are deciding who to cite.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Service 3: Expert Briefings */}
+      {/* ============================================= */}
+      {/* AI Information Architecture                   */}
+      {/* ============================================= */}
+      <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
+        <NodeNetwork opacity={0.15} color="0, 212, 170" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <p className="section-label mb-3">// CONCEPT</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+              AI Information{" "}
+              <span className="text-teal">Architecture</span>
+            </h2>
+          </div>
+          <div className="max-w-3xl mx-auto space-y-5 text-gray-400 leading-relaxed">
+            <p>
+              Traditional SEO focused on ranking individual web pages in a list of
+              links. AI search systems work differently. They interpret
+              organizations through distributed information across many sources:
+              websites, directories, news articles, review platforms, social
+              profiles, structured data, and more.
+            </p>
+            <p>
+              AI Information Architecture is the practice of structuring
+              organizational knowledge so AI systems can correctly interpret,
+              reference, and recommend an organization. It considers how
+              information is distributed, whether it is consistent, whether
+              independent sources validate it, and whether it is technically
+              readable by AI crawlers.
+            </p>
+            <p>
+              This is the layer between what your organization publishes and what
+              AI systems understand about you. When done well, AI systems form
+              an accurate, confident model of who you are and what you do. When
+              neglected, AI either ignores you or misrepresents you.
+            </p>
+          </div>
+          <div className="mt-10 grid md:grid-cols-3 gap-5">
+            {[
+              {
+                label: "Traditional SEO",
+                desc: "Rank pages in a list of links",
+                muted: true,
+              },
+              {
+                label: "GEO",
+                desc: "Optimize for AI-generated answers",
+                muted: false,
+              },
+              {
+                label: "AI Information Architecture",
+                desc: "Structure how AI systems understand your organization",
+                muted: false,
+              },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className={`border rounded-xl p-5 text-center ${item.muted
+                    ? "border-white/10 opacity-50"
+                    : "border-teal/30 bg-teal/5"
+                  }`}
+              >
+                <p className={`text-sm font-bold mb-1 ${item.muted ? "text-gray-500" : "text-teal"}`}>
+                  {item.label}
+                </p>
+                <p className="text-xs text-gray-400">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================= */}
+      {/* Research & Insights                           */}
+      {/* ============================================= */}
+      <section className="relative py-16 md:py-24 bg-soft-white overflow-hidden">
+        <NodeNetwork opacity={0.15} />
+        <div className="relative z-10 max-w-5xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <p className="section-label mb-3">// RESEARCH & INSIGHTS</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-navy leading-tight">
+              Studying How Organizations Appear in AI Search
+            </h2>
+            <p className="mt-4 text-warm-gray text-lg max-w-2xl mx-auto">
+              Miaren AI studies the emerging information layer between
+              organizations and the AI systems that interpret them.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                topic: "How AI assistants choose which organizations to recommend",
+                detail:
+                  "Analyzing the citation selection process across ChatGPT, Perplexity, Google AI Overviews, and Copilot to understand what signals drive AI recommendations.",
+              },
+              {
+                topic: "Visibility patterns across generative search platforms",
+                detail:
+                  "Each AI system retrieves and synthesizes information differently. We study platform-specific citation behaviors and how they diverge from traditional search.",
+              },
+              {
+                topic: "AI discoverability for nonprofits and mission-driven organizations",
+                detail:
+                  "How organizations without large marketing budgets can structure their information for AI visibility through strategic information architecture.",
+              },
+              {
+                topic: "Information architecture for generative search systems",
+                detail:
+                  "How distributed organizational knowledge is structured to be correctly interpreted by AI systems that synthesize from multiple sources.",
+              },
+            ].map((item) => (
+              <div key={item.topic} className="glass-card p-6">
+                <h3 className="text-base font-bold text-navy mb-2">
+                  {item.topic}
+                </h3>
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  {item.detail}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/research"
+              className="text-teal font-medium hover:underline"
+            >
+              Explore our research →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================= */}
+      {/* Expert Briefings                              */}
+      {/* ============================================= */}
       <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -269,11 +426,11 @@ export default function ServicesPage() {
               </p>
               <ul className="space-y-3">
                 {[
-                  "How AI search engines construct knowledge and select citations",
-                  "The three diagnostic signals that determine AI visibility",
+                  "How AI search systems construct knowledge and select citations",
+                  "The five diagnostic signals that determine AI visibility",
                   "How to evaluate your organization's current AI presence",
                   "Strategic considerations for AI information architecture",
-                  "Ongoing monitoring frameworks and assessment criteria",
+                  "Ongoing assessment criteria and monitoring frameworks",
                 ].map((item) => (
                   <li
                     key={item}
@@ -320,7 +477,7 @@ export default function ServicesPage() {
             </h2>
             <p className="mt-3 text-warm-gray">
               Start with a conversation. We&apos;ll help you understand what
-              AI search engines currently say about your organization.
+              AI search systems currently say about your organization.
             </p>
             <div className="mt-6">
               <a

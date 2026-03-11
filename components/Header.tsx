@@ -62,6 +62,15 @@ export default function Header() {
             About
           </Link>
           <Link
+            href="/research"
+            className={`text-sm font-medium transition-colors ${isActive("/research")
+              ? "text-navy"
+              : "text-warm-gray hover:text-navy"
+              }`}
+          >
+            Research
+          </Link>
+          <Link
             href="/faq"
             className={`text-sm font-medium transition-colors ${isActive("/faq")
               ? "text-navy"
@@ -99,6 +108,7 @@ export default function Header() {
           <Link href="/methodology" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Methodology</Link>
           <Link href="/geo-vs-seo" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>GEO vs SEO</Link>
           <Link href="/about" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>About</Link>
+          <Link href="/research" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Research</Link>
           <Link href="/faq" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>FAQ</Link>
           <Link href="/contact" className="btn-primary text-sm !py-2 w-full justify-center" onClick={() => setMobileOpen(false)}>Connect</Link>
         </div>
