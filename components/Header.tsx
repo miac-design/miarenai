@@ -32,7 +32,7 @@ export default function Header() {
               : "text-warm-gray hover:text-navy"
               }`}
           >
-            Services
+            Expertise
           </Link>
           <Link
             href="/methodology"
@@ -104,7 +104,7 @@ export default function Header() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3">
-          <Link href="/services" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Services</Link>
+          <Link href="/services" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Expertise</Link>
           <Link href="/methodology" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Methodology</Link>
           <Link href="/geo-vs-seo" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>GEO vs SEO</Link>
           <Link href="/about" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>About</Link>

@@ -260,8 +260,8 @@ export function getServiceSchema() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Expert Briefings",
-            description: "Research-informed sessions for leadership and marketing teams on AI search systems, diagnostic signals, and AI visibility data interpretation.",
+            name: "Executive Intelligence Briefings",
+            description: "Research seminars for leadership on RAG pipeline mechanics, entity disambiguation, and the citation dynamics that determine organizational visibility in synthetic search.",
           },
         },
       ],

@@ -63,14 +63,15 @@ export default function ExactFrameworkPage() {
                         Three <span className="text-teal">Diagnostic Signals</span>
                     </h1>
                     <p className="mt-4 text-xl md:text-2xl text-warm-gray font-medium">
-                        A diagnostic framework for understanding AI citation decisions.
+                        A proprietary diagnostic system for evaluating entity verification,
+                        RAG alignment, and citation authority in synthetic search.
                     </p>
                     <p className="mt-6 text-warm-gray text-lg leading-relaxed max-w-2xl mx-auto">
-                        AI engines evaluate multiple signals when deciding which organizations to
-                        name in their responses. Through systematic research and testing across
-                        ChatGPT, Perplexity, Google AI Overviews, and Copilot,
-                        I&apos;ve identified three diagnostic signals that consistently determine
-                        who gets cited and who gets ignored.
+                        AI retrieval systems evaluate entity consistency, knowledge structure,
+                        and third-party authority signals when constructing generated responses.
+                        Through PhD-level research and systematic testing across four major
+                        AI platforms, I have isolated three diagnostic signals that determine
+                        citation probability.
                     </p>
                     <p className="mt-6 text-sm font-mono tracking-wider text-teal uppercase">
                         Developed by Mia Cheraghian, PhD / Founder of Miaren AI
@@ -239,14 +240,14 @@ export default function ExactFrameworkPage() {
                 <NodeNetwork opacity={0.2} />
                 <div className="relative z-10 max-w-5xl mx-auto px-6">
                     <div className="text-center mb-4">
-                        <p className="section-label mb-3">// BEYOND THE FOUNDATION</p>
+                        <p className="section-label mb-3">// SUSTAINED CITATION INTEGRITY</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-navy leading-tight">
-                            The three signals establish your foundation.{" "}
-                            <span className="text-teal">These sustain it.</span>
+                            The diagnostic establishes your baseline.{" "}
+                            <span className="text-teal">These sustain citation authority.</span>
                         </h2>
                         <p className="mt-4 text-warm-gray text-lg max-w-2xl mx-auto">
-                            The diagnostic methodology identifies your foundation for AI citability.
-                            Maintaining visibility requires three ongoing strategies.
+                            The three-signal diagnostic identifies structural gaps in AI citability.
+                            Maintaining retrieval presence requires ongoing knowledge architecture.
                         </p>
                     </div>
 

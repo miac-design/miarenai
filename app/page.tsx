@@ -20,22 +20,24 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-2 bg-teal/10 border border-teal/30 rounded-full px-4 py-1.5 mb-5">
                 <span className="w-2 h-2 rounded-full bg-teal" />
                 <span className="text-xs font-mono tracking-wider text-teal uppercase">
-                  AI Visibility Research & Strategy
+                  PhD-Led AI Visibility Research
                 </span>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight">
-                Be Found Where It{" "}
-                <span className="text-teal">Matters Next.</span>
+                Protect Your Brand Integrity{" "}
+                <span className="text-teal">in Synthetic Search.</span>
               </h1>
 
               <p className="mt-5 text-warm-gray text-lg leading-relaxed max-w-lg">
-                People are no longer just searching Google. They are asking AI
-                systems like ChatGPT, Perplexity, and Copilot for recommendations.
+                Synthetic search engines are rewriting how organizations are
+                discovered, cited, and perceived. When AI systems generate
+                answers, they make consequential decisions about which entities
+                to name — and which to omit.
               </p>
               <p className="mt-3 text-warm-gray text-lg leading-relaxed max-w-lg">
-                Miaren AI helps organizations become visible, trusted, and
-                recommendable in AI-powered search.
+                Miaren AI conducts PhD-led research into the retrieval and
+                citation mechanisms that govern AI-generated responses.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -61,7 +63,7 @@ export default function HomePage() {
                   </svg>
                 </a>
                 <Link href="/services" className="btn-secondary">
-                  Explore Areas of Focus
+                  View Expertise →
                 </Link>
               </div>
             </div>
@@ -130,9 +132,9 @@ export default function HomePage() {
         <NodeNetwork opacity={0.2} />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="text-center mb-10">
-            <p className="section-label mb-3">// AREAS OF FOCUS</p>
+            <p className="section-label mb-3">// EXPERTISE</p>
             <h2 className="text-3xl md:text-4xl font-bold text-navy">
-              Areas of Focus
+              Strategic Pillars
             </h2>
           </div>
 
@@ -157,12 +159,12 @@ export default function HomePage() {
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-navy mb-2 group-hover:text-teal transition-colors">
-                AI Visibility Audit
+                Three-Signal Diagnostic
               </h3>
               <p className="text-sm text-warm-gray leading-relaxed">
-                A structured diagnostic analyzing how AI systems currently
-                interpret, reference, and cite your organization across
-                ChatGPT, Perplexity, Google AI Overviews, and Copilot.
+                A proprietary PhD-led assessment evaluating entity verification,
+                RAG alignment, and citation authority across ChatGPT, Perplexity,
+                Google AI Overviews, and Copilot.
               </p>
             </Link>
 
@@ -186,12 +188,12 @@ export default function HomePage() {
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-navy mb-2 group-hover:text-teal transition-colors">
-                AI Visibility Strategy
+                Knowledge Architecture
               </h3>
               <p className="text-sm text-warm-gray leading-relaxed">
-                Strategic analysis of the signals AI systems evaluate when
-                deciding who to cite. Covers entity consistency, content
-                architecture, and authority signals.
+                We construct semantic hierarchies, structured data schemas, and
+                entity graphs that align your organization&apos;s information
+                architecture with AI retrieval patterns.
               </p>
             </Link>
 
@@ -215,12 +217,12 @@ export default function HomePage() {
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-navy mb-2 group-hover:text-teal transition-colors">
-                Expert Briefings
+                Executive Intelligence Briefings
               </h3>
               <p className="text-sm text-warm-gray leading-relaxed">
-                Research-informed sessions for leadership and marketing teams
-                on how AI search systems work, what the diagnostic signals
-                reveal, and how to interpret AI visibility data.
+                Research seminars for leadership on RAG pipeline mechanics,
+                entity disambiguation, and the citation dynamics that determine
+                organizational visibility in synthetic search.
               </p>
             </Link>
           </div>
@@ -237,7 +239,7 @@ export default function HomePage() {
               Three <span className="text-teal">Diagnostic Signals</span>
             </h2>
             <p className="mt-3 text-warm-gray">
-              Three signals. One methodology. Complete clarity.
+              A proprietary diagnostic framework developed through PhD research.
             </p>
           </div>
 
@@ -275,15 +277,16 @@ export default function HomePage() {
       {/* Section 5: Who This Is For */}
       <section className="py-16 md:py-20 bg-soft-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <p className="section-label mb-3">// WHO THIS IS FOR</p>
+          <p className="section-label mb-3">// DIAGNOSTIC INDICATORS</p>
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-            Is this for you?
+            When This Matters
           </h2>
           <p className="text-warm-gray text-lg leading-relaxed">
-            Organizations that are invisible in AI search despite strong
-            traditional web presence. If competitors are being recommended by
-            ChatGPT and you are not, the diagnostic methodology identifies
-            why.
+            Organizations with established domain authority in traditional
+            search that face citation gaps in synthetic search environments.
+            The diagnostic identifies whether the deficit is structural
+            (entity verification), architectural (knowledge hierarchy), or
+            reputational (citation authority).
           </p>
           <div className="mt-8">
             <Link href="/faq" className="text-teal font-medium hover:underline">
@@ -298,12 +301,13 @@ export default function HomePage() {
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-            Explore how AI sees{" "}
-            <span className="text-teal">your brand.</span>
+            Evaluate your{" "}
+            <span className="text-teal">citation integrity.</span>
           </h2>
           <p className="mt-5 text-gray-400 text-lg">
-            Learn where your brand stands in AI search and what the
-            three diagnostic signals reveal.
+            Request a diagnostic assessment to identify where your
+            organization&apos;s entity signals, knowledge architecture, and
+            citation authority stand.
           </p>
           <div className="mt-8">
             <a

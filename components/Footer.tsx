@@ -14,7 +14,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-16">
             <div className="space-y-2.5">
-              <Link href="/services" className="block text-sm text-gray-400 hover:text-white transition-colors">Services</Link>
+              <Link href="/services" className="block text-sm text-gray-400 hover:text-white transition-colors">Expertise</Link>
               <Link href="/methodology" className="block text-sm text-gray-400 hover:text-white transition-colors">Methodology</Link>
               <Link href="/geo-vs-seo" className="block text-sm text-gray-400 hover:text-white transition-colors">GEO vs SEO</Link>
               <Link href="/results" className="block text-sm text-gray-400 hover:text-white transition-colors">Case Studies</Link>

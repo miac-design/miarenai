@@ -4,14 +4,14 @@ import NodeNetwork from "@/components/NodeNetwork";
 import { getServiceSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Areas of Focus | AI Visibility Diagnostics & Strategy | Miaren AI",
+  title: "Expertise | AI Visibility Diagnostics & Strategy | Miaren AI",
   description:
     "AI visibility diagnostics, information architecture strategy, and generative search analysis. Research-based advisory by Mia Cheraghian, PhD.",
   alternates: {
     canonical: "https://miarenai.com/services",
   },
   openGraph: {
-    title: "Areas of Focus | Miaren AI",
+    title: "Expertise | Miaren AI",
     description:
       "AI visibility diagnostics, information architecture strategy, and generative search analysis.",
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "https://miarenai.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Miaren AI - Areas of Focus",
+        alt: "Miaren AI - Expertise",
       },
     ],
   },
@@ -392,7 +392,7 @@ export default function ServicesPage() {
                 FOR TEAMS
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Expert Briefings
+                Executive Intelligence Briefings
               </h2>
               <p className="text-gray-400 leading-relaxed mb-6">
                 Structured briefings for leadership and technical teams who need
