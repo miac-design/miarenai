@@ -7,12 +7,9 @@ import { usePathname } from "next/navigation";
 const navItems = [
   { href: "/services", label: "Expertise" },
   { href: "/methodology", label: "Methodology" },
-  { href: "/geo-vs-seo", label: "GEO vs SEO" },
-  { href: "/self-check", label: "Self-Check" },
-  { href: "/about", label: "About" },
   { href: "/research", label: "Research" },
   { href: "/insights", label: "Insights" },
-  { href: "/faq", label: "FAQ" },
+  { href: "/about", label: "About" },
 ];
 
 export default function Header() {
@@ -50,6 +47,12 @@ export default function Header() {
             </Link>
           ))}
 
+          <Link
+            href="/ai-visibility-score"
+            className="text-sm font-medium text-teal border border-teal rounded-full px-4 py-2 hover:bg-teal hover:text-navy transition-colors"
+          >
+            AI Visibility Score
+          </Link>
           <Link href="/contact" className="btn-primary text-sm !py-2 !px-5">
             Connect
           </Link>
@@ -85,6 +88,7 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
+          <Link href="/ai-visibility-score" className="block text-sm font-medium text-teal border border-teal rounded-full px-4 py-2 text-center hover:bg-teal hover:text-navy transition-colors" onClick={() => setMobileOpen(false)}>AI Visibility Score</Link>
           <Link href="/contact" className="btn-primary text-sm !py-2 w-full justify-center" onClick={() => setMobileOpen(false)}>Connect</Link>
         </div>
       )}

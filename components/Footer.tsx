@@ -41,6 +41,7 @@ export default function Footer() {
               <Link href="/services" className="block text-sm text-gray-400 hover:text-white transition-colors">Expertise</Link>
               <Link href="/methodology" className="block text-sm text-gray-400 hover:text-white transition-colors">Methodology</Link>
               <Link href="/geo-vs-seo" className="block text-sm text-gray-400 hover:text-white transition-colors">GEO vs SEO</Link>
+              <Link href="/geo-vs-seo" className="block text-sm text-gray-400 hover:text-white transition-colors">GEO vs SEO</Link>
               <Link href="/results" className="block text-sm text-gray-400 hover:text-white transition-colors">Case Studies</Link>
               <Link href="/about" className="block text-sm text-gray-400 hover:text-white transition-colors">About</Link>
             </div>
@@ -65,6 +66,7 @@ export default function Footer() {
               <a href="https://www.linkedin.com/company/miaren-ai/" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-400 hover:text-white transition-colors">LinkedIn</a>
               <a href="mailto:hello@miarenai.com" className="block text-sm text-gray-400 hover:text-white transition-colors">hello@miarenai.com</a>
               <a href="https://calendly.com/c2018-mia/chat-with-mia" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-400 hover:text-white transition-colors">Book a Call</a>
+              <Link href="/ai-visibility-score" className="block text-sm text-teal hover:text-white transition-colors font-medium">AI Visibility Score</Link>
             </div>
           </div>
         </div>
