@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import NodeNetwork from "@/components/NodeNetwork";
+import { getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Start a Conversation | Miaren AI",
@@ -27,8 +28,17 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "https://miarenai.com" },
+    { name: "Contact", url: "https://miarenai.com/contact" },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="relative bg-navy py-12 md:py-16 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
@@ -103,7 +113,7 @@ export default function ContactPage() {
                     </span>
                   </div>
                   <a
-                    href="https://www.linkedin.com/company/miaren-ai/about/?viewAsMember=true"
+                    href="https://www.linkedin.com/in/mia-cheraghian/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 hover:opacity-80"

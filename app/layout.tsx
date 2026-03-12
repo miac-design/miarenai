@@ -1,20 +1,31 @@
 import type { Metadata } from "next";
-import { DM_Sans, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getOrganizationSchema, getPersonSchema } from "@/lib/schema";
+import { getOrganizationSchema, getPersonSchema, getLocalBusinessSchema, getEventSchema } from "@/lib/schema";
 import "./globals.css";
 
-const dmSans = DM_Sans({
-  subsets: ["latin"],
+const dmSans = localFont({
+  src: [
+    { path: "../public/fonts/dm-sans-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "../public/fonts/dm-sans-latin-500-normal.woff2", weight: "500", style: "normal" },
+    { path: "../public/fonts/dm-sans-latin-600-normal.woff2", weight: "600", style: "normal" },
+    { path: "../public/fonts/dm-sans-latin-700-normal.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-dm-sans",
   display: "swap",
+  fallback: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
 });
 
-const jetbrains = JetBrains_Mono({
-  subsets: ["latin"],
+const jetbrains = localFont({
+  src: [
+    { path: "../public/fonts/jetbrains-mono-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "../public/fonts/jetbrains-mono-latin-500-normal.woff2", weight: "500", style: "normal" },
+    { path: "../public/fonts/jetbrains-mono-latin-700-normal.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-jetbrains",
   display: "swap",
+  fallback: ["SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"],
 });
 
 export const metadata: Metadata = {
@@ -83,6 +94,8 @@ export default function RootLayout({
 }) {
   const orgSchema = getOrganizationSchema();
   const personSchema = getPersonSchema();
+  const localBusinessSchema = getLocalBusinessSchema();
+  const eventSchema = getEventSchema();
 
   return (
     <html lang="en" className={`${dmSans.variable} ${jetbrains.variable}`}>
@@ -94,6 +107,14 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
         />
       </head>
       <body className="font-sans antialiased">

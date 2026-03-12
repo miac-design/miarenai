@@ -15,19 +15,19 @@ interface CardData {
 
 const cards: CardData[] = [
     {
-        frontTitle: "What's Inside the Bowl",
+        frontTitle: "Clear Testimony",
         frontText:
-            "The actual substance — structured content, schema markup, direct answers. This is what AI engines 'eat' and decide to cite.",
+            "A witness who gives clear, structured, direct answers gets heard. Mumble or ramble, and the investigator moves on to someone else.",
         backLabel: "Can AI find you?",
         backText:
-            "Your content must be structured, crawlable, and readable by AI engines. Without structured data, clean heading hierarchy, and direct answers to real questions, AI doesn't know you exist. A beautiful bowl with nothing AI can scoop? It skips right past.",
+            "Your content must be structured, crawlable, and readable by AI engines. Without structured data, clean heading hierarchy, and direct answers to real questions, AI doesn't know you exist. Lead with the answer. Be direct. Be parseable.",
         signalId: "signal-find",
         tagLabel: "Signal 1: Findability",
     },
     {
-        frontTitle: "The Same Bowl at Every Table",
+        frontTitle: "Consistent Story",
         frontText:
-            "Same name on the door, on Google Maps, on Yelp, on LinkedIn. If one says Italian and another says Mexican, nobody recommends confidently.",
+            "The investigator cross-references what you say with other sources. If your story changes depending on who asks, your credibility drops.",
         backLabel: "Can AI trust you?",
         backText:
             "Your brand information must be identical across every platform AI looks at. AI cross-references multiple sources to build confidence. If your description on LinkedIn says one thing and your website says another, AI loses confidence in citing you.",
@@ -35,12 +35,12 @@ const cards: CardData[] = [
         tagLabel: "Signal 2: Trust",
     },
     {
-        frontTitle: "Others Recommending the Restaurant",
+        frontTitle: "Corroborating Sources",
         frontText:
-            "The critic asks: who else says this place is good? Reviews, press mentions, word of mouth from independent sources.",
+            "The investigator doesn't take one witness at face value. They need independent sources confirming the same thing before they go on record.",
         backLabel: "Can AI quote you?",
         backText:
-            "Third-party validation from trusted sources tells AI your brand is worth naming. Without independent sources confirming you're worth naming, AI doesn't walk in the door. The hardest signal to build. The most durable once you have it.",
+            "Third-party validation from trusted sources tells AI your brand is worth naming. If the only source saying you're great is your own website, that's weak. Independent publications, reviews, and references are what make AI confident enough to cite you.",
         signalId: "signal-quote",
         tagLabel: "Signal 3: Authority",
     },
@@ -48,52 +48,63 @@ const cards: CardData[] = [
 
 /* ─── Icons (inline SVG, monoline, consistent 2px stroke) ─── */
 
-function BowlIcon() {
+function TestimonyIcon() {
     return (
         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" stroke="#00D4AA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            {/* Bowl body */}
-            <path d="M12 32c0 14 10 22 24 22s24-8 24-22" />
-            {/* Bowl rim */}
-            <path d="M8 32h56" />
-            {/* Steam wisps */}
-            <path d="M30 24c0-4 4-6 2-10" />
-            <path d="M36 22c0-4 4-6 2-10" />
-            <path d="M42 24c0-4 4-6 2-10" />
+            {/* Document/clipboard */}
+            <rect x="20" y="14" width="32" height="44" rx="3" />
+            {/* Clipboard clip */}
+            <path d="M30 14v-2a6 6 0 0112 0v2" />
+            {/* Text lines — structured, clear */}
+            <line x1="28" y1="28" x2="44" y2="28" />
+            <line x1="28" y1="34" x2="44" y2="34" />
+            <line x1="28" y1="40" x2="38" y2="40" />
+            {/* Checkmark */}
+            <path d="M30 48l3 3 6-6" />
         </svg>
     );
 }
 
-function StorefrontIcon() {
+function ConsistencyIcon() {
     return (
         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" stroke="#00D4AA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            {/* Building */}
-            <rect x="16" y="28" width="40" height="28" rx="2" />
-            {/* Awning */}
-            <path d="M12 28l4-12h40l4 12" />
-            {/* Door */}
-            <rect x="30" y="42" width="12" height="14" />
-            {/* Sign */}
-            <line x1="22" y1="34" x2="28" y2="34" />
-            <line x1="22" y1="37" x2="26" y2="37" />
-            {/* Map pin */}
-            <circle cx="56" cy="18" r="4" />
-            <path d="M56 22l0 4" />
+            {/* Three overlapping documents */}
+            <rect x="24" y="10" width="28" height="36" rx="2" />
+            <rect x="20" y="16" width="28" height="36" rx="2" />
+            <rect x="16" y="22" width="28" height="36" rx="2" />
+            {/* Lines on front doc */}
+            <line x1="22" y1="32" x2="36" y2="32" />
+            <line x1="22" y1="38" x2="36" y2="38" />
+            <line x1="22" y1="44" x2="30" y2="44" />
+            {/* Equals / match symbol */}
+            <line x1="50" y1="38" x2="58" y2="38" />
+            <line x1="50" y1="42" x2="58" y2="42" />
         </svg>
     );
 }
 
-function StarBubbleIcon() {
+function CorroborateIcon() {
     return (
         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" stroke="#00D4AA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            {/* Speech bubble */}
-            <path d="M20 16h32a4 4 0 014 4v20a4 4 0 01-4 4H38l-6 8-2-8h-10a4 4 0 01-4-4V20a4 4 0 014-4z" />
-            {/* Star inside */}
-            <path d="M36 24l2.5 5 5.5.8-4 3.9.9 5.3-4.9-2.6L31.1 39l.9-5.3-4-3.9 5.5-.8z" />
+            {/* Central node */}
+            <circle cx="36" cy="36" r="6" />
+            {/* Surrounding nodes */}
+            <circle cx="18" cy="20" r="4" />
+            <circle cx="54" cy="20" r="4" />
+            <circle cx="18" cy="52" r="4" />
+            <circle cx="54" cy="52" r="4" />
+            <circle cx="36" cy="14" r="4" />
+            {/* Connection lines */}
+            <line x1="32" y1="31" x2="21" y2="23" />
+            <line x1="40" y1="31" x2="51" y2="23" />
+            <line x1="32" y1="41" x2="21" y2="49" />
+            <line x1="40" y1="41" x2="51" y2="49" />
+            <line x1="36" y1="30" x2="36" y2="18" />
         </svg>
     );
 }
 
-const iconComponents = [BowlIcon, StorefrontIcon, StarBubbleIcon];
+const iconComponents = [TestimonyIcon, ConsistencyIcon, CorroborateIcon];
 
 /* ─── Flip Card Component ─── */
 
@@ -126,11 +137,12 @@ function FlipCard({
                     setTapped((t) => !t);
                 }
             }}
-            aria-label={`${card.frontTitle}: ${card.backLabel}`}
+            aria-label={`${card.frontTitle}: ${card.backLabel}. ${isFlipped ? "Showing details." : "Activate to see details."}`}
+            aria-expanded={isFlipped}
         >
             <div className="flip-card-inner">
                 {/* ══════ FRONT ══════ */}
-                <div className="flip-card-front">
+                <div className="flip-card-front" aria-hidden={isFlipped}>
                     <div className="flex flex-col items-center justify-center mb-4">
                         <Icon />
                     </div>
@@ -168,7 +180,7 @@ function FlipCard({
                 </div>
 
                 {/* ══════ BACK ══════ */}
-                <div className="flip-card-back">
+                <div className="flip-card-back" aria-hidden={!isFlipped}>
                     <div className="relative z-10 flex flex-col h-full justify-between">
                         <div>
                             <h3 className="text-xl font-bold text-[#0A1628] mb-3">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
 import NodeNetwork from "@/components/NodeNetwork";
 import { faqItems } from "@/lib/faq-data";
-import { getFaqSchema } from "@/lib/schema";
+import { getFaqSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "AI Visibility FAQ | Common Questions About GEO",
@@ -29,12 +29,20 @@ export const metadata: Metadata = {
 
 export default function FaqPage() {
   const faqSchema = getFaqSchema(faqItems);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "https://miarenai.com" },
+    { name: "FAQ", url: "https://miarenai.com/faq" },
+  ]);
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <section className="relative bg-soft-white pt-14 pb-16 md:pt-24 md:pb-28 overflow-hidden">
@@ -55,17 +63,15 @@ export default function FaqPage() {
             , AI search visibility, and how we work.
           </p>
 
-          {/* SSR-rendered answers for crawlers */}
-          <noscript>
-            <div className="space-y-6">
-              {faqItems.map((item, i) => (
-                <div key={i} className="border border-gray-200 rounded-xl p-6 bg-white">
-                  <h3 className="text-base font-medium text-navy mb-2">{item.question}</h3>
-                  <p className="text-warm-gray text-sm leading-relaxed">{item.answer}</p>
-                </div>
-              ))}
-            </div>
-          </noscript>
+          {/* SSR-rendered answers always in DOM for AI crawlers */}
+          <div className="sr-only" aria-hidden="true">
+            {faqItems.map((item, i) => (
+              <div key={i}>
+                <h3>{item.question}</h3>
+                <p>{item.answer}</p>
+              </div>
+            ))}
+          </div>
 
           <FaqAccordion items={faqItems} />
 
@@ -91,18 +97,10 @@ export default function FaqPage() {
               Let&apos;s talk about your brand&apos;s AI visibility, no strings
               attached.
             </p>
-            <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <div className="mt-6">
               <Link href="/contact" className="btn-primary">
-                Connect →
+                Start a Conversation →
               </Link>
-              <a
-                href="https://calendly.com/c2018-mia/chat-with-mia"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary"
-              >
-                Book a Call →
-              </a>
             </div>
           </div>
         </div>

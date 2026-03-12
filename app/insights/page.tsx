@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import NodeNetwork from "@/components/NodeNetwork";
 import InsightsGrid from "@/components/InsightsGrid";
 import Link from "next/link";
+import { getCollectionPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Insights | GEO Research & AI Visibility Articles",
@@ -18,8 +19,26 @@ export const metadata: Metadata = {
 };
 
 export default function InsightsPage() {
+  const collectionSchema = getCollectionPageSchema({
+    title: "Insights | GEO Research & AI Visibility Articles",
+    description: "Research, frameworks, and field notes on AI visibility. Expert articles on Generative Engine Optimization from Mia Cheraghian, PhD.",
+    url: "https://miarenai.com/insights",
+  });
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "https://miarenai.com" },
+    { name: "Insights", url: "https://miarenai.com/insights" },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="relative bg-soft-white pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden">
         <NodeNetwork opacity={0.25} />
         <div className="relative z-10 max-w-7xl mx-auto px-6">

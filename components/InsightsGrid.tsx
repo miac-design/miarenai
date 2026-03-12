@@ -52,26 +52,35 @@ export default function InsightsGrid() {
           </article>
         )}
 
-        {(activeCategory === "All" ? rest.slice(0, 1) : []).concat(activeCategory !== "All" ? filtered : rest.slice(1)).map((post) => (
-          <article key={post.slug} className="glass-card p-6 flex flex-col">
-            <div className="flex items-center gap-3 mb-3">
-              <span className={`text-xs font-mono px-2.5 py-1 rounded ${post.category === "GEO 101" || post.category === "How-To" ? "bg-teal/10 text-teal" : "bg-navy/10 text-navy"}`}>
-                {post.category.toUpperCase()}
-              </span>
-              <span className="text-xs text-warm-gray font-mono ml-auto">
-                {new Date(post.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
-              </span>
-              <span className="text-xs text-warm-gray font-mono">{post.readTime}</span>
-            </div>
-            <h3 className="text-lg font-bold text-navy mb-2">{post.title}</h3>
-            <p className="text-sm text-warm-gray leading-relaxed mb-4 flex-1">{post.description}</p>
-            <div className="border-t border-gray-100 pt-3">
-              <Link href={`/insights/${post.slug}`} className="text-teal text-sm font-medium inline-flex items-center gap-1 hover:underline">
-                Read more →
-              </Link>
-            </div>
-          </article>
-        ))}
+        {(() => {
+          const posts = activeCategory === "All"
+            ? [rest.slice(0, 1), rest.slice(1)].flat()
+            : filtered;
+          return posts.map((post, i) => {
+            // Make last orphan card span 2 cols if odd count and in 3-col grid
+            const isLastOrphan = i === posts.length - 1 && posts.length % 3 === 1;
+            return (
+              <article key={post.slug} className={`glass-card p-6 flex flex-col ${isLastOrphan ? "md:col-span-2" : ""}`}>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className={`text-xs font-mono px-2.5 py-1 rounded ${post.category === "GEO 101" || post.category === "How-To" ? "bg-teal/10 text-teal" : "bg-navy/10 text-navy"}`}>
+                    {post.category.toUpperCase()}
+                  </span>
+                  <span className="text-xs text-warm-gray font-mono ml-auto">
+                    {new Date(post.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                  </span>
+                  <span className="text-xs text-warm-gray font-mono">{post.readTime}</span>
+                </div>
+                <h3 className="text-lg font-bold text-navy mb-2">{post.title}</h3>
+                <p className="text-sm text-warm-gray leading-relaxed mb-4 flex-1">{post.description}</p>
+                <div className="border-t border-gray-100 pt-3">
+                  <Link href={`/insights/${post.slug}`} className="text-teal text-sm font-medium inline-flex items-center gap-1 hover:underline">
+                    Read more →
+                  </Link>
+                </div>
+              </article>
+            );
+          });
+        })()}
       </div>
     </>
   );

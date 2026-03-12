@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import NodeNetwork from "@/components/NodeNetwork";
+import { getWebPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Research & Insights | How AI Systems Interpret Organizations | Miaren AI",
@@ -24,10 +25,28 @@ export const metadata: Metadata = {
 };
 
 export default function ResearchPage() {
+    const webPageSchema = getWebPageSchema({
+        title: "Research & Insights | How AI Systems Interpret Organizations",
+        description: "Studying how organizations become discoverable, citable, and recommended in AI-powered search systems. Research by Mia Cheraghian, PhD.",
+        url: "https://miarenai.com/research",
+    });
+    const breadcrumbSchema = getBreadcrumbSchema([
+        { name: "Home", url: "https://miarenai.com" },
+        { name: "Research", url: "https://miarenai.com/research" },
+    ]);
+
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             {/* Hero */}
-            <section className="relative bg-soft-white pt-14 pb-16 md:pt-24 md:pb-28 overflow-hidden">
+            <section className="relative bg-soft-white pt-12 pb-12 md:pt-20 md:pb-20 overflow-hidden">
                 <NodeNetwork opacity={0.3} />
                 <div className="relative z-10 max-w-3xl mx-auto px-6">
                     <p className="section-label mb-4">// RESEARCH</p>
@@ -35,17 +54,11 @@ export default function ResearchPage() {
                         Research & Insights on{" "}
                         <span className="text-teal">AI Visibility</span>
                     </h1>
-                    <p className="mt-4 text-xl md:text-2xl text-warm-gray font-medium">
-                        Studying how organizations become discoverable, citable, and
-                        recommended in AI-powered search systems.
-                    </p>
-                    <p className="mt-6 text-warm-gray text-lg leading-relaxed">
-                        AI search is an emerging information layer. Systems like ChatGPT,
-                        Perplexity, Google AI Overviews, and Copilot are making citation
-                        decisions about organizations every day, drawing from distributed
-                        signals across the internet. Miaren AI researches how those decisions
-                        are made, what signals drive them, and how organizations can structure
-                        their presence accordingly.
+                    <p className="mt-4 text-warm-gray text-lg leading-relaxed">
+                        AI systems like ChatGPT, Perplexity, and Google AI Overviews make
+                        citation decisions about organizations every day. We research how
+                        those decisions are made, what signals drive them, and how organizations
+                        can structure their presence accordingly.
                     </p>
                     <p className="mt-4 text-sm font-mono tracking-wider text-teal uppercase">
                         Research by Mia Cheraghian, PhD
@@ -160,32 +173,20 @@ export default function ResearchPage() {
             {/* ============================================= */}
             {/* Why This Research Matters                     */}
             {/* ============================================= */}
-            <section className="py-16 md:py-24 bg-soft-white">
+            <section className="py-12 md:py-16 bg-soft-white">
                 <div className="max-w-3xl mx-auto px-6">
                     <p className="section-label mb-3">// WHY THIS MATTERS</p>
                     <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
                         A new information layer is forming
                     </h2>
-                    <div className="space-y-4 text-warm-gray text-lg leading-relaxed">
+                    <div className="space-y-4 text-warm-gray leading-relaxed">
                         <p>
-                            People are increasingly asking AI assistants for recommendations
-                            instead of searching through ranked lists of web pages. When
-                            someone asks ChatGPT for the best accounting firm in Austin or
-                            asks Perplexity to compare nonprofit management platforms, the AI
-                            system must decide which organizations to name.
-                        </p>
-                        <p>
-                            That decision is based on how well AI systems understand each
-                            organization: the consistency of its information across platforms,
-                            the authority signals from independent sources, the structure of
-                            its content, and the technical readability of its presence.
-                        </p>
-                        <p>
-                            This is a new layer of organizational visibility. It operates
-                            alongside traditional search but follows different rules. Miaren AI
-                            studies this layer, because the organizations that understand it
-                            early will have compounding advantages that late movers spend years
-                            trying to close.
+                            People are asking AI for recommendations instead of scrolling
+                            through search results. AI must decide which organizations to
+                            name — based on information consistency, authority signals, content
+                            structure, and technical readability. This layer follows different
+                            rules than traditional search. Organizations that understand it
+                            early will compound advantages that late movers spend years closing.
                         </p>
                     </div>
                 </div>
@@ -248,7 +249,7 @@ export default function ResearchPage() {
             </section>
 
             {/* CTA */}
-            <section className="py-16 md:py-20 bg-soft-white">
+            <section className="py-10 md:py-14 bg-soft-white">
                 <div className="max-w-xl mx-auto px-6">
                     <div className="bg-teal-light border border-teal/20 rounded-2xl p-8 text-center">
                         <h2 className="text-2xl md:text-3xl font-bold text-navy">

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GlossarySearch from "@/components/GlossarySearch";
 import NodeNetwork from "@/components/NodeNetwork";
 import { glossaryTerms } from "@/lib/glossary-data";
-import { getGlossarySchema } from "@/lib/schema";
+import { getGlossarySchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "GEO Glossary | The Language of AI Visibility",
@@ -23,11 +23,21 @@ export default function GlossaryPage() {
     glossaryTerms.map((t) => ({ term: t.term, definition: t.definition }))
   );
 
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "https://miarenai.com" },
+    { name: "Insights", url: "https://miarenai.com/insights" },
+    { name: "Glossary", url: "https://miarenai.com/insights/glossary" },
+  ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(glossarySchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <section className="relative bg-soft-white pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden">
@@ -47,21 +57,22 @@ export default function GlossaryPage() {
             <p className="mt-3 text-sm text-warm-gray">Last updated March 2026 · Maintained by Mia Cheraghian, PhD</p>
           </div>
 
-          {/* three-signal methodology callout */}
+          {/* Three-Signal Methodology callout */}
           <div className="teal-border-left bg-teal-light/50 rounded-r-xl p-6 mb-10">
-            <h2 className="text-lg font-bold text-navy mb-2">The AI visibility methodology</h2>
-            <p className="text-sm text-warm-gray mb-4">Miaren AI&apos;s proprietary methodology for assessing and improving AI visibility.</p>
-            <div className="space-y-2">
+            <h2 className="text-lg font-bold text-navy mb-2">Three-Signal Diagnostic Methodology</h2>
+            <p className="text-sm text-warm-gray mb-4">Miaren AI&apos;s proprietary framework for evaluating AI visibility. Three diagnostic signals that determine whether AI engines cite your brand.</p>
+            <div className="space-y-3">
               {[
-                { letter: "E", name: "Entity Consistency" },
-                { letter: "X", name: "Cross-Platform Presence" },
-                { letter: "A", name: "Authority Signals" },
-                { letter: "C", name: "Content Structure" },
-                { letter: "T", name: "Technical Infrastructure" },
+                { num: "1", name: "Can AI find you?", desc: "Content structure, schema markup, and technical infrastructure that make you machine-readable." },
+                { num: "2", name: "Can AI trust you?", desc: "Entity consistency and cross-platform presence that build AI confidence." },
+                { num: "3", name: "Can AI quote you?", desc: "Third-party authority signals that give AI engines confidence to cite you." },
               ].map((s) => (
-                <div key={s.letter} className="flex items-center gap-3">
-                  <span className="w-7 h-7 rounded-full bg-teal text-navy text-xs font-bold flex items-center justify-center">{s.letter}</span>
-                  <span className="text-sm font-medium text-navy">{s.letter} = {s.name}</span>
+                <div key={s.num} className="flex items-start gap-3">
+                  <span className="w-7 h-7 rounded-full bg-teal text-navy text-xs font-bold flex items-center justify-center shrink-0">{s.num}</span>
+                  <div>
+                    <span className="text-sm font-bold text-navy">{s.name}</span>
+                    <p className="text-xs text-warm-gray mt-0.5">{s.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>

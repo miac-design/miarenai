@@ -72,7 +72,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "ChatGPT",
     category: "AI Platforms",
     definition:
-      "OpenAI's conversational AI with over 300 million weekly active users as of 2025. The most widely used AI search platform. Cites authoritative, recent content and is increasingly used as a search alternative.",
+      "OpenAI's conversational AI with over 900 million weekly active users as of early 2026. The most widely used AI search platform. Cites authoritative, recent content and is increasingly used as a search alternative.",
   },
   {
     term: "Citation Frequency",
@@ -113,10 +113,12 @@ export const glossaryTerms: GlossaryTerm[] = [
       "Entity consistency fixes can show impact within 2-4 weeks. This is often the single fastest improvement you can make.",
   },
   {
-    term: "three-signal methodology",
+    term: "Three-Signal Diagnostic Methodology",
     category: "Core GEO",
     definition:
-      "Miaren AI's research methodology for assessing and improving AI visibility. Evaluates three signals: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure.",
+      "Miaren AI's proprietary research methodology for evaluating AI visibility, developed by Mia Cheraghian, PhD. Assesses three diagnostic signals: (1) Can AI find you? — content structure, schema markup, and technical infrastructure; (2) Can AI trust you? — entity consistency and cross-platform presence; (3) Can AI quote you? — third-party authority signals and independent validation.",
+    insight:
+      "The three signals map to the lifecycle of an AI citation decision: discovery, verification, and confidence.",
   },
   {
     term: "FAQPage Schema",

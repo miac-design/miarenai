@@ -30,14 +30,13 @@ export default function HomePage() {
               </h1>
 
               <p className="mt-5 text-warm-gray text-lg leading-relaxed max-w-lg">
-                Synthetic search engines are rewriting how organizations are
-                discovered, cited, and perceived. When AI systems generate
-                answers, they make consequential decisions about which entities
-                to name — and which to omit.
+                When someone asks ChatGPT or Perplexity for a recommendation
+                in your industry, AI decides who to name — and who to skip.
+                Most organizations have no visibility into that process.
               </p>
               <p className="mt-3 text-warm-gray text-lg leading-relaxed max-w-lg">
-                Miaren AI conducts PhD-led research into the retrieval and
-                citation mechanisms that govern AI-generated responses.
+                Miaren AI helps you understand how AI search sees your brand
+                and what to do about it. PhD-led research, not guesswork.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -282,11 +281,10 @@ export default function HomePage() {
             When This Matters
           </h2>
           <p className="text-warm-gray text-lg leading-relaxed">
-            Organizations with established domain authority in traditional
-            search that face citation gaps in synthetic search environments.
-            The diagnostic identifies whether the deficit is structural
-            (entity verification), architectural (knowledge hierarchy), or
-            reputational (citation authority).
+            You rank well on Google but AI doesn&apos;t mention you. You have
+            a strong brand but ChatGPT recommends your competitors. Your website
+            looks great but AI can&apos;t parse it. The diagnostic tells you
+            exactly where the gap is and what to fix first.
           </p>
           <div className="mt-8">
             <Link href="/faq" className="text-teal font-medium hover:underline">

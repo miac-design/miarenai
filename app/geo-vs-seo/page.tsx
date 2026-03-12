@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
+import { geoVsSeoFaqItems } from "@/lib/faq-data";
+import { getFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "GEO vs SEO | What's the Difference?",
@@ -28,68 +30,38 @@ export const metadata: Metadata = {
 function getGeoVsSeoSchema() {
     return {
         "@context": "https://schema.org",
-        "@type": "Article",
+        "@type": "NewsArticle",
         headline: "GEO vs SEO: What's the Difference?",
         description:
             "GEO (Generative Engine Optimization) is the practice of being cited in AI search responses. SEO focuses on ranking in Google. GEO layers on top of SEO.",
         url: "https://miarenai.com/geo-vs-seo",
         datePublished: "2026-03-09",
+        dateModified: "2026-03-12",
         author: {
             "@type": "Person",
             name: "Mia Cheraghian",
             url: "https://miarenai.com/about",
+            jobTitle: "Founder, Miaren AI",
         },
         publisher: {
             "@type": "Organization",
             name: "Miaren AI",
             url: "https://miarenai.com",
+            logo: {
+                "@type": "ImageObject",
+                url: "https://miarenai.com/og-image.png",
+            },
         },
+        image: "https://miarenai.com/og-image.png",
         articleSection: "GEO Education",
+        inLanguage: "en-US",
     };
 }
 
-function getFaqSectionSchema() {
-    const questions = [
-        {
-            q: "Is GEO better than SEO?",
-            a: "GEO and SEO serve different systems. SEO optimizes for Google's ranking algorithm. GEO optimizes for AI synthesis engines that evaluate authority, entity consistency, and structured data to decide who to cite. Only 12% of AI-cited URLs also rank in Google's top 10 (Ahrefs, 2025). You need both working together.",
-        },
-        {
-            q: "Is GEO taking over SEO?",
-            a: "No. GEO layers on top of SEO. A strong SEO foundation actually supports GEO performance because many of the same signals matter: quality content, site authority, technical health. What's changing is that SEO alone is no longer sufficient. Businesses need to add GEO elements: structured data, AI-readable content, entity consistency, and AI citation tracking.",
-        },
-        {
-            q: "What is the equivalent of SEO for AI?",
-            a: "GEO (Generative Engine Optimization) is the direct equivalent. While SEO focuses on being ranked by Google, GEO focuses on being cited by AI engines like ChatGPT, Perplexity, Google AI Overviews, and Microsoft Copilot.",
-        },
-        {
-            q: "Will SEO be replaced by AI?",
-            a: "No. AI search engines rely on indexed web content to generate their answers. If content doesn't rank or exist on the web, AI has nothing to pull from. SEO remains the foundation of web visibility. GEO is the new layer that ensures AI engines can find, understand, and cite your content.",
-        },
-        {
-            q: "Will SEO exist in 5 years?",
-            a: "SEO will exist but will evolve significantly. By 2026, an estimated 85% of consumers will have used AI for search. Traditional search volume may decline, but SEO fundamentals (quality content, site structure, authority) will remain important as the foundation that GEO builds on. The businesses that thrive will be those who integrate GEO into their SEO strategy now.",
-        },
-        {
-            q: "Is SEO still worth it with AI?",
-            a: "Absolutely. SEO and GEO are complementary. A strong SEO foundation supports GEO performance. What you should do is evolve your SEO strategy to include GEO elements: add structured data, restructure content for AI readability, build entity consistency, and start tracking AI citations alongside your traditional SEO metrics.",
-        },
-    ];
-
-    return {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: questions.map((q) => ({
-            "@type": "Question",
-            name: q.q,
-            acceptedAnswer: { "@type": "Answer", text: q.a },
-        })),
-    };
-}
 
 export default function GeoVsSeoPage() {
     const articleSchema = getGeoVsSeoSchema();
-    const faqSchema = getFaqSectionSchema();
+    const faqSchema = getFaqSchema(geoVsSeoFaqItems);
 
     return (
         <>
@@ -203,39 +175,14 @@ export default function GeoVsSeoPage() {
                     </h2>
 
                     <div className="space-y-6">
-                        {[
-                            {
-                                q: "Is GEO better than SEO?",
-                                a: "GEO and SEO serve different systems. SEO optimizes for Google's ranking algorithm. GEO optimizes for AI synthesis engines that evaluate authority, entity consistency, and structured data to decide who to cite. Only 12% of AI-cited URLs also rank in Google's top 10 (Ahrefs, 2025). You need both working together.",
-                            },
-                            {
-                                q: "Is GEO taking over SEO?",
-                                a: "No. GEO layers on top of SEO. A strong SEO foundation actually supports GEO performance because many of the same signals matter: quality content, site authority, technical health. What's changing is that SEO alone is no longer sufficient. Businesses need to add GEO elements: structured data, AI-readable content, entity consistency, and AI citation tracking.",
-                            },
-                            {
-                                q: "What is the equivalent of SEO for AI?",
-                                a: "GEO (Generative Engine Optimization) is the direct equivalent. While SEO focuses on being ranked by Google, GEO focuses on being cited by AI engines like ChatGPT, Perplexity, Google AI Overviews, and Microsoft Copilot.",
-                            },
-                            {
-                                q: "Will SEO be replaced by AI?",
-                                a: "No. AI search engines rely on indexed web content to generate their answers. If content doesn't rank or exist on the web, AI has nothing to pull from. SEO remains the foundation of web visibility. GEO is the new layer that ensures AI engines can find, understand, and cite your content.",
-                            },
-                            {
-                                q: "Will SEO exist in 5 years?",
-                                a: "SEO will exist but will evolve significantly. By 2026, an estimated 85% of consumers will have used AI for search. Traditional search volume may decline, but SEO fundamentals (quality content, site structure, authority) will remain important as the foundation that GEO builds on. The businesses that thrive will be those who integrate GEO into their SEO strategy now.",
-                            },
-                            {
-                                q: "Is SEO still worth it with AI?",
-                                a: "Absolutely. SEO and GEO are complementary. A strong SEO foundation supports GEO performance. What you should do is evolve your SEO strategy to include GEO elements: add structured data, restructure content for AI readability, build entity consistency, and start tracking AI citations alongside your traditional SEO metrics.",
-                            },
-                        ].map((item) => (
+                        {geoVsSeoFaqItems.map((item) => (
                             <div
-                                key={item.q}
+                                key={item.question}
                                 className="border border-gray-200 rounded-xl p-6 bg-white"
                             >
-                                <h3 className="text-lg font-bold text-navy mb-3">{item.q}</h3>
+                                <h3 className="text-lg font-bold text-navy mb-3">{item.question}</h3>
                                 <p className="text-warm-gray leading-relaxed text-sm">
-                                    {item.a}
+                                    {item.answer}
                                 </p>
                             </div>
                         ))}
@@ -273,14 +220,14 @@ export default function GeoVsSeoPage() {
                                 source: "Ahrefs, 2025",
                             },
                             {
-                                stat: "300M+",
+                                stat: "900M+",
                                 label: "Weekly active ChatGPT users",
-                                source: "OpenAI, 2025",
+                                source: "OpenAI, 2026",
                             },
                             {
-                                stat: "30%+",
+                                stat: "~48%",
                                 label: "Of Google queries now show AI Overviews",
-                                source: "BrightEdge",
+                                source: "BrightEdge, 2026",
                             },
                         ].map((item) => (
                             <div

@@ -180,11 +180,8 @@ export default async function BlogPostPage({ params }: Props) {
           <p className="mt-3 text-warm-gray">
             Get a research-backed audit of your brand&apos;s presence across AI search systems.
           </p>
-          <div className="mt-6 flex gap-3 justify-center">
-            <Link href="/contact" className="btn-primary">Connect →</Link>
-            <a href="https://calendly.com/c2018-mia/chat-with-mia" target="_blank" rel="noopener noreferrer" className="btn-secondary !border-white/20 !text-white hover:!border-white/40">
-              Book a Call →
-            </a>
+          <div className="mt-6">
+            <Link href="/contact" className="btn-primary">Start a Conversation →</Link>
           </div>
         </div>
       </section>

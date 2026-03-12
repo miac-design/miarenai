@@ -77,81 +77,97 @@ export default function ServicesPage() {
       <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-10 items-start">
-            <div>
-              <span className="inline-block bg-teal text-navy text-xs font-bold px-3 py-1 rounded mb-4">
-                DIAGNOSTIC
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                AI Visibility Audit
-              </h2>
-              <p className="text-gray-400 leading-relaxed mb-6">
-                A structured diagnostic that analyzes how AI systems currently
-                interpret, reference, and cite your organization. We query
-                ChatGPT, Perplexity, Google AI Overviews, and Copilot with the
-                questions your audience actually asks, then evaluate the
-                results against three diagnostic signals.
-              </p>
-              <p className="text-sm font-mono text-teal mb-4">THREE DIAGNOSTIC SIGNALS</p>
-              <div className="space-y-4">
-                {[
-                  {
-                    signal: "Can AI Find You?",
-                    desc: "Whether your content is structured, crawlable, and machine-readable. Evaluates schema markup, heading hierarchy, content architecture, and technical infrastructure that determines if AI systems can parse and interpret your organization.",
-                  },
-                  {
-                    signal: "Can AI Trust You?",
-                    desc: "Whether AI systems encounter consistent brand identity, description, and positioning across every platform they cross-reference. Evaluates entity consistency and cross-platform presence across directories, LinkedIn, review sites, and your website.",
-                  },
-                  {
-                    signal: "Can AI Quote You?",
-                    desc: "Whether independent, trusted sources reference your organization in ways that give AI systems confidence to cite you. Evaluates third-party authority signals, earned media, and external validation.",
-                  },
-                ].map((item) => (
-                  <div key={item.signal}>
-                    <p className="text-sm font-semibold text-white">{item.signal}</p>
-                    <p className="text-xs text-gray-500 leading-relaxed mt-1">{item.desc}</p>
-                  </div>
-                ))}
+          {/* Header */}
+          <div className="mb-10">
+            <span className="inline-block bg-teal text-navy text-xs font-bold px-3 py-1 rounded mb-4">
+              01 / DIAGNOSTIC
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              AI Visibility Audit
+            </h2>
+            <p className="text-gray-400 leading-relaxed max-w-2xl">
+              A structured diagnostic that analyzes how AI systems currently
+              interpret, reference, and cite your organization. We query
+              ChatGPT, Perplexity, Google AI Overviews, and Copilot with the
+              questions your audience actually asks, then evaluate the
+              results against three diagnostic signals.
+            </p>
+          </div>
+
+          {/* Three Signals as visual cards */}
+          <div className="grid md:grid-cols-3 gap-5 mb-10">
+            {[
+              {
+                num: "1",
+                signal: "Can AI Find You?",
+                desc: "Whether your content is structured, crawlable, and machine-readable. Evaluates schema markup, heading hierarchy, content architecture, and technical infrastructure.",
+              },
+              {
+                num: "2",
+                signal: "Can AI Trust You?",
+                desc: "Whether AI systems encounter consistent brand identity across every platform they cross-reference. Evaluates entity consistency across directories, LinkedIn, review sites, and your website.",
+              },
+              {
+                num: "3",
+                signal: "Can AI Quote You?",
+                desc: "Whether independent, trusted sources reference your organization in ways that give AI confidence to cite you. Evaluates third-party authority signals and external validation.",
+              },
+            ].map((item) => (
+              <div key={item.num} className="bg-white/5 border border-white/10 rounded-xl p-6">
+                <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center mb-4">
+                  <span className="text-lg font-bold text-teal">{item.num}</span>
+                </div>
+                <h3 className="text-base font-bold text-white mb-2">{item.signal}</h3>
+                <p className="text-xs text-gray-400 leading-relaxed">{item.desc}</p>
               </div>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-7">
-              <p className="text-xs font-mono tracking-wider text-teal uppercase mb-4">
-                WHAT THE DIAGNOSTIC REVEALS
-              </p>
-              <ul className="space-y-3">
-                {[
-                  "How AI systems currently interpret your organization",
-                  "Where information gaps or inconsistencies undermine AI confidence",
-                  "Which competitors AI systems cite instead of you, and why",
-                  "Signal-level assessment across all three diagnostic dimensions",
-                  "Strategic visibility recommendations based on diagnostic findings",
-                ].map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-3 text-sm text-gray-300"
-                  >
-                    <svg
-                      className="w-4 h-4 text-teal shrink-0 mt-0.5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+            ))}
+          </div>
+
+          {/* What it reveals + CTA */}
+          <div className="bg-white/5 border border-white/10 rounded-xl p-7 md:p-9">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <p className="text-xs font-mono tracking-wider text-teal uppercase mb-4">
+                  WHAT THE DIAGNOSTIC REVEALS
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "How AI systems currently interpret your organization",
+                    "Where information gaps undermine AI confidence",
+                    "Which competitors AI cites instead of you, and why",
+                    "Signal-level assessment across all three dimensions",
+                    "Prioritized visibility recommendations",
+                  ].map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-3 text-sm text-gray-300"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-6">
+                      <svg
+                        className="w-4 h-4 text-teal shrink-0 mt-0.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <p className="text-gray-400 text-sm mb-6">
+                  Most organizations score below 20% on AI visibility.
+                  Find out where you stand.
+                </p>
                 <Link
                   href="/contact"
-                  className="btn-primary w-full justify-center"
+                  className="btn-primary w-full max-w-xs justify-center"
                 >
                   Request a Diagnostic →
                 </Link>
@@ -168,9 +184,39 @@ export default function ServicesPage() {
         <NodeNetwork opacity={0.2} />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-10 items-start">
-            <div className="glass-card p-7 order-2 md:order-1">
+            <div>
+              <span className="inline-block border border-gray-300 text-warm-gray text-xs font-medium px-3 py-1 rounded mb-4">
+                02 / STRATEGY
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+                AI Visibility Strategy
+              </h2>
+              <p className="text-warm-gray leading-relaxed">
+                A research-informed strategic analysis built on your diagnostic
+                results. We map how AI systems currently construct knowledge about
+                your category, identify where your organization is absent or
+                misrepresented, and design the knowledge architecture needed to
+                change how AI systems interpret you.
+              </p>
+              <p className="text-warm-gray leading-relaxed mt-4">
+                This is not a content calendar or an execution plan. It is a
+                strategic assessment of how to structure your organization&apos;s
+                information for AI systems that are deciding who to cite.
+              </p>
+              <div className="mt-6">
+                <a
+                  href="https://calendly.com/c2018-mia/chat-with-mia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-dark inline-flex"
+                >
+                  Schedule a Conversation →
+                </a>
+              </div>
+            </div>
+            <div className="glass-card p-7">
               <p className="text-xs font-mono tracking-wider text-teal uppercase mb-4">
-                STRATEGIC ANALYSIS
+                STRATEGIC ANALYSIS INCLUDES
               </p>
               <ul className="space-y-3">
                 {[
@@ -212,36 +258,6 @@ export default function ServicesPage() {
                   durable results.
                 </p>
               </div>
-              <div className="mt-6">
-                <a
-                  href="https://calendly.com/c2018-mia/chat-with-mia"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-dark w-full justify-center"
-                >
-                  Schedule a Conversation →
-                </a>
-              </div>
-            </div>
-            <div className="order-1 md:order-2">
-              <span className="inline-block border border-gray-300 text-warm-gray text-xs font-medium px-3 py-1 rounded mb-4">
-                STRATEGY
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
-                AI Visibility Strategy
-              </h2>
-              <p className="text-warm-gray leading-relaxed">
-                A research-informed strategic analysis built on your diagnostic
-                results. We map how AI systems currently construct knowledge about
-                your category, identify where your organization is absent or
-                misrepresented, and design the knowledge architecture needed to
-                change how AI systems interpret you.
-              </p>
-              <p className="text-warm-gray leading-relaxed mt-4">
-                This is not a content calendar or an execution plan. It is a
-                strategic assessment of how to structure your organization&apos;s
-                information for AI systems that are deciding who to cite.
-              </p>
             </div>
           </div>
         </div>
@@ -252,68 +268,64 @@ export default function ServicesPage() {
       {/* ============================================= */}
       <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
         <NodeNetwork opacity={0.15} color="0, 212, 170" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <div className="text-center mb-10">
-            <p className="section-label mb-3">// CONCEPT</p>
+        <div className="relative z-10 max-w-5xl mx-auto px-6">
+          <div className="mb-10">
+            <span className="inline-block border border-teal/40 text-teal text-xs font-medium px-3 py-1 rounded mb-4">
+              03 / CONCEPT
+            </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
               AI Information{" "}
               <span className="text-teal">Architecture</span>
             </h2>
           </div>
-          <div className="max-w-3xl mx-auto space-y-5 text-gray-400 leading-relaxed">
-            <p>
-              Traditional SEO focused on ranking individual web pages in a list of
-              links. AI search systems work differently. They interpret
-              organizations through distributed information across many sources:
-              websites, directories, news articles, review platforms, social
-              profiles, structured data, and more.
-            </p>
-            <p>
-              AI Information Architecture is the practice of structuring
-              organizational knowledge so AI systems can correctly interpret,
-              reference, and recommend an organization. It considers how
-              information is distributed, whether it is consistent, whether
-              independent sources validate it, and whether it is technically
-              readable by AI crawlers.
-            </p>
-            <p>
-              This is the layer between what your organization publishes and what
-              AI systems understand about you. When done well, AI systems form
-              an accurate, confident model of who you are and what you do. When
-              neglected, AI either ignores you or misrepresents you.
-            </p>
+
+          <div className="grid md:grid-cols-2 gap-10 items-start mb-12">
+            <div className="space-y-5 text-gray-400 leading-relaxed">
+              <p>
+                Traditional SEO focused on ranking individual web pages in a list of
+                links. AI search systems work differently. They interpret
+                organizations through distributed information across many sources:
+                websites, directories, news articles, review platforms, social
+                profiles, structured data, and more.
+              </p>
+              <p>
+                AI Information Architecture is the practice of structuring
+                organizational knowledge so AI systems can correctly interpret,
+                reference, and recommend an organization.
+              </p>
+            </div>
+            <div className="space-y-5 text-gray-400 leading-relaxed">
+              <p>
+                It considers how information is distributed, whether it is consistent,
+                whether independent sources validate it, and whether it is technically
+                readable by AI crawlers.
+              </p>
+              <p>
+                This is the layer between what your organization publishes and what
+                AI systems understand about you. When done well, AI systems form
+                an accurate, confident model. When neglected, AI either ignores you
+                or misrepresents you.
+              </p>
+            </div>
           </div>
-          <div className="mt-10 grid md:grid-cols-3 gap-5">
-            {[
-              {
-                label: "Traditional SEO",
-                desc: "Rank pages in a list of links",
-                muted: true,
-              },
-              {
-                label: "GEO",
-                desc: "Optimize for AI-generated answers",
-                muted: false,
-              },
-              {
-                label: "AI Information Architecture",
-                desc: "Structure how AI systems understand your organization",
-                muted: false,
-              },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className={`border rounded-xl p-5 text-center ${item.muted
-                  ? "border-white/10 opacity-50"
-                  : "border-teal/30 bg-teal/5"
-                  }`}
-              >
-                <p className={`text-sm font-bold mb-1 ${item.muted ? "text-gray-500" : "text-teal"}`}>
-                  {item.label}
-                </p>
-                <p className="text-xs text-gray-400">{item.desc}</p>
-              </div>
-            ))}
+
+          {/* Evolution progression */}
+          <div className="grid md:grid-cols-3 gap-0 md:gap-0">
+            <div className="border border-white/10 rounded-l-xl md:rounded-l-xl rounded-t-xl md:rounded-tr-none p-7 text-center opacity-50">
+              <p className="text-xs font-mono tracking-wider text-gray-500 mb-2">PAST</p>
+              <p className="text-lg font-bold text-gray-500 mb-2">Traditional SEO</p>
+              <p className="text-xs text-gray-500">Rank pages in a list of links</p>
+            </div>
+            <div className="border border-teal/30 bg-teal/5 p-7 text-center">
+              <p className="text-xs font-mono tracking-wider text-teal mb-2">PRESENT</p>
+              <p className="text-lg font-bold text-teal mb-2">GEO</p>
+              <p className="text-xs text-gray-400">Optimize for AI-generated answers</p>
+            </div>
+            <div className="border border-teal/30 bg-teal/10 rounded-r-xl md:rounded-r-xl rounded-b-xl md:rounded-bl-none p-7 text-center">
+              <p className="text-xs font-mono tracking-wider text-teal mb-2">NEXT</p>
+              <p className="text-lg font-bold text-white mb-2">AI Information Architecture</p>
+              <p className="text-xs text-gray-400">Structure how AI systems understand your organization</p>
+            </div>
           </div>
         </div>
       </section>
@@ -389,7 +401,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div>
               <span className="inline-block border border-teal/40 text-teal text-xs font-medium px-3 py-1 rounded mb-4">
-                FOR TEAMS
+                04 / FOR TEAMS
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Executive Intelligence Briefings

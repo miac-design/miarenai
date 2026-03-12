@@ -116,7 +116,7 @@ body {
   padding-left: 1.5rem;
 }
 
-.exact-letter {
+.signal-letter {
   width: 3rem;
   height: 3rem;
   border-radius: 0.5rem;
@@ -129,18 +129,18 @@ body {
   cursor: pointer;
 }
 
-.exact-letter-active {
+.signal-letter-active {
   background-color: var(--teal);
   color: var(--navy);
   box-shadow: 0 10px 15px -3px rgba(0, 212, 170, 0.3);
 }
 
-.exact-letter-inactive {
+.signal-letter-inactive {
   background-color: rgba(20, 30, 48, 0.8);
   color: var(--warm-gray);
 }
 
-.exact-letter-inactive:hover {
+.signal-letter-inactive:hover {
   background-color: var(--navy-light);
   color: white;
 }
@@ -291,4 +291,28 @@ body {
 
 .tap-indicator {
   animation: tap-pulse 2s infinite;
+}
+
+/* ─── Reduced Motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .flip-card-inner {
+    transition: none;
+  }
+
+  .flip-card {
+    transition: opacity 0.01ms ease;
+  }
+
+  .node-dot {
+    animation: none;
+  }
 }

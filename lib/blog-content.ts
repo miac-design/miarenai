@@ -21,7 +21,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "Why this matters now",
-        content: "AI-referred website traffic has grown 527% year over year (Previsible / Search Engine Land, 2025). Google AI Overviews now appear in over 30% of search queries (BrightEdge). ChatGPT has over 300 million weekly active users (OpenAI, 2025). The brands that establish their AI visibility now will compound that advantage over time. The ones that wait will find themselves invisible in the fastest-growing discovery channel in history.",
+        content: "AI-referred website traffic has grown 527% year over year (Previsible / Search Engine Land, 2025). Google AI Overviews now appear in nearly 50% of search queries (BrightEdge, 2026). ChatGPT has over 900 million weekly active users (OpenAI, 2026). The brands that establish their AI visibility now will compound that advantage over time. The ones that wait will find themselves invisible in the fastest-growing discovery channel in history.",
       },
       {
         heading: "What you should do next",
@@ -133,7 +133,7 @@ export const blogContent: Record<string, { sections: { heading: string; content:
       },
       {
         heading: "The data that moves executives",
-        content: "AI-referred website traffic grew 527% year over year (Previsible / Search Engine Land, 2025). Organic search click-through rates have declined roughly 30% since AI Overviews launched (BrightEdge). ChatGPT has 300M+ weekly active users. Gartner projected traditional search volume would decrease 25% by 2026. Less than 5% of companies have any intentional AI search strategy. These aren't projections. This is happening now.",
+        content: "AI-referred website traffic grew 527% year over year (Previsible / Search Engine Land, 2025). Organic search click-through rates have declined roughly 30% since AI Overviews launched (BrightEdge). ChatGPT has 900M+ weekly active users (OpenAI, 2026). Gartner projected traditional search volume would decrease 25% by 2026. Less than 5% of companies have any intentional AI search strategy. These aren't projections. This is happening now.",
       },
       {
         heading: "The competitive intelligence angle",
