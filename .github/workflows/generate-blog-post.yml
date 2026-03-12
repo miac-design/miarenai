@@ -27,7 +27,7 @@ jobs:
 
       - name: Generate blog post with Claude
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_KEY }}
         run: node scripts/generate-blog-post.mjs "${{ github.event.inputs.topic || '' }}"
 
       - name: Check if files were generated
