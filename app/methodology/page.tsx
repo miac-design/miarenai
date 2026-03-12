@@ -239,110 +239,65 @@ export default function ExactFrameworkPage() {
             <section className="relative bg-soft-white py-16 md:py-24 overflow-hidden">
                 <NodeNetwork opacity={0.2} />
                 <div className="relative z-10 max-w-5xl mx-auto px-6">
-                    <div className="text-center mb-4">
+                    <div className="text-center mb-10">
                         <p className="section-label mb-3">// SUSTAINED CITATION INTEGRITY</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-navy leading-tight">
                             The diagnostic establishes your baseline.{" "}
-                            <span className="text-teal">These sustain citation authority.</span>
+                            <span className="text-teal">These sustain it.</span>
                         </h2>
                         <p className="mt-4 text-warm-gray text-lg max-w-2xl mx-auto">
-                            The three-signal diagnostic identifies structural gaps in AI citability.
-                            Maintaining retrieval presence requires ongoing knowledge architecture.
+                            Finding gaps is step one. Staying visible requires ongoing work across three dimensions.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-6 mt-10">
+                    <div className="grid md:grid-cols-3 gap-6">
                         {/* Freshness */}
                         <div className="glass-card p-7 border-t-4 border-teal/40 hover:border-teal transition-colors duration-300">
-                            <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center mb-4">
-                                <svg
-                                    className="w-5 h-5 text-teal"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    strokeWidth={1.5}
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                                    />
-                                </svg>
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="text-xs font-mono font-bold text-teal bg-teal/10 w-7 h-7 rounded-lg flex items-center justify-center">1</span>
+                                <h3 className="text-lg font-bold text-navy">Freshness</h3>
                             </div>
-                            <h3 className="text-lg font-bold text-navy mb-2">Freshness</h3>
                             <p className="text-warm-gray text-sm leading-relaxed">
                                 AI prioritizes recent, consistently updated content. You
-                                can&apos;t build it once and walk away. Publishing regularly
-                                tells AI you&apos;re active and current. Brands that go silent
+                                can&apos;t build it once and walk away. Brands that go silent
                                 lose citations to brands that show up consistently.
                             </p>
                         </div>
 
                         {/* Sentiment */}
                         <div className="glass-card p-7 border-t-4 border-teal/40 hover:border-teal transition-colors duration-300">
-                            <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center mb-4">
-                                <svg
-                                    className="w-5 h-5 text-teal"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    strokeWidth={1.5}
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
-                                    />
-                                </svg>
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="text-xs font-mono font-bold text-teal bg-teal/10 w-7 h-7 rounded-lg flex items-center justify-center">2</span>
+                                <h3 className="text-lg font-bold text-navy">Sentiment</h3>
                             </div>
-                            <h3 className="text-lg font-bold text-navy mb-2">Sentiment</h3>
                             <p className="text-warm-gray text-sm leading-relaxed">
-                                It&apos;s not just whether AI mentions you. It&apos;s how AI
-                                describes you when it does. Are you recommended enthusiastically
-                                or mentioned with caveats? Managing how AI perceives and
-                                describes your brand is an ongoing strategy.
+                                It&apos;s not just whether AI mentions you &mdash; it&apos;s
+                                how. Are you recommended enthusiastically or mentioned with
+                                caveats? Managing how AI describes your brand is an ongoing strategy.
                             </p>
                         </div>
 
                         {/* Query Alignment */}
                         <div className="glass-card p-7 border-t-4 border-teal/40 hover:border-teal transition-colors duration-300">
-                            <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center mb-4">
-                                <svg
-                                    className="w-5 h-5 text-teal"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    strokeWidth={1.5}
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                                    />
-                                </svg>
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="text-xs font-mono font-bold text-teal bg-teal/10 w-7 h-7 rounded-lg flex items-center justify-center">3</span>
+                                <h3 className="text-lg font-bold text-navy">Query Alignment</h3>
                             </div>
-                            <h3 className="text-lg font-bold text-navy mb-2">
-                                Query Alignment
-                            </h3>
                             <p className="text-warm-gray text-sm leading-relaxed">
-                                Are you optimizing for the questions people actually ask AI about
-                                your category? If nobody asks &quot;What is [your brand]?&quot;
-                                but they do ask &quot;best [category] in [city],&quot; your
-                                content needs to match those real queries. Understanding what
-                                prompts your audience uses is essential.
+                                Are you optimizing for the questions people actually ask AI?
+                                If nobody asks &quot;What is [your brand]?&quot; but they do ask
+                                &quot;best [category] in [city],&quot; your content needs to
+                                match those real queries.
                             </p>
                         </div>
                     </div>
 
-                    {/* Relationship Quote — closing this section */}
+                    {/* Quote — tightened */}
                     <div className="mt-12 max-w-3xl mx-auto">
                         <div className="teal-border-left">
                             <p className="text-xl md:text-2xl font-bold text-navy leading-relaxed">
-                                &ldquo;AI citation is not a one-time achievement. It requires
-                                consistent signals over time &mdash; regular publishing, entity
-                                maintenance, and ongoing alignment with the queries your
-                                audience actually asks. The organizations that sustain visibility
-                                are the ones that treat it as an ongoing research problem.&rdquo;
+                                &ldquo;AI citation is not a one-time achievement.
+                                It requires consistent signals over time.&rdquo;
                             </p>
                             <p className="mt-4 text-sm font-mono tracking-wider text-teal uppercase">
                                 / Mia Cheraghian, PhD
@@ -353,95 +308,52 @@ export default function ExactFrameworkPage() {
             </section>
 
             {/* ============================================= */}
-            {/* Section 5: Beyond the Framework               */}
+            {/* Section 5: Advanced Research Areas             */}
             {/* ============================================= */}
-            <section className="relative bg-soft-white py-16 md:py-24 overflow-hidden">
-                <NodeNetwork opacity={0.15} />
+            <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
+                <NodeNetwork opacity={0.2} color="0, 212, 170" />
                 <div className="relative z-10 max-w-4xl mx-auto px-6">
-                    <p className="section-label mb-3">// ADVANCED LAYERS</p>
-                    <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-                        Advanced research areas
-                    </h2>
-                    <p className="text-warm-gray text-lg leading-relaxed mb-8 max-w-3xl">
-                        The diagnostic methodology covers the foundation and ongoing strategy for
-                        AI visibility. For organizations ready to go deeper,
-                        these are the advanced research areas we study.
-                    </p>
+                    <div className="text-center mb-10">
+                        <p className="section-label mb-3">// GOING DEEPER</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white">
+                            Advanced research areas
+                        </h2>
+                        <p className="mt-3 text-gray-400 max-w-2xl mx-auto">
+                            For organizations ready to go beyond the diagnostic.
+                        </p>
+                    </div>
 
                     <div className="grid md:grid-cols-3 gap-5">
-                        <div className="glass-card p-6">
-                            <div className="w-8 h-8 rounded-md bg-navy/5 flex items-center justify-center mb-3">
-                                <svg
-                                    className="w-4 h-4 text-navy"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    strokeWidth={1.5}
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
-                                    />
-                                </svg>
-                            </div>
-                            <h3 className="text-base font-bold text-navy mb-1">
+                        <div className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-teal/30 transition-colors">
+                            <p className="text-xs font-mono tracking-wider text-teal mb-3">01</p>
+                            <h3 className="text-base font-bold text-white mb-2">
                                 Platform-Specific Optimization
                             </h3>
-                            <p className="text-warm-gray text-sm leading-relaxed">
+                            <p className="text-gray-400 text-sm leading-relaxed">
                                 How Perplexity, ChatGPT, and Google AI Overviews each cite
                                 differently, and how to tailor your strategy for each.
                             </p>
                         </div>
 
-                        <div className="glass-card p-6">
-                            <div className="w-8 h-8 rounded-md bg-navy/5 flex items-center justify-center mb-3">
-                                <svg
-                                    className="w-4 h-4 text-navy"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    strokeWidth={1.5}
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5-4.5L16.5 21m0 0L12 16.5m4.5 4.5V7.5"
-                                    />
-                                </svg>
-                            </div>
-                            <h3 className="text-base font-bold text-navy mb-1">
+                        <div className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-teal/30 transition-colors">
+                            <p className="text-xs font-mono tracking-wider text-teal mb-3">02</p>
+                            <h3 className="text-base font-bold text-white mb-2">
                                 Competitive Displacement
                             </h3>
-                            <p className="text-warm-gray text-sm leading-relaxed">
+                            <p className="text-gray-400 text-sm leading-relaxed">
                                 Who AI is citing instead of you and why. Analyzing
-                                competitive citation patterns to understand positioning gaps.
+                                competitive citation patterns to find positioning gaps.
                             </p>
                         </div>
 
-                        <div className="glass-card p-6">
-                            <div className="w-8 h-8 rounded-md bg-navy/5 flex items-center justify-center mb-3">
-                                <svg
-                                    className="w-4 h-4 text-navy"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    strokeWidth={1.5}
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
-                                    />
-                                </svg>
-                            </div>
-                            <h3 className="text-base font-bold text-navy mb-1">
+                        <div className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-teal/30 transition-colors">
+                            <p className="text-xs font-mono tracking-wider text-teal mb-3">03</p>
+                            <h3 className="text-base font-bold text-white mb-2">
                                 AI Misinformation Monitoring
                             </h3>
-                            <p className="text-warm-gray text-sm leading-relaxed">
+                            <p className="text-gray-400 text-sm leading-relaxed">
                                 What happens when AI says something inaccurate about your
-                                organization. Identifying, documenting, and addressing
-                                AI-generated misinformation.
+                                organization. Identifying, documenting, and correcting it.
                             </p>
                         </div>
                     </div>
@@ -452,21 +364,18 @@ export default function ExactFrameworkPage() {
             {/* Section 6: CTA                                */}
             {/* ============================================= */}
             <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
-                <NodeNetwork opacity={0.2} color="0, 212, 170" />
+                <NodeNetwork opacity={0.15} color="0, 212, 170" />
                 <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
-                    <p className="text-warm-gray text-lg leading-relaxed mb-8">
-                        For organizations ready to go deeper into AI visibility analysis.
-                        The entity relationships AI engines are forming now will
-                        compound. Early understanding creates advantages that become
-                        difficult to close.
-                    </p>
                     <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
                         Explore how AI sees{" "}
                         <span className="text-teal">your brand.</span>
                     </h2>
                     <p className="mt-4 text-gray-400 text-lg">
-                        Learn where your brand stands in AI search based on the three
-                        diagnostic signals. Have questions? Check our{" "}
+                        The entity relationships AI engines are forming now will compound.
+                        Early understanding creates advantages that become difficult to close.
+                    </p>
+                    <p className="mt-2 text-gray-500 text-sm">
+                        Have questions? Check our{" "}
                         <Link href="/faq" className="text-teal hover:underline">
                             FAQ
                         </Link>
