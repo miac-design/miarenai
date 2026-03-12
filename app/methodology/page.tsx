@@ -220,13 +220,18 @@ export default function ExactFrameworkPage() {
                     <div className="mt-14">
                         <div className="teal-border-left">
                             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-                                &ldquo;Academic research has identified 9 content
-                                optimization techniques for AI citation. Content is one of
-                                three signals in the methodology. The other two are
-                                equally important — and often overlooked.&rdquo;
+                                Academic research identified 9 content optimization techniques
+                                that improve AI citation rates by up to 40%.
+                            </p>
+                            <p className="mt-2 text-sm text-gray-400 leading-relaxed">
+                                But content is only one of three signals. The other two &mdash;
+                                entity consistency and third-party authority &mdash; are equally
+                                important, and often overlooked.
                             </p>
                             <p className="mt-4 text-sm font-mono tracking-wider text-teal uppercase">
-                                Aggarwal et al., Georgia Tech / Princeton / IIT Delhi (2024)
+                                Research: Aggarwal et al., Georgia Tech / Princeton / IIT Delhi (2024)
+                                <span className="text-gray-500 normal-case tracking-normal"> &middot; </span>
+                                <span className="text-gray-500 normal-case tracking-normal">Analysis: Mia Cheraghian, PhD</span>
                             </p>
                         </div>
                     </div>
