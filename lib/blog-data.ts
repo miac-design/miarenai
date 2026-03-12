@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "entity-optimization-for-ai-search-engines",
+    title: "Entity Optimization: How AI Search Engines Verify Your Brand Identity",
+    description:
+      "AI engines need consistent entity signals to cite your brand with confidence—here's how to audit and optimize your entity presence across platforms.",
+    category: "How-To",
+    date: "2026-03-12",
+    readTime: "8 min read",
+  },
+  {
     slug: "what-is-generative-engine-optimization",
     title: "What is Generative Engine Optimization?",
     description:

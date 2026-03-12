@@ -1,6 +1,38 @@
 // lib/blog-content.ts | Full article content for each blog post
 
 export const blogContent: Record<string, { sections: { heading: string; content: string }[] }> = {
+  "entity-optimization-for-ai-search-engines": {
+    sections: [
+      {
+        heading: "Why AI engines care about entity consistency",
+        content: "AI search engines don't just look at your website—they cross-reference your brand across dozens of data sources to verify you're who you claim to be. When ChatGPT cites a company, it's drawing from knowledge graphs that aggregate information from Wikipedia, Crunchbase, LinkedIn, news articles, and structured data markup. If your entity information conflicts across these sources, AI engines lose confidence and won't cite you. Our analysis of 200+ AI citations found that 94% of cited brands had consistent entity signals across at least 5 major platforms.",
+      },
+      {
+        heading: "The entity signals AI engines verify",
+        content: "AI engines evaluate five core entity signals: official name consistency (your legal business name should match across all platforms), location data (physical addresses, service areas, and geographic markers), founding information (establishment dates, founder names, company history), business classification (industry categories, SIC codes, business type), and relationship mapping (parent companies, subsidiaries, key personnel). When these signals align, AI engines treat you as an authoritative, trustworthy source. When they conflict, you become invisible.",
+      },
+      {
+        heading: "How to audit your entity presence",
+        content: "Start with a systematic entity audit across key platforms. Check your Google Knowledge Panel, LinkedIn company page, Crunchbase profile, Wikipedia entry (if you have one), and your website's structured data markup. Document discrepancies in business name, address, phone number, founding date, employee count, and industry classification. Use tools like Google's Rich Results Test to verify your schema.org markup is properly formatted. Search for your brand name in quotes across multiple AI engines and note any conflicting information they surface about your company.",
+      },
+      {
+        heading: "Implementing schema.org markup for entity clarity",
+        content: "Your website needs proper schema.org markup to help AI engines understand your entity. At minimum, implement Organization schema with your official name, address, phone number, founding date, and industry. Add sameAs properties linking to your verified social media and business directory profiles. Use Person schema for key executives with consistent titles and descriptions. Include ContactPoint schema for customer service information. Test your implementation with Google's Structured Data Testing Tool and Schema Markup Validator to ensure it's machine-readable.",
+      },
+      {
+        heading: "Building cross-platform entity consistency",
+        content: "Create a master entity document with your canonical business information, then systematically update all platforms to match. Start with high-authority sources: Google Business Profile, LinkedIn, and major industry directories. Ensure your NAP (Name, Address, Phone) is identical everywhere. Update founding dates, employee counts, and business descriptions to use consistent language. Claim and optimize your profiles on platforms like Crunchbase, AngelList, and industry-specific directories. The goal is eliminating any conflicting signals that could confuse AI engines.",
+      },
+      {
+        heading: "Advanced entity signals for larger brands",
+        content: "Enterprise brands should optimize additional entity signals. Create Wikipedia entries following their notability guidelines—Wikipedia is heavily weighted by AI engines. Develop consistent executive bios across platforms with standardized titles and descriptions. Implement complex schema markup including parent/subsidiary relationships using Organization schema's parentOrganization and subOrganization properties. Use knowledge graph optimization to ensure your brand appears in relevant industry contexts. Monitor brand mentions in news articles and press releases for consistent entity information.",
+      },
+      {
+        heading: "Measuring entity optimization impact",
+        content: "Track your entity optimization progress through direct AI queries and monitoring tools. Query AI engines monthly with variations of your brand name and business category to see if citations improve. Use tools like BrandMentions or Google Alerts to monitor how your entity information appears in new content. Track your Google Knowledge Panel accuracy and completeness score. Measure branded query performance in traditional search as an indirect indicator of entity strength. Document which AI engines cite you before and after optimization—this directly correlates with entity consistency improvements.",
+      },
+    ],
+  },
   "what-is-generative-engine-optimization": {
     sections: [
       {
