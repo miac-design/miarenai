@@ -24,15 +24,30 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Check if this is a biweekly run
+        if: github.event_name == 'schedule'
+        id: week
+        run: |
+          WEEK=$(date +%V)
+          if [ $((WEEK % 2)) -eq 0 ]; then
+            echo "run=true" >> $GITHUB_OUTPUT
+          else
+            echo "run=false" >> $GITHUB_OUTPUT
+            echo "Skipping — not a biweekly week (week $WEEK)"
+          fi
+
       - name: Install Anthropic SDK
+        if: github.event_name != 'schedule' || steps.week.outputs.run == 'true'
         run: npm install @anthropic-ai/sdk
 
       - name: Generate blog post with Claude
+        if: github.event_name != 'schedule' || steps.week.outputs.run == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_KEY }}
         run: node scripts/generate-blog-post.mjs "${{ github.event.inputs.topic || '' }}"
 
       - name: Publish to main
+        if: github.event_name != 'schedule' || steps.week.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
