@@ -9,7 +9,7 @@ import {
   type CheckQuestion,
 } from "@/lib/self-check-data";
 
-type Answer = "yes" | "no" | null;
+type Answer = "yes" | "no" | "unsure" | null;
 
 function SignalGauge({
   signal,
@@ -76,8 +76,13 @@ function QuestionCard({
           <p className="text-xs font-mono text-teal mb-1.5">
             {label.name}: {label.title}
           </p>
-          <p className="text-sm text-white font-medium mb-3">{q.question}</p>
-          <div className="flex gap-3">
+          <p className="text-sm text-white font-medium mb-2">{q.question}</p>
+          {q.hint && (
+            <p className="text-xs text-gray-500 mb-3 leading-relaxed italic">
+              {q.hint}
+            </p>
+          )}
+          <div className="flex flex-wrap gap-2">
             <button
               type="button"
               onClick={() => onAnswer(q.id, answer === "yes" ? null : "yes")}
@@ -102,9 +107,24 @@ function QuestionCard({
             >
               No
             </button>
+            <button
+              type="button"
+              onClick={() => onAnswer(q.id, answer === "unsure" ? null : "unsure")}
+              className={`px-5 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                answer === "unsure"
+                  ? "bg-amber-500/70 text-white"
+                  : "bg-white/10 text-gray-400 hover:bg-white/15"
+              }`}
+              aria-pressed={answer === "unsure"}
+            >
+              I&apos;m not sure
+            </button>
           </div>
-          {showExplanation && answer === "no" && (
+          {showExplanation && (answer === "no" || answer === "unsure") && (
             <p className="text-xs text-gray-400 mt-3 leading-relaxed">
+              {answer === "unsure" && (
+                <span className="text-amber-400 font-medium">If you&apos;re not sure, it likely isn&apos;t in place yet. </span>
+              )}
               {q.explanation}
             </p>
           )}
@@ -139,6 +159,8 @@ export default function SelfCheckTool() {
     const yesCount = qs.filter((q) => answers[q.id] === "yes").length;
     return { score: yesCount, total: qs.length };
   };
+
+  const unsureCount = Object.values(answers).filter((a) => a === "unsure").length;
 
   const totalScore =
     Object.values(answers).filter((a) => a === "yes").length;
@@ -237,6 +259,9 @@ export default function SelfCheckTool() {
             </p>
             <p className="text-sm text-gray-400 mt-2">
               {totalScore} of {totalQuestions} signals present
+              {unsureCount > 0 && (
+                <span className="text-amber-400"> · {unsureCount} uncertain</span>
+              )}
             </p>
           </div>
 
