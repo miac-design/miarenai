@@ -195,7 +195,7 @@ export default function AboutPage() {
               "Director of Strategic Partnerships & Marketing, Austin AI Hub (501(c)(3) nonprofit)",
               "Creator of the three-signal diagnostic methodology for AI visibility",
               "Background in UX research and market research methods",
-              "Published researcher and peer reviewer (1 book chapter, 2 journal papers under review, 2 conference presentations)",
+              "Published researcher and peer reviewer",
             ].map((item) => (
               <div
                 key={item}
@@ -215,6 +215,100 @@ export default function AboutPage() {
                   />
                 </svg>
                 <p className="text-sm text-navy">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================= */}
+      {/* Section 3b: Publications & Speaking           */}
+      {/* ============================================= */}
+      <section className="relative bg-navy py-12 md:py-16 overflow-hidden">
+        <NodeNetwork opacity={0.15} color="0, 212, 170" />
+        <div className="relative z-10 max-w-3xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Publications */}
+            <div>
+              <p className="section-label mb-4">// PUBLICATIONS</p>
+              <div className="space-y-4">
+                <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                  <p className="text-xs font-mono text-teal mb-2">BOOK CHAPTER</p>
+                  <p className="text-sm text-white font-medium mb-1">
+                    Smart Glasses and Travel Hesitation Among People with Disabilities
+                  </p>
+                  <p className="text-xs text-gray-400">
+                    Published in peer-reviewed academic volume. Research conducted at Texas Tech University.
+                  </p>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                  <p className="text-xs font-mono text-teal mb-2">JOURNAL PAPERS</p>
+                  <p className="text-sm text-white font-medium mb-1">
+                    2 journal papers under peer review
+                  </p>
+                  <p className="text-xs text-gray-400">
+                    Research on emerging technology adoption and user behavior in hospitality contexts.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaking & Conferences */}
+            <div>
+              <p className="section-label mb-4">// SPEAKING & CONFERENCES</p>
+              <div className="space-y-4">
+                <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                  <p className="text-xs font-mono text-teal mb-2">CONFERENCE PRESENTATIONS</p>
+                  <p className="text-sm text-white font-medium mb-1">
+                    2 peer-reviewed conference presentations
+                  </p>
+                  <p className="text-xs text-gray-400">
+                    Research on how emerging technology shapes user behavior, presented at academic conferences.
+                  </p>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                  <p className="text-xs font-mono text-teal mb-2">PEER REVIEWER</p>
+                  <p className="text-sm text-white font-medium mb-1">
+                    Academic peer reviewer
+                  </p>
+                  <p className="text-xs text-gray-400">
+                    Reviews research manuscripts in hospitality, technology adoption, and user experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================= */}
+      {/* Section 3c: Featured & Affiliated              */}
+      {/* ============================================= */}
+      <section className="py-12 md:py-16 bg-soft-white">
+        <div className="max-w-3xl mx-auto px-6">
+          <p className="section-label mb-4">// AFFILIATED WITH</p>
+          <div className="grid grid-cols-3 gap-4">
+            {[
+              {
+                name: "Texas Tech University",
+                role: "PhD, Doctoral Researcher",
+                type: "R1 Research Institution",
+              },
+              {
+                name: "Rackspace Technology",
+                role: "Senior Researcher",
+                type: "Enterprise Technology",
+              },
+              {
+                name: "Austin AI Hub",
+                role: "Director, Strategic Partnerships",
+                type: "501(c)(3) Nonprofit",
+              },
+            ].map((org) => (
+              <div key={org.name} className="glass-card p-5 text-center">
+                <p className="text-sm font-bold text-navy">{org.name}</p>
+                <p className="text-xs text-teal mt-1">{org.role}</p>
+                <p className="text-xs text-warm-gray mt-0.5">{org.type}</p>
               </div>
             ))}
           </div>

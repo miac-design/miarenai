@@ -30,23 +30,31 @@ export const metadata: Metadata = {
 function getGeoVsSeoSchema() {
     return {
         "@context": "https://schema.org",
-        "@type": "Article",
+        "@type": "NewsArticle",
         headline: "GEO vs SEO: What's the Difference?",
         description:
             "GEO (Generative Engine Optimization) is the practice of being cited in AI search responses. SEO focuses on ranking in Google. GEO layers on top of SEO.",
         url: "https://miarenai.com/geo-vs-seo",
         datePublished: "2026-03-09",
+        dateModified: "2026-03-12",
         author: {
             "@type": "Person",
             name: "Mia Cheraghian",
             url: "https://miarenai.com/about",
+            jobTitle: "Founder, Miaren AI",
         },
         publisher: {
             "@type": "Organization",
             name: "Miaren AI",
             url: "https://miarenai.com",
+            logo: {
+                "@type": "ImageObject",
+                url: "https://miarenai.com/og-image.png",
+            },
         },
+        image: "https://miarenai.com/og-image.png",
         articleSection: "GEO Education",
+        inLanguage: "en-US",
     };
 }
 

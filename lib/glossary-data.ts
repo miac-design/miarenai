@@ -113,10 +113,12 @@ export const glossaryTerms: GlossaryTerm[] = [
       "Entity consistency fixes can show impact within 2-4 weeks. This is often the single fastest improvement you can make.",
   },
   {
-    term: "three-signal methodology",
+    term: "Three-Signal Diagnostic Methodology",
     category: "Core GEO",
     definition:
-      "Miaren AI's research methodology for assessing and improving AI visibility. Evaluates three signals: Entity Consistency, Cross-Platform Presence, Authority Signals, Content Structure, and Technical Infrastructure.",
+      "Miaren AI's proprietary research methodology for evaluating AI visibility, developed by Mia Cheraghian, PhD. Assesses three diagnostic signals: (1) Can AI find you? — content structure, schema markup, and technical infrastructure; (2) Can AI trust you? — entity consistency and cross-platform presence; (3) Can AI quote you? — third-party authority signals and independent validation.",
+    insight:
+      "The three signals map to the lifecycle of an AI citation decision: discovery, verification, and confidence.",
   },
   {
     term: "FAQPage Schema",

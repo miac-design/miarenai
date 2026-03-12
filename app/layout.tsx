@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getOrganizationSchema, getPersonSchema } from "@/lib/schema";
+import { getOrganizationSchema, getPersonSchema, getLocalBusinessSchema, getEventSchema } from "@/lib/schema";
 import "./globals.css";
 
 const dmSans = localFont({
@@ -94,6 +94,8 @@ export default function RootLayout({
 }) {
   const orgSchema = getOrganizationSchema();
   const personSchema = getPersonSchema();
+  const localBusinessSchema = getLocalBusinessSchema();
+  const eventSchema = getEventSchema();
 
   return (
     <html lang="en" className={`${dmSans.variable} ${jetbrains.variable}`}>
@@ -105,6 +107,14 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
         />
       </head>
       <body className="font-sans antialiased">
