@@ -5,14 +5,14 @@ import { selfCheckQuestions, signalLabels } from "@/lib/self-check-data";
 import { getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "AI Visibility AI Visibility Score | How Visible Is Your Brand to AI?",
+  title: "AI Visibility Score | How Visible Is Your Brand to AI?",
   description:
     "Answer 10 questions to estimate your brand's AI visibility across the three diagnostic signals: findability, trust, and authority. Free assessment by Miaren AI.",
   alternates: {
     canonical: "https://miarenai.com/ai-visibility-score",
   },
   openGraph: {
-    title: "AI Visibility AI Visibility Score | Miaren AI",
+    title: "AI Visibility Score | Miaren AI",
     description:
       "Answer 10 questions to estimate how visible your brand is to AI search engines like ChatGPT, Perplexity, and Google AI Overviews.",
     url: "https://miarenai.com/ai-visibility-score",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://miarenai.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AI Visibility AI Visibility Score | Miaren AI",
+        alt: "AI Visibility Score | Miaren AI",
       },
     ],
   },
@@ -31,7 +31,7 @@ function getSelfCheckSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Quiz",
-    name: "AI Visibility AI Visibility Score",
+    name: "AI Visibility Score",
     description:
       "A 10-question assessment tool that estimates how visible your brand is to AI-powered search engines. Evaluates three diagnostic signals: findability, trust, and authority.",
     url: "https://miarenai.com/ai-visibility-score",
