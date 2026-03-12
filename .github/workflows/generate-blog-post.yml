@@ -70,5 +70,4 @@ jobs:
 
           > Merge this PR to publish. Close it to discard.
           EOF
-          )" \
-            --label "blog-draft"
+          )"
