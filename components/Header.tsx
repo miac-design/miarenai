@@ -8,6 +8,7 @@ const navItems = [
   { href: "/services", label: "Expertise" },
   { href: "/methodology", label: "Methodology" },
   { href: "/geo-vs-seo", label: "GEO vs SEO" },
+  { href: "/self-check", label: "Self-Check" },
   { href: "/about", label: "About" },
   { href: "/research", label: "Research" },
   { href: "/insights", label: "Insights" },
