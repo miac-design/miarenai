@@ -229,19 +229,27 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Publications */}
-            <div>
+            <div className="flex flex-col">
               <p className="section-label mb-4">// PUBLICATIONS</p>
-              <div className="space-y-4">
-                <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+              <div className="space-y-4 flex-1 flex flex-col">
+                <div className="bg-white/5 border border-white/10 rounded-xl p-5 flex-1">
                   <p className="text-xs font-mono text-teal mb-2">BOOK CHAPTER</p>
                   <p className="text-sm text-white font-medium mb-1">
-                    Smart Glasses and Travel Hesitation Among People with Disabilities
+                    Ethical AI Storytelling in Volunteer Tourism: Code Meets Compassion
                   </p>
-                  <p className="text-xs text-gray-400">
-                    Published in peer-reviewed academic volume. Research conducted at Texas Tech University.
+                  <p className="text-xs text-gray-400 mb-2">
+                    Published in peer-reviewed academic volume by IGI Global. Research conducted at Texas Tech University.
                   </p>
+                  <a
+                    href="https://www.igi-global.com/chapter/ethical-ai-storytelling-in-volunteer-tourism/395307"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal text-xs font-medium hover:underline"
+                  >
+                    Read on IGI Global →
+                  </a>
                 </div>
-                <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                <div className="bg-white/5 border border-white/10 rounded-xl p-5 flex-1">
                   <p className="text-xs font-mono text-teal mb-2">JOURNAL PAPERS</p>
                   <p className="text-sm text-white font-medium mb-1">
                     2 journal papers under peer review
@@ -254,10 +262,10 @@ export default function AboutPage() {
             </div>
 
             {/* Speaking & Conferences */}
-            <div>
+            <div className="flex flex-col">
               <p className="section-label mb-4">// SPEAKING & CONFERENCES</p>
-              <div className="space-y-4">
-                <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+              <div className="space-y-4 flex-1 flex flex-col">
+                <div className="bg-white/5 border border-white/10 rounded-xl p-5 flex-1">
                   <p className="text-xs font-mono text-teal mb-2">CONFERENCE PRESENTATIONS</p>
                   <p className="text-sm text-white font-medium mb-1">
                     2 peer-reviewed conference presentations
@@ -266,7 +274,7 @@ export default function AboutPage() {
                     Research on how emerging technology shapes user behavior, presented at academic conferences.
                   </p>
                 </div>
-                <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                <div className="bg-white/5 border border-white/10 rounded-xl p-5 flex-1">
                   <p className="text-xs font-mono text-teal mb-2">PEER REVIEWER</p>
                   <p className="text-sm text-white font-medium mb-1">
                     Academic peer reviewer
