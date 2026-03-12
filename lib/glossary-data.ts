@@ -72,7 +72,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "ChatGPT",
     category: "AI Platforms",
     definition:
-      "OpenAI's conversational AI with over 300 million weekly active users as of 2025. The most widely used AI search platform. Cites authoritative, recent content and is increasingly used as a search alternative.",
+      "OpenAI's conversational AI with over 900 million weekly active users as of early 2026. The most widely used AI search platform. Cites authoritative, recent content and is increasingly used as a search alternative.",
   },
   {
     term: "Citation Frequency",

@@ -84,12 +84,12 @@ export const faqItems: FaqItem[] = [
   {
     question: "What AI search platforms should we care about?",
     answer:
-      "ChatGPT (300M+ weekly active users), Perplexity (fastest-growing AI search engine), Google AI Overviews (appearing in 30%+ of queries), Microsoft Copilot (enterprise via Office 365), and Google Gemini. Each platform has different citation behaviors, and an effective GEO strategy addresses all of them.",
+      "ChatGPT (900M+ weekly active users), Perplexity (fastest-growing AI search engine), Google AI Overviews (appearing in nearly 50% of queries), Microsoft Copilot (enterprise via Office 365), and Google Gemini. Each platform has different citation behaviors, and an effective GEO strategy addresses all of them.",
   },
   {
     question: "Is this just a fad?",
     answer:
-      "No. AI-referred website sessions grew 527% in 2024-2025 (Previsible/Search Engine Land). Traditional click-through rates dropped ~30% since AI Overviews launched (BrightEdge). 300M+ people use ChatGPT weekly (OpenAI). This is a structural shift in how people find businesses, not a temporary trend.",
+      "No. AI-referred website sessions grew 527% in 2024-2025 (Previsible/Search Engine Land). Traditional click-through rates dropped ~30% since AI Overviews launched (BrightEdge). 900M+ people use ChatGPT weekly (OpenAI, 2026). This is a structural shift in how people find businesses, not a temporary trend.",
   },
 ];
 
@@ -118,7 +118,7 @@ export const geoVsSeoFaqItems: FaqItem[] = [
   {
     question: "Will SEO exist in 5 years?",
     answer:
-      "SEO will exist but will evolve significantly. By 2026, an estimated 85% of consumers will have used AI for search. Traditional search volume may decline, but SEO fundamentals (quality content, site structure, authority) will remain important as the foundation that GEO builds on. The businesses that thrive will be those who integrate GEO into their SEO strategy now.",
+      "SEO will exist but will evolve significantly. ChatGPT alone has 900M+ weekly active users (OpenAI, 2026), and 37% of consumers now start searches with AI instead of Google (Eight Oh Two, 2026). Traditional search volume may decline, but SEO fundamentals (quality content, site structure, authority) will remain important as the foundation that GEO builds on. The businesses that thrive will be those who integrate GEO into their SEO strategy now.",
   },
   {
     question: "Is SEO still worth it with AI?",

@@ -212,14 +212,14 @@ export default function GeoVsSeoPage() {
                                 source: "Ahrefs, 2025",
                             },
                             {
-                                stat: "300M+",
+                                stat: "900M+",
                                 label: "Weekly active ChatGPT users",
-                                source: "OpenAI, 2025",
+                                source: "OpenAI, 2026",
                             },
                             {
-                                stat: "30%+",
+                                stat: "~48%",
                                 label: "Of Google queries now show AI Overviews",
-                                source: "BrightEdge",
+                                source: "BrightEdge, 2026",
                             },
                         ].map((item) => (
                             <div
