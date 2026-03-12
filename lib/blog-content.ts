@@ -1,6 +1,38 @@
 // lib/blog-content.ts | Full article content for each blog post
 
 export const blogContent: Record<string, { sections: { heading: string; content: string }[] }> = {
+  "entity-optimization-guide-for-ai-visibility": {
+    sections: [
+      {
+        heading: "Why entity consistency breaks most AI visibility strategies",
+        content: "AI engines don't just index web pages—they build knowledge graphs of entities: people, organizations, products, and concepts. When ChatGPT or Perplexity evaluates whether to cite your brand, they're checking if you exist as a coherent entity across their training data and real-time sources. Most brands fail here because their entity signals are inconsistent, incomplete, or contradictory. A Fortune 500 client recently discovered their company name appeared in 47 different variations across platforms. AI engines couldn't connect these as the same entity, fragmenting their authority signals.",
+      },
+      {
+        heading: "The four pillars of entity optimization",
+        content: "Entity optimization requires consistency across four areas: NAP (Name, Address, Phone), which must be identical across all platforms down to spacing and punctuation; Business descriptions, where your core value proposition should use consistent language while avoiding keyword stuffing; Category classifications, ensuring you're listed in the same primary business categories across directories; and Leadership attribution, where executive names and titles should match across LinkedIn, company pages, and press mentions. Each inconsistency creates entity confusion that dilutes your AI visibility.",
+      },
+      {
+        heading: "Structured data markup that AI engines actually use",
+        content: "Not all schema markup matters for AI visibility. Focus on Organization schema with exact name, URL, logo, and sameAs properties linking to official social profiles. LocalBusiness schema for location-based entities with consistent NAP data and operating hours. Person schema for leadership that matches public profiles exactly. Article schema with proper author attribution and publication dates. Skip the complex, nested schemas that confuse more than they help. AI engines prioritize clean, consistent structured data over comprehensive markup that's inconsistently implemented.",
+      },
+      {
+        heading: "The knowledge panel audit process",
+        content: "Start by searching your brand name in Google, Bing, and DuckDuckGo to see what knowledge panels appear. Document every piece of information shown: business details, key people, recent news, and related entities. Then cross-reference this against your official information. Mismatches indicate entity confusion that will hurt AI citations. Check Wikipedia, Wikidata, Crunchbase, and industry directories for accuracy. These are primary sources that AI engines reference for entity verification. Fix discrepancies starting with the most authoritative sources first.",
+      },
+      {
+        heading: "Building entity authority through strategic mentions",
+        content: "AI engines evaluate entity importance through co-occurrence patterns and authoritative mentions. Get mentioned alongside recognized entities in your industry through industry reports, expert roundups, and thought leadership pieces. Ensure your executives are quoted as subject matter experts with consistent name and title attribution. Build strategic partnerships with established entities that AI already trusts. Each quality mention strengthens your entity graph connections and increases citation probability. Quality trumps quantity—one mention in a respected industry publication outweighs dozens in low-authority directories.",
+      },
+      {
+        heading: "Measuring entity optimization impact",
+        content: "Track entity mentions using Google Alerts and mention monitoring tools like Brand24 or Ahrefs Alerts. Monitor knowledge panel completeness and accuracy quarterly. Use entity extraction tools to see how consistently AI systems identify your brand from content. Track branded query AI Overviews to see if your entity information appears correctly. Set up monthly searches in ChatGPT, Perplexity, and Gemini asking about your company, competitors, and industry topics to monitor citation patterns. Document when you're mentioned versus when you're not, looking for patterns in query types and competitive landscapes.",
+      },
+      {
+        heading: "Implementation roadmap",
+        content: "Week 1: Complete entity audit across all major platforms and knowledge sources. Week 2-3: Fix NAP inconsistencies starting with Google Business Profile, LinkedIn, and industry directories. Week 4-5: Implement proper structured data markup on primary web properties. Week 6-8: Update executive profiles across platforms for consistent attribution. Month 2-3: Execute strategic mention campaign targeting industry publications and expert opportunities. Month 4+: Monitor and maintain consistency as new platforms and mentions emerge. This systematic approach ensures AI engines can confidently identify and cite your entity across contexts.",
+      },
+    ],
+  },
   "what-is-generative-engine-optimization": {
     sections: [
       {
