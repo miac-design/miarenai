@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import NodeNetwork from "@/components/NodeNetwork";
+import { getWebPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Research & Insights | How AI Systems Interpret Organizations | Miaren AI",
@@ -24,8 +25,26 @@ export const metadata: Metadata = {
 };
 
 export default function ResearchPage() {
+    const webPageSchema = getWebPageSchema({
+        title: "Research & Insights | How AI Systems Interpret Organizations",
+        description: "Studying how organizations become discoverable, citable, and recommended in AI-powered search systems. Research by Mia Cheraghian, PhD.",
+        url: "https://miarenai.com/research",
+    });
+    const breadcrumbSchema = getBreadcrumbSchema([
+        { name: "Home", url: "https://miarenai.com" },
+        { name: "Research", url: "https://miarenai.com/research" },
+    ]);
+
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             {/* Hero */}
             <section className="relative bg-soft-white pt-14 pb-16 md:pt-24 md:pb-28 overflow-hidden">
                 <NodeNetwork opacity={0.3} />

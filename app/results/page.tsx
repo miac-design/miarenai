@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
 import { caseStudies } from "@/lib/case-study-data";
+import { getCollectionPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Case Studies | AI Visibility Research in Practice",
@@ -18,7 +19,26 @@ export const metadata: Metadata = {
 };
 
 export default function ResultsPage() {
+    const collectionSchema = getCollectionPageSchema({
+        title: "Case Studies | AI Visibility Research in Practice",
+        description: "How the three-signal diagnostic methodology has been applied across industries. AI visibility case studies by Miaren AI.",
+        url: "https://miarenai.com/results",
+    });
+    const breadcrumbSchema = getBreadcrumbSchema([
+        { name: "Home", url: "https://miarenai.com" },
+        { name: "Case Studies", url: "https://miarenai.com/results" },
+    ]);
+
     return (
+        <>
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+        />
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
         <section className="relative bg-soft-white pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden">
             <NodeNetwork opacity={0.2} />
             <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -94,5 +114,6 @@ export default function ResultsPage() {
                 </div>
             </div>
         </section>
+        </>
     );
 }

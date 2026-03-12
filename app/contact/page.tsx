@@ -103,7 +103,7 @@ export default function ContactPage() {
                     </span>
                   </div>
                   <a
-                    href="https://www.linkedin.com/company/miaren-ai/about/?viewAsMember=true"
+                    href="https://www.linkedin.com/in/mia-cheraghian/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 hover:opacity-80"

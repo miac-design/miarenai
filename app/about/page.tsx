@@ -51,7 +51,7 @@ const personSchema = {
   description:
     "PhD researcher and founder of Miaren AI. Studies how AI-powered search systems interpret, reference, and recommend organizations. Background in UX research and market research.",
   sameAs: ["https://www.linkedin.com/in/mia-cheraghian/"],
-  url: "https://www.miarenai.com/about",
+  url: "https://miarenai.com/about",
 };
 
 export default function AboutPage() {

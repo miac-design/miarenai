@@ -55,17 +55,15 @@ export default function FaqPage() {
             , AI search visibility, and how we work.
           </p>
 
-          {/* SSR-rendered answers for crawlers */}
-          <noscript>
-            <div className="space-y-6">
-              {faqItems.map((item, i) => (
-                <div key={i} className="border border-gray-200 rounded-xl p-6 bg-white">
-                  <h3 className="text-base font-medium text-navy mb-2">{item.question}</h3>
-                  <p className="text-warm-gray text-sm leading-relaxed">{item.answer}</p>
-                </div>
-              ))}
-            </div>
-          </noscript>
+          {/* SSR-rendered answers always in DOM for AI crawlers */}
+          <div className="sr-only" aria-hidden="true">
+            {faqItems.map((item, i) => (
+              <div key={i}>
+                <h3>{item.question}</h3>
+                <p>{item.answer}</p>
+              </div>
+            ))}
+          </div>
 
           <FaqAccordion items={faqItems} />
 

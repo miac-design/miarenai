@@ -57,7 +57,7 @@ export function getOrganizationSchema() {
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "GEO Services",
+      name: "AI Visibility Services",
       itemListElement: [
         {
           "@type": "Offer",
@@ -65,25 +65,34 @@ export function getOrganizationSchema() {
             "@type": "Service",
             name: "AI Visibility Audit",
             description:
-              "Full AI visibility diagnostic across 4 AI platforms with AI Visibility Score, competitive benchmarking, and prioritized fix list. Delivered in 5-7 business days.",
+              "A structured diagnostic analyzing how AI systems currently interpret, reference, and cite your organization across ChatGPT, Perplexity, Google AI Overviews, and Copilot.",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "The GEO Blueprint",
+            name: "AI Visibility Strategy",
             description:
-              "Custom content restructuring plan, structured data roadmap, entity consistency audit, and authority-building priorities. Delivered in 2-3 weeks.",
+              "A research-informed strategic analysis that maps how AI systems construct knowledge about your category, identifies gaps, and designs the knowledge architecture to improve AI interpretation.",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "The GEO Workshop",
+            name: "AI Information Architecture",
             description:
-              "Live half-day training session with full audit walkthrough, monitoring toolkit, and 30-day implementation support.",
+              "Structuring organizational knowledge so AI systems can correctly interpret, reference, and recommend an organization through semantic hierarchies, structured data schemas, and entity graphs.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Executive Intelligence Briefings",
+            description:
+              "Structured briefings for leadership and technical teams on how AI search systems evaluate and cite sources, grounded in the three-signal diagnostic methodology.",
           },
         },
       ],
@@ -238,22 +247,33 @@ export function getServiceSchema() {
     serviceType: "Generative Engine Optimization",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "GEO Services",
+      name: "AI Visibility Services",
       itemListElement: [
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
             name: "AI Visibility Audit",
-            description: "Full AI visibility diagnostic across 4 AI platforms with AI Visibility Score, competitive benchmarking, and prioritized fix list.",
+            description:
+              "A structured diagnostic analyzing how AI systems currently interpret, reference, and cite your organization across ChatGPT, Perplexity, Google AI Overviews, and Copilot.",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "The GEO Blueprint",
-            description: "Custom content restructuring plan, structured data roadmap, entity consistency audit, and authority-building priorities.",
+            name: "AI Visibility Strategy",
+            description:
+              "A research-informed strategic analysis that maps how AI systems construct knowledge about your category, identifies gaps, and designs the knowledge architecture to improve AI interpretation.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "AI Information Architecture",
+            description:
+              "Structuring organizational knowledge so AI systems can correctly interpret, reference, and recommend an organization through semantic hierarchies, structured data schemas, and entity graphs.",
           },
         },
         {
@@ -261,7 +281,8 @@ export function getServiceSchema() {
           itemOffered: {
             "@type": "Service",
             name: "Executive Intelligence Briefings",
-            description: "Research seminars for leadership on RAG pipeline mechanics, entity disambiguation, and the citation dynamics that determine organizational visibility in synthetic search.",
+            description:
+              "Structured briefings for leadership and technical teams on how AI search systems evaluate and cite sources, grounded in the three-signal diagnostic methodology.",
           },
         },
       ],
@@ -289,6 +310,30 @@ export function getExactFrameworkArticleSchema() {
       url: "https://miarenai.com",
     },
     articleSection: "Methodology",
+  };
+}
+
+export function getCollectionPageSchema(page: {
+  title: string;
+  description: string;
+  url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: page.title,
+    description: page.description,
+    url: page.url,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Miaren AI",
+      url: "https://miarenai.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Miaren AI",
+      url: "https://miarenai.com",
+    },
   };
 }
 

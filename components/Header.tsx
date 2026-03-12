@@ -4,6 +4,16 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+const navItems = [
+  { href: "/services", label: "Expertise" },
+  { href: "/methodology", label: "Methodology" },
+  { href: "/geo-vs-seo", label: "GEO vs SEO" },
+  { href: "/about", label: "About" },
+  { href: "/research", label: "Research" },
+  { href: "/insights", label: "Insights" },
+  { href: "/faq", label: "FAQ" },
+];
+
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -25,60 +35,19 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
-          <Link
-            href="/services"
-            className={`text-sm font-medium transition-colors ${isActive("/services")
-              ? "text-navy"
-              : "text-warm-gray hover:text-navy"
-              }`}
-          >
-            Expertise
-          </Link>
-          <Link
-            href="/methodology"
-            className={`text-sm font-medium transition-colors ${isActive("/methodology")
-              ? "text-navy"
-              : "text-warm-gray hover:text-navy"
-              }`}
-          >
-            Methodology
-          </Link>
-          <Link
-            href="/geo-vs-seo"
-            className={`text-sm font-medium transition-colors ${isActive("/geo-vs-seo")
-              ? "text-navy"
-              : "text-warm-gray hover:text-navy"
-              }`}
-          >
-            GEO vs SEO
-          </Link>
-          <Link
-            href="/about"
-            className={`text-sm font-medium transition-colors ${isActive("/about")
-              ? "text-navy"
-              : "text-warm-gray hover:text-navy"
-              }`}
-          >
-            About
-          </Link>
-          <Link
-            href="/research"
-            className={`text-sm font-medium transition-colors ${isActive("/research")
-              ? "text-navy"
-              : "text-warm-gray hover:text-navy"
-              }`}
-          >
-            Research
-          </Link>
-          <Link
-            href="/faq"
-            className={`text-sm font-medium transition-colors ${isActive("/faq")
-              ? "text-navy"
-              : "text-warm-gray hover:text-navy"
-              }`}
-          >
-            FAQ
-          </Link>
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-current={isActive(item.href) ? "page" : undefined}
+              className={`text-sm font-medium transition-colors ${isActive(item.href)
+                ? "text-navy"
+                : "text-warm-gray hover:text-navy"
+                }`}
+            >
+              {item.label}
+            </Link>
+          ))}
 
           <Link href="/contact" className="btn-primary text-sm !py-2 !px-5">
             Connect
@@ -104,12 +73,17 @@ export default function Header() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3">
-          <Link href="/services" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Expertise</Link>
-          <Link href="/methodology" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Methodology</Link>
-          <Link href="/geo-vs-seo" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>GEO vs SEO</Link>
-          <Link href="/about" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>About</Link>
-          <Link href="/research" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>Research</Link>
-          <Link href="/faq" className="block text-sm font-medium text-navy" onClick={() => setMobileOpen(false)}>FAQ</Link>
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-current={isActive(item.href) ? "page" : undefined}
+              className="block text-sm font-medium text-navy"
+              onClick={() => setMobileOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
           <Link href="/contact" className="btn-primary text-sm !py-2 w-full justify-center" onClick={() => setMobileOpen(false)}>Connect</Link>
         </div>
       )}
