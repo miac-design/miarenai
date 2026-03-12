@@ -208,8 +208,8 @@ export default function ExactFrameworkPage() {
                     <div className="text-center mb-10">
                         <p className="section-label mb-3">// HOW TO THINK ABOUT IT</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-                            Your Brand Is a Restaurant.{" "}
-                            <span className="text-teal">AI Is the Food Critic.</span>
+                            Your Brand Is a Witness.{" "}
+                            <span className="text-teal">AI Is the Investigator.</span>
                         </h2>
                     </div>
 
