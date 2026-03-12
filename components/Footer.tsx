@@ -41,7 +41,6 @@ export default function Footer() {
               <Link href="/services" className="block text-sm text-gray-400 hover:text-white transition-colors">Expertise</Link>
               <Link href="/methodology" className="block text-sm text-gray-400 hover:text-white transition-colors">Methodology</Link>
               <Link href="/geo-vs-seo" className="block text-sm text-gray-400 hover:text-white transition-colors">GEO vs SEO</Link>
-              <Link href="/geo-vs-seo" className="block text-sm text-gray-400 hover:text-white transition-colors">GEO vs SEO</Link>
               <Link href="/results" className="block text-sm text-gray-400 hover:text-white transition-colors">Case Studies</Link>
               <Link href="/about" className="block text-sm text-gray-400 hover:text-white transition-colors">About</Link>
             </div>
