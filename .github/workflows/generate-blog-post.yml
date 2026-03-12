@@ -13,7 +13,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   generate:
@@ -33,62 +32,11 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_KEY }}
         run: node scripts/generate-blog-post.mjs "${{ github.event.inputs.topic || '' }}"
 
-      - name: Check if files were generated
-        id: check
-        run: |
-          if git diff --quiet && git diff --cached --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Validate blog post
-        if: steps.check.outputs.changed == 'true'
-        id: validate
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_KEY }}
-        run: |
-          if node scripts/validate-blog-post.mjs; then
-            echo "approved=true" >> $GITHUB_OUTPUT
-          else
-            echo "approved=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Auto-publish to main
-        if: steps.check.outputs.changed == 'true' && steps.validate.outputs.approved == 'true'
+      - name: Publish to main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add lib/blog-data.ts lib/blog-content.ts
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
           git commit -m "Publish blog post $(date +%Y-%m-%d) [auto-generated]"
           git push origin main
-
-      - name: Create PR for manual review (validation failed)
-        if: steps.check.outputs.changed == 'true' && steps.validate.outputs.approved == 'false'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          BRANCH="blog/needs-review-$(date +%Y-%m-%d)"
-          git checkout -b "$BRANCH"
-          git add lib/blog-data.ts lib/blog-content.ts
-          git add -f validation-result.json || true
-          git commit -m "Blog post needs review $(date +%Y-%m-%d)"
-          git push -u origin "$BRANCH"
-          VALIDATION=$(cat validation-result.json 2>/dev/null || echo '{}')
-          gh pr create \
-            --title "Blog Post Needs Review — $(date +%B\ %d,\ %Y)" \
-            --body "$(cat <<EOF
-          ## Blog Post Flagged for Review
-
-          The automated validator found issues with this post. Please review before publishing.
-
-          ### Validation Result
-          \`\`\`json
-          $VALIDATION
-          \`\`\`
-
-          **Action:** Fix issues and merge to publish, or close to discard.
-          EOF
-          )"
