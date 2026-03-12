@@ -73,7 +73,7 @@ jobs:
           BRANCH="blog/needs-review-$(date +%Y-%m-%d)"
           git checkout -b "$BRANCH"
           git add lib/blog-data.ts lib/blog-content.ts
-          git add validation-result.json || true
+          git add -f validation-result.json || true
           git commit -m "Blog post needs review $(date +%Y-%m-%d)"
           git push -u origin "$BRANCH"
           VALIDATION=$(cat validation-result.json 2>/dev/null || echo '{}')
