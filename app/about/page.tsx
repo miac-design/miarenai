@@ -117,6 +117,7 @@ export default function AboutPage() {
               alt="Mia Cheraghian, Founder of Miaren AI"
               width={88}
               height={88}
+              priority
               className="rounded-full object-cover w-20 h-20 md:w-22 md:h-22 ring-2 ring-teal/30"
             />
             <div>

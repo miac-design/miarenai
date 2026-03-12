@@ -137,11 +137,12 @@ function FlipCard({
                     setTapped((t) => !t);
                 }
             }}
-            aria-label={`${card.frontTitle}: ${card.backLabel}`}
+            aria-label={`${card.frontTitle}: ${card.backLabel}. ${isFlipped ? "Showing details." : "Activate to see details."}`}
+            aria-expanded={isFlipped}
         >
             <div className="flip-card-inner">
                 {/* ══════ FRONT ══════ */}
-                <div className="flip-card-front">
+                <div className="flip-card-front" aria-hidden={isFlipped}>
                     <div className="flex flex-col items-center justify-center mb-4">
                         <Icon />
                     </div>
@@ -179,7 +180,7 @@ function FlipCard({
                 </div>
 
                 {/* ══════ BACK ══════ */}
-                <div className="flip-card-back">
+                <div className="flip-card-back" aria-hidden={!isFlipped}>
                     <div className="relative z-10 flex flex-col h-full justify-between">
                         <div>
                             <h3 className="text-xl font-bold text-[#0A1628] mb-3">

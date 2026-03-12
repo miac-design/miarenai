@@ -16,6 +16,10 @@ export default function NodeNetwork({
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
+    // Respect prefers-reduced-motion
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (motionQuery.matches) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -24,6 +28,10 @@ export default function NodeNetwork({
 
     let animationId: number;
     let nodes: { x: number; y: number; vx: number; vy: number; r: number }[] = [];
+    let isVisible = true;
+
+    // Reduce node count on mobile (< 768px width)
+    const isMobile = window.innerWidth < 768;
 
     const resize = () => {
       const parent = canvas.parentElement;
@@ -33,17 +41,25 @@ export default function NodeNetwork({
     };
 
     const initNodes = () => {
-      const count = Math.min(Math.floor((canvas.width * canvas.height) / 25000), 60);
+      const maxNodes = isMobile ? 20 : 60;
+      const divisor = isMobile ? 40000 : 25000;
+      const count = Math.min(Math.floor((canvas.width * canvas.height) / divisor), maxNodes);
+      const speed = isMobile ? 0.25 : 0.4;
       nodes = Array.from({ length: count }, () => ({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.4,
-        vy: (Math.random() - 0.5) * 0.4,
+        vx: (Math.random() - 0.5) * speed,
+        vy: (Math.random() - 0.5) * speed,
         r: Math.random() * 2 + 1.5,
       }));
     };
 
     const draw = () => {
+      if (!isVisible) {
+        animationId = requestAnimationFrame(draw);
+        return;
+      }
+
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Update positions
@@ -56,14 +72,15 @@ export default function NodeNetwork({
       }
 
       // Draw lines between nearby nodes
+      const maxDist = isMobile ? 120 : 150;
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
           const dx = nodes[i].x - nodes[j].x;
           const dy = nodes[i].y - nodes[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 150) {
-            const lineOpacity = (1 - dist / 150) * opacity * 0.5;
+          if (dist < maxDist) {
+            const lineOpacity = (1 - dist / maxDist) * opacity * 0.5;
             ctx.beginPath();
             ctx.moveTo(nodes[i].x, nodes[i].y);
             ctx.lineTo(nodes[j].x, nodes[j].y);
@@ -85,18 +102,30 @@ export default function NodeNetwork({
       animationId = requestAnimationFrame(draw);
     };
 
+    // Pause animation when not visible (saves CPU/battery)
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isVisible = entry.isIntersecting;
+      },
+      { threshold: 0 }
+    );
+    observer.observe(canvas);
+
+    const handleResize = () => {
+      resize();
+      initNodes();
+    };
+
     resize();
     initNodes();
     draw();
 
-    window.addEventListener("resize", () => {
-      resize();
-      initNodes();
-    });
+    window.addEventListener("resize", handleResize);
 
     return () => {
       cancelAnimationFrame(animationId);
-      window.removeEventListener("resize", resize);
+      window.removeEventListener("resize", handleResize);
+      observer.disconnect();
     };
   }, [opacity, color]);
 

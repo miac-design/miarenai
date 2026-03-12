@@ -89,18 +89,10 @@ export default function FaqPage() {
               Let&apos;s talk about your brand&apos;s AI visibility, no strings
               attached.
             </p>
-            <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <div className="mt-6">
               <Link href="/contact" className="btn-primary">
-                Connect →
+                Start a Conversation →
               </Link>
-              <a
-                href="https://calendly.com/c2018-mia/chat-with-mia"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary"
-              >
-                Book a Call →
-              </a>
             </div>
           </div>
         </div>
