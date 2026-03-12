@@ -3,7 +3,7 @@ import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
 import NodeNetwork from "@/components/NodeNetwork";
 import { faqItems } from "@/lib/faq-data";
-import { getFaqSchema } from "@/lib/schema";
+import { getFaqSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "AI Visibility FAQ | Common Questions About GEO",
@@ -29,12 +29,20 @@ export const metadata: Metadata = {
 
 export default function FaqPage() {
   const faqSchema = getFaqSchema(faqItems);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "https://miarenai.com" },
+    { name: "FAQ", url: "https://miarenai.com/faq" },
+  ]);
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <section className="relative bg-soft-white pt-14 pb-16 md:pt-24 md:pb-28 overflow-hidden">

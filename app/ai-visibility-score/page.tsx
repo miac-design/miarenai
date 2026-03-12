@@ -2,25 +2,26 @@ import type { Metadata } from "next";
 import NodeNetwork from "@/components/NodeNetwork";
 import SelfCheckTool from "@/components/SelfCheckTool";
 import { selfCheckQuestions, signalLabels } from "@/lib/self-check-data";
+import { getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "AI Visibility Self-Check | How Visible Is Your Brand to AI?",
+  title: "AI Visibility AI Visibility Score | How Visible Is Your Brand to AI?",
   description:
-    "Answer 10 questions to estimate your brand's AI visibility across the three diagnostic signals: findability, trust, and authority. Free self-assessment by Miaren AI.",
+    "Answer 10 questions to estimate your brand's AI visibility across the three diagnostic signals: findability, trust, and authority. Free assessment by Miaren AI.",
   alternates: {
-    canonical: "https://miarenai.com/self-check",
+    canonical: "https://miarenai.com/ai-visibility-score",
   },
   openGraph: {
-    title: "AI Visibility Self-Check | Miaren AI",
+    title: "AI Visibility AI Visibility Score | Miaren AI",
     description:
       "Answer 10 questions to estimate how visible your brand is to AI search engines like ChatGPT, Perplexity, and Google AI Overviews.",
-    url: "https://miarenai.com/self-check",
+    url: "https://miarenai.com/ai-visibility-score",
     images: [
       {
         url: "https://miarenai.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AI Visibility Self-Check | Miaren AI",
+        alt: "AI Visibility AI Visibility Score | Miaren AI",
       },
     ],
   },
@@ -30,10 +31,10 @@ function getSelfCheckSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Quiz",
-    name: "AI Visibility Self-Check",
+    name: "AI Visibility AI Visibility Score",
     description:
-      "A 10-question self-assessment tool that estimates how visible your brand is to AI-powered search engines. Evaluates three diagnostic signals: findability, trust, and authority.",
-    url: "https://miarenai.com/self-check",
+      "A 10-question assessment tool that estimates how visible your brand is to AI-powered search engines. Evaluates three diagnostic signals: findability, trust, and authority.",
+    url: "https://miarenai.com/ai-visibility-score",
     about: {
       "@type": "Thing",
       name: "Generative Engine Optimization",
@@ -67,7 +68,7 @@ function getFaqSchema() {
         name: "How do I check my AI visibility?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "You can use the Miaren AI Self-Check tool to answer 10 yes/no questions about your brand's presence across three diagnostic signals: Can AI find you (schema markup, content structure, crawler access), Can AI trust you (entity consistency, directory listings, Google Business Profile), and Can AI quote you (AI search mentions, third-party citations, original research). The tool gives you an instant score estimate. For a full diagnostic, a professional AI Visibility Audit tests 25+ real queries across ChatGPT, Perplexity, Gemini, and Copilot.",
+          text: "Use the Miaren AI Visibility Score tool to answer 10 yes/no questions about your brand's presence across three diagnostic signals: Can AI find you (schema markup, content structure, crawler access), Can AI trust you (entity consistency, directory listings, Google Business Profile), and Can AI quote you (AI search mentions, third-party citations, original research). The tool gives you an instant score estimate. For a full diagnostic, a professional AI Visibility Audit tests 25+ real queries across ChatGPT, Perplexity, Gemini, and Copilot.",
         },
       },
       {
@@ -95,6 +96,10 @@ function getFaqSchema() {
 export default function SelfCheckPage() {
   const quizSchema = getSelfCheckSchema();
   const faqSchema = getFaqSchema();
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "https://miarenai.com" },
+    { name: "AI Visibility Score", url: "https://miarenai.com/ai-visibility-score" },
+  ]);
 
   return (
     <>
@@ -105,6 +110,10 @@ export default function SelfCheckPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Hero */}
@@ -173,7 +182,7 @@ export default function SelfCheckPage() {
             })}
           </div>
           <p className="text-sm text-warm-gray mt-6">
-            This self-check provides a directional estimate. For a comprehensive
+            This tool provides a directional estimate. For a comprehensive
             analysis with real AI query testing, see our{" "}
             <a href="/services" className="text-teal hover:underline">
               AI Visibility Audit

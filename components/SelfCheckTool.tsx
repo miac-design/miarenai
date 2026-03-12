@@ -247,7 +247,7 @@ export default function SelfCheckTool() {
         <div className="text-center">
           <p className="text-white font-bold text-lg mb-2">Want the full picture?</p>
           <p className="text-sm text-gray-400 mb-6">
-            This self-check gives you a directional estimate. A full{" "}
+            This score gives you a directional estimate. A full{" "}
             <Link href="/services" className="text-teal hover:underline">
               AI Visibility Audit
             </Link>{" "}

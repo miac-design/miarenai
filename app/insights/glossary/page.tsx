@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GlossarySearch from "@/components/GlossarySearch";
 import NodeNetwork from "@/components/NodeNetwork";
 import { glossaryTerms } from "@/lib/glossary-data";
-import { getGlossarySchema } from "@/lib/schema";
+import { getGlossarySchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "GEO Glossary | The Language of AI Visibility",
@@ -23,11 +23,21 @@ export default function GlossaryPage() {
     glossaryTerms.map((t) => ({ term: t.term, definition: t.definition }))
   );
 
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "https://miarenai.com" },
+    { name: "Insights", url: "https://miarenai.com/insights" },
+    { name: "Glossary", url: "https://miarenai.com/insights/glossary" },
+  ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(glossarySchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <section className="relative bg-soft-white pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden">
