@@ -87,6 +87,11 @@ export const faqItems: FaqItem[] = [
       "ChatGPT (900M+ weekly active users), Perplexity (fastest-growing AI search engine), Google AI Overviews (appearing in nearly 50% of queries), Microsoft Copilot (enterprise via Office 365), and Google Gemini. Each platform has different citation behaviors, and an effective GEO strategy addresses all of them.",
   },
   {
+    question: "How much does an AI visibility audit cost?",
+    answer:
+      "Pricing depends on the scope of the engagement — the number of AI platforms analyzed, queries tested, and the depth of competitive analysis. We offer diagnostics for organizations of different sizes. The best way to get a clear answer is to schedule a conversation so we can understand your needs and provide a tailored scope.",
+  },
+  {
     question: "Is this just a fad?",
     answer:
       "No. AI-referred website sessions grew 527% in 2024-2025 (Previsible/Search Engine Land). Traditional click-through rates dropped ~30% since AI Overviews launched (BrightEdge). 900M+ people use ChatGPT weekly (OpenAI, 2026). This is a structural shift in how people find businesses, not a temporary trend.",

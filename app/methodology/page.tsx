@@ -80,55 +80,35 @@ export default function ExactFrameworkPage() {
             </section>
 
             {/* ============================================= */}
-            {/* Section 1.5: How AI Actually Finds Info       */}
-            {/* ============================================= */}
-            <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
-                <NodeNetwork opacity={0.2} color="0, 212, 170" />
-                <div className="relative z-10 max-w-3xl mx-auto px-6">
-                    <p className="section-label mb-3">// HOW AI FINDS INFORMATION</p>
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-                        Crawl. Cross-Reference.{" "}
-                        <span className="text-teal">Synthesize & Cite.</span>
-                    </h2>
-                    <div className="space-y-5 text-gray-400 leading-relaxed">
-                        <p>
-                            AI bots scan websites, directories, news articles, and platforms.
-                            Then AI compares what it finds across multiple sources. If 5
-                            sources agree, confidence builds. If sources conflict, confidence
-                            drops.
-                        </p>
-                        <p>
-                            When someone asks a question, AI pulls from its most trusted
-                            sources and names specific brands in its answer. The brands that
-                            get cited are the ones with the strongest, most consistent
-                            signals.
-                        </p>
-                        <p>
-                            Only 12% of URLs that AI engines cite also rank in Google&apos;s
-                            top 10{" "}
-                            <span className="text-xs font-mono text-warm-gray">
-                                (Ahrefs, 2025)
-                            </span>
-                            . This means AI uses different criteria than Google for deciding
-                            who&apos;s trustworthy. That&apos;s why{" "}
-                            <Link
-                                href="/geo-vs-seo"
-                                className="text-teal hover:underline"
-                            >
-                                GEO and SEO are different disciplines
-                            </Link>
-                            .
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            {/* ============================================= */}
-            {/* Section 2: The Three Diagnostic Signals       */}
+            {/* Section 2: How AI Works + Three Signals       */}
             {/* ============================================= */}
             <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
                 <NodeNetwork opacity={0.2} color="0, 212, 170" />
                 <div className="relative z-10 max-w-4xl mx-auto px-6">
+                    {/* How AI finds info — condensed intro */}
+                    <div className="max-w-3xl mb-14">
+                        <p className="section-label mb-3">// HOW AI FINDS INFORMATION</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                            Crawl. Cross-Reference.{" "}
+                            <span className="text-teal">Synthesize & Cite.</span>
+                        </h2>
+                        <div className="space-y-4 text-gray-400 leading-relaxed">
+                            <p>
+                                AI scans websites, directories, news, and platforms, then
+                                cross-references across sources. Agreement builds confidence.
+                                Conflict drops it. The brands that get cited have the strongest,
+                                most consistent signals. Only 12% of AI-cited URLs also rank
+                                in Google&apos;s top 10{" "}
+                                <span className="text-xs font-mono text-warm-gray">(Ahrefs, 2025)</span>
+                                — that&apos;s why{" "}
+                                <Link href="/geo-vs-seo" className="text-teal hover:underline">
+                                    GEO and SEO are different disciplines
+                                </Link>.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Three Signals */}
                     <div className="text-center mb-10">
                         <p className="section-label mb-3">THE THREE SIGNALS</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-white">

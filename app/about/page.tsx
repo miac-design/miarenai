@@ -65,11 +65,11 @@ export default function AboutPage() {
       {/* ============================================= */}
       {/* Section 1: About Miaren AI (The Company)     */}
       {/* ============================================= */}
-      <section className="relative bg-soft-white pt-14 pb-16 md:pt-24 md:pb-28 overflow-hidden">
+      <section className="relative bg-soft-white pt-12 pb-12 md:pt-20 md:pb-20 overflow-hidden">
         <NodeNetwork opacity={0.25} />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <p className="section-label mb-4">// THE COMPANY</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-6">
             About <span className="text-teal">Miaren AI</span>
           </h1>
 
@@ -182,10 +182,10 @@ export default function AboutPage() {
       {/* ============================================= */}
       {/* Section 3: Credentials                        */}
       {/* ============================================= */}
-      <section className="relative py-16 md:py-20 bg-soft-white overflow-hidden">
+      <section className="relative py-12 md:py-16 bg-soft-white overflow-hidden">
         <NodeNetwork opacity={0.15} />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
-          <p className="section-label mb-6">// CREDENTIALS</p>
+          <p className="section-label mb-4">// CREDENTIALS</p>
 
           <div className="grid sm:grid-cols-2 gap-3">
             {[
@@ -223,7 +223,7 @@ export default function AboutPage() {
       {/* ============================================= */}
       {/* Section 4: CTA                                */}
       {/* ============================================= */}
-      <section className="relative bg-navy py-16 md:py-20 overflow-hidden">
+      <section className="relative bg-navy py-12 md:py-16 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
