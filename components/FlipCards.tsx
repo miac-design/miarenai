@@ -46,20 +46,16 @@ const cards: CardData[] = [
     },
 ];
 
-/* ─── Icons (inline SVG, monoline, consistent 2px stroke) ─── */
+/* ─── Icons ─── */
 
 function TestimonyIcon() {
     return (
         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" stroke="#00D4AA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            {/* Document/clipboard */}
             <rect x="20" y="14" width="32" height="44" rx="3" />
-            {/* Clipboard clip */}
             <path d="M30 14v-2a6 6 0 0112 0v2" />
-            {/* Text lines — structured, clear */}
             <line x1="28" y1="28" x2="44" y2="28" />
             <line x1="28" y1="34" x2="44" y2="34" />
             <line x1="28" y1="40" x2="38" y2="40" />
-            {/* Checkmark */}
             <path d="M30 48l3 3 6-6" />
         </svg>
     );
@@ -68,15 +64,12 @@ function TestimonyIcon() {
 function ConsistencyIcon() {
     return (
         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" stroke="#00D4AA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            {/* Three overlapping documents */}
             <rect x="24" y="10" width="28" height="36" rx="2" />
             <rect x="20" y="16" width="28" height="36" rx="2" />
             <rect x="16" y="22" width="28" height="36" rx="2" />
-            {/* Lines on front doc */}
             <line x1="22" y1="32" x2="36" y2="32" />
             <line x1="22" y1="38" x2="36" y2="38" />
             <line x1="22" y1="44" x2="30" y2="44" />
-            {/* Equals / match symbol */}
             <line x1="50" y1="38" x2="58" y2="38" />
             <line x1="50" y1="42" x2="58" y2="42" />
         </svg>
@@ -86,15 +79,12 @@ function ConsistencyIcon() {
 function CorroborateIcon() {
     return (
         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" stroke="#00D4AA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            {/* Central node */}
             <circle cx="36" cy="36" r="6" />
-            {/* Surrounding nodes */}
             <circle cx="18" cy="20" r="4" />
             <circle cx="54" cy="20" r="4" />
             <circle cx="18" cy="52" r="4" />
             <circle cx="54" cy="52" r="4" />
             <circle cx="36" cy="14" r="4" />
-            {/* Connection lines */}
             <line x1="32" y1="31" x2="21" y2="23" />
             <line x1="40" y1="31" x2="51" y2="23" />
             <line x1="32" y1="41" x2="21" y2="49" />
@@ -141,7 +131,7 @@ function FlipCard({
             aria-expanded={isFlipped}
         >
             <div className="flip-card-inner">
-                {/* ══════ FRONT ══════ */}
+                {/* FRONT */}
                 <div className="flip-card-front" aria-hidden={isFlipped}>
                     <div className="flex flex-col items-center justify-center mb-4">
                         <Icon />
@@ -150,7 +140,7 @@ function FlipCard({
                         <h3 className="text-teal font-bold text-lg mb-2">
                             {card.frontTitle}
                         </h3>
-                        <p className="text-[#9BA3AF] text-sm leading-relaxed">
+                        <p className="text-gray-400 text-sm leading-relaxed">
                             {card.frontText}
                         </p>
                     </div>
@@ -179,20 +169,20 @@ function FlipCard({
                     </div>
                 </div>
 
-                {/* ══════ BACK ══════ */}
+                {/* BACK */}
                 <div className="flip-card-back" aria-hidden={!isFlipped}>
                     <div className="relative z-10 flex flex-col h-full justify-between">
                         <div>
-                            <h3 className="text-xl font-bold text-[#0A1628] mb-3">
+                            <h3 className="text-xl font-bold text-navy mb-3">
                                 {card.backLabel}
                             </h3>
-                            <p className="text-[#0A1628]/75 text-sm leading-relaxed">
+                            <p className="text-navy/70 text-sm leading-relaxed">
                                 {card.backText}
                             </p>
                         </div>
                         <a
                             href={`#${card.signalId}`}
-                            className="self-start mt-4 text-[11px] font-semibold border-2 border-[#0A1628]/30 text-[#0A1628] px-3 py-1 rounded-full hover:bg-[#0A1628]/10 transition-colors"
+                            className="self-start mt-4 text-[11px] font-semibold border-2 border-navy/25 text-navy px-3 py-1.5 rounded-full hover:bg-navy/10 transition-colors"
                             onClick={(e) => e.stopPropagation()}
                         >
                             {card.tagLabel} ↑
@@ -218,9 +208,7 @@ export default function FlipCards() {
         if (hasTriggered.current) return;
         hasTriggered.current = true;
 
-        // Stagger flip each card
         cards.forEach((_, i) => {
-            // Flip to back
             setTimeout(() => {
                 setAutoFlipStates((prev) => {
                     const next = [...prev];
@@ -229,7 +217,6 @@ export default function FlipCards() {
                 });
             }, 1000 + i * 500);
 
-            // Flip back to front after 2s
             setTimeout(() => {
                 setAutoFlipStates((prev) => {
                     const next = [...prev];

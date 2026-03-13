@@ -39,12 +39,12 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <section className="relative bg-navy py-12 md:py-16 overflow-hidden">
+      <section className="relative bg-navy py-16 md:py-20 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <p className="section-label mb-3">GET IN TOUCH</p>
-          <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-            Let&apos;s Talk About Your AI Visibility
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+            Let&apos;s Talk About Your <span className="text-gradient">AI Visibility</span>
           </h1>
           <p className="mt-4 text-warm-gray text-lg">
             Not sure if AI mentions your organization? Start with a conversation.
@@ -54,7 +54,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-12 md:py-16 bg-soft-white">
+      <section className="py-16 md:py-20 bg-soft-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-5 gap-10">
             <div className="md:col-span-3">
@@ -75,7 +75,7 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="md:col-span-2 space-y-5">
-              <div className="bg-navy rounded-xl p-6">
+              <div className="bg-navy rounded-2xl p-7">
                 <div className="flex items-start gap-3 mb-4">
                   <Image
                     src="/mia-cheraghian.png"
@@ -191,7 +191,7 @@ export default function ContactPage() {
                   href="https://calendly.com/c2018-mia/chat-with-mia"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border-2 border-teal text-teal text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-teal hover:text-navy transition-colors w-full justify-center"
+                  className="btn-secondary !border-teal !text-teal text-sm w-full justify-center hover:bg-teal hover:!text-navy"
                 >
                   Book a 30-minute call →
                 </a>

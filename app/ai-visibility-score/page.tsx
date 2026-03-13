@@ -117,18 +117,18 @@ export default function SelfCheckPage() {
       />
 
       {/* Hero */}
-      <section className="relative bg-soft-white pt-12 pb-10 md:pt-20 md:pb-14 overflow-hidden">
+      <section className="relative bg-soft-white pt-16 pb-14 md:pt-28 md:pb-20 overflow-hidden">
         <NodeNetwork opacity={0.2} />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
-          <div className="inline-flex items-center gap-2 bg-teal-light border border-teal/20 rounded-full px-4 py-1.5 mb-5">
-            <span className="w-2 h-2 rounded-full bg-teal" />
+          <div className="inline-flex items-center gap-2 bg-teal/8 border border-teal/20 rounded-full px-4 py-1.5 mb-6">
+            <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
             <span className="text-xs font-mono tracking-wider text-teal uppercase">
               Free Tool
             </span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-5 tracking-tight">
             How visible is your brand to{" "}
-            <span className="text-teal">AI search?</span>
+            <span className="text-gradient">AI search?</span>
           </h1>
           <p className="text-warm-gray text-lg leading-relaxed max-w-2xl">
             Answer 10 questions to get an instant estimate of your AI visibility
@@ -142,7 +142,7 @@ export default function SelfCheckPage() {
       </section>
 
       {/* Tool */}
-      <section className="relative bg-navy py-12 md:py-16 overflow-hidden">
+      <section className="relative bg-navy py-16 md:py-20 overflow-hidden">
         <NodeNetwork opacity={0.15} color="0, 212, 170" />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <SelfCheckTool />
@@ -150,11 +150,11 @@ export default function SelfCheckPage() {
       </section>
 
       {/* What This Measures */}
-      <section className="relative bg-soft-white py-12 md:py-16 overflow-hidden">
+      <section className="relative bg-soft-white py-16 md:py-20 overflow-hidden">
         <NodeNetwork opacity={0.15} />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <p className="section-label mb-3">// WHAT THIS MEASURES</p>
-          <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6 tracking-tight">
             The three signals AI engines evaluate
           </h2>
           <div className="space-y-4">

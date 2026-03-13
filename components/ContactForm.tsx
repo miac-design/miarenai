@@ -106,10 +106,10 @@ export default function ContactForm() {
   }
 
   const inputClass = (field: string) =>
-    `w-full px-4 py-3 border rounded-lg text-sm focus:outline-none transition-colors ${
+    `w-full px-4 py-3 border rounded-xl text-sm focus:outline-none transition-all bg-white ${
       touched[field] && fieldErrors[field as keyof FieldErrors]
-        ? "border-red-400 focus:border-red-500"
-        : "border-gray-200 focus:border-teal"
+        ? "border-red-400 focus:border-red-500 focus:ring-2 focus:ring-red-100"
+        : "border-gray-200 focus:border-teal focus:ring-2 focus:ring-teal/10"
     }`;
 
   return (
@@ -172,7 +172,7 @@ export default function ContactForm() {
           placeholder="Where do you work?"
           value={formData.company}
           onChange={(e) => handleChange("company", e.target.value)}
-          className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-teal transition-colors"
+          className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-teal focus:ring-2 focus:ring-teal/10 transition-all bg-white"
         />
       </div>
 
@@ -204,7 +204,7 @@ export default function ContactForm() {
       </div>
 
       {status === "error" && (
-        <div className="p-3 bg-red-50 border border-red-200 rounded-lg" role="alert">
+        <div className="p-4 bg-red-50 border border-red-200 rounded-xl" role="alert">
           <p className="text-sm text-red-700">
             Something went wrong. Please try again or email us directly at{" "}
             <a href="mailto:hello@miarenai.com" className="underline font-medium">

@@ -45,12 +45,12 @@ export default function FaqPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <section className="relative bg-soft-white pt-14 pb-16 md:pt-24 md:pb-28 overflow-hidden">
+      <section className="relative bg-soft-white pt-16 pb-20 md:pt-28 md:pb-32 overflow-hidden">
         <NodeNetwork opacity={0.2} />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <p className="section-label mb-3">// FAQ</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-navy mb-3">
-            Frequently Asked <span className="text-teal">Questions</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-4 tracking-tight">
+            Frequently Asked <span className="text-gradient">Questions</span>
           </h1>
           <p className="text-warm-gray text-lg mb-10">
             Clear answers about{" "}
@@ -87,9 +87,9 @@ export default function FaqPage() {
         </div>
       </section>
 
-      <section className="py-14 bg-soft-white">
+      <section className="py-16 md:py-20 bg-soft-white">
         <div className="max-w-xl mx-auto px-6">
-          <div className="bg-teal-light border border-teal/20 rounded-2xl p-8 text-center">
+          <div className="bg-gradient-to-br from-teal-light to-white border border-teal/15 rounded-2xl p-10 text-center shadow-lg shadow-teal/5">
             <h2 className="text-2xl md:text-3xl font-bold text-navy">
               Still have questions?
             </h2>

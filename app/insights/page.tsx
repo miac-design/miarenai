@@ -39,21 +39,21 @@ export default function InsightsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <section className="relative bg-soft-white pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden">
+      <section className="relative bg-soft-white pt-16 pb-20 md:pt-28 md:pb-28 overflow-hidden">
         <NodeNetwork opacity={0.25} />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <p className="section-label mb-3">// INSIGHTS</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-navy leading-tight mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-10 tracking-tight">
             Research, frameworks, and field notes on{" "}
-            <span className="text-teal">AI visibility.</span>
+            <span className="text-gradient">AI visibility.</span>
           </h1>
           <InsightsGrid />
         </div>
       </section>
 
-      <section className="py-14 bg-soft-white">
+      <section className="py-16 md:py-20 bg-soft-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-navy">Want to check your AI visibility?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-navy tracking-tight">Want to check your AI visibility?</h2>
           <p className="mt-3 text-warm-gray text-lg">Get a research-backed audit of your brand&apos;s presence across AI search systems.</p>
           <div className="mt-6">
             <Link href="/contact" className="btn-primary">Connect →</Link>

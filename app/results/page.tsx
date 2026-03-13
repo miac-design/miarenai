@@ -39,12 +39,12 @@ export default function ResultsPage() {
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
-        <section className="relative bg-soft-white pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden">
+        <section className="relative bg-soft-white pt-16 pb-20 md:pt-28 md:pb-28 overflow-hidden">
             <NodeNetwork opacity={0.2} />
             <div className="relative z-10 max-w-5xl mx-auto px-6">
                 <p className="section-label mb-3">APPLIED RESEARCH</p>
-                <h1 className="text-4xl md:text-5xl font-bold text-navy mb-3">
-                    Case <span className="text-teal">Studies</span>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-4 tracking-tight">
+                    Case <span className="text-gradient">Studies</span>
                 </h1>
                 <p className="text-warm-gray text-lg mb-12 max-w-2xl">
                     How the three-signal diagnostic methodology has been applied across industries. Each engagement follows the same analytical framework.
@@ -86,7 +86,7 @@ export default function ResultsPage() {
 
                 {/* Testimonials Section */}
                 <div className="mt-16">
-                    <h2 className="text-2xl font-bold text-navy mb-8 text-center">From organizations we&apos;ve worked with</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold text-navy mb-8 text-center tracking-tight">From organizations we&apos;ve worked with</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {caseStudies
                             .filter((cs) => cs.testimonial)

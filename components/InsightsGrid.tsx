@@ -17,7 +17,7 @@ export default function InsightsGrid() {
       <div className="flex flex-wrap gap-3 mb-10">
         <button
           onClick={() => setActiveCategory("All")}
-          className={`text-sm px-4 py-1.5 rounded-full border transition-colors ${activeCategory === "All" ? "bg-teal text-navy border-teal font-medium" : "border-gray-200 text-warm-gray hover:border-gray-400"}`}
+          className={`text-sm px-4 py-2 rounded-full border transition-all ${activeCategory === "All" ? "bg-teal text-navy border-teal font-medium shadow-md shadow-teal/15" : "border-gray-200 text-warm-gray hover:border-teal/40 hover:text-teal"}`}
         >
           All
         </button>
@@ -25,7 +25,7 @@ export default function InsightsGrid() {
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`text-sm px-4 py-1.5 rounded-full border transition-colors ${activeCategory === cat ? "bg-teal text-navy border-teal font-medium" : "border-gray-200 text-warm-gray hover:border-gray-400"}`}
+            className={`text-sm px-4 py-2 rounded-full border transition-all ${activeCategory === cat ? "bg-teal text-navy border-teal font-medium shadow-md shadow-teal/15" : "border-gray-200 text-warm-gray hover:border-teal/40 hover:text-teal"}`}
           >
             {cat}
           </button>
@@ -35,7 +35,7 @@ export default function InsightsGrid() {
       <div className="grid md:grid-cols-3 gap-6">
         {/* Featured */}
         {activeCategory === "All" && featured && (
-          <article className="md:col-span-2 bg-navy rounded-xl p-8 flex flex-col justify-end min-h-[280px]">
+          <article className="md:col-span-2 bg-navy rounded-2xl p-8 flex flex-col justify-end min-h-[280px] shadow-xl shadow-navy/10">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-mono bg-teal text-navy px-2.5 py-1 rounded">{featured.category.toUpperCase()}</span>
               <span className="text-xs font-mono bg-teal/20 text-teal px-2.5 py-1 rounded">START HERE</span>
