@@ -65,7 +65,7 @@ export default function GlossarySearch({ terms }: GlossarySearchProps) {
                 setActiveLetter(isActive ? null : available ? letter : null)
               }
               disabled={!available}
-              className={`w-9 h-9 rounded-lg text-sm font-medium transition-all ${
+              className={`w-9 h-9 rounded-lg text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/50 ${
                 isActive
                   ? "bg-teal text-navy font-bold"
                   : available
@@ -101,7 +101,7 @@ export default function GlossarySearch({ terms }: GlossarySearchProps) {
               setSearch(e.target.value);
               setActiveLetter(null);
             }}
-            className="pl-9 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-teal w-48"
+            className="pl-9 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-teal focus:ring-2 focus:ring-teal/10 w-full sm:w-48 transition-all"
           />
         </div>
       </div>

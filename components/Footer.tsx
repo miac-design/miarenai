@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="md:col-span-4">
             <Link href="/" className="inline-flex items-center gap-1.5 group">
               <span className="text-lg font-bold tracking-tight text-white">MIAREN</span>
-              <span className="text-xs font-normal text-teal border border-teal/30 rounded-md px-1.5 py-0.5 group-hover:bg-teal/10 transition-colors">AI</span>
+              <span className="text-xs font-normal text-teal border border-teal/30 rounded-lg px-1.5 py-0.5 group-hover:bg-teal/10 transition-colors">AI</span>
             </Link>
             <p className="mt-4 text-sm text-gray-400 leading-relaxed max-w-xs">
               AI visibility research and strategy. Studying how organizations become discoverable in AI-powered search.

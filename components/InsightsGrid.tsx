@@ -17,7 +17,7 @@ export default function InsightsGrid() {
       <div className="flex flex-wrap gap-3 mb-10">
         <button
           onClick={() => setActiveCategory("All")}
-          className={`text-sm px-4 py-2 rounded-full border transition-all ${activeCategory === "All" ? "bg-teal text-navy border-teal font-medium shadow-md shadow-teal/15" : "border-gray-200 text-warm-gray hover:border-teal/40 hover:text-teal"}`}
+          className={`text-sm px-4 py-2 rounded-full border transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/50 ${activeCategory === "All" ? "bg-teal text-navy border-teal font-medium shadow-md shadow-teal/15" : "border-gray-200 text-warm-gray hover:border-teal/40 hover:text-teal"}`}
         >
           All
         </button>
@@ -25,7 +25,7 @@ export default function InsightsGrid() {
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`text-sm px-4 py-2 rounded-full border transition-all ${activeCategory === cat ? "bg-teal text-navy border-teal font-medium shadow-md shadow-teal/15" : "border-gray-200 text-warm-gray hover:border-teal/40 hover:text-teal"}`}
+            className={`text-sm px-4 py-2 rounded-full border transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/50 ${activeCategory === cat ? "bg-teal text-navy border-teal font-medium shadow-md shadow-teal/15" : "border-gray-200 text-warm-gray hover:border-teal/40 hover:text-teal"}`}
           >
             {cat}
           </button>

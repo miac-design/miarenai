@@ -76,12 +76,10 @@ function SignalGauge({
       <p className="text-sm font-bold text-white mb-3">{label.title}</p>
       <div className="w-full bg-white/10 rounded-full h-3 mb-2">
         <div
-          className="h-3 rounded-full transition-all duration-700 ease-out"
-          style={{
-            width: `${pct}%`,
-            backgroundColor:
-              pct >= 75 ? "#00d4aa" : pct >= 50 ? "#f0ad4e" : "#e74c3c",
-          }}
+          className={`h-3 rounded-full transition-all duration-700 ease-out ${
+            pct >= 75 ? "bg-teal" : pct >= 50 ? "bg-amber-400" : "bg-red-500"
+          }`}
+          style={{ width: `${pct}%` }}
         />
       </div>
       <p className="text-xs text-gray-400">
@@ -146,11 +144,9 @@ export default function SelfCheckTool() {
         <div className="text-center mb-10">
           <p className="text-xs font-mono text-teal mb-3">YOUR AI VISIBILITY ESTIMATE</p>
           <p
-            className="text-7xl md:text-8xl font-bold"
-            style={{
-              color:
-                totalPct >= 75 ? "#00d4aa" : totalPct >= 50 ? "#f0ad4e" : "#e74c3c",
-            }}
+            className={`text-7xl md:text-8xl font-bold ${
+              totalPct >= 75 ? "text-teal" : totalPct >= 50 ? "text-amber-400" : "text-red-500"
+            }`}
           >
             {totalPct}%
           </p>
@@ -229,15 +225,15 @@ export default function SelfCheckTool() {
           <p className="text-xs font-mono text-teal mb-2">HOW TO READ THIS</p>
           <div className="space-y-2 text-xs text-gray-400">
             <p>
-              <span className="font-bold" style={{ color: "#00d4aa" }}>75-100%</span>{" "}
+              <span className="font-bold text-teal">75-100%</span>{" "}
               — Strong foundation. Your brand likely appears in AI search responses.
             </p>
             <p>
-              <span className="font-bold" style={{ color: "#f0ad4e" }}>40-74%</span>{" "}
+              <span className="font-bold text-amber-400">40-74%</span>{" "}
               — Developing. Gaps exist that limit AI citation. Targeted fixes can help.
             </p>
             <p>
-              <span className="font-bold" style={{ color: "#e74c3c" }}>0-39%</span>{" "}
+              <span className="font-bold text-red-500">0-39%</span>{" "}
               — Needs attention. AI engines likely have low confidence in your entity.
             </p>
           </div>
@@ -312,7 +308,7 @@ export default function SelfCheckTool() {
               key={opt.value}
               type="button"
               onClick={() => handleAnswer(opt.value)}
-              className={`px-6 py-3 rounded-xl text-sm font-medium transition-all ${
+              className={`px-6 py-3 rounded-xl text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/50 ${
                 currentAnswer === opt.value
                   ? opt.activeClass
                   : "bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 hover:border-white/20"
