@@ -108,6 +108,8 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <div className="section-divider-down bg-navy" />
+
       {/* ============================================= */}
       {/* Section 2: Mia Cheraghian (The Founder)      */}
       {/* ============================================= */}
@@ -185,6 +187,8 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <div className="section-divider-up bg-soft-white" />
+
       {/* ============================================= */}
       {/* Section 3: Credentials                        */}
       {/* ============================================= */}
@@ -225,6 +229,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <div className="section-divider-down bg-navy" />
 
       {/* ============================================= */}
       {/* Section 3b: Publications & Research            */}
@@ -347,6 +353,8 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <div className="section-divider-up bg-soft-white" />
+
       {/* ============================================= */}
       {/* Section 3c: Featured & Affiliated              */}
       {/* ============================================= */}
@@ -380,6 +388,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <div className="section-divider-down bg-navy" />
 
       {/* ============================================= */}
       {/* Section 4: CTA                                */}

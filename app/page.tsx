@@ -1,6 +1,8 @@
 import Link from "next/link";
 import NodeNetwork from "@/components/NodeNetwork";
 import AiSearchDemo from "@/components/AiSearchDemo";
+import AnimatedStat from "@/components/AnimatedStat";
+import MethodologyDiagram from "@/components/MethodologyDiagram";
 import { getWebSiteSchema } from "@/lib/schema";
 
 export default function HomePage() {
@@ -72,6 +74,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Divider: white → navy */}
+      <div className="section-divider-down bg-navy" />
+
       {/* Section 2: The Problem */}
       <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
         <NodeNetwork opacity={0.25} color="0, 212, 170" />
@@ -84,33 +89,30 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-10">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-7 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-teal">527%</p>
-              <p className="text-sm text-gray-400 mt-2">
-                Growth in AI-referred website sessions
-              </p>
-              <p className="text-xs text-warm-gray mt-1 font-mono">
-                Previsible / Search Engine Land, 2025
-              </p>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-7 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-teal">~30%</p>
-              <p className="text-sm text-gray-400 mt-2">
-                Decline in traditional click-through rates
-              </p>
-              <p className="text-xs text-warm-gray mt-1 font-mono">
-                BrightEdge, 2024-2025
-              </p>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-7 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-teal">12%</p>
-              <p className="text-sm text-gray-400 mt-2">
-                Of AI-cited URLs also rank in Google&apos;s top 10
-              </p>
-              <p className="text-xs text-warm-gray mt-1 font-mono">
-                Ahrefs, 2025
-              </p>
-            </div>
+            <AnimatedStat
+              value="527%"
+              label="Growth in AI-referred website sessions"
+              source="Previsible / Search Engine Land, 2025"
+              barPercent={92}
+              variant="teal"
+              delay={0}
+            />
+            <AnimatedStat
+              value="~30%"
+              label="Decline in traditional click-through rates"
+              source="BrightEdge, 2024-2025"
+              barPercent={30}
+              variant="coral"
+              delay={200}
+            />
+            <AnimatedStat
+              value="12%"
+              label="Of AI-cited URLs also rank in Google's top 10"
+              source="Ahrefs, 2025"
+              barPercent={12}
+              variant="amber"
+              delay={400}
+            />
           </div>
 
           <p className="text-center text-gray-400 text-lg max-w-2xl mx-auto">
@@ -125,6 +127,9 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      {/* Divider: navy → white */}
+      <div className="section-divider-up bg-soft-white" />
 
       {/* Section 3: What We Do */}
       <section className="relative py-16 md:py-24 bg-soft-white overflow-hidden">
@@ -228,6 +233,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Divider: white → navy */}
+      <div className="section-divider-down bg-navy" />
+
       {/* Section 4: Three-Signal Methodology Preview */}
       <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
@@ -242,22 +250,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-3 md:gap-4 mb-8">
-            {[
-              { num: "1", name: "Can AI find you?" },
-              { num: "2", name: "Can AI trust you?" },
-              { num: "3", name: "Can AI quote you?" },
-            ].map((signal) => (
-              <div key={signal.num} className="text-center">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-[rgba(20,30,48,0.8)] text-teal flex items-center justify-center text-xl md:text-2xl font-bold mx-auto mb-2">
-                  {signal.num}
-                </div>
-                <p className="text-xs text-gray-400 leading-tight">
-                  {signal.name}
-                </p>
-              </div>
-            ))}
-          </div>
+          <MethodologyDiagram />
 
           <div className="text-center">
             <p className="text-xs font-mono tracking-wider text-warm-gray uppercase mb-6">
@@ -272,6 +265,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Divider: navy → white */}
+      <div className="section-divider-up bg-soft-white" />
 
       {/* Section 5: Who This Is For */}
       <section className="py-16 md:py-20 bg-soft-white">
@@ -293,6 +289,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Divider: white → navy */}
+      <div className="section-divider-down bg-navy" />
 
       {/* Section 6: Final CTA */}
       <section className="relative bg-navy py-16 md:py-24 overflow-hidden">

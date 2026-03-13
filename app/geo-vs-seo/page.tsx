@@ -103,6 +103,8 @@ export default function GeoVsSeoPage() {
                 </div>
             </section>
 
+            <div className="section-divider-down bg-navy" />
+
             {/* Section 2: The Evolution */}
             <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
                 <NodeNetwork opacity={0.2} color="0, 212, 170" />
@@ -165,6 +167,8 @@ export default function GeoVsSeoPage() {
                 </div>
             </section>
 
+            <div className="section-divider-up bg-soft-white" />
+
             {/* Section 3: FAQ / PAA Questions */}
             <section className="relative py-16 md:py-24 bg-soft-white overflow-hidden">
                 <NodeNetwork opacity={0.15} />
@@ -189,6 +193,8 @@ export default function GeoVsSeoPage() {
                     </div>
                 </div>
             </section>
+
+            <div className="section-divider-down bg-navy" />
 
             {/* Section 4: The Numbers */}
             <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
@@ -246,6 +252,8 @@ export default function GeoVsSeoPage() {
                     </div>
                 </div>
             </section>
+
+            <div className="section-divider-up bg-soft-white" />
 
             {/* Section 5: CTA */}
             <section className="relative py-16 md:py-24 bg-soft-white overflow-hidden">

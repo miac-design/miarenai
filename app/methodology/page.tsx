@@ -79,6 +79,9 @@ export default function MethodologyPage() {
                 </div>
             </section>
 
+            {/* Divider: white → navy */}
+            <div className="section-divider-down bg-navy" />
+
             {/* ============================================= */}
             {/* Section 2: How AI Works + Three Signals       */}
             {/* ============================================= */}
@@ -218,6 +221,9 @@ export default function MethodologyPage() {
                 </div>
             </section>
 
+            {/* Divider: navy → white */}
+            <div className="section-divider-up bg-soft-white" />
+
             {/* ============================================= */}
             {/* Section 3: The Ongoing Strategy Layer         */}
             {/* ============================================= */}
@@ -291,6 +297,9 @@ export default function MethodologyPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Divider: white → navy */}
+            <div className="section-divider-down bg-navy" />
 
             {/* ============================================= */}
             {/* Section 5: Advanced Research Areas             */}
@@ -391,6 +400,9 @@ export default function MethodologyPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Divider: navy → white */}
+            <div className="section-divider-up bg-soft-white" />
 
             {/* ============================================= */}
             {/* Section 7: Source Attribution                  */}

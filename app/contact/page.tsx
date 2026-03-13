@@ -54,6 +54,8 @@ export default function ContactPage() {
         </div>
       </section>
 
+      <div className="section-divider-up bg-soft-white" />
+
       <section className="py-12 md:py-16 bg-soft-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-5 gap-10">

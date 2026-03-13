@@ -109,6 +109,12 @@ body {
   backdrop-filter: blur(4px);
   border: 1px solid rgba(229, 231, 235, 0.6);
   border-radius: 0.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 212, 170, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .teal-border-left {
@@ -191,6 +197,67 @@ body {
 
 .btn-dark:hover {
   background-color: var(--navy-light);
+}
+
+/* ─── Section Dividers ─── */
+.section-divider-down {
+  position: relative;
+  height: 48px;
+  margin-top: -1px;
+}
+
+.section-divider-down::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: var(--soft-white);
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 100%, 0 0%);
+}
+
+.section-divider-up {
+  position: relative;
+  height: 48px;
+  margin-bottom: -1px;
+}
+
+.section-divider-up::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: var(--soft-white);
+  clip-path: polygon(0 100%, 50% 0%, 100% 100%);
+}
+
+/* ─── Enhanced Card Hovers (dark cards on navy sections) ─── */
+.bg-white\/5 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.bg-white\/5:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 212, 170, 0.1);
+}
+
+/* ─── Page Transitions ─── */
+@keyframes pageEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: pageEnter 0.4s ease-out;
 }
 
 ::selection {
@@ -314,5 +381,14 @@ body {
 
   .node-dot {
     animation: none;
+  }
+
+  main {
+    animation: none;
+  }
+
+  .section-divider-down,
+  .section-divider-up {
+    height: 0;
   }
 }

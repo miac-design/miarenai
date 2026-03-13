@@ -66,6 +66,8 @@ export default function ResearchPage() {
                 </div>
             </section>
 
+            <div className="section-divider-down bg-navy" />
+
             {/* ============================================= */}
             {/* Core Research Areas                           */}
             {/* ============================================= */}
@@ -170,6 +172,8 @@ export default function ResearchPage() {
                 </div>
             </section>
 
+            <div className="section-divider-up bg-soft-white" />
+
             {/* ============================================= */}
             {/* Why This Research Matters                     */}
             {/* ============================================= */}
@@ -191,6 +195,8 @@ export default function ResearchPage() {
                     </div>
                 </div>
             </section>
+
+            <div className="section-divider-down bg-navy" />
 
             {/* ============================================= */}
             {/* Future Research                               */}
@@ -247,6 +253,8 @@ export default function ResearchPage() {
                     </div>
                 </div>
             </section>
+
+            <div className="section-divider-up bg-soft-white" />
 
             {/* CTA */}
             <section className="py-10 md:py-14 bg-soft-white">

@@ -71,6 +71,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <div className="section-divider-down bg-navy" />
+
       {/* ============================================= */}
       {/* AI Visibility Audit                           */}
       {/* ============================================= */}
@@ -177,6 +179,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <div className="section-divider-up bg-soft-white" />
+
       {/* ============================================= */}
       {/* AI Visibility Strategy                        */}
       {/* ============================================= */}
@@ -263,6 +267,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <div className="section-divider-down bg-navy" />
+
       {/* ============================================= */}
       {/* AI Information Architecture                   */}
       {/* ============================================= */}
@@ -330,6 +336,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <div className="section-divider-up bg-soft-white" />
+
       {/* ============================================= */}
       {/* Research & Insights                           */}
       {/* ============================================= */}
@@ -391,6 +399,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <div className="section-divider-down bg-navy" />
 
       {/* ============================================= */}
       {/* Expert Briefings                              */}
@@ -479,6 +489,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <div className="section-divider-up bg-soft-white" />
 
       {/* CTA */}
       <section className="py-16 md:py-20 bg-soft-white">
