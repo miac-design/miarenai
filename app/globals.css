@@ -3,15 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --color-navy: #0A1628;
-  --color-navy-light: #141E30;
-  --color-teal: #00D4AA;
-  --color-teal-light: #E6FBF5;
-  --color-teal-dark: #00B894;
-  --color-soft-white: #F8FAFB;
-  --color-warm-gray: #6B7B8D;
-  --color-coral: #FF6B6B;
-
   --font-sans: var(--font-dm-sans), system-ui;
   --font-mono: var(--font-jetbrains), monospace;
 
@@ -59,20 +50,6 @@ html {
 body {
   color: var(--navy);
   background: var(--soft-white);
-}
-
-.bg-node-network {
-  background-image:
-    radial-gradient(circle at 20% 50%, rgba(0, 212, 170, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(0, 212, 170, 0.06) 0%, transparent 40%),
-    radial-gradient(circle at 60% 80%, rgba(0, 212, 170, 0.04) 0%, transparent 40%);
-}
-
-.bg-node-network-dark {
-  background-image:
-    radial-gradient(circle at 20% 50%, rgba(0, 212, 170, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(0, 212, 170, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 60% 80%, rgba(0, 212, 170, 0.06) 0%, transparent 40%);
 }
 
 .node-dot {

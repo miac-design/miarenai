@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Miaren AI | Generative Engine Optimization",
+    title: "Miaren AI | AI Visibility Research & Strategy",
     description:
       "Be found where it matters next. AI visibility research and strategy for generative search.",
     images: ["https://miarenai.com/og-image.png"],
