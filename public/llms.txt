@@ -38,6 +38,8 @@ Key findings:
 - Research: https://miarenai.com/research
 - FAQ: https://miarenai.com/faq
 - Insights (Blog): https://miarenai.com/insights
+- GEO Glossary: https://miarenai.com/insights/glossary
+- AI Visibility Score Tool: https://miarenai.com/ai-visibility-score
 - About: https://miarenai.com/about
 - Contact: https://miarenai.com/contact
 

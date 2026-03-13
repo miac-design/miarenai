@@ -25,47 +25,9 @@ export const metadata: Metadata = {
   },
 };
 
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Mia Cheraghian",
-  alternateName: "Mahboubeh Cheraghian",
-  jobTitle: "Founder",
-  worksFor: { "@type": "Organization", name: "Miaren AI" },
-  alumniOf: {
-    "@type": "CollegeOrUniversity",
-    name: "Texas Tech University",
-  },
-  hasCredential: {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "degree",
-    name: "PhD, Tourism, Hospitality & Retail Management",
-  },
-  hasOccupation: {
-    "@type": "Occupation",
-    name: "AI Visibility Researcher",
-  },
-  mainEntityOfPage: "https://miarenai.com/about",
-  knowsAbout: [
-    "Generative Engine Optimization",
-    "AI Visibility",
-    "AI Search Optimization",
-    "GEO",
-    "AI visibility methodology",
-  ],
-  description:
-    "PhD researcher and founder of Miaren AI. Studies how AI-powered search systems interpret, reference, and recommend organizations. Background in UX research and market research.",
-  sameAs: ["https://www.linkedin.com/in/mia-cheraghian/"],
-  url: "https://miarenai.com/about",
-};
-
 export default function AboutPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
 
       {/* ============================================= */}
       {/* Section 1: About Miaren AI (The Company)     */}
