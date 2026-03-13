@@ -67,15 +67,13 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
 
-      {/* ============================================= */}
-      {/* Section 1: About Miaren AI (The Company)     */}
-      {/* ============================================= */}
-      <section className="relative bg-soft-white pt-12 pb-12 md:pt-20 md:pb-20 overflow-hidden">
+      {/* Section 1: About Miaren AI */}
+      <section className="relative bg-soft-white pt-16 pb-16 md:pt-24 md:pb-24 overflow-hidden">
         <NodeNetwork opacity={0.25} />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <p className="section-label mb-4">// THE COMPANY</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-6">
-            About <span className="text-teal">Miaren AI</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-8 tracking-tight">
+            About <span className="text-gradient">Miaren AI</span>
           </h1>
 
           <div className="space-y-5 text-warm-gray text-lg leading-relaxed">
@@ -108,25 +106,23 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ============================================= */}
-      {/* Section 2: Mia Cheraghian (The Founder)      */}
-      {/* ============================================= */}
-      <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
+      {/* Section 2: The Founder */}
+      <section className="relative bg-navy py-20 md:py-28 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <p className="section-label mb-4">// THE FOUNDER</p>
 
-          <div className="flex items-center gap-5 mb-8">
+          <div className="flex items-center gap-6 mb-10">
             <Image
               src="/mia-cheraghian.png"
               alt="Mia Cheraghian, Founder of Miaren AI"
               width={88}
               height={88}
               priority
-              className="rounded-full object-cover w-20 h-20 md:w-22 md:h-22 ring-2 ring-teal/30"
+              className="rounded-2xl object-cover w-20 h-20 md:w-22 md:h-22 ring-2 ring-teal/30 shadow-lg shadow-teal/10"
             />
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
+              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
                 Mia Cheraghian
               </h2>
               <p className="text-sm text-gray-400 mt-1">
@@ -185,15 +181,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ============================================= */}
-      {/* Section 3: Credentials                        */}
-      {/* ============================================= */}
-      <section className="relative py-12 md:py-16 bg-soft-white overflow-hidden">
+      {/* Section 3: Credentials */}
+      <section className="relative py-16 md:py-20 bg-soft-white overflow-hidden">
         <NodeNetwork opacity={0.15} />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
-          <p className="section-label mb-4">// CREDENTIALS</p>
+          <p className="section-label mb-6">// CREDENTIALS</p>
 
-          <div className="grid sm:grid-cols-2 gap-3">
+          <div className="grid sm:grid-cols-2 gap-4">
             {[
               "PhD, Texas Tech University (Tourism, Hospitality & Retail Management)",
               "Senior Researcher, Rackspace Technology",
@@ -204,7 +198,7 @@ export default function AboutPage() {
             ].map((item) => (
               <div
                 key={item}
-                className="flex items-start gap-3 p-4 glass-card"
+                className="flex items-start gap-3 p-5 glass-card"
               >
                 <svg
                   className="w-4 h-4 text-teal shrink-0 mt-0.5"
@@ -226,53 +220,51 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ============================================= */}
-      {/* Section 3b: Publications & Research            */}
-      {/* ============================================= */}
-      <section className="relative bg-navy py-12 md:py-16 overflow-hidden">
+      {/* Section 3b: Publications & Research */}
+      <section className="relative bg-navy py-16 md:py-20 overflow-hidden">
         <NodeNetwork opacity={0.15} color="0, 212, 170" />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
-          <p className="section-label mb-6">// PUBLICATIONS & RESEARCH</p>
+          <p className="section-label mb-8">// PUBLICATIONS & RESEARCH</p>
 
           {/* Dissertation */}
-          <div className="bg-white/5 border border-teal/30 rounded-xl p-5 mb-6">
-            <div className="flex items-center gap-3 mb-2">
-              <span className="text-xs font-mono font-bold text-navy bg-teal rounded px-2 py-0.5">DISSERTATION</span>
+          <div className="glass-card-dark border-teal/30 p-6 mb-6">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-xs font-mono font-bold text-navy bg-gradient-to-r from-teal to-teal-dark rounded-md px-2.5 py-1">DISSERTATION</span>
               <span className="text-xs text-gray-400">2022</span>
             </div>
             <p className="text-base text-white font-medium mb-1">
               Making Tourism Accessible Through Wearable Technology
             </p>
-            <p className="text-xs text-gray-400 mb-2">
+            <p className="text-sm text-gray-400 mb-3">
               Texas Tech University. Quantitative research on using smart glasses to make travel experiences accessible for people with travel hesitation and disabilities.
             </p>
             <a
               href="https://ttu-ir.tdl.org/items/5ce7d88a-66ff-481f-86ee-627a474cad61"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal text-xs font-medium hover:underline"
+              className="text-teal text-sm font-medium hover:underline"
             >
               View Research →
             </a>
           </div>
 
           {/* Book Chapter */}
-          <div className="bg-white/5 border border-white/10 rounded-xl p-5 mb-6">
-            <div className="flex items-center gap-3 mb-2">
-              <span className="text-xs font-mono font-bold text-navy bg-teal rounded px-2 py-0.5">BOOK CHAPTER</span>
+          <div className="glass-card-dark p-6 mb-6">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-xs font-mono font-bold text-navy bg-gradient-to-r from-teal to-teal-dark rounded-md px-2.5 py-1">BOOK CHAPTER</span>
               <span className="text-xs text-gray-400">2025</span>
             </div>
             <p className="text-base text-white font-medium mb-1">
               Ethical AI Storytelling in Volunteer Tourism: Code Meets Compassion
             </p>
-            <p className="text-xs text-gray-400 mb-2">
+            <p className="text-sm text-gray-400 mb-3">
               Published in peer-reviewed academic volume by IGI Global. Research conducted at Texas Tech University.
             </p>
             <a
               href="https://www.igi-global.com/chapter/ethical-ai-storytelling-in-volunteer-tourism/395307"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal text-xs font-medium hover:underline"
+              className="text-teal text-sm font-medium hover:underline"
             >
               Read on IGI Global →
             </a>
@@ -280,8 +272,8 @@ export default function AboutPage() {
 
           {/* Journal Papers */}
           <div className="grid sm:grid-cols-2 gap-4 mb-6">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <div className="flex items-center gap-3 mb-2">
+            <div className="glass-card-dark p-6">
+              <div className="flex items-center gap-3 mb-3">
                 <span className="text-xs font-mono text-teal">JOURNAL</span>
                 <span className="text-xs text-gray-400">2026 · Under Review</span>
               </div>
@@ -292,8 +284,8 @@ export default function AboutPage() {
                 Journal of Quality Assurance in Hospitality &amp; Tourism. Revised submission.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <div className="flex items-center gap-3 mb-2">
+            <div className="glass-card-dark p-6">
+              <div className="flex items-center gap-3 mb-3">
                 <span className="text-xs font-mono text-teal">JOURNAL</span>
                 <span className="text-xs text-gray-400">2026 · Under Review</span>
               </div>
@@ -308,9 +300,9 @@ export default function AboutPage() {
 
           {/* Conference Presentations */}
           <div className="grid sm:grid-cols-2 gap-4 mb-6">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <div className="flex items-center gap-3 mb-2">
-                <span className="text-xs font-mono font-bold text-white bg-teal/80 rounded px-2 py-0.5">CONFERENCE POSTER</span>
+            <div className="glass-card-dark p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-xs font-mono font-bold text-white bg-teal/80 rounded-md px-2.5 py-1">CONFERENCE POSTER</span>
                 <span className="text-xs text-gray-400">2019</span>
               </div>
               <p className="text-sm text-white font-medium mb-1">
@@ -320,9 +312,9 @@ export default function AboutPage() {
                 Graduate Conference of Hospitality &amp; Tourism Management, Las Vegas.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <div className="flex items-center gap-3 mb-2">
-                <span className="text-xs font-mono font-bold text-white bg-teal/80 rounded px-2 py-0.5">CONFERENCE PAPER</span>
+            <div className="glass-card-dark p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-xs font-mono font-bold text-white bg-teal/80 rounded-md px-2.5 py-1">CONFERENCE PAPER</span>
                 <span className="text-xs text-gray-400">2020</span>
               </div>
               <p className="text-sm text-white font-medium mb-1">
@@ -335,7 +327,7 @@ export default function AboutPage() {
           </div>
 
           {/* Peer Reviewer */}
-          <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+          <div className="glass-card-dark p-6">
             <p className="text-xs font-mono text-teal mb-2">PEER REVIEWER</p>
             <p className="text-sm text-white font-medium mb-1">
               Academic peer reviewer
@@ -347,12 +339,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ============================================= */}
-      {/* Section 3c: Featured & Affiliated              */}
-      {/* ============================================= */}
-      <section className="py-12 md:py-16 bg-soft-white">
+      {/* Section 3c: Featured & Affiliated */}
+      <section className="py-16 md:py-20 bg-soft-white">
         <div className="max-w-3xl mx-auto px-6">
-          <p className="section-label mb-4">// AFFILIATED WITH</p>
+          <p className="section-label mb-6">// AFFILIATED WITH</p>
           <div className="grid grid-cols-3 gap-4">
             {[
               {
@@ -371,26 +361,24 @@ export default function AboutPage() {
                 type: "501(c)(3) Nonprofit",
               },
             ].map((org) => (
-              <div key={org.name} className="glass-card p-5 text-center">
+              <div key={org.name} className="glass-card p-6 text-center">
                 <p className="text-sm font-bold text-navy">{org.name}</p>
-                <p className="text-xs text-teal mt-1">{org.role}</p>
-                <p className="text-xs text-warm-gray mt-0.5">{org.type}</p>
+                <p className="text-xs text-teal mt-1.5">{org.role}</p>
+                <p className="text-xs text-warm-gray mt-1">{org.type}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ============================================= */}
-      {/* Section 4: CTA                                */}
-      {/* ============================================= */}
-      <section className="relative bg-navy py-12 md:py-16 overflow-hidden">
+      {/* Section 4: CTA */}
+      <section className="relative bg-navy py-16 md:py-20 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
             Interested in working together?
           </h2>
-          <div className="mt-8">
+          <div className="mt-10">
             <a
               href="https://calendly.com/c2018-mia/chat-with-mia"
               target="_blank"

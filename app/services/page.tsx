@@ -44,12 +44,12 @@ export default function ServicesPage() {
       />
 
       {/* Hero */}
-      <section className="relative bg-soft-white pt-14 pb-16 md:pt-24 md:pb-28 overflow-hidden">
+      <section className="relative bg-soft-white pt-16 pb-20 md:pt-28 md:pb-32 overflow-hidden">
         <NodeNetwork opacity={0.3} />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <p className="section-label mb-4">// AREAS OF FOCUS</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight">
-            How We <span className="text-teal">Study</span> AI Visibility
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight tracking-tight">
+            How We <span className="text-gradient">Study</span> AI Visibility
           </h1>
           <p className="mt-6 text-warm-gray text-lg leading-relaxed">
             AI search systems are building entity models of every organization.
@@ -71,31 +71,25 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ============================================= */}
-      {/* AI Visibility Audit                           */}
-      {/* ============================================= */}
-      <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
+      {/* AI Visibility Audit */}
+      <section className="relative bg-navy py-20 md:py-28 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
-          {/* Header */}
-          <div className="mb-10">
-            <span className="inline-block bg-teal text-navy text-xs font-bold px-3 py-1 rounded mb-4">
+          <div className="mb-12">
+            <span className="inline-block bg-gradient-to-r from-teal to-teal-dark text-navy text-xs font-bold px-3 py-1.5 rounded-lg mb-4">
               01 / DIAGNOSTIC
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
               AI Visibility Audit
             </h2>
-            <p className="text-gray-400 leading-relaxed max-w-2xl">
+            <p className="text-gray-400 leading-relaxed max-w-2xl text-lg">
               A structured diagnostic that analyzes how AI systems currently
-              interpret, reference, and cite your organization. We query
-              ChatGPT, Perplexity, Google AI Overviews, and Copilot with the
-              questions your audience actually asks, then evaluate the
-              results against three diagnostic signals.
+              interpret, reference, and cite your organization.
             </p>
           </div>
 
           {/* Three Signals as visual cards */}
-          <div className="grid md:grid-cols-3 gap-5 mb-10">
+          <div className="grid md:grid-cols-3 gap-5 mb-12">
             {[
               {
                 num: "1",
@@ -113,21 +107,21 @@ export default function ServicesPage() {
                 desc: "Whether independent, trusted sources reference your organization in ways that give AI confidence to cite you. Evaluates third-party authority signals and external validation.",
               },
             ].map((item) => (
-              <div key={item.num} className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center mb-4">
+              <div key={item.num} className="glass-card-dark p-7 group">
+                <div className="w-11 h-11 rounded-xl bg-teal/10 flex items-center justify-center mb-4 group-hover:bg-teal/20 transition-colors">
                   <span className="text-lg font-bold text-teal">{item.num}</span>
                 </div>
                 <h3 className="text-base font-bold text-white mb-2">{item.signal}</h3>
-                <p className="text-xs text-gray-400 leading-relaxed">{item.desc}</p>
+                <p className="text-sm text-gray-400 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
 
           {/* What it reveals + CTA */}
-          <div className="bg-white/5 border border-white/10 rounded-xl p-7 md:p-9">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="glass-card-dark p-8 md:p-10">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
               <div>
-                <p className="text-xs font-mono tracking-wider text-teal uppercase mb-4">
+                <p className="text-xs font-mono tracking-wider text-teal uppercase mb-5">
                   WHAT THE DIAGNOSTIC REVEALS
                 </p>
                 <ul className="space-y-3">
@@ -177,21 +171,19 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ============================================= */}
-      {/* AI Visibility Strategy                        */}
-      {/* ============================================= */}
-      <section className="relative py-16 md:py-24 bg-soft-white overflow-hidden">
+      {/* AI Visibility Strategy */}
+      <section className="relative py-20 md:py-28 bg-soft-white overflow-hidden">
         <NodeNetwork opacity={0.2} />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-10 items-start">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="inline-block border border-gray-300 text-warm-gray text-xs font-medium px-3 py-1 rounded mb-4">
+              <span className="inline-block border border-gray-300 text-warm-gray text-xs font-medium px-3 py-1.5 rounded-lg mb-4">
                 02 / STRATEGY
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-5 tracking-tight">
                 AI Visibility Strategy
               </h2>
-              <p className="text-warm-gray leading-relaxed">
+              <p className="text-warm-gray leading-relaxed text-lg">
                 A research-informed strategic analysis built on your diagnostic
                 results. We map how AI systems currently construct knowledge about
                 your category, identify where your organization is absent or
@@ -203,7 +195,7 @@ export default function ServicesPage() {
                 strategic assessment of how to structure your organization&apos;s
                 information for AI systems that are deciding who to cite.
               </p>
-              <div className="mt-6">
+              <div className="mt-8">
                 <a
                   href="https://calendly.com/c2018-mia/chat-with-mia"
                   target="_blank"
@@ -214,8 +206,8 @@ export default function ServicesPage() {
                 </a>
               </div>
             </div>
-            <div className="glass-card p-7">
-              <p className="text-xs font-mono tracking-wider text-teal uppercase mb-4">
+            <div className="glass-card p-8">
+              <p className="text-xs font-mono tracking-wider text-teal uppercase mb-5">
                 STRATEGIC ANALYSIS INCLUDES
               </p>
               <ul className="space-y-3">
@@ -247,7 +239,7 @@ export default function ServicesPage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 p-4 bg-teal/5 border border-teal/20 rounded-lg">
+              <div className="mt-7 p-5 bg-teal/5 border border-teal/15 rounded-xl">
                 <p className="text-xs font-mono text-teal uppercase mb-2">
                   IMPACT TIMELINE
                 </p>
@@ -263,24 +255,22 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ============================================= */}
-      {/* AI Information Architecture                   */}
-      {/* ============================================= */}
-      <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
+      {/* AI Information Architecture */}
+      <section className="relative bg-navy py-20 md:py-28 overflow-hidden">
         <NodeNetwork opacity={0.15} color="0, 212, 170" />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <div className="mb-10">
-            <span className="inline-block border border-teal/40 text-teal text-xs font-medium px-3 py-1 rounded mb-4">
+          <div className="mb-12">
+            <span className="inline-block border border-teal/40 text-teal text-xs font-medium px-3 py-1.5 rounded-lg mb-4">
               03 / CONCEPT
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
               AI Information{" "}
-              <span className="text-teal">Architecture</span>
+              <span className="text-gradient">Architecture</span>
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 items-start mb-12">
-            <div className="space-y-5 text-gray-400 leading-relaxed">
+          <div className="grid md:grid-cols-2 gap-12 items-start mb-14">
+            <div className="space-y-5 text-gray-400 leading-relaxed text-lg">
               <p>
                 Traditional SEO focused on ranking individual web pages in a list of
                 links. AI search systems work differently. They interpret
@@ -294,7 +284,7 @@ export default function ServicesPage() {
                 reference, and recommend an organization.
               </p>
             </div>
-            <div className="space-y-5 text-gray-400 leading-relaxed">
+            <div className="space-y-5 text-gray-400 leading-relaxed text-lg">
               <p>
                 It considers how information is distributed, whether it is consistent,
                 whether independent sources validate it, and whether it is technically
@@ -310,18 +300,18 @@ export default function ServicesPage() {
           </div>
 
           {/* Evolution progression */}
-          <div className="grid md:grid-cols-3 gap-0 md:gap-0">
-            <div className="border border-white/10 rounded-l-xl md:rounded-l-xl rounded-t-xl md:rounded-tr-none p-7 text-center opacity-50">
+          <div className="grid md:grid-cols-3 gap-0">
+            <div className="border border-white/10 rounded-l-2xl md:rounded-l-2xl rounded-t-2xl md:rounded-tr-none p-8 text-center opacity-50">
               <p className="text-xs font-mono tracking-wider text-gray-500 mb-2">PAST</p>
               <p className="text-lg font-bold text-gray-500 mb-2">Traditional SEO</p>
               <p className="text-xs text-gray-500">Rank pages in a list of links</p>
             </div>
-            <div className="border border-teal/30 bg-teal/5 p-7 text-center">
+            <div className="border border-teal/30 bg-teal/5 p-8 text-center">
               <p className="text-xs font-mono tracking-wider text-teal mb-2">PRESENT</p>
               <p className="text-lg font-bold text-teal mb-2">GEO</p>
               <p className="text-xs text-gray-400">Optimize for AI-generated answers</p>
             </div>
-            <div className="border border-teal/30 bg-teal/10 rounded-r-xl md:rounded-r-xl rounded-b-xl md:rounded-bl-none p-7 text-center">
+            <div className="border border-teal/30 bg-teal/10 rounded-r-2xl md:rounded-r-2xl rounded-b-2xl md:rounded-bl-none p-8 text-center">
               <p className="text-xs font-mono tracking-wider text-teal mb-2">NEXT</p>
               <p className="text-lg font-bold text-white mb-2">AI Information Architecture</p>
               <p className="text-xs text-gray-400">Structure how AI systems understand your organization</p>
@@ -330,15 +320,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ============================================= */}
-      {/* Research & Insights                           */}
-      {/* ============================================= */}
-      <section className="relative py-16 md:py-24 bg-soft-white overflow-hidden">
+      {/* Research & Insights */}
+      <section className="relative py-20 md:py-28 bg-soft-white overflow-hidden">
         <NodeNetwork opacity={0.15} />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <div className="text-center mb-10">
+          <div className="text-center mb-12">
             <p className="section-label mb-3">// RESEARCH & INSIGHTS</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-navy leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy leading-tight tracking-tight">
               Studying How Organizations Appear in AI Search
             </h2>
             <p className="mt-4 text-warm-gray text-lg max-w-2xl mx-auto">
@@ -370,7 +358,7 @@ export default function ServicesPage() {
                   "How distributed organizational knowledge is structured to be correctly interpreted by AI systems that synthesize from multiple sources.",
               },
             ].map((item) => (
-              <div key={item.topic} className="glass-card p-6">
+              <div key={item.topic} className="glass-card p-7">
                 <h3 className="text-base font-bold text-navy mb-2">
                   {item.topic}
                 </h3>
@@ -392,21 +380,19 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ============================================= */}
-      {/* Expert Briefings                              */}
-      {/* ============================================= */}
-      <section className="relative bg-navy py-16 md:py-24 overflow-hidden">
+      {/* Expert Briefings */}
+      <section className="relative bg-navy py-20 md:py-28 overflow-hidden">
         <NodeNetwork opacity={0.2} color="0, 212, 170" />
         <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-10 items-start">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="inline-block border border-teal/40 text-teal text-xs font-medium px-3 py-1 rounded mb-4">
+              <span className="inline-block border border-teal/40 text-teal text-xs font-medium px-3 py-1.5 rounded-lg mb-4">
                 04 / FOR TEAMS
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 tracking-tight">
                 Executive Intelligence Briefings
               </h2>
-              <p className="text-gray-400 leading-relaxed mb-6">
+              <p className="text-gray-400 leading-relaxed mb-6 text-lg">
                 Structured briefings for leadership and technical teams who need
                 to understand how AI search systems evaluate and cite sources.
                 Grounded in the{" "}
@@ -424,7 +410,7 @@ export default function ServicesPage() {
                   (tag) => (
                     <span
                       key={tag}
-                      className="text-xs border border-teal/30 text-teal rounded-full px-3 py-1"
+                      className="text-xs border border-teal/30 text-teal rounded-full px-3 py-1.5 hover:bg-teal/10 transition-colors"
                     >
                       {tag}
                     </span>
@@ -432,8 +418,8 @@ export default function ServicesPage() {
                 )}
               </div>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-7">
-              <p className="text-xs font-mono tracking-wider text-teal uppercase mb-4">
+            <div className="glass-card-dark p-8">
+              <p className="text-xs font-mono tracking-wider text-teal uppercase mb-5">
                 BRIEFING COVERS
               </p>
               <ul className="space-y-3">
@@ -465,7 +451,7 @@ export default function ServicesPage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-6">
+              <div className="mt-7">
                 <a
                   href="https://calendly.com/c2018-mia/chat-with-mia"
                   target="_blank"
@@ -481,17 +467,17 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-20 bg-soft-white">
+      <section className="py-20 md:py-24 bg-soft-white">
         <div className="max-w-xl mx-auto px-6">
-          <div className="bg-teal-light border border-teal/20 rounded-2xl p-8 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-navy">
+          <div className="bg-gradient-to-br from-teal-light to-white border border-teal/15 rounded-2xl p-10 text-center shadow-lg shadow-teal/5">
+            <h2 className="text-2xl md:text-3xl font-bold text-navy tracking-tight">
               Not sure where to start?
             </h2>
-            <p className="mt-3 text-warm-gray">
+            <p className="mt-4 text-warm-gray text-lg">
               Start with a conversation. We&apos;ll help you understand what
               AI search systems currently say about your organization.
             </p>
-            <div className="mt-6">
+            <div className="mt-8">
               <a
                 href="https://calendly.com/c2018-mia/chat-with-mia"
                 target="_blank"

@@ -3,15 +3,16 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-navy text-white">
+      <div className="section-divider" />
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
           {/* Brand */}
           <div className="md:col-span-4">
-            <Link href="/" className="inline-flex items-center gap-1.5">
+            <Link href="/" className="inline-flex items-center gap-1.5 group">
               <span className="text-lg font-bold tracking-tight text-white">MIAREN</span>
-              <span className="text-xs font-normal text-teal border border-teal/40 rounded px-1.5 py-0.5">AI</span>
+              <span className="text-xs font-normal text-teal border border-teal/30 rounded-md px-1.5 py-0.5 group-hover:bg-teal/10 transition-colors">AI</span>
             </Link>
-            <p className="mt-3 text-sm text-warm-gray leading-relaxed max-w-xs">
+            <p className="mt-4 text-sm text-gray-400 leading-relaxed max-w-xs">
               AI visibility research and strategy. Studying how organizations become discoverable in AI-powered search.
             </p>
             <div className="mt-5 flex items-center gap-4">
@@ -38,11 +39,17 @@ export default function Footer() {
           <div className="md:col-span-2 md:col-start-6">
             <h4 className="text-xs font-mono uppercase tracking-widest text-teal mb-4">Navigate</h4>
             <div className="space-y-3">
-              <Link href="/services" className="block text-sm text-gray-400 hover:text-white transition-colors">Expertise</Link>
-              <Link href="/methodology" className="block text-sm text-gray-400 hover:text-white transition-colors">Methodology</Link>
-              <Link href="/geo-vs-seo" className="block text-sm text-gray-400 hover:text-white transition-colors">GEO vs SEO</Link>
-              <Link href="/results" className="block text-sm text-gray-400 hover:text-white transition-colors">Case Studies</Link>
-              <Link href="/about" className="block text-sm text-gray-400 hover:text-white transition-colors">About</Link>
+              {[
+                { href: "/services", label: "Expertise" },
+                { href: "/methodology", label: "Methodology" },
+                { href: "/geo-vs-seo", label: "GEO vs SEO" },
+                { href: "/results", label: "Case Studies" },
+                { href: "/about", label: "About" },
+              ].map((link) => (
+                <Link key={link.href} href={link.href} className="block text-sm text-gray-400 hover:text-teal transition-colors">
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </div>
 
@@ -50,11 +57,17 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h4 className="text-xs font-mono uppercase tracking-widest text-teal mb-4">Learn</h4>
             <div className="space-y-3">
-              <Link href="/research" className="block text-sm text-gray-400 hover:text-white transition-colors">Research</Link>
-              <Link href="/insights" className="block text-sm text-gray-400 hover:text-white transition-colors">Insights</Link>
-              <Link href="/insights/glossary" className="block text-sm text-gray-400 hover:text-white transition-colors">Glossary</Link>
-              <Link href="/faq" className="block text-sm text-gray-400 hover:text-white transition-colors">FAQ</Link>
-              <Link href="/contact" className="block text-sm text-gray-400 hover:text-white transition-colors">Contact</Link>
+              {[
+                { href: "/research", label: "Research" },
+                { href: "/insights", label: "Insights" },
+                { href: "/insights/glossary", label: "Glossary" },
+                { href: "/faq", label: "FAQ" },
+                { href: "/contact", label: "Contact" },
+              ].map((link) => (
+                <Link key={link.href} href={link.href} className="block text-sm text-gray-400 hover:text-teal transition-colors">
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </div>
 
@@ -62,16 +75,16 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h4 className="text-xs font-mono uppercase tracking-widest text-teal mb-4">Connect</h4>
             <div className="space-y-3">
-              <a href="https://www.linkedin.com/company/miaren-ai/" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-400 hover:text-white transition-colors">LinkedIn</a>
-              <a href="mailto:hello@miarenai.com" className="block text-sm text-gray-400 hover:text-white transition-colors">hello@miarenai.com</a>
-              <a href="https://calendly.com/c2018-mia/chat-with-mia" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-400 hover:text-white transition-colors">Book a Call</a>
+              <a href="https://www.linkedin.com/company/miaren-ai/" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-400 hover:text-teal transition-colors">LinkedIn</a>
+              <a href="mailto:hello@miarenai.com" className="block text-sm text-gray-400 hover:text-teal transition-colors">hello@miarenai.com</a>
+              <a href="https://calendly.com/c2018-mia/chat-with-mia" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-400 hover:text-teal transition-colors">Book a Call</a>
               <Link href="/ai-visibility-score" className="block text-sm text-teal hover:text-white transition-colors font-medium">AI Visibility Score</Link>
             </div>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-white/10">
+        <div className="mt-14 pt-6 border-t border-white/8">
           <div className="flex flex-col md:flex-row justify-between gap-2">
             <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Miaren AI. All rights reserved.</p>
             <p className="text-xs text-gray-500">
