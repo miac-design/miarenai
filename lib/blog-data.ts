@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "measuring-ai-visibility-roi-beyond-vanity-metrics",
+    title: "Measuring AI Visibility ROI: Beyond Vanity Metrics",
+    description:
+      "How to prove AI visibility impact to executives with revenue-linked metrics, not just citation counts.",
+    category: "Strategy",
+    date: "2026-03-16",
+    readTime: "8 min read",
+  },
+  {
     slug: "entity-optimization-for-ai-search-engines",
     title: "Entity Optimization: How AI Search Engines Build Trust in Your Brand",
     description:
