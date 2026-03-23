@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "local-business-ai-search-optimization-guide",
+    title: "AI Search for Local Businesses: Why Your GMB Profile Isn't Enough",
+    description:
+      "Local businesses need different GEO tactics than enterprises—here's the specific optimization strategy that works for location-based queries.",
+    category: "How-To",
+    date: "2026-03-23",
+    readTime: "7 min read",
+  },
+  {
     slug: "measuring-ai-visibility-roi-beyond-vanity-metrics",
     title: "Measuring AI Visibility ROI: Beyond Vanity Metrics",
     description:
