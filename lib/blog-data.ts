@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "schema-markup-audit-ai-search-optimization",
+    title: "How to Audit Your Schema Markup for AI Search Engines",
+    description:
+      "Most schema implementations work for Google but fail AI engines—here's the systematic audit process that reveals what needs fixing.",
+    category: "How-To",
+    date: "2026-03-30",
+    readTime: "8 min read",
+  },
+  {
     slug: "local-business-ai-search-optimization-guide",
     title: "AI Search for Local Businesses: Why Your GMB Profile Isn't Enough",
     description:
