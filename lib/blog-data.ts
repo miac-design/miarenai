@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "building-authority-signals-ai-engines-trust-2026",
+    title: "Building Authority Signals AI Engines Actually Trust in 2026",
+    description:
+      "Most authority-building tactics work for Google but fail AI engines—here's what ChatGPT, Perplexity, and Gemini actually look for before citing your brand.",
+    category: "Deep Dive",
+    date: "2026-04-06",
+    readTime: "9 min read",
+  },
+  {
     slug: "schema-markup-audit-ai-search-optimization",
     title: "How to Audit Your Schema Markup for AI Search Engines",
     description:
