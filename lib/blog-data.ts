@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ai-search-query-intent-optimization-2026",
+    title: "AI Search Query Intent: Why Your Keywords Don't Match What AI Engines Need",
+    description:
+      "AI engines interpret query intent differently than Google—here's how to optimize content for the way ChatGPT, Perplexity, and Gemini actually parse user questions.",
+    category: "Deep Dive",
+    date: "2026-04-13",
+    readTime: "8 min read",
+  },
+  {
     slug: "building-authority-signals-ai-engines-trust-2026",
     title: "Building Authority Signals AI Engines Actually Trust in 2026",
     description:
