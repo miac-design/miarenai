@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "crawlability-issues-blocking-ai-engines-2026",
+    title: "The Hidden Crawlability Issues Blocking AI Engines from Finding Your Content",
+    description:
+      "Technical barriers that prevent AI engines from accessing your content, even when Google crawls it perfectly.",
+    category: "How-To",
+    date: "2026-04-20",
+    readTime: "7 min read",
+  },
+  {
     slug: "ai-search-query-intent-optimization-2026",
     title: "AI Search Query Intent: Why Your Keywords Don't Match What AI Engines Need",
     description:
