@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "content-depth-ai-engines-citation-patterns-2026",
+    title: "Why AI Engines Favor Deep Content Over Surface-Level Articles",
+    description:
+      "Analysis of 1,200+ AI citations reveals the specific content depth patterns that determine whether ChatGPT, Perplexity, and Gemini cite your articles.",
+    category: "Research",
+    date: "2026-04-27",
+    readTime: "8 min read",
+  },
+  {
     slug: "crawlability-issues-blocking-ai-engines-2026",
     title: "The Hidden Crawlability Issues Blocking AI Engines from Finding Your Content",
     description:
