@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "competitive-ai-visibility-gaps-enterprise-advantage-2026",
+    title: "How to Find Your Competitors' AI Visibility Gaps and Exploit Them",
+    description:
+      "A systematic approach to identifying where competitors fail in AI search results and building content strategies that capture those opportunities.",
+    category: "Strategy",
+    date: "2026-05-04",
+    readTime: "9 min read",
+  },
+  {
     slug: "content-depth-ai-engines-citation-patterns-2026",
     title: "Why AI Engines Favor Deep Content Over Surface-Level Articles",
     description:
