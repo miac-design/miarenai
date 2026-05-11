@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ai-search-content-freshness-signals-2026",
+    title: "Content Freshness Signals AI Engines Actually Check Before Citations",
+    description:
+      "AI engines prioritize fresh content differently than Google—here's the specific recency signals that determine citation priority in ChatGPT, Perplexity, and Gemini.",
+    category: "Deep Dive",
+    date: "2026-05-11",
+    readTime: "8 min read",
+  },
+  {
     slug: "competitive-ai-visibility-gaps-enterprise-advantage-2026",
     title: "How to Find Your Competitors' AI Visibility Gaps and Exploit Them",
     description:
