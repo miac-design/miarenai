@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ai-engines-structured-data-citation-signals-2026",
+    title: "The Structured Data Signals AI Engines Check Before Every Citation",
+    description:
+      "AI engines parse structured data differently than Google—here's what they actually look for and why 78% of sites fail the AI readability test.",
+    category: "Deep Dive",
+    date: "2026-05-18",
+    readTime: "9 min read",
+  },
+  {
     slug: "ai-search-content-freshness-signals-2026",
     title: "Content Freshness Signals AI Engines Actually Check Before Citations",
     description:
