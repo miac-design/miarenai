@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ai-search-zero-click-citations-brand-visibility-2026",
+    title: "Zero-Click Citations: When AI Engines Reference Your Brand Without Links",
+    description:
+      "Most AI citations don't include clickable links—here's how to track and optimize for brand mentions that drive awareness without direct traffic.",
+    category: "Deep Dive",
+    date: "2026-05-25",
+    readTime: "8 min read",
+  },
+  {
     slug: "ai-engines-structured-data-citation-signals-2026",
     title: "The Structured Data Signals AI Engines Check Before Every Citation",
     description:
