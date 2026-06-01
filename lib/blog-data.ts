@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "knowledge-graph-signals-ai-engines-check-citations-2026",
+    title: "The Knowledge Graph Signals AI Engines Check Before Every Citation",
+    description:
+      "AI engines rely on knowledge graph connections to validate citations—here's what they actually verify and why 84% of brands fail the entity verification test.",
+    category: "Deep Dive",
+    date: "2026-06-01",
+    readTime: "9 min read",
+  },
+  {
     slug: "ai-search-zero-click-citations-brand-visibility-2026",
     title: "Zero-Click Citations: When AI Engines Reference Your Brand Without Links",
     description:
