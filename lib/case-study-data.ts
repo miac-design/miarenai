@@ -12,6 +12,9 @@ export interface CaseStudy {
     results: { metric: string; description: string }[];
     testimonial?: { quote: string; role: string };
     keyInsight: string;
+    disclosure?: string;
+    whatAiCites?: string[];
+    methodologyNote?: string;
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -47,30 +50,37 @@ export const caseStudies: CaseStudy[] = [
     },
     {
         slug: "austin-ai-hub",
-        client: "Austin AI Hub",
+        client: "Austin AI Hub: From Invisible to AI-Cited",
         industry: "Nonprofit Technology Community",
-        type: "Full GEO Implementation",
-        tagline: "Making a grassroots AI community discoverable to the engines it teaches about.",
-        hero: "A nonprofit AI education hub with deep community roots, but no visibility in the AI-powered search engines that its own members use daily.",
+        type: "GEO Case Study",
+        tagline: "A 501(c)(3) nonprofit AI community went from a 28/100 GEO score to a cleanly cited, machine-readable entity — surfacing alongside communities ten times its size.",
+        hero: "A 501(c)(3) nonprofit AI community went from a 28/100 GEO score and zero AI visibility to a cleanly cited, machine-readable entity — surfacing alongside communities ten times its size.",
+        disclosure:
+            "Miaren AI and Austin AI Hub share leadership. Mia Cheraghian, PhD is the founder of Miaren AI and part of the founding team of Austin AI Hub, where she serves as Director of Strategic Partnerships & Marketing. This GEO work was delivered as a pro bono community initiative. We share it as a portfolio example of our Visibility methodology and its measurable results — not as an independent client testimonial.",
         challenge:
-            "Austin AI Hub was building one of the most impactful AI education communities in Central Texas, with workshops, volunteer programs, and partnerships with organizations like Texas Tech University. But their digital presence told a different story. No schema markup. No structured FAQ content. Inconsistent entity information across platforms. When people asked AI engines about AI communities in Austin, AI education programs, or tech volunteering opportunities, Austin AI Hub was nowhere in the responses. For an organization teaching people about AI, being invisible to AI search was an existential credibility gap.",
+            "Austin AI Hub had a clear mission and an active community, but it was effectively invisible to the AI search engines its audience increasingly relies on. A GEO audit scored the site 28 out of 100 for AI discoverability. The net effect: when someone asked an AI assistant about AI communities in Austin, Austin AI Hub did not exist. The audit found zero structured data — no JSON-LD anywhere, so AI models had no machine-readable way to understand the organization, its leaders, or its programs. There was no llms.txt at root and crawler access for GPTBot, ClaudeBot, and PerplexityBot was unconfirmed. Entity signals were fragmented across three competing domains, with a decommissioned legacy brand still in the footer, an outdated member count, the wrong founding year, and an old contact email. And there was no external verification — no presence on the third-party sources AI models lean on to verify entities, such as Crunchbase, Wikidata, and Candid.",
         approach: [
-            "Full AI Visibility Audit revealing a baseline AI Visibility Score of 4% across all platforms",
-            "Implemented Organization, Person, and FAQPage schema markup, ensuring AI engines understood what the Hub does, who leads it, and what programs it offers",
-            "Restructured the FAQ section using GEO and AEO best practices: direct answers, statistical claims with sources, and Q&A formatting optimized for AI extraction",
-            "Built comprehensive robots.txt allowing GPTBot, ClaudeBot, PerplexityBot, and Google-Extended crawlers",
-            "Created an auto-generated sitemap covering all static pages and dynamic program content",
-            "Established cross-platform entity consistency: website, Google Business Profile, LinkedIn, and community directories all aligned",
+            "Establish one source of truth: defined the canonical entity once — name, founding year, nonprofit status, leadership, location, programs — and enforced it everywhere, replacing legacy branding and correcting every inconsistent fact.",
+            "Build the machine-readable foundation: Organization, FAQPage, and BreadcrumbList JSON-LD across the site, a curated llms.txt at root, a robots.txt that explicitly admits every major AI crawler, plus sitemap and canonical tags to consolidate authority.",
+            "Create citation-ready content: a dense, factual About page and a FAQ structured as direct question-and-answer pairs — the exact format AI models prefer to quote — plus a live blog to build topical authority over time.",
+            "Extend the external signal network: consistent entity profiles across Crunchbase, Wikidata, Google Business Profile, Built In Austin, Candid, and LinkedIn — so external verification reinforces the website rather than contradicting it.",
         ],
         results: [
-            { metric: "4% → 42%", description: "AI Visibility Score across 4 platforms" },
-            { metric: "8 of 20", description: "Target queries now cite Austin AI Hub" },
-            { metric: "12 pages", description: "Fully schema-optimized with JSON-LD structured data" },
-            { metric: "100%", description: "AI crawler access, all major bots explicitly allowed" },
+            { metric: "28 → ~60", description: "AI-readiness score (2x+ improvement)" },
+            { metric: "0 → Org-wide", description: "Structured data schema coverage" },
+            { metric: "6+", description: "Verification sources (Crunchbase, Wikidata, more)" },
+            { metric: "500+", description: "Member nonprofit now AI-cited" },
         ],
-
+        whatAiCites: [
+            "501(c)(3) nonprofit AI community in Austin, founded in 2025",
+            "500+ members, led by Hamed Alikhani, PhD (Founder) and Mia Cheraghian, PhD (Director of Strategic Partnerships & Marketing)",
+            "Sharp, quotable differentiator: the only 501(c)(3) nonprofit AI community in Austin combining PhD-led education for complete beginners with AI-for-social-good projects",
+            "Now appears alongside AITX Community (7,000+), AI Tinkerers (110,000+ global), and Austin AI Developers Group (8,000+) in Austin AI community searches",
+        ],
+        methodologyNote:
+            "The AI-readiness score reflects Miaren AI's internal GEO audit framework. We have intentionally not claimed specific platform-citation wins (e.g. \"#1 in ChatGPT\") because those have not yet been formally measured. A tracking sweep across ChatGPT, Perplexity, Gemini, and Claude can quantify live citation results. The engagement is ongoing — remaining levers include full domain consolidation and a sustained content cadence to compound topical authority.",
         keyInsight:
-            "Nonprofits and community organizations are particularly vulnerable to AI invisibility because they rarely invest in technical SEO, let alone GEO. Yet these are often the exact organizations people search for with AI — queries like 'best AI communities near me' or 'where to learn AI in Austin.' The gap between mission impact and digital discoverability is significant and measurable.",
+            "The organization's AI-readiness score more than doubled, from a 28/100 baseline into the high-50s to low-60s range, with the highest-leverage fixes delivering the steepest gains. More tellingly, the facts now surface: across the site, AI-facing descriptions return a clean, consistent profile. A 500+ member nonprofit now holds a cleaner, more accurate, more machine-readable profile than communities ten times larger. In GEO, structure beats size.",
     },
     {
         slug: "enterprise-tech-audit",
