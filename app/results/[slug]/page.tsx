@@ -82,6 +82,14 @@ export default async function CaseStudyPage({ params }: Props) {
             <section className="relative bg-soft-white py-12 md:py-16 overflow-hidden">
                 <NodeNetwork opacity={0.15} />
                 <div className="relative z-10 max-w-3xl mx-auto px-6">
+                    {/* Disclosure */}
+                    {cs.disclosure && (
+                        <div className="mb-12 bg-teal-light border border-teal/20 rounded-xl p-5 md:p-6">
+                            <p className="text-xs font-mono tracking-wider text-teal uppercase mb-2">Disclosure</p>
+                            <p className="text-sm text-warm-gray leading-relaxed">{cs.disclosure}</p>
+                        </div>
+                    )}
+
                     {/* The Challenge */}
                     <div className="mb-12">
                         <h2 className="text-2xl font-bold text-navy mb-4">The Challenge</h2>
@@ -123,6 +131,31 @@ export default async function CaseStudyPage({ params }: Props) {
                             <p className="text-warm-gray leading-relaxed italic">{cs.keyInsight}</p>
                         </div>
                     </div>
+
+                    {/* What AI Models Now Cite */}
+                    {cs.whatAiCites && cs.whatAiCites.length > 0 && (
+                        <div className="mb-12">
+                            <h2 className="text-2xl font-bold text-navy mb-4">What AI Models Now Cite</h2>
+                            <ul className="space-y-3">
+                                {cs.whatAiCites.map((item, i) => (
+                                    <li key={i} className="flex gap-3">
+                                        <svg className="w-5 h-5 text-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                        </svg>
+                                        <p className="text-warm-gray leading-relaxed">{item}</p>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+
+                    {/* Methodology Note */}
+                    {cs.methodologyNote && (
+                        <div className="mb-12 bg-navy/[0.03] border border-gray-200 rounded-xl p-5 md:p-6">
+                            <p className="text-xs font-mono tracking-wider text-warm-gray uppercase mb-2">Methodology Note</p>
+                            <p className="text-sm text-warm-gray leading-relaxed">{cs.methodologyNote}</p>
+                        </div>
+                    )}
 
                     {/* CTA */}
                     <div className="text-center pt-6 border-t border-gray-200">
