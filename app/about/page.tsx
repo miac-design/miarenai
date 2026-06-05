@@ -196,6 +196,28 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <p className="section-label mb-6">// PUBLICATIONS & RESEARCH</p>
 
+          {/* GEO Working Paper (Featured) */}
+          <div className="bg-teal/10 border border-teal/40 rounded-xl p-5 mb-6">
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-xs font-mono font-bold text-navy bg-teal rounded px-2 py-0.5">WORKING PAPER</span>
+              <span className="text-xs text-gray-400">2026</span>
+            </div>
+            <p className="text-base text-white font-medium mb-1">
+              Generative Engine Optimization as a Digital Equity Strategy for Underserved Tourism Destinations
+            </p>
+            <p className="text-xs text-gray-400 mb-2">
+              Cheraghian Mahboubeh, Saeed Vayghan. Published on SSRN. Examines how Generative Engine Optimization can serve as a digital equity strategy for underserved tourism destinations.
+            </p>
+            <a
+              href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6806318"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal text-xs font-medium hover:underline"
+            >
+              Read on SSRN →
+            </a>
+          </div>
+
           {/* Dissertation */}
           <div className="bg-white/5 border border-teal/30 rounded-xl p-5 mb-6">
             <div className="flex items-center gap-3 mb-2">
