@@ -84,26 +84,6 @@ export default function ResultsPage() {
                     ))}
                 </div>
 
-                {/* Testimonials Section */}
-                <div className="mt-16">
-                    <h2 className="text-2xl font-bold text-navy mb-8 text-center">From organizations we&apos;ve worked with</h2>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        {caseStudies
-                            .filter((cs) => cs.testimonial)
-                            .map((cs) => (
-                                <div key={cs.slug} className="glass-card p-7">
-                                    <svg className="w-8 h-8 text-teal/30 mb-4" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zm-14.017 0v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H0z" />
-                                    </svg>
-                                    <p className="text-warm-gray leading-relaxed italic mb-4">
-                                        &ldquo;{cs.testimonial!.quote}&rdquo;
-                                    </p>
-                                    <p className="text-sm font-medium text-navy">/ {cs.testimonial!.role}</p>
-                                </div>
-                            ))}
-                    </div>
-                </div>
-
                 <div className="text-center mt-12">
                     <Link href="/contact" className="btn-primary">
                         Request a Diagnostic
