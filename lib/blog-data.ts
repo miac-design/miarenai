@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "enterprise-content-audit-ai-citation-readiness-2026",
+    title: "The Enterprise Content Audit: Identifying AI Citation-Ready Assets",
+    description:
+      "Most enterprise content libraries contain AI citation gold mines—here's the systematic audit process that reveals which assets are ready for AI engines and which need optimization.",
+    category: "How-To",
+    date: "2026-06-08",
+    readTime: "8 min read",
+  },
+  {
     slug: "knowledge-graph-signals-ai-engines-check-citations-2026",
     title: "The Knowledge Graph Signals AI Engines Check Before Every Citation",
     description:
