@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "technical-seo-gaps-blocking-ai-engine-discovery-2026",
+    title: "The Technical SEO Gaps That Block AI Engines (But Not Google)",
+    description:
+      "Critical technical barriers that prevent AI engines from accessing your content, even when Google crawls it perfectly—here's what's different and how to fix it.",
+    category: "How-To",
+    date: "2026-06-15",
+    readTime: "8 min read",
+  },
+  {
     slug: "enterprise-content-audit-ai-citation-readiness-2026",
     title: "The Enterprise Content Audit: Identifying AI Citation-Ready Assets",
     description:
